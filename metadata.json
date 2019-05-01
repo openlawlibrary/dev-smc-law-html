@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "build": {
+      "date": "2019-05-01 11:38:12",
+      "platform": {
+        "reproducible": "false",
+        "version": "****.*.*"
+      },
+      "repositories": {
+        "repository": {
+          "commit": "e752cffc66b70cac30302a1ec72d3a82d28da935",
+          "name": "smc-law-xml"
+        }
+      },
+      "through-date": "2019-02-04"
+    },
+    "canonical-urls": {
+      "html": "https://sanmateo.ca.us.open.law",
+      "html-bulk": "https://github.com/cityofsanmateo/law-html",
+      "xml-bulk": "https://github.com/cityofsanmateo/law-xml"
+    },
+    "contact": {
+      "email": "help@openlawlib.org"
+    },
+    "description": "Browse the laws and code of San Mateo"
+  }
+}
