@@ -1,5 +1,5 @@
 """
-Server for viewing the DC Code locally
+Server for hosting website locally
 
 Requires python 3.3 or greater.
 
@@ -24,7 +24,7 @@ DIR = os.path.abspath(os.path.dirname(__file__))
 # make sure our working directory for this server is the same as this file is in
 os.chdir(DIR)
 
-with open('version.json') as f:
+with open('metadata.json') as f:
     VERSION_INFO = json.load(f)
 
 DEFAULT_SEARCH_URL = VERSION_INFO['meta']['canonical-urls']['html']
