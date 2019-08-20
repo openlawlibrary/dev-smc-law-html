@@ -1,15 +1,15 @@
 {
   "meta": {
     "build": {
-      "date": "2019-08-01 12:41:05",
+      "date": "2019-08-19 20:28:51",
       "platform": {
         "reproducible": "false",
         "version": "****.*.*"
       },
       "repositories": {
         "repository": {
-          "commit": "23dd65b2d33fc2d59c3a15608a0b460f89a96c5f",
-          "name": "smc-law-xml"
+          "commit": "d004721015a211e0856ff4318b82faa5c31d627e",
+          "name": "law-xml"
         }
       },
       "through-date": "2019-07-17"
