@@ -7,7 +7,8 @@
     "language": "en-US",
     "siteUrl": "https://sanmateo.ca.us.open.law",
     "favicon": "/images/favicons/favicon.ico",
-    "docRoot": "/us/ngo/oll"
+    "docRoot": "/us/ngo/oll",
+    "entityId": "us/ca/cities/san-mateo"
   },
   "style": { "namespaceSuffix": "oll-core" },
   "logo": {

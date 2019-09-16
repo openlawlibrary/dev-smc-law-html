@@ -1,11 +1,15 @@
 """
 Server for hosting website locally
 
-Requires python 3.3 or greater.
+On windows, run `server.exe`.
+
+(executable created with: `pyinstaller --onefile server.py`)
+
+Otherwise, requires python 3.3 or greater.
 
 Run `python3 server.py`
 
-Visit `localhost:8000` in your web browser.
+Visit `http://localhost:8000` in your web browser.
 """
 
 from http.server import SimpleHTTPRequestHandler, HTTPServer
@@ -17,7 +21,9 @@ import urllib.request
 import http.client
 import posixpath
 import json
-
+import webbrowser
+import threading
+import time
 
 DIR = os.path.abspath(os.path.dirname(__file__))
 
@@ -167,7 +173,7 @@ if __name__ == '__main__':
     parser.add_argument('--bind', '-b', default='127.0.0.1', metavar='ADDRESS',
                         help='Specify alternate bind address '
                              '[default: localhost]')
-    parser.add_argument('port', action='store',
+    parser.add_argument('--port', action='store',
                         default=8000, type=int,
                         nargs='?',
                         help='Specify alternate port [default: 8000]')
@@ -175,7 +181,8 @@ if __name__ == '__main__':
                         help='url to proxy search requests to. [default: {}'.format(DEFAULT_SEARCH_URL))
     parser.add_argument('--portal-proxy-url', default=None, metavar='PORTAL_URL',
                         help='url to proxy portal requests to. [default: None]')
-
+    parser.add_argument('--no-open-browser', default=False, action="store_true",
+                        help='do not open the library in default browser after starting server.')
     args = parser.parse_args()
     server_address = (args.bind, args.port)
 
@@ -191,11 +198,22 @@ if __name__ == '__main__':
     httpd.redirects = redirects
 
     sa = httpd.socket.getsockname()
-    print("Serving HTTP on", sa[0], "port", sa[1], "...")
-    print("\n\n*** This server is designed for local use. DO NOT USE IN PRODUCTION ***\n\n")
-    PORTAL_CLIENT_CLASS, PORTAL_HOST = get_http_client_info('portal', args.portal_proxy_url)
+    url = 'http://{}:{}'.format(sa[0], sa[1])
 
+    print("Visit {} in your webbrowser to view library...".format(url))
+    print("\n\n*** This server is designed for local use. Do not use in production. ***\n\n")
+
+    PORTAL_CLIENT_CLASS, PORTAL_HOST = get_http_client_info('portal', args.portal_proxy_url)
     SEARCH_CLIENT_CLASS, SEARCH_HOST = get_http_client_info('search', args.search_proxy_url)
+
+    def visit_library():
+        time.sleep(2)
+        webbrowser.open(url, new=2)
+
+    if not args.no_open_browser:
+        thread = threading.Thread(target=visit_library)
+        thread.start()
+
 
     try:
         httpd.serve_forever()
