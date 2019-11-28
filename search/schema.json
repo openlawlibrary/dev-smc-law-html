@@ -19,17 +19,17 @@
           "tokenizer": "path_tokenizer"
         }
       },
+      "char_filter": {
+        "stripHTMLFilter": {
+          "type": "html_strip"
+        }
+      },
       "tokenizer": {
         "path_tokenizer": {
           "type": "path_hierarchy",
           "delimiter": "|"
         }
       }
-    }
-  },
-  "char_filter": {
-    "stripHTMLFilter": {
-      "type": "html_strip"
     }
   },
   "mappings": {
