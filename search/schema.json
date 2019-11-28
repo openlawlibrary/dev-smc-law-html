@@ -10,7 +10,7 @@
             "lowercase",
             "kstem"
           ],
-          "char_filter": [ "html_strip" ]
+          "char_filter": [ "stripHTMLFilter" ]
         },
         "path_analyzer": {
           "type": "custom",
@@ -23,6 +23,11 @@
           "delimiter": "|"
         }
       }
+    }
+  },
+  "char_filter": {
+    "stripHTMLFilter": {
+      "type": "html_strip"
     }
   },
   "mappings": {
