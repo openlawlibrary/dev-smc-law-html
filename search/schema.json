@@ -21,7 +21,8 @@
       },
       "char_filter": {
         "stripHTMLFilter": {
-          "type": "html_strip"
+          "type": "html_strip",
+          "escaped_tags": []
         }
       },
       "tokenizer": {
