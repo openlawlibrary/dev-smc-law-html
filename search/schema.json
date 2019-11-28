@@ -9,6 +9,9 @@
             "asciifolding",
             "lowercase",
             "kstem"
+          ],
+          "char_filter": [
+            "html_strip"
           ]
         },
         "path_analyzer": {
