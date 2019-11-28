@@ -10,9 +10,7 @@
             "lowercase",
             "kstem"
           ],
-          "char_filter": [
-            "html_strip"
-          ]
+          "char_filter": [ "html_strip" ]
         },
         "path_analyzer": {
           "type": "custom",
