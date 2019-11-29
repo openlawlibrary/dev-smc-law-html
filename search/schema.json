@@ -5,24 +5,16 @@
         "text_analyzer": {
           "type": "custom",
           "tokenizer": "standard",
+          "char_filter": ["html_strip"],
           "filter": [
             "asciifolding",
             "lowercase",
             "kstem"
-          ],
-          "char_filter": [ 
-            "stripHTMLFilter" 
           ]
         },
         "path_analyzer": {
           "type": "custom",
           "tokenizer": "path_tokenizer"
-        }
-      },
-      "char_filter": {
-        "stripHTMLFilter": {
-          "type": "html_strip",
-          "escaped_tags": []
         }
       },
       "tokenizer": {
@@ -56,7 +48,7 @@
           "index": true,
           "type": "text",
           "analyzer": "text_analyzer",
-          "store": false
+          "store": true
         },
         "url": {
           "type": "text",
