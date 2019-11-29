@@ -4,13 +4,15 @@
       "analyzer": {
         "text_analyzer": {
           "type": "custom",
-          "tokenizer": "keyword",
+          "tokenizer": "standard",
           "filter": [
             "asciifolding",
             "lowercase",
             "kstem"
           ],
-          "char_filter": [ "stripHTMLFilter" ]
+          "char_filter": [ 
+            "stripHTMLFilter" 
+          ]
         },
         "path_analyzer": {
           "type": "custom",
@@ -54,7 +56,7 @@
           "index": true,
           "type": "text",
           "analyzer": "text_analyzer",
-          "store": true
+          "store": false
         },
         "url": {
           "type": "text",
