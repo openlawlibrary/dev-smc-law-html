@@ -4,7 +4,7 @@
       "analyzer": {
         "text_analyzer": {
           "type": "custom",
-          "tokenizer": "standard",
+          "tokenizer": "keyword",
           "filter": [
             "asciifolding",
             "lowercase",
