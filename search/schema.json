@@ -71,9 +71,9 @@
           "index": false,
           "store": true
         },
-        "path": {
-          "type": "text",
-          "analyzer": "path_analyzer",
+        "path" : {
+          "type" : "text",
+          "analyzer" : "path_analyzer",
           "search_analyzer": "path_analyzer"
         }
       }

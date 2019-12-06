@@ -2,7 +2,8 @@
   "general": {
     "libraryName": "City of San Mateo Law Library",
     "language": "en-US",
-    "gitOrgURL": "https://github.com/cityofsanmateo/",
+    "gitProviderURL": "https://github.com",
+    "gitOrgName": "cityofsanmateo",
     "liveSite": "https://sanmateo.ca.us.open.law/",
     "displayName": "City of San Mateo, California",
     "entityId": "us/ca/cities/san-mateo"

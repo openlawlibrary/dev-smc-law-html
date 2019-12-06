@@ -102,7 +102,7 @@ class RequestHandler(SimpleHTTPRequestHandler):
             self.copyfile(resp, self.wfile)
 
     def do_GET(self):
-        if self.path.startswith('/_portal'):
+        if self.path.startswith('/_portal') or  self.path.startswith('/_api') or self.path.startswith('/_date') or self.path.startswith('/_compare'):
             return self._proxy(PORTAL_CLIENT_CLASS, PORTAL_HOST, 'portal')
 
         if self.path.startswith('/_search'):

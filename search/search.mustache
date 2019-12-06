@@ -15,7 +15,8 @@
                 "fields": [
                   "num",
                   "title",
-                  "body"
+                  "body",
+                  "body_markup"
                 ],
                 "query": "{{query_string}}"
               }
@@ -76,10 +77,7 @@
         "no_match_size": 60
       },
       "body_markup": {
-        "fragmenter": "simple",
-        "number_of_fragments": 1,
-        "fragment_size": 60,
-        "no_match_size": 60
+        "number_of_fragments": 0
       },
       "title": {
         "number_of_fragments": 0

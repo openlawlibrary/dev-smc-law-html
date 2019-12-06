@@ -1,18 +1,18 @@
 {
   "meta": {
     "build": {
-      "date": "2019-11-21 17:08:53",
+      "build-date": "2019-12-06",
+      "codified-date": "2020-01-01",
       "platform": {
         "reproducible": "false",
-        "version": "****.*.*"
+        "version": "2019.8.0"
       },
       "repositories": {
         "repository": {
-          "commit": "64c6c91fdfae23c6ea3591daad7b8c7612038aef",
+          "commit": "9b28e92b9356fe7fa4064ac3fe319c09929edea8",
           "name": "smc-law-xml"
         }
-      },
-      "through-date": "2020-01-01"
+      }
     },
     "canonical-urls": {
       "html": "https://sanmateo.ca.us.open.law",
