@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var core_js_modules_es_regexp_exec__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.regexp.exec */ \"../../../../../node_modules/core-js/modules/es.regexp.exec.js\");\n/* harmony import */ var core_js_modules_es_regexp_exec__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_regexp_exec__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var core_js_modules_es_string_match__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.string.match */ \"../../../../../node_modules/core-js/modules/es.string.match.js\");\n/* harmony import */ var core_js_modules_es_string_match__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_match__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var D_workspace_OLL_platform_publish_client_node_modules_babel_runtime_corejs3_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! D:/workspace/OLL/platform/publish-client/node_modules/@babel/runtime-corejs3/helpers/esm/classCallCheck */ \"../../../../../node_modules/@babel/runtime-corejs3/helpers/esm/classCallCheck.js\");\n/* harmony import */ var D_workspace_OLL_platform_publish_client_node_modules_babel_runtime_corejs3_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! D:/workspace/OLL/platform/publish-client/node_modules/@babel/runtime-corejs3/helpers/esm/createClass */ \"../../../../../node_modules/@babel/runtime-corejs3/helpers/esm/createClass.js\");\n\n/*\n\tClass used to attach FILE or a SCRIPT to the head of HTML\n\t---------------------------------------------------------\n\tFirst parameter can be:\n\t\t- `script`\n\t\t- `style`\n\n\tSecond parameter can be:\n\t\t- Link to a file that starts with `http://`, `https://`, `//` or `/`\n\t\t- Inline script, JS or CSS\n\n\n\tExample usage\n\t-------------\n\t// Attaching a file\n\t```js\n\timport Append2Head from 'Core/utils/Append2Head';\n\tvar file = '/_analytics/stats.js';\n\tvar a2h = new Append2Head('script', file);\n\n\ta2h.run();\n\t```\n\n\t// Attaching a script\n\t```js\n\timport Append2Head from 'Core/utils/Append2Head';\n\tvar code = `\n\t\tconsole.log('this is dummy JS');\n\t`;\n\tvar a2h = new Append2Head('script', code);\n\t```\n*/\n\n\n\n\n\n\nvar Append2Head =\n/*#__PURE__*/\nfunction () {\n  function Append2Head(elemType, content) {\n    Object(D_workspace_OLL_platform_publish_client_node_modules_babel_runtime_corejs3_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(this, Append2Head);\n\n    this._elemType = elemType;\n    this._content = content;\n    this._attachment = '';\n    this._urlPattern = /(^http:\\/\\/)|(^http[s\\u017F]:\\/\\/)|(^\\/\\/)|(^\\/)/gmi;\n  } // Getters and setters\n\n\n  Object(D_workspace_OLL_platform_publish_client_node_modules_babel_runtime_corejs3_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(Append2Head, [{\n    key: \"isLink\",\n    // Functions\n    value: function isLink() {\n      if (this._content.match(this._urlPattern)) {\n        return true;\n      }\n\n      return false;\n    }\n  }, {\n    key: \"run\",\n    value: function run() {\n      if (this.isLink()) {\n        // This is a link\n        if (this._elemType === 'script') {\n          this._attachment = document.createElement('script');\n          this._attachment.src = this._content;\n          this._attachment.type = 'text/javascript';\n        } else if (this._elemType === 'style') {\n          this._attachment = document.createElement('link');\n          this._attachment.href = this._content;\n          this._attachment.type = 'text/css';\n          this._attachment.rel = 'stylesheet';\n        }\n      } else {\n        // This is a script\n        if (this._elemType === 'script') {\n          this._attachment = document.createElement(this._elemType);\n          this._attachment.type = 'text/javascript';\n          this._attachment.innerHTML = this._content;\n        } else if (this._elemType === 'style') {\n          this._attachment = document.createElement(this._elemType);\n          this._attachment.type = 'text/css';\n\n          if (this._attachment.styleSheet) {\n            this._attachment.styleSheet.cssText = this._content;\n          } else {\n            this._attachment.appendChild(document.createTextNode(this._content));\n          }\n        }\n      } // Attach content to head\n\n\n      (document.head || document.getElementsByTagName('head')[0]).appendChild(this._attachment);\n    }\n  }, {\n    key: \"elemType\",\n    get: function get() {\n      return this._elemType;\n    },\n    set: function set(value) {\n      this._elemType = value;\n    }\n  }, {\n    key: \"content\",\n    get: function get() {\n      return this._content;\n    },\n    set: function set(value) {\n      this._content = value;\n    }\n  }]);\n\n  return Append2Head;\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Append2Head);\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/core__front-end/v2/shared/js/utils/Append2Head.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var core_js_modules_es_regexp_exec__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.regexp.exec */ \"../../../../../node_modules/core-js/modules/es.regexp.exec.js\");\n/* harmony import */ var core_js_modules_es_regexp_exec__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_regexp_exec__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var core_js_modules_es_string_match__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.string.match */ \"../../../../../node_modules/core-js/modules/es.string.match.js\");\n/* harmony import */ var core_js_modules_es_string_match__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_match__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var D_workspace_OLL_platform_publish_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! D:/workspace/OLL/platform/publish-client/node_modules/@babel/runtime/helpers/esm/classCallCheck */ \"../../../../../node_modules/@babel/runtime/helpers/esm/classCallCheck.js\");\n/* harmony import */ var D_workspace_OLL_platform_publish_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! D:/workspace/OLL/platform/publish-client/node_modules/@babel/runtime/helpers/esm/createClass */ \"../../../../../node_modules/@babel/runtime/helpers/esm/createClass.js\");\n\n/*\n\tClass used to attach FILE or a SCRIPT to the head of HTML\n\t---------------------------------------------------------\n\tFirst parameter can be:\n\t\t- `script`\n\t\t- `style`\n\n\tSecond parameter can be:\n\t\t- Link to a file that starts with `http://`, `https://`, `//` or `/`\n\t\t- Inline script, JS or CSS\n\n\n\tExample usage\n\t-------------\n\t// Attaching a file\n\t```js\n\timport Append2Head from 'Core/utils/Append2Head';\n\tvar file = '/_analytics/stats.js';\n\tvar a2h = new Append2Head('script', file);\n\n\ta2h.run();\n\t```\n\n\t// Attaching a script\n\t```js\n\timport Append2Head from 'Core/utils/Append2Head';\n\tvar code = `\n\t\tconsole.log('this is dummy JS');\n\t`;\n\tvar a2h = new Append2Head('script', code);\n\t```\n*/\n\n\n\n\n\n\nvar Append2Head =\n/*#__PURE__*/\nfunction () {\n  function Append2Head(elemType, content) {\n    Object(D_workspace_OLL_platform_publish_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(this, Append2Head);\n\n    this._elemType = elemType;\n    this._content = content;\n    this._attachment = '';\n    this._urlPattern = /(^http:\\/\\/)|(^http[s\\u017F]:\\/\\/)|(^\\/\\/)|(^\\/)/gmi;\n  } // Getters and setters\n\n\n  Object(D_workspace_OLL_platform_publish_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(Append2Head, [{\n    key: \"isLink\",\n    // Functions\n    value: function isLink() {\n      if (this._content.match(this._urlPattern)) {\n        return true;\n      }\n\n      return false;\n    }\n  }, {\n    key: \"run\",\n    value: function run() {\n      if (this.isLink()) {\n        // This is a link\n        if (this._elemType === 'script') {\n          this._attachment = document.createElement('script');\n          this._attachment.src = this._content;\n          this._attachment.type = 'text/javascript';\n        } else if (this._elemType === 'style') {\n          this._attachment = document.createElement('link');\n          this._attachment.href = this._content;\n          this._attachment.type = 'text/css';\n          this._attachment.rel = 'stylesheet';\n        }\n      } else {\n        // This is a script\n        if (this._elemType === 'script') {\n          this._attachment = document.createElement(this._elemType);\n          this._attachment.type = 'text/javascript';\n          this._attachment.innerHTML = this._content;\n        } else if (this._elemType === 'style') {\n          this._attachment = document.createElement(this._elemType);\n          this._attachment.type = 'text/css';\n\n          if (this._attachment.styleSheet) {\n            this._attachment.styleSheet.cssText = this._content;\n          } else {\n            this._attachment.appendChild(document.createTextNode(this._content));\n          }\n        }\n      } // Attach content to head\n\n\n      (document.head || document.getElementsByTagName('head')[0]).appendChild(this._attachment);\n    }\n  }, {\n    key: \"elemType\",\n    get: function get() {\n      return this._elemType;\n    },\n    set: function set(value) {\n      this._elemType = value;\n    }\n  }, {\n    key: \"content\",\n    get: function get() {\n      return this._content;\n    },\n    set: function set(value) {\n      this._content = value;\n    }\n  }]);\n\n  return Append2Head;\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Append2Head);\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/core__front-end/v2/shared/js/utils/Append2Head.js?");
 
 /***/ }),
 
@@ -106,330 +106,31 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var core
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var core_js_modules_es_regexp_exec__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.regexp.exec */ \"../../../../../node_modules/core-js/modules/es.regexp.exec.js\");\n/* harmony import */ var core_js_modules_es_regexp_exec__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_regexp_exec__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var D_workspace_OLL_platform_publish_client_node_modules_babel_runtime_corejs3_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! D:/workspace/OLL/platform/publish-client/node_modules/@babel/runtime-corejs3/helpers/esm/classCallCheck */ \"../../../../../node_modules/@babel/runtime-corejs3/helpers/esm/classCallCheck.js\");\n/* harmony import */ var D_workspace_OLL_platform_publish_client_node_modules_babel_runtime_corejs3_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! D:/workspace/OLL/platform/publish-client/node_modules/@babel/runtime-corejs3/helpers/esm/createClass */ \"../../../../../node_modules/@babel/runtime-corejs3/helpers/esm/createClass.js\");\n\n\n\n\n\n\nvar FindThemeDir =\n/*#__PURE__*/\nfunction () {\n  function FindThemeDir(elem) {\n    Object(D_workspace_OLL_platform_publish_client_node_modules_babel_runtime_corejs3_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(this, FindThemeDir);\n\n    this._elem = elem; // Finds path + _document + version number, starting with `v` + any digit\n\n    this._pattern = /^((?:[\\0-\\t\\x0B\\f\\x0E-\\u2027\\u202A-\\uD7FF\\uE000-\\uFFFF]|[\\uD800-\\uDBFF][\\uDC00-\\uDFFF]|[\\uD800-\\uDBFF](?![\\uDC00-\\uDFFF])|(?:[^\\uD800-\\uDBFF]|^)[\\uDC00-\\uDFFF])*?)_document\\/v[0-9]*/gmi;\n  } // Getters and Setters\n\n\n  Object(D_workspace_OLL_platform_publish_client_node_modules_babel_runtime_corejs3_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(FindThemeDir, [{\n    key: \"documentUrl\",\n    // Functions\n    value: function documentUrl() {\n      return this._pattern.exec(this._elem)[0];\n    }\n  }, {\n    key: \"themeUrl\",\n    value: function themeUrl() {\n      return this._pattern.exec(this._elem)[1];\n    }\n  }, {\n    key: \"elem\",\n    get: function get() {\n      return this._elem;\n    },\n    set: function set(value) {\n      this._elem = value;\n    }\n  }]);\n\n  return FindThemeDir;\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (FindThemeDir);\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/core__front-end/v2/shared/js/utils/FindThemeDir.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var core_js_modules_es_regexp_exec__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.regexp.exec */ \"../../../../../node_modules/core-js/modules/es.regexp.exec.js\");\n/* harmony import */ var core_js_modules_es_regexp_exec__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_regexp_exec__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var D_workspace_OLL_platform_publish_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! D:/workspace/OLL/platform/publish-client/node_modules/@babel/runtime/helpers/esm/classCallCheck */ \"../../../../../node_modules/@babel/runtime/helpers/esm/classCallCheck.js\");\n/* harmony import */ var D_workspace_OLL_platform_publish_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! D:/workspace/OLL/platform/publish-client/node_modules/@babel/runtime/helpers/esm/createClass */ \"../../../../../node_modules/@babel/runtime/helpers/esm/createClass.js\");\n\n\n\n\n\n\nvar FindThemeDir =\n/*#__PURE__*/\nfunction () {\n  function FindThemeDir(elem) {\n    Object(D_workspace_OLL_platform_publish_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(this, FindThemeDir);\n\n    this._elem = elem; // Finds path + _document + version number, starting with `v` + any digit\n\n    this._pattern = /^((?:[\\0-\\t\\x0B\\f\\x0E-\\u2027\\u202A-\\uD7FF\\uE000-\\uFFFF]|[\\uD800-\\uDBFF][\\uDC00-\\uDFFF]|[\\uD800-\\uDBFF](?![\\uDC00-\\uDFFF])|(?:[^\\uD800-\\uDBFF]|^)[\\uDC00-\\uDFFF])*?)_document\\/v[0-9]*/gmi;\n  } // Getters and Setters\n\n\n  Object(D_workspace_OLL_platform_publish_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(FindThemeDir, [{\n    key: \"documentUrl\",\n    // Functions\n    value: function documentUrl() {\n      return this._pattern.exec(this._elem)[0];\n    }\n  }, {\n    key: \"themeUrl\",\n    value: function themeUrl() {\n      return this._pattern.exec(this._elem)[1];\n    }\n  }, {\n    key: \"elem\",\n    get: function get() {\n      return this._elem;\n    },\n    set: function set(value) {\n      this._elem = value;\n    }\n  }]);\n\n  return FindThemeDir;\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (FindThemeDir);\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/core__front-end/v2/shared/js/utils/FindThemeDir.js?");
 
 /***/ }),
 
-/***/ "../../../../../node_modules/@babel/runtime-corejs3/core-js/object/define-property.js":
-/*!**********************************************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/@babel/runtime-corejs3/core-js/object/define-property.js ***!
-  \**********************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__(/*! core-js-pure/features/object/define-property */ \"../../../../../node_modules/core-js-pure/features/object/define-property.js\");\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/@babel/runtime-corejs3/core-js/object/define-property.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/@babel/runtime-corejs3/helpers/esm/classCallCheck.js":
-/*!******************************************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/@babel/runtime-corejs3/helpers/esm/classCallCheck.js ***!
-  \******************************************************************************************************************/
+/***/ "../../../../../node_modules/@babel/runtime/helpers/esm/classCallCheck.js":
+/*!**********************************************************************************************************!*\
+  !*** D:/workspace/OLL/platform/publish-client/node_modules/@babel/runtime/helpers/esm/classCallCheck.js ***!
+  \**********************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _classCallCheck; });\nfunction _classCallCheck(instance, Constructor) {\n  if (!(instance instanceof Constructor)) {\n    throw new TypeError(\"Cannot call a class as a function\");\n  }\n}\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/@babel/runtime-corejs3/helpers/esm/classCallCheck.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _classCallCheck; });\nfunction _classCallCheck(instance, Constructor) {\n  if (!(instance instanceof Constructor)) {\n    throw new TypeError(\"Cannot call a class as a function\");\n  }\n}\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/@babel/runtime/helpers/esm/classCallCheck.js?");
 
 /***/ }),
 
-/***/ "../../../../../node_modules/@babel/runtime-corejs3/helpers/esm/createClass.js":
-/*!***************************************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/@babel/runtime-corejs3/helpers/esm/createClass.js ***!
-  \***************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _createClass; });\n/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-property */ \"../../../../../node_modules/@babel/runtime-corejs3/core-js/object/define-property.js\");\n/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);\n\n\nfunction _defineProperties(target, props) {\n  for (var i = 0; i < props.length; i++) {\n    var descriptor = props[i];\n    descriptor.enumerable = descriptor.enumerable || false;\n    descriptor.configurable = true;\n    if (\"value\" in descriptor) descriptor.writable = true;\n\n    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(target, descriptor.key, descriptor);\n  }\n}\n\nfunction _createClass(Constructor, protoProps, staticProps) {\n  if (protoProps) _defineProperties(Constructor.prototype, protoProps);\n  if (staticProps) _defineProperties(Constructor, staticProps);\n  return Constructor;\n}\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/@babel/runtime-corejs3/helpers/esm/createClass.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/es/object/define-property.js":
+/***/ "../../../../../node_modules/@babel/runtime/helpers/esm/createClass.js":
 /*!*******************************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/es/object/define-property.js ***!
+  !*** D:/workspace/OLL/platform/publish-client/node_modules/@babel/runtime/helpers/esm/createClass.js ***!
   \*******************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("__webpack_require__(/*! ../../modules/es.object.define-property */ \"../../../../../node_modules/core-js-pure/modules/es.object.define-property.js\");\nvar path = __webpack_require__(/*! ../../internals/path */ \"../../../../../node_modules/core-js-pure/internals/path.js\");\n\nvar Object = path.Object;\n\nvar defineProperty = module.exports = function defineProperty(it, key, desc) {\n  return Object.defineProperty(it, key, desc);\n};\n\nif (Object.defineProperty.sham) defineProperty.sham = true;\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/es/object/define-property.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/features/object/define-property.js":
-/*!*************************************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/features/object/define-property.js ***!
-  \*************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__(/*! ../../es/object/define-property */ \"../../../../../node_modules/core-js-pure/es/object/define-property.js\");\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/features/object/define-property.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/internals/a-function.js":
-/*!**************************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/a-function.js ***!
-  \**************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = function (it) {\n  if (typeof it != 'function') {\n    throw TypeError(String(it) + ' is not a function');\n  } return it;\n};\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/a-function.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/internals/an-object.js":
-/*!*************************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/an-object.js ***!
-  \*************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var isObject = __webpack_require__(/*! ../internals/is-object */ \"../../../../../node_modules/core-js-pure/internals/is-object.js\");\n\nmodule.exports = function (it) {\n  if (!isObject(it)) {\n    throw TypeError(String(it) + ' is not an object');\n  } return it;\n};\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/an-object.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/internals/bind-context.js":
-/*!****************************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/bind-context.js ***!
-  \****************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var aFunction = __webpack_require__(/*! ../internals/a-function */ \"../../../../../node_modules/core-js-pure/internals/a-function.js\");\n\n// optional / simple context binding\nmodule.exports = function (fn, that, length) {\n  aFunction(fn);\n  if (that === undefined) return fn;\n  switch (length) {\n    case 0: return function () {\n      return fn.call(that);\n    };\n    case 1: return function (a) {\n      return fn.call(that, a);\n    };\n    case 2: return function (a, b) {\n      return fn.call(that, a, b);\n    };\n    case 3: return function (a, b, c) {\n      return fn.call(that, a, b, c);\n    };\n  }\n  return function (/* ...args */) {\n    return fn.apply(that, arguments);\n  };\n};\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/bind-context.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/internals/classof-raw.js":
-/*!***************************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/classof-raw.js ***!
-  \***************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("var toString = {}.toString;\n\nmodule.exports = function (it) {\n  return toString.call(it).slice(8, -1);\n};\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/classof-raw.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/internals/create-non-enumerable-property.js":
-/*!**********************************************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/create-non-enumerable-property.js ***!
-  \**********************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var DESCRIPTORS = __webpack_require__(/*! ../internals/descriptors */ \"../../../../../node_modules/core-js-pure/internals/descriptors.js\");\nvar definePropertyModule = __webpack_require__(/*! ../internals/object-define-property */ \"../../../../../node_modules/core-js-pure/internals/object-define-property.js\");\nvar createPropertyDescriptor = __webpack_require__(/*! ../internals/create-property-descriptor */ \"../../../../../node_modules/core-js-pure/internals/create-property-descriptor.js\");\n\nmodule.exports = DESCRIPTORS ? function (object, key, value) {\n  return definePropertyModule.f(object, key, createPropertyDescriptor(1, value));\n} : function (object, key, value) {\n  object[key] = value;\n  return object;\n};\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/create-non-enumerable-property.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/internals/create-property-descriptor.js":
-/*!******************************************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/create-property-descriptor.js ***!
-  \******************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = function (bitmap, value) {\n  return {\n    enumerable: !(bitmap & 1),\n    configurable: !(bitmap & 2),\n    writable: !(bitmap & 4),\n    value: value\n  };\n};\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/create-property-descriptor.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/internals/descriptors.js":
-/*!***************************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/descriptors.js ***!
-  \***************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var fails = __webpack_require__(/*! ../internals/fails */ \"../../../../../node_modules/core-js-pure/internals/fails.js\");\n\n// Thank's IE8 for his funny defineProperty\nmodule.exports = !fails(function () {\n  return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;\n});\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/descriptors.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/internals/document-create-element.js":
-/*!***************************************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/document-create-element.js ***!
-  \***************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var global = __webpack_require__(/*! ../internals/global */ \"../../../../../node_modules/core-js-pure/internals/global.js\");\nvar isObject = __webpack_require__(/*! ../internals/is-object */ \"../../../../../node_modules/core-js-pure/internals/is-object.js\");\n\nvar document = global.document;\n// typeof document.createElement is 'object' in old IE\nvar EXISTS = isObject(document) && isObject(document.createElement);\n\nmodule.exports = function (it) {\n  return EXISTS ? document.createElement(it) : {};\n};\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/document-create-element.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/internals/export.js":
-/*!**********************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/export.js ***!
-  \**********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("\nvar global = __webpack_require__(/*! ../internals/global */ \"../../../../../node_modules/core-js-pure/internals/global.js\");\nvar getOwnPropertyDescriptor = __webpack_require__(/*! ../internals/object-get-own-property-descriptor */ \"../../../../../node_modules/core-js-pure/internals/object-get-own-property-descriptor.js\").f;\nvar isForced = __webpack_require__(/*! ../internals/is-forced */ \"../../../../../node_modules/core-js-pure/internals/is-forced.js\");\nvar path = __webpack_require__(/*! ../internals/path */ \"../../../../../node_modules/core-js-pure/internals/path.js\");\nvar bind = __webpack_require__(/*! ../internals/bind-context */ \"../../../../../node_modules/core-js-pure/internals/bind-context.js\");\nvar createNonEnumerableProperty = __webpack_require__(/*! ../internals/create-non-enumerable-property */ \"../../../../../node_modules/core-js-pure/internals/create-non-enumerable-property.js\");\nvar has = __webpack_require__(/*! ../internals/has */ \"../../../../../node_modules/core-js-pure/internals/has.js\");\n\nvar wrapConstructor = function (NativeConstructor) {\n  var Wrapper = function (a, b, c) {\n    if (this instanceof NativeConstructor) {\n      switch (arguments.length) {\n        case 0: return new NativeConstructor();\n        case 1: return new NativeConstructor(a);\n        case 2: return new NativeConstructor(a, b);\n      } return new NativeConstructor(a, b, c);\n    } return NativeConstructor.apply(this, arguments);\n  };\n  Wrapper.prototype = NativeConstructor.prototype;\n  return Wrapper;\n};\n\n/*\n  options.target      - name of the target object\n  options.global      - target is the global object\n  options.stat        - export as static methods of target\n  options.proto       - export as prototype methods of target\n  options.real        - real prototype method for the `pure` version\n  options.forced      - export even if the native feature is available\n  options.bind        - bind methods to the target, required for the `pure` version\n  options.wrap        - wrap constructors to preventing global pollution, required for the `pure` version\n  options.unsafe      - use the simple assignment of property instead of delete + defineProperty\n  options.sham        - add a flag to not completely full polyfills\n  options.enumerable  - export as enumerable property\n  options.noTargetGet - prevent calling a getter on target\n*/\nmodule.exports = function (options, source) {\n  var TARGET = options.target;\n  var GLOBAL = options.global;\n  var STATIC = options.stat;\n  var PROTO = options.proto;\n\n  var nativeSource = GLOBAL ? global : STATIC ? global[TARGET] : (global[TARGET] || {}).prototype;\n\n  var target = GLOBAL ? path : path[TARGET] || (path[TARGET] = {});\n  var targetPrototype = target.prototype;\n\n  var FORCED, USE_NATIVE, VIRTUAL_PROTOTYPE;\n  var key, sourceProperty, targetProperty, nativeProperty, resultProperty, descriptor;\n\n  for (key in source) {\n    FORCED = isForced(GLOBAL ? key : TARGET + (STATIC ? '.' : '#') + key, options.forced);\n    // contains in native\n    USE_NATIVE = !FORCED && nativeSource && has(nativeSource, key);\n\n    targetProperty = target[key];\n\n    if (USE_NATIVE) if (options.noTargetGet) {\n      descriptor = getOwnPropertyDescriptor(nativeSource, key);\n      nativeProperty = descriptor && descriptor.value;\n    } else nativeProperty = nativeSource[key];\n\n    // export native or implementation\n    sourceProperty = (USE_NATIVE && nativeProperty) ? nativeProperty : source[key];\n\n    if (USE_NATIVE && typeof targetProperty === typeof sourceProperty) continue;\n\n    // bind timers to global for call from export context\n    if (options.bind && USE_NATIVE) resultProperty = bind(sourceProperty, global);\n    // wrap global constructors for prevent changs in this version\n    else if (options.wrap && USE_NATIVE) resultProperty = wrapConstructor(sourceProperty);\n    // make static versions for prototype methods\n    else if (PROTO && typeof sourceProperty == 'function') resultProperty = bind(Function.call, sourceProperty);\n    // default case\n    else resultProperty = sourceProperty;\n\n    // add a flag to not completely full polyfills\n    if (options.sham || (sourceProperty && sourceProperty.sham) || (targetProperty && targetProperty.sham)) {\n      createNonEnumerableProperty(resultProperty, 'sham', true);\n    }\n\n    target[key] = resultProperty;\n\n    if (PROTO) {\n      VIRTUAL_PROTOTYPE = TARGET + 'Prototype';\n      if (!has(path, VIRTUAL_PROTOTYPE)) {\n        createNonEnumerableProperty(path, VIRTUAL_PROTOTYPE, {});\n      }\n      // export virtual prototype methods\n      path[VIRTUAL_PROTOTYPE][key] = sourceProperty;\n      // export real prototype methods\n      if (options.real && targetPrototype && !targetPrototype[key]) {\n        createNonEnumerableProperty(targetPrototype, key, sourceProperty);\n      }\n    }\n  }\n};\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/export.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/internals/fails.js":
-/*!*********************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/fails.js ***!
-  \*********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = function (exec) {\n  try {\n    return !!exec();\n  } catch (error) {\n    return true;\n  }\n};\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/fails.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/internals/global.js":
-/*!**********************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/global.js ***!
-  \**********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("/* WEBPACK VAR INJECTION */(function(global) {var check = function (it) {\n  return it && it.Math == Math && it;\n};\n\n// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028\nmodule.exports =\n  // eslint-disable-next-line no-undef\n  check(typeof globalThis == 'object' && globalThis) ||\n  check(typeof window == 'object' && window) ||\n  check(typeof self == 'object' && self) ||\n  check(typeof global == 'object' && global) ||\n  // eslint-disable-next-line no-new-func\n  Function('return this')();\n\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ \"../../../../../node_modules/webpack/buildin/global.js\")))\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/global.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/internals/has.js":
-/*!*******************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/has.js ***!
-  \*******************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("var hasOwnProperty = {}.hasOwnProperty;\n\nmodule.exports = function (it, key) {\n  return hasOwnProperty.call(it, key);\n};\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/has.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/internals/ie8-dom-define.js":
-/*!******************************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/ie8-dom-define.js ***!
-  \******************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var DESCRIPTORS = __webpack_require__(/*! ../internals/descriptors */ \"../../../../../node_modules/core-js-pure/internals/descriptors.js\");\nvar fails = __webpack_require__(/*! ../internals/fails */ \"../../../../../node_modules/core-js-pure/internals/fails.js\");\nvar createElement = __webpack_require__(/*! ../internals/document-create-element */ \"../../../../../node_modules/core-js-pure/internals/document-create-element.js\");\n\n// Thank's IE8 for his funny defineProperty\nmodule.exports = !DESCRIPTORS && !fails(function () {\n  return Object.defineProperty(createElement('div'), 'a', {\n    get: function () { return 7; }\n  }).a != 7;\n});\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/ie8-dom-define.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/internals/indexed-object.js":
-/*!******************************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/indexed-object.js ***!
-  \******************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var fails = __webpack_require__(/*! ../internals/fails */ \"../../../../../node_modules/core-js-pure/internals/fails.js\");\nvar classof = __webpack_require__(/*! ../internals/classof-raw */ \"../../../../../node_modules/core-js-pure/internals/classof-raw.js\");\n\nvar split = ''.split;\n\n// fallback for non-array-like ES3 and non-enumerable old V8 strings\nmodule.exports = fails(function () {\n  // throws an error in rhino, see https://github.com/mozilla/rhino/issues/346\n  // eslint-disable-next-line no-prototype-builtins\n  return !Object('z').propertyIsEnumerable(0);\n}) ? function (it) {\n  return classof(it) == 'String' ? split.call(it, '') : Object(it);\n} : Object;\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/indexed-object.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/internals/is-forced.js":
-/*!*************************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/is-forced.js ***!
-  \*************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var fails = __webpack_require__(/*! ../internals/fails */ \"../../../../../node_modules/core-js-pure/internals/fails.js\");\n\nvar replacement = /#|\\.prototype\\./;\n\nvar isForced = function (feature, detection) {\n  var value = data[normalize(feature)];\n  return value == POLYFILL ? true\n    : value == NATIVE ? false\n    : typeof detection == 'function' ? fails(detection)\n    : !!detection;\n};\n\nvar normalize = isForced.normalize = function (string) {\n  return String(string).replace(replacement, '.').toLowerCase();\n};\n\nvar data = isForced.data = {};\nvar NATIVE = isForced.NATIVE = 'N';\nvar POLYFILL = isForced.POLYFILL = 'P';\n\nmodule.exports = isForced;\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/is-forced.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/internals/is-object.js":
-/*!*************************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/is-object.js ***!
-  \*************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = function (it) {\n  return typeof it === 'object' ? it !== null : typeof it === 'function';\n};\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/is-object.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/internals/object-define-property.js":
-/*!**************************************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/object-define-property.js ***!
-  \**************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var DESCRIPTORS = __webpack_require__(/*! ../internals/descriptors */ \"../../../../../node_modules/core-js-pure/internals/descriptors.js\");\nvar IE8_DOM_DEFINE = __webpack_require__(/*! ../internals/ie8-dom-define */ \"../../../../../node_modules/core-js-pure/internals/ie8-dom-define.js\");\nvar anObject = __webpack_require__(/*! ../internals/an-object */ \"../../../../../node_modules/core-js-pure/internals/an-object.js\");\nvar toPrimitive = __webpack_require__(/*! ../internals/to-primitive */ \"../../../../../node_modules/core-js-pure/internals/to-primitive.js\");\n\nvar nativeDefineProperty = Object.defineProperty;\n\n// `Object.defineProperty` method\n// https://tc39.github.io/ecma262/#sec-object.defineproperty\nexports.f = DESCRIPTORS ? nativeDefineProperty : function defineProperty(O, P, Attributes) {\n  anObject(O);\n  P = toPrimitive(P, true);\n  anObject(Attributes);\n  if (IE8_DOM_DEFINE) try {\n    return nativeDefineProperty(O, P, Attributes);\n  } catch (error) { /* empty */ }\n  if ('get' in Attributes || 'set' in Attributes) throw TypeError('Accessors not supported');\n  if ('value' in Attributes) O[P] = Attributes.value;\n  return O;\n};\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/object-define-property.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/internals/object-get-own-property-descriptor.js":
-/*!**************************************************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/object-get-own-property-descriptor.js ***!
-  \**************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var DESCRIPTORS = __webpack_require__(/*! ../internals/descriptors */ \"../../../../../node_modules/core-js-pure/internals/descriptors.js\");\nvar propertyIsEnumerableModule = __webpack_require__(/*! ../internals/object-property-is-enumerable */ \"../../../../../node_modules/core-js-pure/internals/object-property-is-enumerable.js\");\nvar createPropertyDescriptor = __webpack_require__(/*! ../internals/create-property-descriptor */ \"../../../../../node_modules/core-js-pure/internals/create-property-descriptor.js\");\nvar toIndexedObject = __webpack_require__(/*! ../internals/to-indexed-object */ \"../../../../../node_modules/core-js-pure/internals/to-indexed-object.js\");\nvar toPrimitive = __webpack_require__(/*! ../internals/to-primitive */ \"../../../../../node_modules/core-js-pure/internals/to-primitive.js\");\nvar has = __webpack_require__(/*! ../internals/has */ \"../../../../../node_modules/core-js-pure/internals/has.js\");\nvar IE8_DOM_DEFINE = __webpack_require__(/*! ../internals/ie8-dom-define */ \"../../../../../node_modules/core-js-pure/internals/ie8-dom-define.js\");\n\nvar nativeGetOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;\n\n// `Object.getOwnPropertyDescriptor` method\n// https://tc39.github.io/ecma262/#sec-object.getownpropertydescriptor\nexports.f = DESCRIPTORS ? nativeGetOwnPropertyDescriptor : function getOwnPropertyDescriptor(O, P) {\n  O = toIndexedObject(O);\n  P = toPrimitive(P, true);\n  if (IE8_DOM_DEFINE) try {\n    return nativeGetOwnPropertyDescriptor(O, P);\n  } catch (error) { /* empty */ }\n  if (has(O, P)) return createPropertyDescriptor(!propertyIsEnumerableModule.f.call(O, P), O[P]);\n};\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/object-get-own-property-descriptor.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/internals/object-property-is-enumerable.js":
-/*!*********************************************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/object-property-is-enumerable.js ***!
-  \*********************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nvar nativePropertyIsEnumerable = {}.propertyIsEnumerable;\nvar getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;\n\n// Nashorn ~ JDK8 bug\nvar NASHORN_BUG = getOwnPropertyDescriptor && !nativePropertyIsEnumerable.call({ 1: 2 }, 1);\n\n// `Object.prototype.propertyIsEnumerable` method implementation\n// https://tc39.github.io/ecma262/#sec-object.prototype.propertyisenumerable\nexports.f = NASHORN_BUG ? function propertyIsEnumerable(V) {\n  var descriptor = getOwnPropertyDescriptor(this, V);\n  return !!descriptor && descriptor.enumerable;\n} : nativePropertyIsEnumerable;\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/object-property-is-enumerable.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/internals/path.js":
-/*!********************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/path.js ***!
-  \********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = {};\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/path.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/internals/require-object-coercible.js":
-/*!****************************************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/require-object-coercible.js ***!
-  \****************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("// `RequireObjectCoercible` abstract operation\n// https://tc39.github.io/ecma262/#sec-requireobjectcoercible\nmodule.exports = function (it) {\n  if (it == undefined) throw TypeError(\"Can't call method on \" + it);\n  return it;\n};\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/require-object-coercible.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/internals/to-indexed-object.js":
-/*!*********************************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/to-indexed-object.js ***!
-  \*********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// toObject with fallback for non-array-like ES3 strings\nvar IndexedObject = __webpack_require__(/*! ../internals/indexed-object */ \"../../../../../node_modules/core-js-pure/internals/indexed-object.js\");\nvar requireObjectCoercible = __webpack_require__(/*! ../internals/require-object-coercible */ \"../../../../../node_modules/core-js-pure/internals/require-object-coercible.js\");\n\nmodule.exports = function (it) {\n  return IndexedObject(requireObjectCoercible(it));\n};\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/to-indexed-object.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/internals/to-primitive.js":
-/*!****************************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/to-primitive.js ***!
-  \****************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var isObject = __webpack_require__(/*! ../internals/is-object */ \"../../../../../node_modules/core-js-pure/internals/is-object.js\");\n\n// `ToPrimitive` abstract operation\n// https://tc39.github.io/ecma262/#sec-toprimitive\n// instead of the ES6 spec version, we didn't implement @@toPrimitive case\n// and the second argument - flag - preferred type is a string\nmodule.exports = function (input, PREFERRED_STRING) {\n  if (!isObject(input)) return input;\n  var fn, val;\n  if (PREFERRED_STRING && typeof (fn = input.toString) == 'function' && !isObject(val = fn.call(input))) return val;\n  if (typeof (fn = input.valueOf) == 'function' && !isObject(val = fn.call(input))) return val;\n  if (!PREFERRED_STRING && typeof (fn = input.toString) == 'function' && !isObject(val = fn.call(input))) return val;\n  throw TypeError(\"Can't convert object to primitive value\");\n};\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/internals/to-primitive.js?");
-
-/***/ }),
-
-/***/ "../../../../../node_modules/core-js-pure/modules/es.object.define-property.js":
-/*!***************************************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/modules/es.object.define-property.js ***!
-  \***************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var $ = __webpack_require__(/*! ../internals/export */ \"../../../../../node_modules/core-js-pure/internals/export.js\");\nvar DESCRIPTORS = __webpack_require__(/*! ../internals/descriptors */ \"../../../../../node_modules/core-js-pure/internals/descriptors.js\");\nvar objectDefinePropertyModile = __webpack_require__(/*! ../internals/object-define-property */ \"../../../../../node_modules/core-js-pure/internals/object-define-property.js\");\n\n// `Object.defineProperty` method\n// https://tc39.github.io/ecma262/#sec-object.defineproperty\n$({ target: 'Object', stat: true, forced: !DESCRIPTORS, sham: !DESCRIPTORS }, {\n  defineProperty: objectDefinePropertyModile.f\n});\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js-pure/modules/es.object.define-property.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _createClass; });\nfunction _defineProperties(target, props) {\n  for (var i = 0; i < props.length; i++) {\n    var descriptor = props[i];\n    descriptor.enumerable = descriptor.enumerable || false;\n    descriptor.configurable = true;\n    if (\"value\" in descriptor) descriptor.writable = true;\n    Object.defineProperty(target, descriptor.key, descriptor);\n  }\n}\n\nfunction _createClass(Constructor, protoProps, staticProps) {\n  if (protoProps) _defineProperties(Constructor.prototype, protoProps);\n  if (staticProps) _defineProperties(Constructor, staticProps);\n  return Constructor;\n}\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/@babel/runtime/helpers/esm/createClass.js?");
 
 /***/ }),
 
@@ -578,17 +279,6 @@ eval("\nvar createNonEnumerableProperty = __webpack_require__(/*! ../internals/c
 
 /***/ }),
 
-/***/ "../../../../../node_modules/core-js/internals/function-to-string.js":
-/*!*****************************************************************************************************!*\
-  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js/internals/function-to-string.js ***!
-  \*****************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var shared = __webpack_require__(/*! ../internals/shared */ \"../../../../../node_modules/core-js/internals/shared.js\");\n\nmodule.exports = shared('native-function-to-string', Function.toString);\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js/internals/function-to-string.js?");
-
-/***/ }),
-
 /***/ "../../../../../node_modules/core-js/internals/get-built-in.js":
 /*!***********************************************************************************************!*\
   !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js/internals/get-built-in.js ***!
@@ -655,6 +345,17 @@ eval("var fails = __webpack_require__(/*! ../internals/fails */ \"../../../../..
 
 /***/ }),
 
+/***/ "../../../../../node_modules/core-js/internals/inspect-source.js":
+/*!*************************************************************************************************!*\
+  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js/internals/inspect-source.js ***!
+  \*************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var store = __webpack_require__(/*! ../internals/shared-store */ \"../../../../../node_modules/core-js/internals/shared-store.js\");\n\nvar functionToString = Function.toString;\n\n// this helper broken in `3.4.1-3.4.4`, so we can't use `shared` helper\nif (typeof store.inspectSource != 'function') {\n  store.inspectSource = function (it) {\n    return functionToString.call(it);\n  };\n}\n\nmodule.exports = store.inspectSource;\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js/internals/inspect-source.js?");
+
+/***/ }),
+
 /***/ "../../../../../node_modules/core-js/internals/internal-state.js":
 /*!*************************************************************************************************!*\
   !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js/internals/internal-state.js ***!
@@ -717,7 +418,7 @@ eval("var fails = __webpack_require__(/*! ../internals/fails */ \"../../../../..
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var global = __webpack_require__(/*! ../internals/global */ \"../../../../../node_modules/core-js/internals/global.js\");\nvar nativeFunctionToString = __webpack_require__(/*! ../internals/function-to-string */ \"../../../../../node_modules/core-js/internals/function-to-string.js\");\n\nvar WeakMap = global.WeakMap;\n\nmodule.exports = typeof WeakMap === 'function' && /native code/.test(nativeFunctionToString.call(WeakMap));\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js/internals/native-weak-map.js?");
+eval("var global = __webpack_require__(/*! ../internals/global */ \"../../../../../node_modules/core-js/internals/global.js\");\nvar inspectSource = __webpack_require__(/*! ../internals/inspect-source */ \"../../../../../node_modules/core-js/internals/inspect-source.js\");\n\nvar WeakMap = global.WeakMap;\n\nmodule.exports = typeof WeakMap === 'function' && /native code/.test(inspectSource(WeakMap));\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js/internals/native-weak-map.js?");
 
 /***/ }),
 
@@ -806,7 +507,7 @@ eval("var getBuiltIn = __webpack_require__(/*! ../internals/get-built-in */ \"..
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__(/*! ../internals/global */ \"../../../../../node_modules/core-js/internals/global.js\");\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js/internals/path.js?");
+eval("var global = __webpack_require__(/*! ../internals/global */ \"../../../../../node_modules/core-js/internals/global.js\");\n\nmodule.exports = global;\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js/internals/path.js?");
 
 /***/ }),
 
@@ -817,7 +518,7 @@ eval("module.exports = __webpack_require__(/*! ../internals/global */ \"../../..
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var global = __webpack_require__(/*! ../internals/global */ \"../../../../../node_modules/core-js/internals/global.js\");\nvar shared = __webpack_require__(/*! ../internals/shared */ \"../../../../../node_modules/core-js/internals/shared.js\");\nvar createNonEnumerableProperty = __webpack_require__(/*! ../internals/create-non-enumerable-property */ \"../../../../../node_modules/core-js/internals/create-non-enumerable-property.js\");\nvar has = __webpack_require__(/*! ../internals/has */ \"../../../../../node_modules/core-js/internals/has.js\");\nvar setGlobal = __webpack_require__(/*! ../internals/set-global */ \"../../../../../node_modules/core-js/internals/set-global.js\");\nvar nativeFunctionToString = __webpack_require__(/*! ../internals/function-to-string */ \"../../../../../node_modules/core-js/internals/function-to-string.js\");\nvar InternalStateModule = __webpack_require__(/*! ../internals/internal-state */ \"../../../../../node_modules/core-js/internals/internal-state.js\");\n\nvar getInternalState = InternalStateModule.get;\nvar enforceInternalState = InternalStateModule.enforce;\nvar TEMPLATE = String(nativeFunctionToString).split('toString');\n\nshared('inspectSource', function (it) {\n  return nativeFunctionToString.call(it);\n});\n\n(module.exports = function (O, key, value, options) {\n  var unsafe = options ? !!options.unsafe : false;\n  var simple = options ? !!options.enumerable : false;\n  var noTargetGet = options ? !!options.noTargetGet : false;\n  if (typeof value == 'function') {\n    if (typeof key == 'string' && !has(value, 'name')) createNonEnumerableProperty(value, 'name', key);\n    enforceInternalState(value).source = TEMPLATE.join(typeof key == 'string' ? key : '');\n  }\n  if (O === global) {\n    if (simple) O[key] = value;\n    else setGlobal(key, value);\n    return;\n  } else if (!unsafe) {\n    delete O[key];\n  } else if (!noTargetGet && O[key]) {\n    simple = true;\n  }\n  if (simple) O[key] = value;\n  else createNonEnumerableProperty(O, key, value);\n// add fake Function#toString for correct work wrapped methods / constructors with methods like LoDash isNative\n})(Function.prototype, 'toString', function toString() {\n  return typeof this == 'function' && getInternalState(this).source || nativeFunctionToString.call(this);\n});\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js/internals/redefine.js?");
+eval("var global = __webpack_require__(/*! ../internals/global */ \"../../../../../node_modules/core-js/internals/global.js\");\nvar createNonEnumerableProperty = __webpack_require__(/*! ../internals/create-non-enumerable-property */ \"../../../../../node_modules/core-js/internals/create-non-enumerable-property.js\");\nvar has = __webpack_require__(/*! ../internals/has */ \"../../../../../node_modules/core-js/internals/has.js\");\nvar setGlobal = __webpack_require__(/*! ../internals/set-global */ \"../../../../../node_modules/core-js/internals/set-global.js\");\nvar inspectSource = __webpack_require__(/*! ../internals/inspect-source */ \"../../../../../node_modules/core-js/internals/inspect-source.js\");\nvar InternalStateModule = __webpack_require__(/*! ../internals/internal-state */ \"../../../../../node_modules/core-js/internals/internal-state.js\");\n\nvar getInternalState = InternalStateModule.get;\nvar enforceInternalState = InternalStateModule.enforce;\nvar TEMPLATE = String(String).split('String');\n\n(module.exports = function (O, key, value, options) {\n  var unsafe = options ? !!options.unsafe : false;\n  var simple = options ? !!options.enumerable : false;\n  var noTargetGet = options ? !!options.noTargetGet : false;\n  if (typeof value == 'function') {\n    if (typeof key == 'string' && !has(value, 'name')) createNonEnumerableProperty(value, 'name', key);\n    enforceInternalState(value).source = TEMPLATE.join(typeof key == 'string' ? key : '');\n  }\n  if (O === global) {\n    if (simple) O[key] = value;\n    else setGlobal(key, value);\n    return;\n  } else if (!unsafe) {\n    delete O[key];\n  } else if (!noTargetGet && O[key]) {\n    simple = true;\n  }\n  if (simple) O[key] = value;\n  else createNonEnumerableProperty(O, key, value);\n// add fake Function#toString for correct work wrapped methods / constructors with methods like LoDash isNative\n})(Function.prototype, 'toString', function toString() {\n  return typeof this == 'function' && getInternalState(this).source || inspectSource(this);\n});\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js/internals/redefine.js?");
 
 /***/ }),
 
@@ -907,7 +608,7 @@ eval("var global = __webpack_require__(/*! ../internals/global */ \"../../../../
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var IS_PURE = __webpack_require__(/*! ../internals/is-pure */ \"../../../../../node_modules/core-js/internals/is-pure.js\");\nvar store = __webpack_require__(/*! ../internals/shared-store */ \"../../../../../node_modules/core-js/internals/shared-store.js\");\n\n(module.exports = function (key, value) {\n  return store[key] || (store[key] = value !== undefined ? value : {});\n})('versions', []).push({\n  version: '3.4.0',\n  mode: IS_PURE ? 'pure' : 'global',\n  copyright: '© 2019 Denis Pushkarev (zloirock.ru)'\n});\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js/internals/shared.js?");
+eval("var IS_PURE = __webpack_require__(/*! ../internals/is-pure */ \"../../../../../node_modules/core-js/internals/is-pure.js\");\nvar store = __webpack_require__(/*! ../internals/shared-store */ \"../../../../../node_modules/core-js/internals/shared-store.js\");\n\n(module.exports = function (key, value) {\n  return store[key] || (store[key] = value !== undefined ? value : {});\n})('versions', []).push({\n  version: '3.5.0',\n  mode: IS_PURE ? 'pure' : 'global',\n  copyright: '© 2019 Denis Pushkarev (zloirock.ru)'\n});\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js/internals/shared.js?");
 
 /***/ }),
 
@@ -929,7 +630,7 @@ eval("var toInteger = __webpack_require__(/*! ../internals/to-integer */ \"../..
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var toInteger = __webpack_require__(/*! ../internals/to-integer */ \"../../../../../node_modules/core-js/internals/to-integer.js\");\n\nvar max = Math.max;\nvar min = Math.min;\n\n// Helper for a popular repeating case of the spec:\n// Let integer be ? ToInteger(index).\n// If integer < 0, let result be max((length + integer), 0); else let result be min(length, length).\nmodule.exports = function (index, length) {\n  var integer = toInteger(index);\n  return integer < 0 ? max(integer + length, 0) : min(integer, length);\n};\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js/internals/to-absolute-index.js?");
+eval("var toInteger = __webpack_require__(/*! ../internals/to-integer */ \"../../../../../node_modules/core-js/internals/to-integer.js\");\n\nvar max = Math.max;\nvar min = Math.min;\n\n// Helper for a popular repeating case of the spec:\n// Let integer be ? ToInteger(index).\n// If integer < 0, let result be max((length + integer), 0); else let result be min(integer, length).\nmodule.exports = function (index, length) {\n  var integer = toInteger(index);\n  return integer < 0 ? max(integer + length, 0) : min(integer, length);\n};\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js/internals/to-absolute-index.js?");
 
 /***/ }),
 
@@ -988,6 +689,17 @@ eval("var id = 0;\nvar postfix = Math.random();\n\nmodule.exports = function (ke
 
 /***/ }),
 
+/***/ "../../../../../node_modules/core-js/internals/use-symbol-as-uid.js":
+/*!****************************************************************************************************!*\
+  !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js/internals/use-symbol-as-uid.js ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var NATIVE_SYMBOL = __webpack_require__(/*! ../internals/native-symbol */ \"../../../../../node_modules/core-js/internals/native-symbol.js\");\n\nmodule.exports = NATIVE_SYMBOL\n  // eslint-disable-next-line no-undef\n  && !Symbol.sham\n  // eslint-disable-next-line no-undef\n  && typeof Symbol() == 'symbol';\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js/internals/use-symbol-as-uid.js?");
+
+/***/ }),
+
 /***/ "../../../../../node_modules/core-js/internals/well-known-symbol.js":
 /*!****************************************************************************************************!*\
   !*** D:/workspace/OLL/platform/publish-client/node_modules/core-js/internals/well-known-symbol.js ***!
@@ -995,7 +707,7 @@ eval("var id = 0;\nvar postfix = Math.random();\n\nmodule.exports = function (ke
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var global = __webpack_require__(/*! ../internals/global */ \"../../../../../node_modules/core-js/internals/global.js\");\nvar shared = __webpack_require__(/*! ../internals/shared */ \"../../../../../node_modules/core-js/internals/shared.js\");\nvar uid = __webpack_require__(/*! ../internals/uid */ \"../../../../../node_modules/core-js/internals/uid.js\");\nvar NATIVE_SYMBOL = __webpack_require__(/*! ../internals/native-symbol */ \"../../../../../node_modules/core-js/internals/native-symbol.js\");\n\nvar Symbol = global.Symbol;\nvar store = shared('wks');\n\nmodule.exports = function (name) {\n  return store[name] || (store[name] = NATIVE_SYMBOL && Symbol[name]\n    || (NATIVE_SYMBOL ? Symbol : uid)('Symbol.' + name));\n};\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js/internals/well-known-symbol.js?");
+eval("var global = __webpack_require__(/*! ../internals/global */ \"../../../../../node_modules/core-js/internals/global.js\");\nvar shared = __webpack_require__(/*! ../internals/shared */ \"../../../../../node_modules/core-js/internals/shared.js\");\nvar has = __webpack_require__(/*! ../internals/has */ \"../../../../../node_modules/core-js/internals/has.js\");\nvar uid = __webpack_require__(/*! ../internals/uid */ \"../../../../../node_modules/core-js/internals/uid.js\");\nvar NATIVE_SYMBOL = __webpack_require__(/*! ../internals/native-symbol */ \"../../../../../node_modules/core-js/internals/native-symbol.js\");\nvar USE_SYMBOL_AS_UID = __webpack_require__(/*! ../internals/use-symbol-as-uid */ \"../../../../../node_modules/core-js/internals/use-symbol-as-uid.js\");\n\nvar WellKnownSymbolsStore = shared('wks');\nvar Symbol = global.Symbol;\nvar createWellKnownSymbol = USE_SYMBOL_AS_UID ? Symbol : uid;\n\nmodule.exports = function (name) {\n  if (!has(WellKnownSymbolsStore, name)) {\n    if (NATIVE_SYMBOL && has(Symbol, name)) WellKnownSymbolsStore[name] = Symbol[name];\n    else WellKnownSymbolsStore[name] = createWellKnownSymbol('Symbol.' + name);\n  } return WellKnownSymbolsStore[name];\n};\n\n\n//# sourceURL=webpack:///D:/workspace/OLL/platform/publish-client/node_modules/core-js/internals/well-known-symbol.js?");
 
 /***/ }),
 

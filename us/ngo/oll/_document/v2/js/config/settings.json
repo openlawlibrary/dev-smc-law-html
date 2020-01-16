@@ -43,8 +43,8 @@
     "msapp": { "tileColor": "#FFFFFF" },
     "search": {
       "searchHost": "https://sanmateo.ca.us.open.law",
-      "queryUrl": "/v1/search",
-      "method": "POST"
+      "queryUrl": "/_search/global",
+      "method": "GET"
     },
     "openGraph": {
       "libraryName": "Open Law Library",

@@ -12,18 +12,18 @@ Run `python3 server.py`
 Visit `http://localhost:8000` in your web browser.
 """
 
-from http.server import SimpleHTTPRequestHandler, HTTPServer
 import argparse
-import sys
-import os
-import urllib.parse
-import urllib.request
 import http.client
-import posixpath
 import json
-import webbrowser
+import os
+import posixpath
+import sys
 import threading
 import time
+import urllib.parse
+import urllib.request
+import webbrowser
+from http.server import HTTPServer, SimpleHTTPRequestHandler
 
 DIR = os.path.abspath(os.path.dirname(__file__))
 
@@ -57,6 +57,9 @@ filetypes = {
     'woff',
     'woff2',
 }
+
+HISTORICAL_VERSIONS_PATH_PREFIXES = ('/_publication', '/_date', '/_compare')
+PORTAL_PATH_PREFIXES = ('/_portal', '/_api') + HISTORICAL_VERSIONS_PATH_PREFIXES
 
 
 class RequestHandler(SimpleHTTPRequestHandler):
@@ -102,7 +105,7 @@ class RequestHandler(SimpleHTTPRequestHandler):
             self.copyfile(resp, self.wfile)
 
     def do_GET(self):
-        if self.path.startswith('/_portal') or  self.path.startswith('/_api') or self.path.startswith('/_date') or self.path.startswith('/_compare'):
+        if self.path.startswith(PORTAL_PATH_PREFIXES):
             return self._proxy(PORTAL_CLIENT_CLASS, PORTAL_HOST, 'portal')
 
         if self.path.startswith('/_search'):
@@ -213,7 +216,6 @@ if __name__ == '__main__':
     if not args.no_open_browser:
         thread = threading.Thread(target=visit_library)
         thread.start()
-
 
     try:
         httpd.serve_forever()
