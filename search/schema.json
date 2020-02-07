@@ -2,16 +2,6 @@
   "settings": {
     "analysis": {
       "analyzer": {
-        "markup_analyzer": {
-          "type": "custom",
-          "tokenizer": "standard",
-          "char_filter": ["html_strip"],
-          "filter": [
-            "asciifolding",
-            "lowercase",
-            "kstem"
-          ]
-        },
         "text_analyzer": {
           "type": "custom",
           "tokenizer": "standard",
@@ -59,21 +49,14 @@
           "analyzer": "text_analyzer",
           "store": true
         },
-        "body_markup": {
-          "term_vector": "with_positions_offsets",
-          "index": true,
-          "type": "text",
-          "analyzer": "markup_analyzer",
-          "store": true
-        },
         "url": {
           "type": "text",
           "index": false,
           "store": true
         },
-        "path" : {
-          "type" : "text",
-          "analyzer" : "path_analyzer",
+        "path": {
+          "type": "text",
+          "analyzer": "path_analyzer",
           "search_analyzer": "path_analyzer"
         }
       }
