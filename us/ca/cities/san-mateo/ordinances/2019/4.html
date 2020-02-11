@@ -49,15 +49,17 @@
     <script src="/_reader/js/main.js"> </script>
   </head>
   <body>
-    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true">
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
       <p id="message"> </p>
     </div>
-    <a href="#area__content" class="skip-link">Skip to main content</a>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
     <div id="grid" class="ns__document__oll-core">
       <header id="section__header" class="ns__document__oll-core">
         <div id="section__header__inner" class="ns__document__oll-core">
           <div id="area__logo" class="ns__document__oll-core">
-            <a href="/" class="logo" alt="San Mateo Law Library">
+            <a href="/" class="logo" aria-label="Logo - Return to home page">
               <img src="/us/ngo/oll/_document/v2/images/logo/logo.png" srcset="/us/ngo/oll/_document/v2/images/logo/logo.png 1x, /us/ngo/oll/_document/v2/images/logo/logo@2x.png 2x" alt="San Mateo Law Library logo"/>
             </a>
           </div>
@@ -66,11 +68,13 @@
           </div>
         </div>
       </header>
-      <section id="section__content" class="ns__document__oll-core">
+      <div id="section__content" class="ns__document__oll-core">
         <div id="section__content__inner" class="ns__document__oll-core">
-          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region">
-            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-hidden="true" aria-label="Mobile menu toggler"/>
-            <label for="menu-trigger" aria-label="Toggle mobile menu"> </label>
+          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
             <nav role="navigation" aria-label="Breadcrumb navigation">
               <div class="h__ui">Navigation</div>
               <ul class="ancestors">
@@ -109,15 +113,15 @@
                 <p>WHEREAS, staff is proposing regulations for shared mobility operators including electric scooter businesses in order to protect public peace, health, safety and welfare; and</p>
                 <p>WHEREAS, the proposed shared mobility regulations are not yet adopted; and</p>
                 <p>NOW, THEREFORE, THE CITY COUNCIL OF THE CITY OF SAN MATEO, CALIFORNIA, HEREBY ORDAINS that:</p>
-                <div class="p--section" ref-path="&#xA7;1"><h2 class="h__inline-text" id="1">Section 1.</h2> <p>That the above recitals are true and correct and are adopted as the City Council's findings.</p></div>
-                <div class="p--section" ref-path="&#xA7;2"><h2 class="h__inline-text" id="2">Section 2.</h2> <p>For the immediate presentation of public peace, health, safety, and welfare, pursuant to <a class="internal-link " href="/us/ca/cities/san-mateo/charter/2.16" title="2.16 Emergency Ordinances.">City Charter Section 2.16</a>, the commercial operation of electric scooter businesses is prohibited while this ordinance remains in effect.</p></div>
-                <div class="p--section" ref-path="&#xA7;3"><h2 class="h__inline-text" id="3">Section 3.</h2> <p>This ordinance is declared to be an emergency measure and interim ordinance adopted pursuant to the provisions of <a class="internal-link " href="/us/ca/cities/san-mateo/charter/2.16" title="2.16 Emergency Ordinances.">City Charter Section 2.16</a>. As set forth in the findings above, this ordinance is necessary for preserving the public peace, health, safety, and welfare of the community. Accordingly, upon adoption by a majority plus one vote of the City Council, this ordinance shall take effect immediately.</p></div>
-                <div class="p--section" ref-path="&#xA7;4"><h2 class="h__inline-text" id="4">Section 4.</h2> <p>That this ordinance is adopted by at least a 4/5 vote of the City Council.</p></div>
-                <div class="p--section" ref-path="&#xA7;5"><h2 class="h__inline-text" id="5">Section 5.</h2> <p>This ordinance shall of no further force or effect upon the 91st day after its adoption or when the City's shared mobility ordinance and resolution go into effect, whichever comes first.</p></div>
-                <div class="p--section" ref-path="&#xA7;6"><h2 class="h__inline-text" id="6">Section 6. PUBLICATION.</h2> <p>The City Clerk shall cause this ordinance to be posted in three places designated by City Council and published by title with a brief summary at least once within fifteen (15) days after its adoption in a newspaper of general circulation, published in the County of San Mateo and circulated in the City; shall certify to the adoption of this ordinance and shall cause a certified copy of this ordinance, together with proof of publication, to be filed in the Office of the Clerk of this City.</p></div>
-                <div class="p--section" ref-path="&#xA7;7"><h2 class="h__inline-text" id="7">Section 7. SEVERABILITY.</h2> <p>In the event any section, clause or provision of this Ordinance shall be determined invalid or unconstitutional, such section, clause or provision shall be deemed severable and all other sections or portions hereof shall remain in full force and effect.</p></div>
-                <div class="p--section" ref-path="&#xA7;8"><h2 class="h__inline-text" id="8">Section 8. ENVIRONMENTAL DETERMINATION.</h2> <p>In accordance with California Environmental Quality Act (CEQA) Guidelines section 15061(b)(3), this action is not a project subject to CEQA because it will not result in a potentially significant physical impact on the environment.</p></div>
-                <div class="p--section" ref-path="&#xA7;5"><h2 class="h__inline-text" id="5">Section 5. LEGISLATIVE HISTORY AND EFFECTIVE DATE.</h2> <p>This Ordinance was introduced and adopted on May 6, 2019 and shall take effect immediately.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;1"><h2 class="h__inline-text" id="1">Section 1.</h2> <p>That the above recitals are true and correct and are adopted as the City Council's findings.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;2"><h2 class="h__inline-text" id="2">Section 2.</h2> <p>For the immediate presentation of public peace, health, safety, and welfare, pursuant to <a class="internal-link " href="/us/ca/cities/san-mateo/charter/2.16" title="2.16 Emergency Ordinances.">City Charter Section 2.16</a>, the commercial operation of electric scooter businesses is prohibited while this ordinance remains in effect.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;3"><h2 class="h__inline-text" id="3">Section 3.</h2> <p>This ordinance is declared to be an emergency measure and interim ordinance adopted pursuant to the provisions of <a class="internal-link " href="/us/ca/cities/san-mateo/charter/2.16" title="2.16 Emergency Ordinances.">City Charter Section 2.16</a>. As set forth in the findings above, this ordinance is necessary for preserving the public peace, health, safety, and welfare of the community. Accordingly, upon adoption by a majority plus one vote of the City Council, this ordinance shall take effect immediately.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;4"><h2 class="h__inline-text" id="4">Section 4.</h2> <p>That this ordinance is adopted by at least a 4/5 vote of the City Council.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;5"><h2 class="h__inline-text" id="5">Section 5.</h2> <p>This ordinance shall of no further force or effect upon the 91st day after its adoption or when the City's shared mobility ordinance and resolution go into effect, whichever comes first.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;6"><h2 class="h__inline-text" id="6">Section 6. PUBLICATION.</h2> <p>The City Clerk shall cause this ordinance to be posted in three places designated by City Council and published by title with a brief summary at least once within fifteen (15) days after its adoption in a newspaper of general circulation, published in the County of San Mateo and circulated in the City; shall certify to the adoption of this ordinance and shall cause a certified copy of this ordinance, together with proof of publication, to be filed in the Office of the Clerk of this City.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;7"><h2 class="h__inline-text" id="7">Section 7. SEVERABILITY.</h2> <p>In the event any section, clause or provision of this Ordinance shall be determined invalid or unconstitutional, such section, clause or provision shall be deemed severable and all other sections or portions hereof shall remain in full force and effect.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;8"><h2 class="h__inline-text" id="8">Section 8. ENVIRONMENTAL DETERMINATION.</h2> <p>In accordance with California Environmental Quality Act (CEQA) Guidelines section 15061(b)(3), this action is not a project subject to CEQA because it will not result in a potentially significant physical impact on the environment.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;5"><h2 class="h__inline-text" id="5">Section 5. LEGISLATIVE HISTORY AND EFFECTIVE DATE.</h2> <p>This Ordinance was introduced and adopted on May 6, 2019 and shall take effect immediately.</p></div>
                 <p>The foregoing ordinance was adopted by the City Council of the City of San Mateo, California by the following vote:</p>
                 <div class="table_wrap">
                   <table>
@@ -157,7 +161,7 @@
             </section>
           </section>
         </div>
-      </section>
+      </div>
       <footer id="section__footer" class="ns__document__oll-core">
         <div id="section__footer__inner" class="ns__document__oll-core">
           <div id="area__footer__content" class="ns__document__oll-core">

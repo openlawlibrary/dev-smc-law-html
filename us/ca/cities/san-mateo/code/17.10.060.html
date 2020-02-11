@@ -53,15 +53,17 @@
     <script src="/_reader/js/main.js"> </script>
   </head>
   <body>
-    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true">
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
       <p id="message"> </p>
     </div>
-    <a href="#area__content" class="skip-link">Skip to main content</a>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
     <div id="grid" class="ns__document__oll-core">
       <header id="section__header" class="ns__document__oll-core">
         <div id="section__header__inner" class="ns__document__oll-core">
           <div id="area__logo" class="ns__document__oll-core">
-            <a href="/" class="logo" alt="San Mateo Law Library">
+            <a href="/" class="logo" aria-label="Logo - Return to home page">
               <img src="/us/ngo/oll/_document/v2/images/logo/logo.png" srcset="/us/ngo/oll/_document/v2/images/logo/logo.png 1x, /us/ngo/oll/_document/v2/images/logo/logo@2x.png 2x" alt="San Mateo Law Library logo"/>
             </a>
           </div>
@@ -70,11 +72,13 @@
           </div>
         </div>
       </header>
-      <section id="section__content" class="ns__document__oll-core">
+      <div id="section__content" class="ns__document__oll-core">
         <div id="section__content__inner" class="ns__document__oll-core">
-          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region">
-            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-hidden="true" aria-label="Mobile menu toggler"/>
-            <label for="menu-trigger" aria-label="Toggle mobile menu"> </label>
+          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
             <nav role="navigation" aria-label="Breadcrumb navigation">
               <div class="h__ui">Navigation</div>
               <ul class="ancestors">
@@ -98,7 +102,7 @@
           </section>
           <main id="area__content" class="ns__document__oll-core">
             <div class="h__document-title">City of San Mateo Municipal Code.</div>
-            <article class="content" role="document" ref-path="17.10.060">
+            <article class="content" role="document" data-ref-path="17.10.060">
               <div class="tuf-authenticate">
                 <h1 class="h__toc" id="/us/ca/cities/san-mateo/code/17.10.060">17.10.060 NOTICE.</h1>
                 <p class="text-indent-1"><span class="level-num" id="(a)">(a)</span> <span class="level-heading">Notice Requirements for Minor Wireless Permits.</span> The Director shall administratively review a complete and duly filed application for a minor wireless permit and may act on such application without prior notice, except as provided in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10.050#(d)" title="">Section 17.10.050(d)</a>, or a public hearing. Within five days after the Director's decision, notice of the decision shall be posted at the project site and mailed to all properties within 500 feet from the proposed project site measured radially from the centerline of the public right-of-way in both directions. The mailed and posted notice must contain: (1) a general description for the proposed project, which shall include photo simulations, samples or renderings that depict the finished installation in context with the surrounding natural and built environment; (2) the Director's decision; (3) the applicant's name and contact information as provided on the application submitted to the City; (4) contact information for the Department; and (5) instructions for how and when to file a protest with the Secretary of the Sustainability and Infrastructure Commission.</p>
@@ -127,7 +131,7 @@
               </div>
             </article>
           </main>
-          <nav id="area__navigation_mini" class="ui ns__document__oll-core" role="region" aria-label="Previous and next article links">
+          <nav id="area__navigation_mini" class="ns__document__oll-core" aria-label="Previous and next article links">
             <section>
               <a href="/us/ca/cities/san-mateo/code/17.10.050" aria-label="17.10.050 APPLICATION REQUIREMENTS.">
                 <div class="h__ui">Previous</div>
@@ -142,7 +146,7 @@
             </section>
           </nav>
         </div>
-      </section>
+      </div>
       <footer id="section__footer" class="ns__document__oll-core">
         <div id="section__footer__inner" class="ns__document__oll-core">
           <div id="area__footer__content" class="ns__document__oll-core">

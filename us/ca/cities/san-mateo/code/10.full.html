@@ -53,15 +53,17 @@
     <script src="/_reader/js/main.js"> </script>
   </head>
   <body>
-    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true">
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
       <p id="message"> </p>
     </div>
-    <a href="#area__content" class="skip-link">Skip to main content</a>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
     <div id="grid" class="ns__document__oll-core">
       <header id="section__header" class="ns__document__oll-core">
         <div id="section__header__inner" class="ns__document__oll-core">
           <div id="area__logo" class="ns__document__oll-core">
-            <a href="/" class="logo" alt="San Mateo Law Library">
+            <a href="/" class="logo" aria-label="Logo - Return to home page">
               <img src="/us/ngo/oll/_document/v2/images/logo/logo.png" srcset="/us/ngo/oll/_document/v2/images/logo/logo.png 1x, /us/ngo/oll/_document/v2/images/logo/logo@2x.png 2x" alt="San Mateo Law Library logo"/>
             </a>
           </div>
@@ -70,11 +72,13 @@
           </div>
         </div>
       </header>
-      <section id="section__content" class="ns__document__oll-core">
+      <div id="section__content" class="ns__document__oll-core">
         <div id="section__content__inner" class="ns__document__oll-core">
-          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region">
-            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-hidden="true" aria-label="Mobile menu toggler"/>
-            <label for="menu-trigger" aria-label="Toggle mobile menu"> </label>
+          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
             <nav role="navigation" aria-label="Breadcrumb navigation">
               <div class="h__ui">Navigation</div>
               <ul class="ancestors">
@@ -92,15 +96,15 @@
           </section>
           <main id="area__content" class="ns__document__oll-core">
             <div class="h__document-title">City of San Mateo Municipal Code.</div>
-            <article class="content" role="document" ref-path="10">
+            <article class="content" role="document" data-ref-path="10">
               <div class="tuf-authenticate">
                 <h1 class="h__toc" id="/us/ca/cities/san-mateo/code/10">Title 10 PEACE, SAFETY AND MORALS</h1>
                 <section class="line-group annotations">
                   <h4>Editor's Notes</h4>
                   <p>For the City charter provision giving the City all powers necessary and appropriate to a municipal corporation and the general welfare of its inhabitants which are not prohibited by the constitution see Section 1.03.</p>
                 </section>
-                <h2 id="/us/ca/cities/san-mateo/code/10.04" data-order="|10|10.04|" ref-path="10.04" class="h__chapter">Chapter 10.04 PUBLIC PEACE AND ORDER</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/10.04.010" data-order="|10|10.04|10.04.010|" ref-path="10.04.010" class="h__section">10.04.010 DISTURBING THE PEACE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.04" data-order="|10|10.04|" data-ref-path="10.04" class="h__chapter">Chapter 10.04 PUBLIC PEACE AND ORDER</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.04.010" data-order="|10|10.04|10.04.010|" data-ref-path="10.04.010" class="h__section">10.04.010 DISTURBING THE PEACE.</h2>
                 <p>No person shall make in any place or suffer to be made upon his or her premises, or premises within his or her control, any noise, disorder, or tumult, to the disturbance of the public peace within the City.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -108,7 +112,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.04.020" data-order="|10|10.04|10.04.020|" ref-path="10.04.020" class="h__section">10.04.020 OBSCENE LANGUAGE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.04.020" data-order="|10|10.04|10.04.020|" data-ref-path="10.04.020" class="h__section">10.04.020 OBSCENE LANGUAGE.</h2>
                 <p>No person shall utter within the hearing of two (2) or more persons any loud, obscene or profane language, words or epithets, or address another, or utter in the presence of another, any words, language or expression, having a tendency to create a breach of the peace.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -116,7 +120,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.04.030" data-order="|10|10.04|10.04.030|" ref-path="10.04.030" class="h__section">10.04.030 DISORDERLY CONDUCT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.04.030" data-order="|10|10.04|10.04.030|" data-ref-path="10.04.030" class="h__section">10.04.030 DISORDERLY CONDUCT.</h2>
                 <p>Every person is guilty of disorderly conduct:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.04.030#(a)">(a)</span> Who solicits anyone to engage in or who engages in lewd or dissolute conduct in any public place or in any place open to the public or exposed to public view;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.04.030#(b)">(b)</span> Who solicits or who engages in any act of prostitution. As used in this subdivision, "prostitution" includes any lewd act between persons for money or other consideration;</p>
@@ -132,7 +136,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.04.040" data-order="|10|10.04|10.04.040|" ref-path="10.04.040" class="h__section">10.04.040 PUBLIC PROPERTY—DAMAGE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.04.040" data-order="|10|10.04|10.04.040|" data-ref-path="10.04.040" class="h__section">10.04.040 PUBLIC PROPERTY—DAMAGE.</h2>
                 <p>Irrespective of any other provisions of this code, no person shall willfully or negligently break, injure or damage any real, personal or mixed property belonging to, or owned by, the City.</p>
                 <p>The provisions of this section are cumulative and shall not prevent the City from instituting, prosecuting or maintaining any civil action for breaking, injuring or otherwise damaging property owned by, or belonging to, the City, nor is this section intended to, or shall it, repeal, or amend any other section of this code, providing that it is unlawful to break, injure, or damage any specific type or class of property owned by the City.</p>
                 <aside class="annotations" role="note">
@@ -141,7 +145,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.04.050" data-order="|10|10.04|10.04.050|" ref-path="10.04.050" class="h__section">10.04.050 PRIVATE PROPERTY—TRESPASS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.04.050" data-order="|10|10.04|10.04.050|" data-ref-path="10.04.050" class="h__section">10.04.050 PRIVATE PROPERTY—TRESPASS.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.04.050#(a)">(a)</span> It is unlawful for any person to remain upon any private property or business premises after having been notified by the owner or lessee or other person in charge thereof to remove therefrom.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.04.050#(b)">(b)</span> It is unlawful for any person, without permission, express or implied, of the owner or lessee or other person in charge of private property or business premises, to enter upon any such private property or business premises after having been notified by the owner, lessee or other person in charge thereof to keep off or away therefrom.</p>
                 <aside class="annotations" role="note">
@@ -150,7 +154,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.04.060" data-order="|10|10.04|10.04.060|" ref-path="10.04.060" class="h__section">10.04.060 ABUSE OR MUTILATION OF TREES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.04.060" data-order="|10|10.04|10.04.060|" data-ref-path="10.04.060" class="h__section">10.04.060 ABUSE OR MUTILATION OF TREES.</h2>
                 <p>No person shall knowingly or intentionally:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.04.060#(a)">(a)</span> Damage, cut, carve, or injure the bark of any street tree or shrub;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.04.060#(b)">(b)</span> Attach any sign, wire or injurious material to any tree or shrub;</p>
@@ -162,7 +166,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.04.070" data-order="|10|10.04|10.04.070|" ref-path="10.04.070" class="h__section">10.04.070 TEASING, HARMING OR INTERFERING WITH POLICE DOGS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.04.070" data-order="|10|10.04|10.04.070|" data-ref-path="10.04.070" class="h__section">10.04.070 TEASING, HARMING OR INTERFERING WITH POLICE DOGS.</h2>
                 <p>It is unlawful for any person to torture, tease, torment, beat, kick, strike, mutilate, injure, disable, kill, or otherwise interfere with any dog used by the Police Department of the City of San Mateo in the performance of the functions or duties of such department or any officer or member thereof.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -170,7 +174,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.04.080" data-order="|10|10.04|10.04.080|" ref-path="10.04.080" class="h__section">10.04.080 DRINKING—PUBLIC AREAS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.04.080" data-order="|10|10.04|10.04.080|" data-ref-path="10.04.080" class="h__section">10.04.080 DRINKING—PUBLIC AREAS.</h2>
                 <p>It is unlawful for any person to drink or possess any open container of beer, wine, or other intoxicating beverage on any public sidewalk, alley, street or highway. This section shall not be deemed to make punishable any such act or acts which are prohibited by the <a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=VEH&amp;tocTitle=+Public+Utilities+Code+-+VEH" title="">Vehicle Code</a> or by any other law of the State.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -178,7 +182,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.04.090" data-order="|10|10.04|10.04.090|" ref-path="10.04.090" class="h__section">10.04.090 DRINKING—PRIVATE PARKING LOTS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.04.090" data-order="|10|10.04|10.04.090|" data-ref-path="10.04.090" class="h__section">10.04.090 DRINKING—PRIVATE PARKING LOTS.</h2>
                 <p>It is unlawful for any person to drink or possess any open container of beer, wine, or other intoxicating beverage upon that portion of private property open to the public and within 500 feet of any public sidewalk, alley, street or highway, which is used or intended to be used for the parking or storage of motor vehicles by customers or employees of any business, commercial or industrial establishment without the express written permission of the owner, agent, or person in lawful possession thereof. This section shall not be deemed to make punishable any such act or acts which are prohibited by the <a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=VEH&amp;tocTitle=+Public+Utilities+Code+-+VEH" title="">Vehicle Code</a> or by any other law of the State.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -186,7 +190,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.04.100" data-order="|10|10.04|10.04.100|" ref-path="10.04.100" class="h__section">10.04.100 URINATION OR DEFECATION IN PUBLIC.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.04.100" data-order="|10|10.04|10.04.100|" data-ref-path="10.04.100" class="h__section">10.04.100 URINATION OR DEFECATION IN PUBLIC.</h2>
                 <p>It is unlawful for any person to urinate or defecate on public property or in any public place.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -194,7 +198,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.04.110" data-order="|10|10.04|10.04.110|" ref-path="10.04.110" class="h__section">10.04.110 BLOCKING ACCESS TO PUBLIC OR PRIVATE PLACES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.04.110" data-order="|10|10.04|10.04.110|" data-ref-path="10.04.110" class="h__section">10.04.110 BLOCKING ACCESS TO PUBLIC OR PRIVATE PLACES.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.04.110#(a)">(a)</span> It is unlawful for any person acting alone or for two (2) or more persons acting together or in concert to block or obstruct or otherwise prevent access to, or passage to or from, any public or private building, area or place through physical interference, assault or threats of immediate personal harm, or by such means, to attempt to do so.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.04.110#(b)">(b)</span> Exceptions. This section does not apply to: (1) the owners or lawful tenants of such building, place, or area provided that they are acting within the scope and authority of their ownership or tenancy; and (2) Federal, State, or local representatives of government acting within the scope of their employment.</p>
                 <aside class="annotations" role="note">
@@ -203,7 +207,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.04.120" data-order="|10|10.04|10.04.120|" ref-path="10.04.120" class="h__section">10.04.120 IMPERSONATING A CITY EMPLOYEE, LAW ENFORCEMENT OR FIRE SERVICE OFFICER, OR PUBLIC UTILITY EMPLOYEE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.04.120" data-order="|10|10.04|10.04.120|" data-ref-path="10.04.120" class="h__section">10.04.120 IMPERSONATING A CITY EMPLOYEE, LAW ENFORCEMENT OR FIRE SERVICE OFFICER, OR PUBLIC UTILITY EMPLOYEE.</h2>
                 <p>It is unlawful for any person without authorization to wear, display, or use any title, identification card, vehicle, uniform, cap, badge, insignia, or other document or item that causes or would tend to cause a reasonable individual to believe that such a person is an employee of the City, a member of any law enforcement agency or fire service, or an employee of a public utility.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -211,7 +215,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.04.130" data-order="|10|10.04|10.04.130|" ref-path="10.04.130" class="h__section">10.04.130 BLINDER RACKS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.04.130" data-order="|10|10.04|10.04.130|" data-ref-path="10.04.130" class="h__section">10.04.130 BLINDER RACKS.</h2>
                 <p>Any person who displays, sells, or offers to sell any material that is harmful to minors, as defined by <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=PEN&amp;tocTitle=+Public+Utilities+Code+-+PEN" title="">Chapter 7.6 of the California Penal Code</a>, in a public place, other than a public place from which minors are excluded, shall place devices commonly known as blinder racks in front of the material, so that the lower two-thirds of the material is not exposed to view. The definitions of <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=PEN&amp;tocTitle=+Public+Utilities+Code+-+PEN" title="">Penal Code Chapter 7.6</a> are incorporated herein including the definition of "harmful matter" which includes the display of photographs or pictorial representations of acts of sodomy, oral copulation, sexual intercourse, masturbation, bestiality, or representation of an exposed penis in an erect and turgid state.</p>
                 <p>It is unlawful to fail to comply with this section.</p>
                 <aside class="annotations" role="note">
@@ -220,7 +224,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.04.140" data-order="|10|10.04|10.04.140|" ref-path="10.04.140" class="h__section">10.04.140 PROHIBITING VEHICLE USE FOR HABITATION AND SLEEP.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.04.140" data-order="|10|10.04|10.04.140|" data-ref-path="10.04.140" class="h__section">10.04.140 PROHIBITING VEHICLE USE FOR HABITATION AND SLEEP.</h2>
                 <p>It is unlawful:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.04.140#(a)">(a)</span> For any person to use a vehicle as defined in the <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=VEH&amp;tocTitle=+Public+Utilities+Code+-+VEH" title="">California Vehicle Code</a>, for lodging in the City of San Mateo. For the purpose of this section, "lodging" means the combination of one or more activities in subdivision (1) with one or more activities in subdivision (2) where it reasonably appears, in light of all the circumstances, that a person is using a vehicle for habitation.</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.04.140#(a)(1)">(1)</span> Storing of contents inside a vehicle that are not associated with ordinary vehicle use, such as a sleeping bag, bedroll, blanket, sheet, pillow, kitchen utensils, cookware, cooking equipment, bodily fluids, or the storing of personal possessions or belongings that obscure some or all of the vehicle's windows; and</p>
@@ -232,7 +236,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.04.150" data-order="|10|10.04|10.04.150|" ref-path="10.04.150" class="h__section">10.04.150 DRUG-FREE ZONES IN CITY LIBRARIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.04.150" data-order="|10|10.04|10.04.150|" data-ref-path="10.04.150" class="h__section">10.04.150 DRUG-FREE ZONES IN CITY LIBRARIES.</h2>
                 <p>Each of the following public San Mateo City Libraries is designated as a "drug-free zone" pursuant to <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=113830.5&amp;lawCode=HSC" title="">California Health and Safety Code Section 113830.5</a>:</p>
                 <p>55 West Third Avenue</p>
                 <p>205 West Hillsdale Blvd.</p>
@@ -243,8 +247,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.12" data-order="|10|10.12|" ref-path="10.12" class="h__chapter">Chapter 10.12 MINORS—CURFEW</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/10.12.010" data-order="|10|10.12|10.12.010|" ref-path="10.12.010" class="h__section">10.12.010 DEFINITIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.12" data-order="|10|10.12|" data-ref-path="10.12" class="h__chapter">Chapter 10.12 MINORS—CURFEW</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.12.010" data-order="|10|10.12|10.12.010|" data-ref-path="10.12.010" class="h__section">10.12.010 DEFINITIONS.</h2>
                 <p>For the purposes of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.12" title="Chapter 10.12 MINORS—CURFEW">this chapter</a>, the following words and phrases shall be defined as follows:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.12.010#(a)">(a)</span> "Emergency" means any unforeseen circumstance or circumstances that calls for immediate action to prevent serious injury, loss of life or serious property damage. The term includes, but is not limited to, a fire, natural disaster or vehicular accident.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.12.010#(b)">(b)</span> "Guardian" means:</p>
@@ -262,7 +266,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.12.020" data-order="|10|10.12|10.12.020|" ref-path="10.12.020" class="h__section">10.12.020 LOITERING PROHIBITED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.12.020" data-order="|10|10.12|10.12.020|" data-ref-path="10.12.020" class="h__section">10.12.020 LOITERING PROHIBITED.</h2>
                 <p>It is unlawful for any minor to loiter about or in any public place within the City between the hours of 11:00 p.m. and 5:00 a.m. Sunday through Thursday nights, 12:00 a.m. to 5:00 a.m. Friday and Saturday nights, and 8:30 a.m. to 2:00 p.m. on days and times when the school in which the student is registered is in session.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -270,7 +274,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.12.030" data-order="|10|10.12|10.12.030|" ref-path="10.12.030" class="h__section">10.12.030 PERMITTING VIOLATION UNLAWFUL.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.12.030" data-order="|10|10.12|10.12.030|" data-ref-path="10.12.030" class="h__section">10.12.030 PERMITTING VIOLATION UNLAWFUL.</h2>
                 <p>It is unlawful for a parent, guardian, or other person having the care, custody or control of any minor to permit such minor to violate any provision of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.12" title="Chapter 10.12 MINORS—CURFEW">this chapter</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -278,7 +282,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.12.040" data-order="|10|10.12|10.12.040|" ref-path="10.12.040" class="h__section">10.12.040 AIDING—ABETTING.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.12.040" data-order="|10|10.12|10.12.040|" data-ref-path="10.12.040" class="h__section">10.12.040 AIDING—ABETTING.</h2>
                 <p>It is unlawful for any person to assist, aid, abet or encourage any minor to violate any provision of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.12" title="Chapter 10.12 MINORS—CURFEW">this chapter</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -286,7 +290,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.12.050" data-order="|10|10.12|10.12.050|" ref-path="10.12.050" class="h__section">10.12.050 VIOLATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.12.050" data-order="|10|10.12|10.12.050|" data-ref-path="10.12.050" class="h__section">10.12.050 VIOLATION.</h2>
                 <p>No person shall violate the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.12" title="Chapter 10.12 MINORS—CURFEW">this chapter</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -294,7 +298,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.12.060" data-order="|10|10.12|10.12.060|" ref-path="10.12.060" class="h__section">10.12.060 EXEMPTIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.12.060" data-order="|10|10.12|10.12.060|" data-ref-path="10.12.060" class="h__section">10.12.060 EXEMPTIONS.</h2>
                 <p>A minor shall not be in violation of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.12" title="Chapter 10.12 MINORS—CURFEW">this chapter</a> if the minor is:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.12.060#(a)">(a)</span> Accompanied by the minor's parent or guardian;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.12.060#(b)">(b)</span> On an errand at the direction of the minor's parent or guardian, without unnecessary detour or stop;</p>
@@ -311,7 +315,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.12.070" data-order="|10|10.12|10.12.070|" ref-path="10.12.070" class="h__section">10.12.070 ENFORCEMENT PROCEDURES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.12.070" data-order="|10|10.12|10.12.070|" data-ref-path="10.12.070" class="h__section">10.12.070 ENFORCEMENT PROCEDURES.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.12.070#(a)">(a)</span> Nothing in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.12" title="Chapter 10.12 MINORS—CURFEW">this chapter</a> shall be construed to preclude minors from being in a public place for the purpose of exercising the rights guaranteed by the First Amendment of the United States Constitution or the California Constitution.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.12.070#(b)">(b)</span> Before taking enforcement action under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.12" title="Chapter 10.12 MINORS—CURFEW">this chapter</a>, a peace officer shall ask the suspected offender's age and reason for being in a public place.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.12.070#(c)">(c)</span> A peace officer may take enforcement action under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.12" title="Chapter 10.12 MINORS—CURFEW">this chapter</a> only when the peace officer has cause to believe that neither subsection (a) above nor any other exemption in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.12" title="Chapter 10.12 MINORS—CURFEW">this chapter</a> applies to the offender.</p>
@@ -321,12 +325,12 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.16" data-order="|10|10.16|" ref-path="10.16" class="h__chapter">Chapter 10.16 FIRE REGULATIONS</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.16" data-order="|10|10.16|" data-ref-path="10.16" class="h__chapter">Chapter 10.16 FIRE REGULATIONS</h2>
                 <section class="line-group annotations">
                   <h4>Editor's Notes</h4>
                   <p>For provisions relating to the City fire department, see <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.36" title="Chapter 2.36 FIRE DEPARTMENT">Chapter 2.36</a>.</p>
                 </section>
-                <h2 id="/us/ca/cities/san-mateo/code/10.16.010" data-order="|10|10.16|10.16.010|" ref-path="10.16.010" class="h__section">10.16.010 RUNNING VEHICLE OVER FIRE EQUIPMENT PROHIBITED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.16.010" data-order="|10|10.16|10.16.010|" data-ref-path="10.16.010" class="h__section">10.16.010 RUNNING VEHICLE OVER FIRE EQUIPMENT PROHIBITED.</h2>
                 <p>No person shall operate any vehicle, locomotive or railroad car, on, over or across any hose, ladders, or other equipment, of the fire department.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -334,7 +338,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.16.020" data-order="|10|10.16|10.16.020|" ref-path="10.16.020" class="h__section">10.16.020 DEBRIS REMOVAL AFTER FIRE REQUIRED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.16.020" data-order="|10|10.16|10.16.020|" data-ref-path="10.16.020" class="h__section">10.16.020 DEBRIS REMOVAL AFTER FIRE REQUIRED.</h2>
                 <p>The owner or person having under his or her control, or in his or her possession, upon any premises in the City, any hay, straw, bales of wool, cotton, paper or other substances which have been rendered useless or unmerchantable by reason of any fire on such premises, or any debris resulting from such fire, must remove the same from the premises as soon as possible.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -342,7 +346,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.16.030" data-order="|10|10.16|10.16.030|" ref-path="10.16.030" class="h__section">10.16.030 FIRE HYDRANT—OBSTRUCTING PROHIBITED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.16.030" data-order="|10|10.16|10.16.030|" data-ref-path="10.16.030" class="h__section">10.16.030 FIRE HYDRANT—OBSTRUCTING PROHIBITED.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.16.030#(a)">(a)</span> No person shall obstruct any fire hydrant in any manner.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.16.030#(b)">(b)</span> No person shall place or deposit lumber, rock, sand, debris or other substance within a minimum three foot clear space around the circumference of any fire hydrant nor within fifteen feet from the face or sides of the outlets of any hydrant on any public or private property in the City.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.16.030#(c)">(c)</span> No person shall plant or maintain shrubs, bushes, or other vegetation, or construct or maintain any fences or poles, or any other structures on any public or private property, any of which are a danger to the public health, safety or welfare within a minimum three foot clear space around the circumference of any fire hydrant nor within fifteen feet from the face or sides of the outlets of any fire hydrant.</p>
@@ -362,7 +366,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.16.040" data-order="|10|10.16|10.16.040|" ref-path="10.16.040" class="h__section">10.16.040 FIRE ZONE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.16.040" data-order="|10|10.16|10.16.040|" data-ref-path="10.16.040" class="h__section">10.16.040 FIRE ZONE.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.16.040#(a)">(a)</span> There is established about the scene of every fire during its course a "fire zone," which will consist of all public and private streets within a radius of three hundred feet or more from such fire, and in any case shall include the two closest street intersections.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.16.040#(b)">(b)</span> All traffic, vehicular and pedestrian, including but not limited to, locomotives, railroad cars, within a "fire zone" shall stop and no person shall move, operate or start to move or operate any vehicle except upon orders of the Chief of Police or a chief fire officer.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.16.040#(c)">(c)</span> It is unlawful to enter a "fire zone" or to stop, stand, or park in such a manner as to hinder the apparatus of the fire department in entering or leaving any "fire zone."</p>
@@ -373,7 +377,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.16.050" data-order="|10|10.16|10.16.050|" ref-path="10.16.050" class="h__section">10.16.050 HAZARDOUS FIRE AREAS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.16.050" data-order="|10|10.16|10.16.050|" data-ref-path="10.16.050" class="h__section">10.16.050 HAZARDOUS FIRE AREAS.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.16.050#(a)">(a)</span> For purposes of this Section, "hazardous fire area" means any property owned, leased, or otherwise occupied by the City that is designated as a hazardous fire area by the City Manager or the Fire Chief pursuant to this Section.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.16.050#(b)">(b)</span> Whenever the City Manager or the Fire Chief determines that a fire hazard exists on property owned, leased, or otherwise occupied by the City because of the presence of flammable material or cover or the usage of the property, the area may be declared to be a hazardous fire area. In any such declaration, restrictions on usage may be designated for the hazardous fire area.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.16.050#(c)">(c)</span> The City Manager or the Fire Chief may restrict, condition, or prohibit smoking, flammable material usage or possession, specified occupancies or uses, and entry to the property, as the official believes necessary to protect the public safety.</p>
@@ -385,8 +389,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.26" data-order="|10|10.26|" ref-path="10.26" class="h__chapter">Chapter 10.26 FIREARMS—DISCHARGE</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/10.26.010" data-order="|10|10.26|10.26.010|" ref-path="10.26.010" class="h__section">10.26.010 DISCHARGE OF FIREARMS—PROHIBITED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.26" data-order="|10|10.26|" data-ref-path="10.26" class="h__chapter">Chapter 10.26 FIREARMS—DISCHARGE</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.26.010" data-order="|10|10.26|10.26.010|" data-ref-path="10.26.010" class="h__section">10.26.010 DISCHARGE OF FIREARMS—PROHIBITED.</h2>
                 <p>No person shall discharge or fire any firearm within the City except as otherwise provided herein. For purposes of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.26" title="Chapter 10.26 FIREARMS—DISCHARGE">this chapter</a>, "firearm" is defined as a gun, pistol, revolver, rifle, shotgun, BB gun, air gun, pellet gun, bow and arrow, crossbow, blow gun, slingshot or any other weapon of a similar nature designed to discharge a projectile propelled by the expansion of a gas or a spring or any other device designed to throw or sling or otherwise project any solid object.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -398,7 +402,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.26.020" data-order="|10|10.26|10.26.020|" ref-path="10.26.020" class="h__section">10.26.020 EXCEPTIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.26.020" data-order="|10|10.26|10.26.020|" data-ref-path="10.26.020" class="h__section">10.26.020 EXCEPTIONS.</h2>
                 <p>The provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.26.010" title="10.26.010 DISCHARGE OF FIREARMS—PROHIBITED.">Section 10.26.010</a> shall not apply to the following:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.26.020#(a)">(a)</span> To police officers, sheriffs, constables, marshals or other police officers, or any person summoned by any such officers to assist in making arrests or preserving the peace, or persons who are members of the armed services of the United States, or the National Guard, while such persons are acting in the lawful discharge of their duties;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.26.020#(b)">(b)</span> To persons using firearms in the lawful defense of self, third persons, or the user's property;</p>
@@ -409,8 +413,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34" data-order="|10|10.34|" ref-path="10.34" class="h__chapter">Chapter 10.34 CHARITABLE BINGO GAMES—PERMITS</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.010" data-order="|10|10.34|10.34.010|" ref-path="10.34.010" class="h__section">10.34.010 PURPOSE AND INTENT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34" data-order="|10|10.34|" data-ref-path="10.34" class="h__chapter">Chapter 10.34 CHARITABLE BINGO GAMES—PERMITS</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.010" data-order="|10|10.34|10.34.010|" data-ref-path="10.34.010" class="h__section">10.34.010 PURPOSE AND INTENT.</h2>
                 <p>It is the purpose and intent of the Council by enacting <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.34" title="Chapter 10.34 CHARITABLE BINGO GAMES—PERMITS">this chapter</a> to provide for the issuance of permits to allow charitable organizations to hold bingo games lawfully in the City.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -418,7 +422,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.020" data-order="|10|10.34|10.34.020|" ref-path="10.34.020" class="h__section">10.34.020 BINGO—DEFINED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.020" data-order="|10|10.34|10.34.020|" data-ref-path="10.34.020" class="h__section">10.34.020 BINGO—DEFINED.</h2>
                 <p>As used in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.34" title="Chapter 10.34 CHARITABLE BINGO GAMES—PERMITS">this chapter</a> "bingo" means a game of chance in which prizes are awarded on the basis of designated numbers or symbols on a card which conform to numbers or symbols selected at random. The game of bingo shall include cards having numbers or symbols which are concealed and preprinted in a manner providing for distribution of prizes. The winning cards shall not be known prior to the game by any person participating in the playing or operation of the bingo game. Bingo as defined in this section applies exclusively to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.34" title="Chapter 10.34 CHARITABLE BINGO GAMES—PERMITS">this chapter</a> and shall not be applied in the construction or enforcement of any other provision of law.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -426,7 +430,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.030" data-order="|10|10.34|10.34.030|" ref-path="10.34.030" class="h__section">10.34.030 BINGO—PROHIBITED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.030" data-order="|10|10.34|10.34.030|" data-ref-path="10.34.030" class="h__section">10.34.030 BINGO—PROHIBITED.</h2>
                 <p>No person, including, but not limited to, an individual, corporation, association, organization or group, shall operate a bingo game within the City without possessing a valid, unexpired and unrevoked permit issued under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.34" title="Chapter 10.34 CHARITABLE BINGO GAMES—PERMITS">this chapter</a> and except in conformance with <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.34" title="Chapter 10.34 CHARITABLE BINGO GAMES—PERMITS">this chapter</a> and all other applicable laws.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -434,7 +438,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.040" data-order="|10|10.34|10.34.040|" ref-path="10.34.040" class="h__section">10.34.040 ORGANIZATIONS ELIGIBLE FOR PERMIT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.040" data-order="|10|10.34|10.34.040|" data-ref-path="10.34.040" class="h__section">10.34.040 ORGANIZATIONS ELIGIBLE FOR PERMIT.</h2>
                 <p>Organizations which are exempted from the payment of the bank and corporation tax by Sections 23701a, 23701b, 23701d, 23701e, 23701f, 23701g, and 23701l of the <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=RTC&amp;tocTitle=+Public+Utilities+Code+-+RTC" title="">Revenue and Taxation Code</a>, mobile home park associations and senior citizens organizations shall be eligible to apply for a permit to conduct bingo games in this City; provided that the proceeds of such games are used only for charitable purposes; and further provided, said applicant has owned or leased property within the City of San Mateo that has been used by the applicant for performance of the purposes for which the applicant is organized for at least 12 consecutive months immediately preceding the filing of such application. No other person shall be qualified or eligible to receive a bingo permit.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -442,7 +446,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.050" data-order="|10|10.34|10.34.050|" ref-path="10.34.050" class="h__section">10.34.050 CONTENTS OF APPLICATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.050" data-order="|10|10.34|10.34.050|" data-ref-path="10.34.050" class="h__section">10.34.050 CONTENTS OF APPLICATION.</h2>
                 <p>An application shall be presented to the Tax Collector and shall contain the following:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.34.050#(a)">(a)</span> The name and principal local address of the organization;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.34.050#(b)">(b)</span> The names of the principal officers of the organization locally;</p>
@@ -462,7 +466,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.060" data-order="|10|10.34|10.34.060|" ref-path="10.34.060" class="h__section">10.34.060 ISSUANCE OF PERMIT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.060" data-order="|10|10.34|10.34.060|" data-ref-path="10.34.060" class="h__section">10.34.060 ISSUANCE OF PERMIT.</h2>
                 <p>A permit shall be issued unless the Tax Collector makes one (1) or more of the following findings:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.34.060#(a)">(a)</span> The bingo games will be a fraud on the public;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.34.060#(b)">(b)</span> The bingo games will be conducted at a location or in a manner or the proceeds thereof will be accounted for or expended in a manner which violates any applicable law;</p>
@@ -481,7 +485,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.070" data-order="|10|10.34|10.34.070|" ref-path="10.34.070" class="h__section">10.34.070 PERMIT—PERIOD OF VALIDITY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.070" data-order="|10|10.34|10.34.070|" data-ref-path="10.34.070" class="h__section">10.34.070 PERMIT—PERIOD OF VALIDITY.</h2>
                 <p>Each permit shall only be valid only until the next following August 30. (This section is effective on September 1, 1990.)</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -489,7 +493,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.080" data-order="|10|10.34|10.34.080|" ref-path="10.34.080" class="h__section">10.34.080 PERMIT—FEE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.080" data-order="|10|10.34|10.34.080|" data-ref-path="10.34.080" class="h__section">10.34.080 PERMIT—FEE.</h2>
                 <p>The permit fee for each permit issued pursuant to the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.34" title="Chapter 10.34 CHARITABLE BINGO GAMES—PERMITS">this chapter</a> shall be $10.00, one-half of which will be refunded if the application is denied.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -497,7 +501,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.090" data-order="|10|10.34|10.34.090|" ref-path="10.34.090" class="h__section">10.34.090 LOCATION OF GAMES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.090" data-order="|10|10.34|10.34.090|" data-ref-path="10.34.090" class="h__section">10.34.090 LOCATION OF GAMES.</h2>
                 <p>An organization authorized to conduct bingo shall conduct bingo only on property owned or leased by it, or property whose use is donated to the organization, and which property is used by such organization for an office or for performance of the purposes for which the organization is organized. Nothing in this section shall be construed to require that the property owned or leased by or whose use is donated to the organization be used or leased exclusively by or donated exclusively to such organization.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -505,7 +509,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.100" data-order="|10|10.34|10.34.100|" ref-path="10.34.100" class="h__section">10.34.100 EXCLUSIVE OPERATION BY PERMIT HOLDER.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.100" data-order="|10|10.34|10.34.100|" data-ref-path="10.34.100" class="h__section">10.34.100 EXCLUSIVE OPERATION BY PERMIT HOLDER.</h2>
                 <p>A bingo game shall be operated and staffed only by members of the authorized organization which organized it. It is unlawful for any person to receive a profit, wage, or salary from any bingo game. Nor shall any person operating or staffing bingo receive free or at reduced cost any pulltabs, bingo papers, or the like enabling them to play bingo. Only the organization authorized to conduct a bingo game shall operate such game, or participate in the promotion, supervision, or any other phase of such game. This section does not preclude the employment of security personnel who are not members of the authorized organization at such bingo game by the organization conducting the game, provided that the name of the security company is filed with the City. A violation of this section shall be punishable by a fine not to exceed $10,000.00 which shall be deposited into the general fund of the City.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -513,7 +517,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.110" data-order="|10|10.34|10.34.110|" ref-path="10.34.110" class="h__section">10.34.110 PROFITS—SECTION 23701d ORGANIZATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.110" data-order="|10|10.34|10.34.110|" data-ref-path="10.34.110" class="h__section">10.34.110 PROFITS—SECTION 23701d ORGANIZATION.</h2>
                 <p>All profits derived from a bingo game shall be kept in a special fund or account and shall not be commingled with any other fund or account. Such profits shall be used only for charitable purposes. The City Council may designate by resolution a percentage of bingo gross receipts that must be used for charitable purposes.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -521,7 +525,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.120" data-order="|10|10.34|10.34.120|" ref-path="10.34.120" class="h__section">10.34.120 PROFITS—ORGANIZATIONS OTHER THAN SECTION 23701d ORGANIZATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.120" data-order="|10|10.34|10.34.120|" data-ref-path="10.34.120" class="h__section">10.34.120 PROFITS—ORGANIZATIONS OTHER THAN SECTION 23701d ORGANIZATION.</h2>
                 <p>All proceeds derived from a bingo game shall be kept in a special fund or account and shall not be commingled with any other fund or account. Such proceeds shall be used only for charitable purposes, except as follows:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.34.120#(a)">(a)</span> Such proceeds may be used for prizes.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.34.120#(b)">(b)</span> A portion of such proceeds, not to exceed 20% of the proceeds before the deduction for prizes, or $1,000.00 per month, whichever is less, may be used for rental of property, overhead, including the purchase of bingo equipment, administrative expenses, securing equipment, and security personnel.</p>
@@ -533,7 +537,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.130" data-order="|10|10.34|10.34.130|" ref-path="10.34.130" class="h__section">10.34.130 HOURS OF OPERATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.130" data-order="|10|10.34|10.34.130|" data-ref-path="10.34.130" class="h__section">10.34.130 HOURS OF OPERATION.</h2>
                 <p>An organization shall not operate or conduct a bingo game between the hours of midnight and 8:00 a.m.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -541,7 +545,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.135" data-order="|10|10.34|10.34.135|" ref-path="10.34.135" class="h__section">10.34.135 ADVERTISING.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.135" data-order="|10|10.34|10.34.135|" data-ref-path="10.34.135" class="h__section">10.34.135 ADVERTISING.</h2>
                 <p>All advertising for bingo shall designate the name of the bingo permit holder and shall state that bingo proceeds will be used for charitable purposes.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -549,7 +553,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.140" data-order="|10|10.34|10.34.140|" ref-path="10.34.140" class="h__section">10.34.140 PARTICIPATION—MINORS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.140" data-order="|10|10.34|10.34.140|" data-ref-path="10.34.140" class="h__section">10.34.140 PARTICIPATION—MINORS.</h2>
                 <p>Participation in all bingo games shall be open to the general public, and may not be limited to members of the licensed charitable organization. No minors shall be allowed to participate in any bingo game, as a worker or player, except for hall set-up, hall tear-down, and for food serving. No person shall be allowed to participate in a bingo game, unless the person is physically present at the time and place in which said game is being conducted.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -557,7 +561,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.150" data-order="|10|10.34|10.34.150|" ref-path="10.34.150" class="h__section">10.34.150 FINANCIAL INTEREST—PROHIBITED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.150" data-order="|10|10.34|10.34.150|" data-ref-path="10.34.150" class="h__section">10.34.150 FINANCIAL INTEREST—PROHIBITED.</h2>
                 <p>No individual, corporation, partnership, or other legal entity except the organization authorized to conduct a bingo game shall hold a financial interest in the conduct of such bingo game.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -565,7 +569,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.160" data-order="|10|10.34|10.34.160|" ref-path="10.34.160" class="h__section">10.34.160 PRIZES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.160" data-order="|10|10.34|10.34.160|" data-ref-path="10.34.160" class="h__section">10.34.160 PRIZES.</h2>
                 <p>The total value of prizes awarded during the conduct of any bingo game shall not exceed $250.00 in cash or kind, or both, for each separate game which is held. A bingo game starts when the first ball or number symbol is called and ends when the first ball and all succeeding balls or number symbols are returned to the cage or blower. Each progressive play in a series which continues to utilize and count any number symbols called and utilized in a previous part of said progression shall be deemed part of the same bingo game, even if a separate prize is awarded for each part of said progression. The cumulative prizes awarded for a "progressive" or other similar bingo game shall not exceed the total of $250.00 in cash or kind or both. No other prizes, except for door prizes, may be given, including, but not limited to, bonus line prizes, good neighbor prizes. Door prizes shall not exceed a total of $250.00 for the bingo day and must be awarded during public attendance and in view of the public.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -573,7 +577,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.170" data-order="|10|10.34|10.34.170|" ref-path="10.34.170" class="h__section">10.34.170 LIMITATION ON FREQUENCY OF BINGO.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.170" data-order="|10|10.34|10.34.170|" data-ref-path="10.34.170" class="h__section">10.34.170 LIMITATION ON FREQUENCY OF BINGO.</h2>
                 <p>A permit holder shall not conduct bingo more frequently than one (1) day a week. The total number of games on any one (1) day shall not exceed 25 games. No single location shall be used for bingo more than two (2) days a week. A permit holder may hold one (1) bingo marathon during the period of the annual permit.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -581,7 +585,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.180" data-order="|10|10.34|10.34.180|" ref-path="10.34.180" class="h__section">10.34.180 RECORDS; AUDIT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.180" data-order="|10|10.34|10.34.180|" data-ref-path="10.34.180" class="h__section">10.34.180 RECORDS; AUDIT.</h2>
                 <p>A bingo permit holder shall keep full and accurate records of the income and expenses received and disbursed in connection with its operation, conduct, promotion, supervision and any other phase of bingo authorized by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.34" title="Chapter 10.34 CHARITABLE BINGO GAMES—PERMITS">this chapter</a>. The permit holder shall keep full and accurate records of all bingo supplies received and used. Records of pulltabs shall include: (1) a designation of the type of pulltab, (2) the serial number of the pulltabs, (3) the number of pulltabs in a deal, (4) the number of deals, (5) the sales value of pulltabs in a deal, (6) the prize value of pulltabs in a deal, (7) the winning tickets.</p>
                 <p>All records, ledgers, receipts, and accounts shall be kept for a period of three (3) years and shall be made available to the Tax Collector, or designated representative, for audit. As part of an audit or as a separate action, City may attend any bingo game and observe the operations. Further, City may place a City representative with the bingo permit holder in order to assure that proper receipts are given and that proper accounting of bingo funds is made.</p>
                 <aside class="annotations" role="note">
@@ -590,7 +594,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.190" data-order="|10|10.34|10.34.190|" ref-path="10.34.190" class="h__section">10.34.190 RECEIPTS—SALE OF BINGO CARDS, PULLTABS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.190" data-order="|10|10.34|10.34.190|" data-ref-path="10.34.190" class="h__section">10.34.190 RECEIPTS—SALE OF BINGO CARDS, PULLTABS.</h2>
                 <p>A bingo permit holder shall provide a receipt to each and every person who purchases a bingo card/paper, or other bingo supply, except that no receipt is required for the purchase of a pulltab. Such receipt shall be a cash register receipt or other receipt clearly designating the amount of money received by the permit holder. The bingo permit holder shall retain all winning pulltabs paying over $25.00 as a record. Persons selling pulltabs must sign for the number of pulltabs taken by said person for sale.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -598,7 +602,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.200" data-order="|10|10.34|10.34.200|" ref-path="10.34.200" class="h__section">10.34.200 REPORTING.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.200" data-order="|10|10.34|10.34.200|" data-ref-path="10.34.200" class="h__section">10.34.200 REPORTING.</h2>
                 <p>A permit holder shall report to the Tax Collector annually on or before each July 31st all receipts and expenses, including, but not limited to, prizes, supplies, property rental or payments, from bingo games within the City of San Mateo. The amount disbursed to charities shall be reported. The period to be covered shall be the preceding July 1st to June 30th.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -610,7 +614,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.210" data-order="|10|10.34|10.34.210|" ref-path="10.34.210" class="h__section">10.34.210 SUMMARY SUSPENSION OF PERMIT PENDING OPPORTUNITY FOR HEARING; GROUNDS FOR SUSPENSION AND REVOCATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.210" data-order="|10|10.34|10.34.210|" data-ref-path="10.34.210" class="h__section">10.34.210 SUMMARY SUSPENSION OF PERMIT PENDING OPPORTUNITY FOR HEARING; GROUNDS FOR SUSPENSION AND REVOCATION.</h2>
                 <p>Whenever it appears to the Tax Collector that:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.34.210#(a)">(a)</span> The permit holder is conducting bingo in violation of any of the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.34" title="Chapter 10.34 CHARITABLE BINGO GAMES—PERMITS">this chapter</a> or other applicable law or is improperly using bingo proceeds for unauthorized purposes; or</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.34.210#(b)">(b)</span> The permit holder has not made available all records, ledgers, and accounts relating to proceeds and expenditures, or is not keeping required receipts and records, or has refused to allow City to audit or monitor the bingo operations; or</p>
@@ -622,7 +626,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.220" data-order="|10|10.34|10.34.220|" ref-path="10.34.220" class="h__section">10.34.220 CONDUCTING BINGO SESSIONS AFTER SUSPENSION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.220" data-order="|10|10.34|10.34.220|" data-ref-path="10.34.220" class="h__section">10.34.220 CONDUCTING BINGO SESSIONS AFTER SUSPENSION.</h2>
                 <p>It is unlawful for any person to continue to conduct bingo after any summary suspension.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -630,7 +634,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.230" data-order="|10|10.34|10.34.230|" ref-path="10.34.230" class="h__section">10.34.230 ORDER AND SUBSEQUENT HEARING.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.230" data-order="|10|10.34|10.34.230|" data-ref-path="10.34.230" class="h__section">10.34.230 ORDER AND SUBSEQUENT HEARING.</h2>
                 <p>The Tax Collector's written order shall state the reasons for the suspension and also notify the permit holder in writing that a hearing will be held within 15 working days from the date of the order to determine whether such permit shall be suspended for a longer time period or permanently.</p>
                 <p>Any such appeal by the permit holder shall be in writing stating the specific grounds for relief, and shall be filed with the Tax Collector.</p>
                 <aside class="annotations" role="note">
@@ -639,7 +643,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.240" data-order="|10|10.34|10.34.240|" ref-path="10.34.240" class="h__section">10.34.240 APPEAL HEARING.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.240" data-order="|10|10.34|10.34.240|" data-ref-path="10.34.240" class="h__section">10.34.240 APPEAL HEARING.</h2>
                 <p>A permit holder may appeal the decision of the Tax Collector within 10 calendar days of the date of the order. The reasons for an appeal shall be stated and the appeal filed with the Tax Collector. Upon timely request, the appeal hearing process and related procedures shall proceed pursuant to the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/5.18" title="Chapter 5.18 APPEAL AND REVIEW—REVOCATION—REFUSAL">Chapter 5.18</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -647,7 +651,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.250" data-order="|10|10.34|10.34.250|" ref-path="10.34.250" class="h__section">10.34.250 RECEIVING BINGO PROCEEDS DURING SUSPENSION OR REVOCATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.250" data-order="|10|10.34|10.34.250|" data-ref-path="10.34.250" class="h__section">10.34.250 RECEIVING BINGO PROCEEDS DURING SUSPENSION OR REVOCATION.</h2>
                 <p>An organization whose permit has been suspended or revoked cannot receive bingo proceeds from any source during the period of suspension or revocation. A violation of this subsection shall result in a permanent permit revocation to the organization involved and no subsequent permit shall be issued to any officer responsible.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -655,7 +659,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.260" data-order="|10|10.34|10.34.260|" ref-path="10.34.260" class="h__section">10.34.260 PURCHASES FROM BINGO SUPPLIERS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.260" data-order="|10|10.34|10.34.260|" data-ref-path="10.34.260" class="h__section">10.34.260 PURCHASES FROM BINGO SUPPLIERS.</h2>
                 <p>All permit holders shall use bingo papers, pulltabs and other supplies purchased from suppliers licensed by the City of San Mateo.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -663,7 +667,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.270" data-order="|10|10.34|10.34.270|" ref-path="10.34.270" class="h__section">10.34.270 BINGO SUPPLIER—DEFINED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.270" data-order="|10|10.34|10.34.270|" data-ref-path="10.34.270" class="h__section">10.34.270 BINGO SUPPLIER—DEFINED.</h2>
                 <p>A "bingo supplier" means any person or enterprise which, for a consideration, sells, rents, supplies, provides or furnishes equipment, products, goods, paper or other items for use in the conduct of bingo games, except for food service items, furniture, and office supplies.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -671,7 +675,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.280" data-order="|10|10.34|10.34.280|" ref-path="10.34.280" class="h__section">10.34.280 PERMIT REQUIRED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.280" data-order="|10|10.34|10.34.280|" data-ref-path="10.34.280" class="h__section">10.34.280 PERMIT REQUIRED.</h2>
                 <p>No person shall, unless under and by permit authority of a valid, unrevoked and unexpired permit, sell, rent, supply, provide or furnish for a consideration, any equipment, products, good, paper or other items for use in the conduct of bingo games, except for food service items, furniture, and office supplies.</p>
                 <p>A bingo supplier shall be deemed to operate or conduct business within the City of San Mateo if representatives of the bingo supplier sell, rent, supply, provide or furnish for a consideration, within the City of San Mateo, any equipment, products, goods, paper or other items for use in the conduct of bingo games, whether or not the bingo supplier operates from a fixed location within another jurisdiction.</p>
                 <p>An application fee of $50.00 shall be paid upon application.</p>
@@ -681,7 +685,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.290" data-order="|10|10.34|10.34.290|" ref-path="10.34.290" class="h__section">10.34.290 ISSUANCE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.290" data-order="|10|10.34|10.34.290|" data-ref-path="10.34.290" class="h__section">10.34.290 ISSUANCE.</h2>
                 <p>The Tax Collector shall issue a permit unless:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.34.290#(a)">(a)</span> The bingo supplier sells, rents, supplies, provides or furnishes any equipment, products, goods, paper or other items for use in the conduct of bingo games in manner which violates <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=326.5&amp;lawCode=PEN" title="">Penal Code Section 326.5</a>, <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.34" title="Chapter 10.34 CHARITABLE BINGO GAMES—PERMITS">this chapter</a> or any other applicable law.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.34.290#(b)">(b)</span> The bingo supplier has failed to keep adequate records of his or her sales in the City or has refused a request by City to audit those records.</p>
@@ -691,7 +695,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.300" data-order="|10|10.34|10.34.300|" ref-path="10.34.300" class="h__section">10.34.300 RECORDS—AUDIT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.300" data-order="|10|10.34|10.34.300|" data-ref-path="10.34.300" class="h__section">10.34.300 RECORDS—AUDIT.</h2>
                 <p>The bingo supplier shall keep full and accurate records of all inventory, income and expenses received and disbursed in connection with the sale, rental, supply, provision or furnishing of any equipment, products, goods, paper or other items for use in the conduct of bingo games in the City of San Mateo. The records shall be of such type and maintained in such manner as may be prescribed by the Tax Collector.</p>
                 <p>The Tax Collector or any other authorized representative of the City shall have the right to examine and audit such records at any reasonable time and the bingo supplier shall fully cooperate by making such records available.</p>
                 <aside class="annotations" role="note">
@@ -700,7 +704,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.310" data-order="|10|10.34|10.34.310|" ref-path="10.34.310" class="h__section">10.34.310 LIMITATION ON INVOLVEMENT IN BINGO.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.310" data-order="|10|10.34|10.34.310|" data-ref-path="10.34.310" class="h__section">10.34.310 LIMITATION ON INVOLVEMENT IN BINGO.</h2>
                 <p>The bingo supplier shall not, directly or indirectly, organize, manage, supervise, conduct, control or otherwise participate in or influence either the operation of any bingo game conducted in the City or the promotion thereof.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -708,7 +712,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.320" data-order="|10|10.34|10.34.320|" ref-path="10.34.320" class="h__section">10.34.320 PROHIBITION OF FINANCIAL INTEREST IN BINGO.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.320" data-order="|10|10.34|10.34.320|" data-ref-path="10.34.320" class="h__section">10.34.320 PROHIBITION OF FINANCIAL INTEREST IN BINGO.</h2>
                 <p>With the exception of revenue generated by any business or enterprise for which a permit is required pursuant to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.34" title="Chapter 10.34 CHARITABLE BINGO GAMES—PERMITS">this chapter</a>, no bingo supplier shall have a financial interest in the conduct of a bingo game operated in the City of San Mateo.</p>
                 <p>A supplier shall be deemed to have a financial interest in the conduct of a bingo game including, but not limited to, the following situations: (1) if the price or cost of bingo supplies is adjusted based on the profits, losses or tax exempt status of any organization licensed under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.34" title="Chapter 10.34 CHARITABLE BINGO GAMES—PERMITS">this chapter</a>; or (2) if the supplier absorbs, assumes, shares or otherwise participates in the losses, or profits of any bingo game conducted by any organization permitted under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.34" title="Chapter 10.34 CHARITABLE BINGO GAMES—PERMITS">this chapter</a>.</p>
                 <aside class="annotations" role="note">
@@ -717,7 +721,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.34.330" data-order="|10|10.34|10.34.330|" ref-path="10.34.330" class="h__section">10.34.330 REQUIRED RECORDS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.34.330" data-order="|10|10.34|10.34.330|" data-ref-path="10.34.330" class="h__section">10.34.330 REQUIRED RECORDS.</h2>
                 <p>Permitted bingo suppliers shall maintain a complete set of records which includes detail of all activities. These records shall include, but not limited to the use of pre-printed (form) sales invoices which reflect the following information:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.34.330#(a)">(a)</span> Date of sale;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.34.330#(b)">(b)</span> The customer name, and complete business address;</p>
@@ -735,12 +739,12 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.36" data-order="|10|10.36|" ref-path="10.36" class="h__chapter">Chapter 10.36 GAMBLING</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.36" data-order="|10|10.36|" data-ref-path="10.36" class="h__chapter">Chapter 10.36 GAMBLING</h2>
                 <section class="line-group annotations">
                   <h4>Editor's Notes</h4>
                   <p>For the statutory provisions prohibiting gaming see Cal. Pen. C §§ 330-337h.</p>
                 </section>
-                <h2 id="/us/ca/cities/san-mateo/code/10.36.010" data-order="|10|10.36|10.36.010|" ref-path="10.36.010" class="h__section">10.36.010 HAZARDING FOR RETURN OF MONEY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.36.010" data-order="|10|10.36|10.36.010|" data-ref-path="10.36.010" class="h__section">10.36.010 HAZARDING FOR RETURN OF MONEY.</h2>
                 <p>No person, either as owner, lessee, agent, employee, mortgagee, or otherwise, shall operate, keep, maintain, rent, use or conduct any clock, tape, slot or card machine, or any other machine, contrivance or device, upon which money is staked or hazarded upon chance, or into which money is paid, deposited, or played, upon chance or upon result of the action of which money or any other article or thing of value is staked, bet, hazarded, won or lost upon chance.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -748,7 +752,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.36.020" data-order="|10|10.36|10.36.020|" ref-path="10.36.020" class="h__section">10.36.020 HAZARDING FOR RETURN OF MERCHANDISE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.36.020" data-order="|10|10.36|10.36.020|" data-ref-path="10.36.020" class="h__section">10.36.020 HAZARDING FOR RETURN OF MERCHANDISE.</h2>
                 <p>No person, either as owner, lessee, agent, employee, mortgagee, or otherwise, shall operate, keep, maintain, rent, use or conduct any machine, contrivance, appliance or mechanical device upon the result of the action of which money or other valuable things are staked, or hazarded, and which is operated, or played by placing or depositing therein, any coins, checks, slugs, balls or other articles or device or in any manner, and by means of the action thereof, or as a result of the operation of which, any merchandise, money, representative or article of value, check or token, redeemable in, or exchangeable for, money, or any other thing of value, is won, or lost, or taken from, or obtained from, such machine, when the result of the action or operation of such machine, contrivance, appliance, or mechanical device, is dependent upon hazard or chance.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -756,7 +760,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.36.030" data-order="|10|10.36|10.36.030|" ref-path="10.36.030" class="h__section">10.36.030 DEFINITIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.36.030" data-order="|10|10.36|10.36.030|" data-ref-path="10.36.030" class="h__section">10.36.030 DEFINITIONS.</h2>
                 <p>Except where the context otherwise requires, the definitions given in this section govern the construction of Sections <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.36.040" title="10.36.040 GAMBLING HOUSE.">10.36.040</a> through 10.36.130:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.36.030#(1)">(1)</span> "Anything of value" means money, coin, currency, checks, chip, allowance, token, credit, merchandise, property, script, or anything representative of value, and includes, without limitation, any payment for services or for the use of any premises, cards, chips, furniture or other articles.</p>
                 <p>Said phrase also means any increase or probable increase in business or patronage resulting directly or indirectly from the playing of any game of cards, or any rent, remuneration or compensation of any nature received by any person, firm, corporation, club, lodge, association or church for the use or occupancy of any premises where the major, primary or customary use of said premises is for gambling;</p>
@@ -767,7 +771,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.36.040" data-order="|10|10.36|10.36.040|" ref-path="10.36.040" class="h__section">10.36.040 GAMBLING HOUSE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.36.040" data-order="|10|10.36|10.36.040|" data-ref-path="10.36.040" class="h__section">10.36.040 GAMBLING HOUSE.</h2>
                 <p>No person, either as principal, or agent, employee or otherwise, shall keep, conduct or maintain within the City, any house, room, apartment or place used in whole or in part as a gambling house or place where gambling shall occur.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -782,7 +786,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.36.050" data-order="|10|10.36|10.36.050|" ref-path="10.36.050" class="h__section">10.36.050 PERMITTING GAMBLING.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.36.050" data-order="|10|10.36|10.36.050|" data-ref-path="10.36.050" class="h__section">10.36.050 PERMITTING GAMBLING.</h2>
                 <p>No person, either as principal, or agent, employee or otherwise, shall knowingly permit any house, room, apartment or place owned by him or her or under his or her charge or control, in the City, to be used in whole or in part as a gambling house or place where gambling occurs.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -790,7 +794,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.36.060" data-order="|10|10.36|10.36.060|" ref-path="10.36.060" class="h__section">10.36.060 BETTING.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.36.060" data-order="|10|10.36|10.36.060|" data-ref-path="10.36.060" class="h__section">10.36.060 BETTING.</h2>
                 <p>No person shall within the City deal, operate, attend, play or bet at or against any game not prohibited by the <a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=PEN&amp;tocTitle=+Public+Utilities+Code+-+PEN" title="">Penal Code</a> of the state or by any other law of the state, which is played, conducted, dealt or carried on with cards, dice, dominoes or other devices for anything of value. (Added by Ordinance 5, adopted February 20, 1967.)</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -802,7 +806,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.36.070" data-order="|10|10.36|10.36.070|" ref-path="10.36.070" class="h__section">10.36.070 EXCEPTIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.36.070" data-order="|10|10.36|10.36.070|" data-ref-path="10.36.070" class="h__section">10.36.070 EXCEPTIONS.</h2>
                 <p>The provisions of Sections <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.36.040" title="10.36.040 GAMBLING HOUSE.">10.36.040</a> through <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.36.060" title="10.36.060 BETTING.">10.36.060</a> shall not apply to:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.36.070#(1)">(1)</span> Occasional private games, otherwise lawful, carried on for purely social purposes in a private home. Said provisions shall not apply to otherwise lawful games, other than card games, conducted by a private group of customers, for the sole purpose of determining which member of said group shall pay for food, refreshments or beverages for immediate consumption by the group;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.36.070#(2)">(2)</span> Any gambling house in existence within the City on February 6, 1967, provided that the continued operation thereof shall be subject to the following:</p>
@@ -826,7 +830,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.36.080" data-order="|10|10.36|10.36.080|" ref-path="10.36.080" class="h__section">10.36.080 PRIVATE CLUB—EXEMPTION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.36.080" data-order="|10|10.36|10.36.080|" data-ref-path="10.36.080" class="h__section">10.36.080 PRIVATE CLUB—EXEMPTION.</h2>
                 <p>An incorporated or charter fraternal, labor, benevolent or charitable organization, or religious association, that has been continuously carrying on within the City the activities for which it was organized for a period of not less than five years immediately preceding, that limits access to its own membership and the invited guests of its members and that had a city permit on June 30, 1984, shall be exempt from local gaming ordinances and gaming regulations.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -838,7 +842,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.36.090" data-order="|10|10.36|10.36.090|" ref-path="10.36.090" class="h__section">10.36.090 ELECTION REQUIRED FOR GAMING CLUB/GAMBLING HOUSE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.36.090" data-order="|10|10.36|10.36.090|" data-ref-path="10.36.090" class="h__section">10.36.090 ELECTION REQUIRED FOR GAMING CLUB/GAMBLING HOUSE.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.36.090#1.">1.</span> No gaming club or gambling house shall be located within the territorial limits of the City of San Mateo unless a majority of electors voting thereon affirmatively approve a measure permitting legal gambling in a gaming club or gambling house within the City.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.36.090#2.">2.</span> Definitions.</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.36.090#2.2.1">2.1</span> "Gaming Club" has the meaning set forth in <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=19802&amp;lawCode=BPC" title="">Section 19802 of the California Business and Professions Code</a>.</p>
@@ -852,8 +856,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.38" data-order="|10|10.38|" ref-path="10.38" class="h__chapter">Chapter 10.38 PUBLIC CONVENIENCE AND NECESSITY—ALCOHOL SALES</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/10.38.010" data-order="|10|10.38|10.38.010|" ref-path="10.38.010" class="h__section">10.38.010 PURPOSE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.38" data-order="|10|10.38|" data-ref-path="10.38" class="h__chapter">Chapter 10.38 PUBLIC CONVENIENCE AND NECESSITY—ALCOHOL SALES</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.38.010" data-order="|10|10.38|10.38.010|" data-ref-path="10.38.010" class="h__section">10.38.010 PURPOSE.</h2>
                 <p>The purpose of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.38" title="Chapter 10.38 PUBLIC CONVENIENCE AND NECESSITY—ALCOHOL SALES">this chapter</a> is to discharge the City's authority to review applications of public convenience and necessity for alcohol beverage sales, both on-site and off-site, that are referred to it by the Alcohol Beverage Control of the State of California.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -861,7 +865,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.38.020" data-order="|10|10.38|10.38.020|" ref-path="10.38.020" class="h__section">10.38.020 PUBLIC CONVENIENCE AND NECESSITY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.38.020" data-order="|10|10.38|10.38.020|" data-ref-path="10.38.020" class="h__section">10.38.020 PUBLIC CONVENIENCE AND NECESSITY.</h2>
                 <p>The Director of Community Development or designee shall review applications for public convenience and necessity. The Director's or designee's decision shall be final unless appealed.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -869,7 +873,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.38.030" data-order="|10|10.38|10.38.030|" ref-path="10.38.030" class="h__section">10.38.030 NOTICE OF APPLICATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.38.030" data-order="|10|10.38|10.38.030|" data-ref-path="10.38.030" class="h__section">10.38.030 NOTICE OF APPLICATION.</h2>
                 <p>Notice shall be provided in the same manner that notice is provided for planning applications under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/27.08" title="Chapter 27.08 RULES OF PROCEDURE">Chapter 27.08</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -877,7 +881,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.38.040" data-order="|10|10.38|10.38.040|" ref-path="10.38.040" class="h__section">10.38.040 REVIEW CRITERIA.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.38.040" data-order="|10|10.38|10.38.040|" data-ref-path="10.38.040" class="h__section">10.38.040 REVIEW CRITERIA.</h2>
                 <p>The application shall be reviewed pursuant to the following criteria:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.38.040#(a)">(a)</span> The number of businesses having authority to sell alcoholic beverages in the census track of applicant;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.38.040#(b)">(b)</span> The extent to which the crime reporting district in which applicant is located exceeds the average for crime reporting districts subject to the jurisdiction of the City of San Mateo Police Department.</p>
@@ -895,7 +899,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.38.050" data-order="|10|10.38|10.38.050|" ref-path="10.38.050" class="h__section">10.38.050 APPEAL.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.38.050" data-order="|10|10.38|10.38.050|" data-ref-path="10.38.050" class="h__section">10.38.050 APPEAL.</h2>
                 <p>The decision of the Director or designee may be appealed to the Planning Commission and the City Council in the same manner for appeals as set forth in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/27.08" title="Chapter 27.08 RULES OF PROCEDURE">Chapter 27.08</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -903,7 +907,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.38.060" data-order="|10|10.38|10.38.060|" ref-path="10.38.060" class="h__section">10.38.060 DIRECT REFERRAL TO PLANNING COMMISSION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.38.060" data-order="|10|10.38|10.38.060|" data-ref-path="10.38.060" class="h__section">10.38.060 DIRECT REFERRAL TO PLANNING COMMISSION.</h2>
                 <p>If the Director of Community Development or designee finds that any application under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.38" title="Chapter 10.38 PUBLIC CONVENIENCE AND NECESSITY—ALCOHOL SALES">this chapter</a> involves an unresolved city policy issue or that there is a public controversy regarding the application, the Director or designee shall refer the application to the Planning Commission for hearing/and action.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -911,8 +915,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.40" data-order="|10|10.40|" ref-path="10.40" class="h__chapter">Chapter 10.40 HANDBILLS</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/10.40.010" data-order="|10|10.40|10.40.010|" ref-path="10.40.010" class="h__section">10.40.010 DEFINITION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.40" data-order="|10|10.40|" data-ref-path="10.40" class="h__chapter">Chapter 10.40 HANDBILLS</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.40.010" data-order="|10|10.40|10.40.010|" data-ref-path="10.40.010" class="h__section">10.40.010 DEFINITION.</h2>
                 <p>"Handbill" as used in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.40" title="Chapter 10.40 HANDBILLS">this chapter</a> includes any printed or written advertising matter, any sample or device, dodger, circular, leaflet, pamphlet, newspaper, paper, booklet, or any other printed matter or literature.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -920,7 +924,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.40.020" data-order="|10|10.40|10.40.020|" ref-path="10.40.020" class="h__section">10.40.020 DISTRIBUTION ON PUBLIC PROPERTY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.40.020" data-order="|10|10.40|10.40.020|" data-ref-path="10.40.020" class="h__section">10.40.020 DISTRIBUTION ON PUBLIC PROPERTY.</h2>
                 <p>No person, either directly or indirectly, shall deposit, place, throw, scatter or cast any handbill in or onto any public street, thoroughfare, park, ground or other public place or depot within the City. The provisions of this section shall not prohibit the handing, transmitting, or distributing, between the hours of eight a.m. and six p.m., of any handbill to any person willing to accept such handbill; provided, however, such handing, transmitting or distribution shall not violate any traffic regulations or interfere with, obstruct, stop or confuse the flow of traffic in, along, or upon such public thoroughfare, park, ground or other public place or depot.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -928,7 +932,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.40.030" data-order="|10|10.40|10.40.030|" ref-path="10.40.030" class="h__section">10.40.030 PLACING IN VEHICLES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.40.030" data-order="|10|10.40|10.40.030|" data-ref-path="10.40.030" class="h__section">10.40.030 PLACING IN VEHICLES.</h2>
                 <p>No person, either directly or indirectly, shall distribute, deposit, place, throw, scatter or cast any handbill in or upon any automobile or other vehicle. The provisions of this section shall not prohibit the handing, transmitting or distributing between the hours of eight a.m. and six p.m. of any handbills to the occupants of any automobile or other vehicle.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -936,7 +940,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.40.040" data-order="|10|10.40|10.40.040|" ref-path="10.40.040" class="h__section">10.40.040 DISTRIBUTING ON PRIVATE PROPERTY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.40.040" data-order="|10|10.40|10.40.040|" data-ref-path="10.40.040" class="h__section">10.40.040 DISTRIBUTING ON PRIVATE PROPERTY.</h2>
                 <p>No person, either directly or indirectly, shall distribute, deposit, place, throw, scatter or cast any handbills in or upon any private yards, grounds, walk, porch, steps, mailbox, vestibule, house, residence, building, or any other private property. The provisions of this section shall not prohibit the handing, transmitting or distributing between the hours of eight a.m. and six p.m. of any handbills to the owner or other occupant of such private yard, grounds, walk, porch, steps, mailbox, vestibule, house, residence, building or other private property.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -948,7 +952,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.40.050" data-order="|10|10.40|10.40.050|" ref-path="10.40.050" class="h__section">10.40.050 POSTED PROPERTY PROHIBITED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.40.050" data-order="|10|10.40|10.40.050|" data-ref-path="10.40.050" class="h__section">10.40.050 POSTED PROPERTY PROHIBITED.</h2>
                 <p>The owner, or person entitled to possession, of any property may place or maintain a sign in a conspicuous place near the entrance thereof, indicating that no handbills are desired, in which event it is unlawful for any person to go upon such premises so posted, and distribute, deposit, place, throw, scatter, or cast any handbill.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -960,7 +964,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.40.060" data-order="|10|10.40|10.40.060|" ref-path="10.40.060" class="h__section">10.40.060 EXEMPTIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.40.060" data-order="|10|10.40|10.40.060|" data-ref-path="10.40.060" class="h__section">10.40.060 EXEMPTIONS.</h2>
                 <p>The provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.40" title="Chapter 10.40 HANDBILLS">this chapter</a> shall not be deemed to apply to the distribution of the United States mail nor shall the provisions of Sections <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.40.040" title="10.40.040 DISTRIBUTING ON PRIVATE PROPERTY.">10.40.040</a> and <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.40.050" title="10.40.050 POSTED PROPERTY PROHIBITED.">10.40.050</a> be deemed to apply to the delivery of any handbill upon any such private property when the person entitled to the possession of such property has requested such delivery.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -968,7 +972,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.40.070" data-order="|10|10.40|10.40.070|" ref-path="10.40.070" class="h__section">10.40.070 PROHIBITED CONTENTS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.40.070" data-order="|10|10.40|10.40.070|" data-ref-path="10.40.070" class="h__section">10.40.070 PROHIBITED CONTENTS.</h2>
                 <p>Anything in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.40" title="Chapter 10.40 HANDBILLS">this chapter</a> to the contrary notwithstanding, no person shall distribute any handbill where the contents of such are immoral, obscene, or advocate unlawful, criminal, seditious or treasonable acts.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -976,7 +980,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.40.080" data-order="|10|10.40|10.40.080|" ref-path="10.40.080" class="h__section">10.40.080 ADVERTISING MATTER.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.40.080" data-order="|10|10.40|10.40.080|" data-ref-path="10.40.080" class="h__section">10.40.080 ADVERTISING MATTER.</h2>
                 <p>No person shall distribute any handbill containing any advertising matter without first obtaining a permit for such distribution.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -988,7 +992,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.40.090" data-order="|10|10.40|10.40.090|" ref-path="10.40.090" class="h__section">10.40.090 ADVERTISING MATTER—PROVISIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.40.090" data-order="|10|10.40|10.40.090|" data-ref-path="10.40.090" class="h__section">10.40.090 ADVERTISING MATTER—PROVISIONS.</h2>
                 <p>Application for the permit provided for in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.40.080" title="10.40.080 ADVERTISING MATTER.">Section 10.40.080</a> shall be made to the business Tax Collector, and shall include the applicant's name, age, address, occupation and principal or employer. The applicant shall attach a copy of the handbill to the application. The Tax Collector shall issue a permit upon the payment of the sum of one dollar for each one thousand handbills or fraction thereof, to be distributed. Permits shall be issued only to the person whose goods, wares, or merchandise are being advertised, or to the person who publishes an advertising medium, or to the person actually distributing such handbill, and a separate permit shall be obtained for each distribution; provided that such permit shall not apply to the distribution, peddling or delivery of any magazine or newspaper of general circulation published for the dissemination of local or telegraphic news or intelligence of a general character which has a bona fide subscription list or paid subscribers, and which is printed and published at regular intervals.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -996,8 +1000,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.48" data-order="|10|10.48|" ref-path="10.48" class="h__chapter">Chapter 10.48 SOUND TRUCKS—LOUDSPEAKERS—ADVERTISING VEHICLES</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/10.48.010" data-order="|10|10.48|10.48.010|" ref-path="10.48.010" class="h__section">10.48.010 DEFINITIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.48" data-order="|10|10.48|" data-ref-path="10.48" class="h__chapter">Chapter 10.48 SOUND TRUCKS—LOUDSPEAKERS—ADVERTISING VEHICLES</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.48.010" data-order="|10|10.48|10.48.010|" data-ref-path="10.48.010" class="h__section">10.48.010 DEFINITIONS.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.48.010#(a)">(a)</span> "Advertising vehicle" as used herein means any motor vehicle, or animal-drawn vehicle, having mounted thereon or attached thereto any sound amplifying equipment or billboard or other display advertising equipment, including, but not limited to, trailers and other attachments to the motor vehicle, or animal propelled vehicle.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.48.010#(b)">(b)</span> "Sound amplifying equipment" as used herein means any machine or device for the amplification of the human voice, music or any other sound. "Sound amplifying equipment" as used herein shall not be construed as including standard automobile radios when used and heard only by occupants of the vehicle in which installed, or warning devices on authorized emergency vehicles, or horns or other warning devices on other vehicles used only for traffic safety purposes.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.48.010#(c)">(c)</span> "Sound truck" as used herein means any motor vehicle, or animal-drawn vehicle, having mounted thereon or attached thereto any sound amplifying equipment, including, but not limited to, trailers or other vehicles attached to said motor vehicle or animal propelled vehicle.</p>
@@ -1007,7 +1011,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.48.020" data-order="|10|10.48|10.48.020|" ref-path="10.48.020" class="h__section">10.48.020 NONCOMMERCIAL—REGISTRATION—REQUIRED—STATEMENT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.48.020" data-order="|10|10.48|10.48.020|" data-ref-path="10.48.020" class="h__section">10.48.020 NONCOMMERCIAL—REGISTRATION—REQUIRED—STATEMENT.</h2>
                 <p>No person shall use, or cause to be used, a sound truck with its sound amplifying equipment in operation for noncommercial purposes in the City before filing a written registration statement in quadruplicate with the Chief of Police, which statement shall give the following information:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.48.020#(1)">(1)</span> Name and home address of the applicant;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.48.020#(2)">(2)</span> Address of place of business of applicant;</p>
@@ -1041,7 +1045,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.48.030" data-order="|10|10.48|10.48.030|" ref-path="10.48.030" class="h__section">10.48.030 NONCOMMERCIAL—PERMIT—ISSUANCE—DENIAL.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.48.030" data-order="|10|10.48|10.48.030|" data-ref-path="10.48.030" class="h__section">10.48.030 NONCOMMERCIAL—PERMIT—ISSUANCE—DENIAL.</h2>
                 <p>If the Chief of Police finds that said statement shows facts complying with the regulations contained in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.48.070" title="10.48.070 NONCOMMERCIAL—USE REGULATIONS.">Section 10.48.070</a>, he or she shall recommend that a permit be issued and transmit a copy of the statement to the City Manager, who shall thereupon issue a permit for the operation of such sound truck. If the Chief of Police finds that the statement fails to show facts complying with said regulations, he or she shall transmit a copy of the statement to the City Manager with a recommendation that a permit be denied, and the City Manager shall thereupon deny such permit, unless such application is amended so that the operation, if allowed, will conform with the requirements of the regulations for use set forth in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.48.070" title="10.48.070 NONCOMMERCIAL—USE REGULATIONS.">Section 10.48.070</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1049,7 +1053,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.48.040" data-order="|10|10.48|10.48.040|" ref-path="10.48.040" class="h__section">10.48.040 NONCOMMERCIAL—PERMIT—APPEAL—HEARING.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.48.040" data-order="|10|10.48|10.48.040|" data-ref-path="10.48.040" class="h__section">10.48.040 NONCOMMERCIAL—PERMIT—APPEAL—HEARING.</h2>
                 <p>In the event that the permit is denied, the applicant may file with the City Clerk a written notice of appeal to the Council from the ruling of the City Manager.</p>
                 <p>The City Clerk shall set the hearing of said appeal to the Council at a date not to exceed twenty-one days from the date of filing said notice of appeal. The clerk shall transmit to applicant by United States mail, postage prepaid, written notice of such hearing which shall be mailed at least ten days before the date fixed therefor, and shall be addressed to the applicant at his or her residence address as it appears on his or her registration statement.</p>
                 <p>The council may continue the hearing on the application from time to time, but the final decision of council shall be made not later than sixty days after the filing of such appeal. At the hearing on the application, the Council may examine witnesses under oath and take such evidence as it may desire. It may order such permit issued with or without modifications, and council's findings and decision thereon shall be final and conclusive on applicant.</p>
@@ -1063,7 +1067,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.48.050" data-order="|10|10.48|10.48.050|" ref-path="10.48.050" class="h__section">10.48.050 NONCOMMERCIAL—REGISTRATION STATEMENT—AMENDMENT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.48.050" data-order="|10|10.48|10.48.050|" data-ref-path="10.48.050" class="h__section">10.48.050 NONCOMMERCIAL—REGISTRATION STATEMENT—AMENDMENT.</h2>
                 <p>All persons using, or causing to be used, sound trucks for noncommercial purposes shall amend any registration statement filed pursuant to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.48.020" title="10.48.020 NONCOMMERCIAL—REGISTRATION—REQUIRED—STATEMENT.">Section 10.48.020</a> within forty-eight hours after any change in the information therein furnished.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1071,7 +1075,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.48.060" data-order="|10|10.48|10.48.060|" ref-path="10.48.060" class="h__section">10.48.060 NONCOMMERCIAL—REGISTRATION STATEMENT—CERTIFIED COPY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.48.060" data-order="|10|10.48|10.48.060|" data-ref-path="10.48.060" class="h__section">10.48.060 NONCOMMERCIAL—REGISTRATION STATEMENT—CERTIFIED COPY.</h2>
                 <p>The clerk shall return to each applicant under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.48.020" title="10.48.020 NONCOMMERCIAL—REGISTRATION—REQUIRED—STATEMENT.">Section 10.48.020</a>, one copy of the registration statement duly certified by the clerk as a correct copy of said application. The certified copy of the application shall be in the possession of any person operating the sound truck at all times while the sound truck's sound amplifying equipment is in operation and said copy shall be promptly displayed and shown to any policeman of the City upon request.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1079,7 +1083,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.48.070" data-order="|10|10.48|10.48.070|" ref-path="10.48.070" class="h__section">10.48.070 NONCOMMERCIAL—USE REGULATIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.48.070" data-order="|10|10.48|10.48.070|" data-ref-path="10.48.070" class="h__section">10.48.070 NONCOMMERCIAL—USE REGULATIONS.</h2>
                 <p>Noncommercial use of sound trucks in the City with sound amplifying equipment in operation shall be subject to the following regulations:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.48.070#(1)">(1)</span> The only sounds permitted are music and human speech;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.48.070#(2)">(2)</span> Operations are permitted each day except Good Friday, and the following legal holidays: Sundays, Christmas Day, Thanksgiving Day and Memorial Day.</p>
@@ -1117,7 +1121,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.48.080" data-order="|10|10.48|10.48.080|" ref-path="10.48.080" class="h__section">10.48.080 COMMERCIAL—LICENSE—REQUIRED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.48.080" data-order="|10|10.48|10.48.080|" data-ref-path="10.48.080" class="h__section">10.48.080 COMMERCIAL—LICENSE—REQUIRED.</h2>
                 <p>No person shall operate, or cause to be operated, any advertising vehicle in the City for commercial advertising purposes unless a license has been obtained from the City license collector. The fee for the license shall be one dollar for each day during which such vehicle operates.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1132,7 +1136,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.48.090" data-order="|10|10.48|10.48.090|" ref-path="10.48.090" class="h__section">10.48.090 COMMERCIAL—LICENSE—APPLICATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.48.090" data-order="|10|10.48|10.48.090|" data-ref-path="10.48.090" class="h__section">10.48.090 COMMERCIAL—LICENSE—APPLICATION.</h2>
                 <p>Persons applying for the license required under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.48.080" title="10.48.080 COMMERCIAL—LICENSE—REQUIRED.">Section 10.48.080</a> shall file with the Chief of Police an application in writing in quadruplicate, giving in said application the information required in the registration statement under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.48.020" title="10.48.020 NONCOMMERCIAL—REGISTRATION—REQUIRED—STATEMENT.">Section 10.48.020</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1144,7 +1148,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.48.100" data-order="|10|10.48|10.48.100|" ref-path="10.48.100" class="h__section">10.48.100 COMMERCIAL—LICENSE—ISSUANCE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.48.100" data-order="|10|10.48|10.48.100|" data-ref-path="10.48.100" class="h__section">10.48.100 COMMERCIAL—LICENSE—ISSUANCE.</h2>
                 <p>The Chief of Police shall examine the application, and if he or she finds it in order, he or she shall recommend that a license be issued, and shall transmit a copy of the application to the license collector, who shall issue a license under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.48.080" title="10.48.080 COMMERCIAL—LICENSE—REQUIRED.">Section 10.48.080</a> upon payment of the required license fee; provided that, in the event that the application required in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.48.090" title="10.48.090 COMMERCIAL—LICENSE—APPLICATION.">Section 10.48.090</a> reveals that applicant would violate the regulations prescribed in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.48.070" title="10.48.070 NONCOMMERCIAL—USE REGULATIONS.">Section 10.48.070</a> or the provisions of some other section of this code, the Chief of Police shall recommend the denial thereof, and transmit such recommendation to the license collector, who shall deny the license. The provisions regarding the right to, time and manner of, appeal there from, hearing by the Council and its findings thereon, and the finality thereof, as contained in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.48.040" title="10.48.040 NONCOMMERCIAL—PERMIT—APPEAL—HEARING.">Section 10.48.040</a> shall apply to instances in which applicants under this section may appeal from a denial of a license.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1152,7 +1156,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.48.110" data-order="|10|10.48|10.48.110|" ref-path="10.48.110" class="h__section">10.48.110 COMMERCIAL—LICENSE—POSSESSION AND DISPLAY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.48.110" data-order="|10|10.48|10.48.110|" data-ref-path="10.48.110" class="h__section">10.48.110 COMMERCIAL—LICENSE—POSSESSION AND DISPLAY.</h2>
                 <p>A licensee shall keep such license in his or her possession in the advertising vehicle during the time the sound truck's sound amplifying equipment is in operation. The license shall be promptly displayed and shown to any policeman of the City upon request.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1160,7 +1164,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.48.120" data-order="|10|10.48|10.48.120|" ref-path="10.48.120" class="h__section">10.48.120 COMMERCIAL—USE REGULATIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.48.120" data-order="|10|10.48|10.48.120|" data-ref-path="10.48.120" class="h__section">10.48.120 COMMERCIAL—USE REGULATIONS.</h2>
                 <p>No person shall operate, or cause to be operated, any advertising vehicle for commercial advertising purposes in violation of the regulations set forth in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.48.070" title="10.48.070 NONCOMMERCIAL—USE REGULATIONS.">Section 10.48.070</a>. The words "advertising vehicle" shall be substituted for the purposes of this section for the words "sound truck" as used in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.48.070" title="10.48.070 NONCOMMERCIAL—USE REGULATIONS.">Section 10.48.070</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1168,8 +1172,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.56" data-order="|10|10.56|" ref-path="10.56" class="h__chapter">Chapter 10.56 USE OF LIBRARIES AND PUBLIC BUILDINGS</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/10.56.010" data-order="|10|10.56|10.56.010|" ref-path="10.56.010" class="h__section">10.56.010 MALICIOUS MISCHIEF.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.56" data-order="|10|10.56|" data-ref-path="10.56" class="h__chapter">Chapter 10.56 USE OF LIBRARIES AND PUBLIC BUILDINGS</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.56.010" data-order="|10|10.56|10.56.010|" data-ref-path="10.56.010" class="h__section">10.56.010 MALICIOUS MISCHIEF.</h2>
                 <p>Any person who maliciously cuts, tears, defaces, breaks, or injures any book, map, chart, picture, engraving, statue, coin, model, apparatus, or other work of literature, art, mechanics, or objects of curiosity located in any public library or other public building owned, operated or controlled by the City, is guilty of a misdemeanor or infraction as charged pursuant to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/1.04" title="Chapter 1.04 GENERAL PENALTY">Chapter 1.04</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1177,7 +1181,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.56.020" data-order="|10|10.56|10.56.020|" ref-path="10.56.020" class="h__section">10.56.020 REFUSAL TO RETURN PROPERTY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.56.020" data-order="|10|10.56|10.56.020|" data-ref-path="10.56.020" class="h__section">10.56.020 REFUSAL TO RETURN PROPERTY.</h2>
                 <p>Any person who willfully detains any book, newspaper, magazine, pamphlet, manuscript, or other property, belonging to any public library owned, operated or controlled by the City, for thirty days after notice in writing to return the article or property, given after the expiration of the time for which by the rules of the institution the article or property may be kept, is guilty of a misdemeanor or infraction as charged pursuant to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/1.04" title="Chapter 1.04 GENERAL PENALTY">Chapter 1.04</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1185,8 +1189,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.65" data-order="|10|10.65|" ref-path="10.65" class="h__chapter">Chapter 10.65 PROTECTION OF CHILDREN RECEIVING SOCIAL SERVICES</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/10.65.010" data-order="|10|10.65|10.65.010|" ref-path="10.65.010" class="h__section">10.65.010 PURPOSE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.65" data-order="|10|10.65|" data-ref-path="10.65" class="h__chapter">Chapter 10.65 PROTECTION OF CHILDREN RECEIVING SOCIAL SERVICES</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.65.010" data-order="|10|10.65|10.65.010|" data-ref-path="10.65.010" class="h__section">10.65.010 PURPOSE.</h2>
                 <p>The City Council, having completed a lengthy study of social services in San Mateo, including issues of child protection, finds that it is necessary and appropriate that non-profit corporations working with children in the City of San Mateo check the criminal backgrounds of their employees and volunteers who will be alone with children and/or who have supervisory or disciplinary control over children.</p>
                 <p>The City Council finds that children are vulnerable to adults having authority over them and that it is important for children to be protected and for parents to be better assured that children enrolled in non-profit programs are protected.</p>
                 <aside class="annotations" role="note">
@@ -1195,7 +1199,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.65.020" data-order="|10|10.65|10.65.020|" ref-path="10.65.020" class="h__section">10.65.020 BACKGROUND CHECK.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.65.020" data-order="|10|10.65|10.65.020|" data-ref-path="10.65.020" class="h__section">10.65.020 BACKGROUND CHECK.</h2>
                 <p>Non-profit corporations doing work or providing service in the City of San Mateo which employ or use the services of employees and/or volunteers shall make criminal background checks (1) pursuant to <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11105.3&amp;lawCode=PEN" title="">Penal Code Section 11105.3</a> or (2) to the extent allowable by law pursuant to AB 1562 (1996) (Megan's Law), <a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=PEN&amp;tocTitle=+Public+Utilities+Code+-+PEN" title="">Penal Code</a> Sections <a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290&amp;lawCode=PEN" title="">290</a> and <a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.4&amp;lawCode=PEN" title="">290.4</a>, as follows:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.65.020#(a)">(a)</span> Employees: Adult employees who have supervisory or disciplinary authority over a child or children shall be checked within 10 days of initial employment or within 10 days after an employee is in a position with supervisory or disciplinary authority over a child or children.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/10.65.020#(b)">(b)</span> Volunteers: Adult volunteers who in the ordinary course of their volunteer duties are expected to be alone with one or more children without a second adult being present shall be checked within 10 days of initially volunteering or within 10 days after a volunteer is in a position in which he/she is alone with one or more children. A volunteer who is alone with one or more children is deemed to have disciplinary or supervisory authority over a child or children. Mentors, tutors, big brothers/sisters, coaches are examples of positions that may typically be alone with one or more children.</p>
@@ -1223,7 +1227,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.65.030" data-order="|10|10.65|10.65.030|" ref-path="10.65.030" class="h__section">10.65.030 TIME OF CHECKS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.65.030" data-order="|10|10.65|10.65.030|" data-ref-path="10.65.030" class="h__section">10.65.030 TIME OF CHECKS.</h2>
                 <p>In the event that there is a break in the employment or volunteer relationship for a year or more with the non-profit organization, the background check shall again be made within 10 days of the recommencement of employment or volunteering.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1231,7 +1235,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.65.040" data-order="|10|10.65|10.65.040|" ref-path="10.65.040" class="h__section">10.65.040 REGULATIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.65.040" data-order="|10|10.65|10.65.040|" data-ref-path="10.65.040" class="h__section">10.65.040 REGULATIONS.</h2>
                 <p>The City Council may adopt regulations to implement <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.65" title="Chapter 10.65 PROTECTION OF CHILDREN RECEIVING SOCIAL SERVICES">this chapter</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1239,7 +1243,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.65.050" data-order="|10|10.65|10.65.050|" ref-path="10.65.050" class="h__section">10.65.050 ANNUAL STATEMENT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.65.050" data-order="|10|10.65|10.65.050|" data-ref-path="10.65.050" class="h__section">10.65.050 ANNUAL STATEMENT.</h2>
                 <p>Non-profit corporations shall file an annual statement certifying compliance with <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.65.020" title="10.65.020 BACKGROUND CHECK.">Section 10.65.020</a> and <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.65.060" title="10.65.060 TRAINING.">Section 10.65.060</a>. This statement shall be filed during the month of July of each year to cover the preceding 12 months, and shall be considered as late if not filed by August 1.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1251,7 +1255,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.65.060" data-order="|10|10.65|10.65.060|" ref-path="10.65.060" class="h__section">10.65.060 TRAINING.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.65.060" data-order="|10|10.65|10.65.060|" data-ref-path="10.65.060" class="h__section">10.65.060 TRAINING.</h2>
                 <p>Non-profit corporations that have employees or volunteers who work with or supervise children shall provide at least two hours of child abuse training within six months of the commencement of employment or volunteering. The training received by an employee or volunteer shall be valid for a two-year period from the date of the training and notwithstanding the preceding paragraph, shall be transferable to other non-profit corporations without the need for further training during the two-year period.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1269,7 +1273,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.65.070" data-order="|10|10.65|10.65.070|" ref-path="10.65.070" class="h__section">10.65.070 CIVIL PENALTY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.65.070" data-order="|10|10.65|10.65.070|" data-ref-path="10.65.070" class="h__section">10.65.070 CIVIL PENALTY.</h2>
                 <p>There shall be a civil penalty of $100.00 imposed upon the nonprofit corporation for each employee or volunteer subject to a background check under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.65.020" title="10.65.020 BACKGROUND CHECK.">section 10.65.020</a> who is not checked and/or for each employee or volunteer subject to training under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.65.060" title="10.65.060 TRAINING.">section 10.65.060</a> who is not trained.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1277,7 +1281,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.65.080" data-order="|10|10.65|10.65.080|" ref-path="10.65.080" class="h__section">10.65.080 PROHIBITED USE OF CITY FACILITIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.65.080" data-order="|10|10.65|10.65.080|" data-ref-path="10.65.080" class="h__section">10.65.080 PROHIBITED USE OF CITY FACILITIES.</h2>
                 <p>Non-profit corporations who are not in compliance with the requirements of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.65.050" title="10.65.050 ANNUAL STATEMENT.">Section 10.65.050</a> and/or Sections <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.65.020" title="10.65.020 BACKGROUND CHECK.">10.65.020</a> and <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.65.060" title="10.65.060 TRAINING.">10.65.060</a> shall not be permitted to use City facilities for the functions of their non-profit corporations. Nothing in this provision shall be construed to prohibit a non-complying, non-profit corporation from applying for or receiving permits for the use of their own property, including property which they rent.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1285,8 +1289,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.80" data-order="|10|10.80|" ref-path="10.80" class="h__chapter">Chapter 10.80 OPERATION OF LEAF BLOWERS</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/10.80.010" data-order="|10|10.80|10.80.010|" ref-path="10.80.010" class="h__section">10.80.010 PURPOSE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.80" data-order="|10|10.80|" data-ref-path="10.80" class="h__chapter">Chapter 10.80 OPERATION OF LEAF BLOWERS</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.80.010" data-order="|10|10.80|10.80.010|" data-ref-path="10.80.010" class="h__section">10.80.010 PURPOSE.</h2>
                 <p>It has been found that leaf blowers cause considerable noise and air pollution and have been the source of numerous complaints by San Mateo citizens living in residential zoning districts. <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.80" title="Chapter 10.80 OPERATION OF LEAF BLOWERS">This chapter</a> is intended to regulate the use of leaf blowers to minimize noise and air pollution in the City's residentially zoned neighborhoods and in areas bordering residentially zoned neighborhoods.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1294,7 +1298,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.80.020" data-order="|10|10.80|10.80.020|" ref-path="10.80.020" class="h__section">10.80.020 LEAF BLOWER—DEFINITION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.80.020" data-order="|10|10.80|10.80.020|" data-ref-path="10.80.020" class="h__section">10.80.020 LEAF BLOWER—DEFINITION.</h2>
                 <p>Leaf blowers are defined as portable equipment that is powered by a self-contained fuel engine and used in any landscape, maintenance, construction, property repair, or property maintenance for the purpose of blowing, dispersing or redistributing dust, dirt, leaves, grass, clippings, cuttings and trimmings from trees, shrubs or other debris.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1302,7 +1306,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.80.030" data-order="|10|10.80|10.80.030|" ref-path="10.80.030" class="h__section">10.80.030 HOURS OF OPERATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.80.030" data-order="|10|10.80|10.80.030|" data-ref-path="10.80.030" class="h__section">10.80.030 HOURS OF OPERATION.</h2>
                 <p>No person shall use or operate a leaf blower in a residential zoning district or in areas bordering a residential zoning district before 8:00 a.m. or after 5:00 p.m. Monday through Friday, nor prior to 9:00 a.m. or after 5:00 p.m. on Saturdays. Use of leaf blowers on Sundays or on the following holidays is prohibited: New Years Day, Martin Luther King, Jr. Birthday, Presidents' Day, Memorial Day, 4th of July, Labor Day, Veterans Day, Thanksgiving, Christmas.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1310,7 +1314,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.80.040" data-order="|10|10.80|10.80.040|" ref-path="10.80.040" class="h__section">10.80.040 LIMITATIONS ON USE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.80.040" data-order="|10|10.80|10.80.040|" data-ref-path="10.80.040" class="h__section">10.80.040 LIMITATIONS ON USE.</h2>
                 <p>Any person who uses or operates a leaf blower in a residential zoning district or in areas bordering a residential zoning district shall use a blower nozzle extension and shall run the blower at a low speed to minimize noise. No more than one blower shall be operated at a residence at any time.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1318,7 +1322,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.80.050" data-order="|10|10.80|10.80.050|" ref-path="10.80.050" class="h__section">10.80.050 REMOVAL OF DEBRIS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.80.050" data-order="|10|10.80|10.80.050|" data-ref-path="10.80.050" class="h__section">10.80.050 REMOVAL OF DEBRIS.</h2>
                 <p>No material or matter blown by leaf blowers shall be blown upon neighboring properties or onto any portion of the public right-of-way, including but not limited to sidewalks and streets, without being immediately removed.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1326,7 +1330,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.80.060" data-order="|10|10.80|10.80.060|" ref-path="10.80.060" class="h__section">10.80.060 VIOLATIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.80.060" data-order="|10|10.80|10.80.060|" data-ref-path="10.80.060" class="h__section">10.80.060 VIOLATIONS.</h2>
                 <p>It is unlawful for any person or entity to violate the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.80" title="Chapter 10.80 OPERATION OF LEAF BLOWERS">this chapter</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1334,7 +1338,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/10.80.070" data-order="|10|10.80|10.80.070|" ref-path="10.80.070" class="h__section">10.80.070 CONSTRUCTION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/10.80.070" data-order="|10|10.80|10.80.070|" data-ref-path="10.80.070" class="h__section">10.80.070 CONSTRUCTION.</h2>
                 <p>No section of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/10.80" title="Chapter 10.80 OPERATION OF LEAF BLOWERS">this chapter</a> shall impose a mandatory duty on the City, or on any officer, official, agent, employee, board, council, or commission of the City. Instead, if any section purports to impose a mandatory duty of enforcement, that section shall be deemed to invest the City, and the appropriate officer, official, agent, employee, board, council, or commission with discretion to enforce the section or not to enforce it.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1345,7 +1349,7 @@
               </div>
             </article>
           </main>
-          <nav id="area__navigation_mini" class="ui ns__document__oll-core" role="region" aria-label="Previous and next article links">
+          <nav id="area__navigation_mini" class="ns__document__oll-core" aria-label="Previous and next article links">
             <section>
               <a href="/us/ca/cities/san-mateo/code/9" aria-label="Title 9 RESERVED">
                 <div class="h__ui">Previous</div>
@@ -1360,7 +1364,7 @@
             </section>
           </nav>
         </div>
-      </section>
+      </div>
       <footer id="section__footer" class="ns__document__oll-core">
         <div id="section__footer__inner" class="ns__document__oll-core">
           <div id="area__footer__content" class="ns__document__oll-core">

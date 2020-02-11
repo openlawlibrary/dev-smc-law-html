@@ -53,15 +53,17 @@
     <script src="/_reader/js/main.js"> </script>
   </head>
   <body>
-    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true">
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
       <p id="message"> </p>
     </div>
-    <a href="#area__content" class="skip-link">Skip to main content</a>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
     <div id="grid" class="ns__document__oll-core">
       <header id="section__header" class="ns__document__oll-core">
         <div id="section__header__inner" class="ns__document__oll-core">
           <div id="area__logo" class="ns__document__oll-core">
-            <a href="/" class="logo" alt="San Mateo Law Library">
+            <a href="/" class="logo" aria-label="Logo - Return to home page">
               <img src="/us/ngo/oll/_document/v2/images/logo/logo.png" srcset="/us/ngo/oll/_document/v2/images/logo/logo.png 1x, /us/ngo/oll/_document/v2/images/logo/logo@2x.png 2x" alt="San Mateo Law Library logo"/>
             </a>
           </div>
@@ -70,11 +72,13 @@
           </div>
         </div>
       </header>
-      <section id="section__content" class="ns__document__oll-core">
+      <div id="section__content" class="ns__document__oll-core">
         <div id="section__content__inner" class="ns__document__oll-core">
-          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region">
-            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-hidden="true" aria-label="Mobile menu toggler"/>
-            <label for="menu-trigger" aria-label="Toggle mobile menu"> </label>
+          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
             <nav role="navigation" aria-label="Breadcrumb navigation">
               <div class="h__ui">Navigation</div>
               <ul class="ancestors">
@@ -98,7 +102,7 @@
           </section>
           <main id="area__content" class="ns__document__oll-core">
             <div class="h__document-title">City of San Mateo Municipal Code.</div>
-            <article class="content" role="document" ref-path="5.12.020">
+            <article class="content" role="document" data-ref-path="5.12.020">
               <div class="tuf-authenticate">
                 <h1 class="h__toc" id="/us/ca/cities/san-mateo/code/5.12.020">5.12.020 CONSTITUTIONAL APPORTIONMENT.</h1>
                 <p>None of the business taxes provided for in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/5.12" title="Chapter 5.12 TAX RETURN FILING—ISSUANCE OF CERTIFICATE">this chapter</a> shall be so applied as to occasion an undue burden upon interstate commerce or be violative of the equal protection and due process clauses of the Constitution of the United States and the State. In any case where a business tax is believed by a business tax certificate holder or applicant for a business tax certificate to place an undue burden upon interstate commerce or be violative of such constitutional clauses, he or she may apply to the Tax Collector for an adjustment of the business tax. Such application may be made before, at, or within one year after the payment of the prescribed business tax. The applicant shall, by sworn statement and supporting testimony, show his or her method of business, his or her gross receipts, and such other information as the Tax Collector may deem necessary in order to determine the extent, if any, of such undue burden or violation. The Tax Collector shall then conduct an investigation and, after having first obtained the written approval of the City Attorney, shall fix as the business tax for the applicant an amount that is reasonable and nondiscriminatory or, if the business tax has already been paid, shall order a refund of the amount over and above the business tax so fixed. In fixing the business tax to be charged the Tax Collector shall have the power to base the business tax upon a percentage of gross receipts or any other measure which will assure that the business tax assessed shall be uniform with that assessed on businesses of like nature, so long as the amount assessed does not exceed the business tax as prescribed by the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/5.12" title="Chapter 5.12 TAX RETURN FILING—ISSUANCE OF CERTIFICATE">this chapter</a>. Should the Tax Collector determine the gross receipts measure of business tax to be the proper basis, he or she may require the applicant to submit, either at the time of termination of the applicant's business in the City or at the end of each fiscal year, a sworn statement of the gross receipts and pay the amount of business tax therefore; provided, however, no additional business tax during any one calendar year shall be required after the business tax certificate holder shall have paid an amount equal to the annual business tax as prescribed in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/5.12" title="Chapter 5.12 TAX RETURN FILING—ISSUANCE OF CERTIFICATE">this chapter</a>.</p>
@@ -111,7 +115,7 @@
               </div>
             </article>
           </main>
-          <nav id="area__navigation_mini" class="ui ns__document__oll-core" role="region" aria-label="Previous and next article links">
+          <nav id="area__navigation_mini" class="ns__document__oll-core" aria-label="Previous and next article links">
             <section>
               <a href="/us/ca/cities/san-mateo/code/5.12.010" aria-label="5.12.010 FIRST FILING—DECLARATION FOR ISSUANCE OF CERTIFICATE.">
                 <div class="h__ui">Previous</div>
@@ -126,7 +130,7 @@
             </section>
           </nav>
         </div>
-      </section>
+      </div>
       <footer id="section__footer" class="ns__document__oll-core">
         <div id="section__footer__inner" class="ns__document__oll-core">
           <div id="area__footer__content" class="ns__document__oll-core">

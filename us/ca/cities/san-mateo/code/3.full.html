@@ -53,15 +53,17 @@
     <script src="/_reader/js/main.js"> </script>
   </head>
   <body>
-    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true">
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
       <p id="message"> </p>
     </div>
-    <a href="#area__content" class="skip-link">Skip to main content</a>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
     <div id="grid" class="ns__document__oll-core">
       <header id="section__header" class="ns__document__oll-core">
         <div id="section__header__inner" class="ns__document__oll-core">
           <div id="area__logo" class="ns__document__oll-core">
-            <a href="/" class="logo" alt="San Mateo Law Library">
+            <a href="/" class="logo" aria-label="Logo - Return to home page">
               <img src="/us/ngo/oll/_document/v2/images/logo/logo.png" srcset="/us/ngo/oll/_document/v2/images/logo/logo.png 1x, /us/ngo/oll/_document/v2/images/logo/logo@2x.png 2x" alt="San Mateo Law Library logo"/>
             </a>
           </div>
@@ -70,11 +72,13 @@
           </div>
         </div>
       </header>
-      <section id="section__content" class="ns__document__oll-core">
+      <div id="section__content" class="ns__document__oll-core">
         <div id="section__content__inner" class="ns__document__oll-core">
-          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region">
-            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-hidden="true" aria-label="Mobile menu toggler"/>
-            <label for="menu-trigger" aria-label="Toggle mobile menu"> </label>
+          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
             <nav role="navigation" aria-label="Breadcrumb navigation">
               <div class="h__ui">Navigation</div>
               <ul class="ancestors">
@@ -92,15 +96,15 @@
           </section>
           <main id="area__content" class="ns__document__oll-core">
             <div class="h__document-title">City of San Mateo Municipal Code.</div>
-            <article class="content" role="document" ref-path="3">
+            <article class="content" role="document" data-ref-path="3">
               <div class="tuf-authenticate">
                 <h1 class="h__toc" id="/us/ca/cities/san-mateo/code/3">Title 3 TAXATION AND FINANCE</h1>
                 <section class="line-group annotations">
                   <h4>Editor's Notes</h4>
                   <p>For the taxation provisions of the California Constitution see CAL. CONST. Art. 13 (1879).</p>
                 </section>
-                <h2 id="/us/ca/cities/san-mateo/code/3.35" data-order="|3|3.35|" ref-path="3.35" class="h__chapter">Chapter 3.35 CLAIMS FOR TAX REFUNDS</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/3.35.010" data-order="|3|3.35|3.35.010|" ref-path="3.35.010" class="h__section">3.35.010 AUTHORITY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.35" data-order="|3|3.35|" data-ref-path="3.35" class="h__chapter">Chapter 3.35 CLAIMS FOR TAX REFUNDS</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.35.010" data-order="|3|3.35|3.35.010|" data-ref-path="3.35.010" class="h__section">3.35.010 AUTHORITY.</h2>
                 <p>The Chapter is enacted pursuant to <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=935&amp;lawCode=GOV" title="">Section 935 of the California Government Code</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -108,7 +112,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.35.020" data-order="|3|3.35|3.35.020|" ref-path="3.35.020" class="h__section">3.35.020 CLAIMS REQUIRED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.35.020" data-order="|3|3.35|3.35.020|" data-ref-path="3.35.020" class="h__section">3.35.020 CLAIMS REQUIRED.</h2>
                 <p>All claims against the City for money or damages not otherwise governed by the Tort Claims Act, <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=900&amp;lawCode=GOV" title="">California government Code Sections 900 et seq.</a>, or another State law (hereinafter in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.35" title="Chapter 3.35 CLAIMS FOR TAX REFUNDS">this chapter</a>, "claims") shall be presented with the time, and in the manner, prescribed by Part 3 of Division 3.6 of Title <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1&amp;lawCode=GOV" title="">1 of the California Government Code</a> (commencing with Section 900 thereof) for the claims to which that Part applies by its own terms, as those provisions now exist or shall hereafter be amended, and as further provided by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.35" title="Chapter 3.35 CLAIMS FOR TAX REFUNDS">this chapter</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -116,7 +120,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.35.030" data-order="|3|3.35|3.35.030|" ref-path="3.35.030" class="h__section">3.35.030 FORM OF CLAIM.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.35.030" data-order="|3|3.35|3.35.030|" data-ref-path="3.35.030" class="h__section">3.35.030 FORM OF CLAIM.</h2>
                 <p>All claims shall be made in writing and verified by the claimant or by his or her guardian, conservator, executor or administrator. No claim may be filed on behalf of a class of persons unless verified by every member of that class as required by this section. In addition, all claims shall contain the information required by <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=910&amp;lawCode=GOV" title="">California Government Code Section 910</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -124,7 +128,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.35.040" data-order="|3|3.35|3.35.040|" ref-path="3.35.040" class="h__section">3.35.040 CLAIM PREREQUISITE TO SUIT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.35.040" data-order="|3|3.35|3.35.040|" data-ref-path="3.35.040" class="h__section">3.35.040 CLAIM PREREQUISITE TO SUIT.</h2>
                 <p>In accordance with <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=GOV&amp;tocTitle=+Public+Utilities+Code+-+GOV" title="">California Government Code</a> Sections <a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=935&amp;lawCode=GOV" title="">935</a>(b) and <a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=945.6&amp;lawCode=GOV" title="">945.6</a>, all claims shall be presented prior to the filing of any action on such claims and no such action may be maintained by a person who has not complied with the requirements of Section 2 of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.35" title="Chapter 3.35 CLAIMS FOR TAX REFUNDS">this chapter</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -132,7 +136,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.35.045" data-order="|3|3.35|3.35.045|" ref-path="3.35.045" class="h__section">3.35.045 EXHAUSTION OF ADMINISTRATIVE REMEDIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.35.045" data-order="|3|3.35|3.35.045|" data-ref-path="3.35.045" class="h__section">3.35.045 EXHAUSTION OF ADMINISTRATIVE REMEDIES.</h2>
                 <p>Before seeking judicial relief with respect to a dispute regarding a tax, fee, or other charge imposed by the City, an aggrieved taxpayer, fee payer, or any other person must:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.35.045#(i)">(i)</span> exhaust any administrative remedies specified by any other provision of this code or other applicable law, and</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.35.045#(ii)">(ii)</span> pay the full amount owed, including applicable penalties and interest.</p>
@@ -142,7 +146,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.35.050" data-order="|3|3.35|3.35.050|" ref-path="3.35.050" class="h__section">3.35.050 SUIT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.35.050" data-order="|3|3.35|3.35.050|" data-ref-path="3.35.050" class="h__section">3.35.050 SUIT.</h2>
                 <p>Any action brought against the City upon any claim or demand shall conform to the requirements of Sections <a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=940&amp;lawCode=GOV" title="">940</a>-<a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=949&amp;lawCode=GOV" title="">949</a> of the <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=GOV&amp;tocTitle=+Public+Utilities+Code+-+GOV" title="">California government Code</a>. Any action brought against any employee of the City shall conform with the requirements of Section 950-<a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=951&amp;lawCode=GOV" title="">951 of the California Government Code</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -150,8 +154,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.38" data-order="|3|3.38|" ref-path="3.38" class="h__chapter">Chapter 3.38 PROPERTY TAXATION</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/3.38.010" data-order="|3|3.38|3.38.010|" ref-path="3.38.010" class="h__section">3.38.010 TRANSFER OF CITY TAX FUNCTION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.38" data-order="|3|3.38|" data-ref-path="3.38" class="h__chapter">Chapter 3.38 PROPERTY TAXATION</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.38.010" data-order="|3|3.38|3.38.010|" data-ref-path="3.38.010" class="h__section">3.38.010 TRANSFER OF CITY TAX FUNCTION.</h2>
                 <p>Pursuant to Ordinance No. 1971-35, the agreement of July 23, 1971 between County of San Mateo and City of San Mateo, City Resolutions Nos. 115 (1971) and 161 (1971), County Resolution No. 19841, and <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=51500&amp;lawCode=GOV" title="">Government Code Sections 51500 et seq.</a>, certain municipal functions relative to taxation or property were in 1971 transferred to the county. Reference is made to the City Clerk's file for the terms of the agreement and text of the ordinance and resolutions.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -159,8 +163,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.44" data-order="|3|3.44|" ref-path="3.44" class="h__chapter">Chapter 3.44 ADMISSIONS TAX—HORSE RACING</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/3.44.010" data-order="|3|3.44|3.44.010|" ref-path="3.44.010" class="h__section">3.44.010 DEFINITIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.44" data-order="|3|3.44|" data-ref-path="3.44" class="h__chapter">Chapter 3.44 ADMISSIONS TAX—HORSE RACING</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.44.010" data-order="|3|3.44|3.44.010|" data-ref-path="3.44.010" class="h__section">3.44.010 DEFINITIONS.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.44.010#(a)">(a)</span> "Admission" as used in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.44" title="Chapter 3.44 ADMISSIONS TAX—HORSE RACING">this chapter</a> means the right to enter a place where horse racing meetings or harness racing meetings are held or conducted, and includes, but is not limited to, seats, tables and standing room, reserved and not reserved.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.44.010#(b)">(b)</span> "Tax" or "taxes" includes penalties, interest and costs.</p>
                 <aside class="annotations" role="note">
@@ -169,7 +173,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.44.020" data-order="|3|3.44|3.44.020|" ref-path="3.44.020" class="h__section">3.44.020 TAX LEVY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.44.020" data-order="|3|3.44|3.44.020|" data-ref-path="3.44.020" class="h__section">3.44.020 TAX LEVY.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.44.020#(a)">(a)</span> Method. There shall be levied, assessed, collected and paid, a tax of fifty cents for each charge of one dollar or more paid for admission of one person for one meeting, to any place at which horse racing meetings are held or conducted within this city, including admission by season ticket or subscription. In the case of admission by season ticket or subscription, such tax shall be levied, assessed, collected and paid, based on the price so charged for admission of one person to one meeting, and such tax of fifty cents shall be multiplied by the number of meetings to which the holder or owner of such season ticket or subscription is entitled to attend by reason of such season ticket or subscription, and shall be paid at the time of the payment for such season ticket, or subscription, by the purchaser thereof.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.44.020#(b)">(b)</span> Reduced Admission Tax. The tax to be levied, assessed, collected and paid by certain classes of admittees shall be twenty-five cents per admission, whether they are admitted with or without charge. The reduced rate of tax shall apply to the following classes:</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.44.020#(b)(1)">(1)</span> Senior citizens of the age of sixty-five years or more;</p>
@@ -189,7 +193,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.44.022" data-order="|3|3.44|3.44.022|" ref-path="3.44.022" class="h__section">3.44.022 ELECTION PURSUANT TO SECTION 19610.3 OF THE BUSINESS AND PROFESSIONS CODE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.44.022" data-order="|3|3.44|3.44.022|" data-ref-path="3.44.022" class="h__section">3.44.022 ELECTION PURSUANT TO SECTION 19610.3 OF THE BUSINESS AND PROFESSIONS CODE.</h2>
                 <p>The City elects, pursuant to <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=19610.3&amp;lawCode=BPC" title="">California Business and Professions Code Section 19610.3</a> to permanently receive thirty-three one hundredths of one percent of the total parimutuel wagers placed at Bay Meadows Race Track during all thoroughbred and quarterhorse racing meets conducted there. This election is subject to the following conditions:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.44.022#(1)">(1)</span> This election does not apply to horse racing conducted during the annual county fair;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.44.022#(2)">(2)</span> This election shall be effective as of Saturday, September 25, 1982, and that effective as of such date, the City shall not collect its admissions tax from any racing association conducting a racing meet at said track, or from any racing patron;</p>
@@ -204,7 +208,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.44.024" data-order="|3|3.44|3.44.024|" ref-path="3.44.024" class="h__section">3.44.024 STATEMENT—ACCOUNT—PAYMENT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.44.024" data-order="|3|3.44|3.44.024|" data-ref-path="3.44.024" class="h__section">3.44.024 STATEMENT—ACCOUNT—PAYMENT.</h2>
                 <p>Weekly when racing meetings are conducted at Bay Meadows Race Track the association conducting the meeting (except the San Mateo County Fair Association) shall (a) render to the City treasurer an accounting of the total parimutuel wagers placed and (b) pay the treasurer thirty-three hundredths of one percent (0.33 of 1 percent) of the total. Payment shall be simultaneous with the weekly license fee payment to the State. Interest at 1-1/2% per week shall be paid in case of any late payment.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -212,7 +216,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.44.025" data-order="|3|3.44|3.44.025|" ref-path="3.44.025" class="h__section">3.44.025 ELECTION PURSUANT TO SECTION 19610.3 OF THE BUSINESS AND PROFESSIONS CODE—SAN MATEO COUNTY FAIR ASSOCIATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.44.025" data-order="|3|3.44|3.44.025|" data-ref-path="3.44.025" class="h__section">3.44.025 ELECTION PURSUANT TO SECTION 19610.3 OF THE BUSINESS AND PROFESSIONS CODE—SAN MATEO COUNTY FAIR ASSOCIATION.</h2>
                 <p>The City elects, pursuant to <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=19610.3&amp;lawCode=BPC" title="">California Business and Professions Code Section 19610.3</a> to permanently receive thirty-three one hundredths of one percent of the total parimutuel wagers placed at Bay Meadows Race Track during all thoroughbred and other horse racing meets conducted there by the San Mateo County Fair Association. This election is subject to the following conditions:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.44.025#(1)">(1)</span> This election shall be effective as of August 20, 1984, and that effective as of such date, the City shall not collect its admissions tax from the San Mateo County Fair Association for conducting a racing meet at said track, or from any racing patron;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.44.025#(2)">(2)</span> If for any reason either the election by the San Mateo County Fair Association, or that of the City's, is found not to be effective as of August 20, 1984, or is thereafter at any time found not to be effective, the admissions tax provisions contained in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.44" title="Chapter 3.44 ADMISSIONS TAX—HORSE RACING">Chapter 3.44</a> of this code shall be in effect until such time as the City is legally entitled to receive thirty-three one hundredths of one percent of all parimutuel wagers under the provisions of <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=19610.3&amp;lawCode=BPC" title="">Section 19610.3 of the California Business and Professions Code</a>.</p>
@@ -222,7 +226,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.44.030" data-order="|3|3.44|3.44.030|" ref-path="3.44.030" class="h__section">3.44.030 REDUCED ADMISSION CHARGE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.44.030" data-order="|3|3.44|3.44.030|" data-ref-path="3.44.030" class="h__section">3.44.030 REDUCED ADMISSION CHARGE.</h2>
                 <p>In the case of persons (except bona fide employees of the person conducting such meeting) admitted free, or at reduced rates, to such places at which horse racing meetings or harness horse racing meetings are held or conducted within this city, at any time when, and under circumstances under which an admission charge is made to other persons, an equivalent tax shall be collected, based on the price so charged to other persons for the same or similar accommodations to be paid by the persons so admitted.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -234,7 +238,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.44.040" data-order="|3|3.44|3.44.040|" ref-path="3.44.040" class="h__section">3.44.040 PLACE OF PAYMENT—COLLECTION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.44.040" data-order="|3|3.44|3.44.040|" data-ref-path="3.44.040" class="h__section">3.44.040 PLACE OF PAYMENT—COLLECTION.</h2>
                 <p>The tax imposed under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.44.020" title="3.44.020 TAX LEVY.">Section 3.44.020</a> shall be paid by the person paying for such admission at the time when, and the place at which, such admission charge is paid and the tax shall be collected by the person charging for such admission. The tax imposed under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.44.030" title="3.44.030 REDUCED ADMISSION CHARGE.">Section 3.44.030</a> shall be paid by the person admitted at the time of his or her admission to the meeting and shall be collected at the time of said admission by the person conducting such meeting.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -246,7 +250,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.44.050" data-order="|3|3.44|3.44.050|" ref-path="3.44.050" class="h__section">3.44.050 STATEMENT—ACCOUNT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.44.050" data-order="|3|3.44|3.44.050|" data-ref-path="3.44.050" class="h__section">3.44.050 STATEMENT—ACCOUNT.</h2>
                 <p>On Tuesday of each week during the time during which such horse racing meetings or harness racing meetings are held or conducted, the person charging for the admission referred to in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.44.040" title="3.44.040 PLACE OF PAYMENT—COLLECTION.">Section 3.44.040</a> shall render an accounting or statement of all persons (except bona fide employees of such person) admitted to such place during the week preceding such accounting, and at such time shall file such accounting or statement with the City treasurer, and shall then pay to him or her all amounts so collected as taxes under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.44" title="Chapter 3.44 ADMISSIONS TAX—HORSE RACING">this chapter</a>.</p>
                 <p>Within ten days after the conclusion of such horse racing meeting or such harness racing meeting, such person shall render an accounting or statement of all persons (except bona fide employees of such person) admitted to such place during the entire time during which such meeting was held or conducted, and at such time shall file such accounting or statement with the City treasurer, and shall pay to him or her all amounts collected during the time during which such meeting was conducted, and previously unpaid to him.</p>
                 <aside class="annotations" role="note">
@@ -255,7 +259,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.44.060" data-order="|3|3.44|3.44.060|" ref-path="3.44.060" class="h__section">3.44.060 FAILURE TO PAY ENTIRE TAX—PENALTY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.44.060" data-order="|3|3.44|3.44.060|" data-ref-path="3.44.060" class="h__section">3.44.060 FAILURE TO PAY ENTIRE TAX—PENALTY.</h2>
                 <p>A failure on the part of such person hereinbefore mentioned to pay the entire amount of taxes due under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.44" title="Chapter 3.44 ADMISSIONS TAX—HORSE RACING">this chapter</a> within the aforesaid period of ten days after the conclusion of any such horse racing meeting or harness racing meeting shall automatically cause the amount of such taxes then unpaid forthwith to become delinquent and the City treasurer shall thereupon add and collect a penalty of five percent of the taxes so delinquent.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -263,7 +267,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.44.080" data-order="|3|3.44|3.44.080|" ref-path="3.44.080" class="h__section">3.44.080 CONVICTION NOT EXEMPTION OF PAYMENT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.44.080" data-order="|3|3.44|3.44.080|" data-ref-path="3.44.080" class="h__section">3.44.080 CONVICTION NOT EXEMPTION OF PAYMENT.</h2>
                 <p>The conviction and punishment of any person for violation of any provision of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.44" title="Chapter 3.44 ADMISSIONS TAX—HORSE RACING">this chapter</a> shall not excuse or exempt such person from the payment of any license fee due or unpaid at the time of such conviction, and nothing herein shall prevent a criminal prosecution of any violation of any provision of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.44" title="Chapter 3.44 ADMISSIONS TAX—HORSE RACING">this chapter</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -271,7 +275,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.44.090" data-order="|3|3.44|3.44.090|" ref-path="3.44.090" class="h__section">3.44.090 UNPAID AMOUNT DEBT TO CITY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.44.090" data-order="|3|3.44|3.44.090|" data-ref-path="3.44.090" class="h__section">3.44.090 UNPAID AMOUNT DEBT TO CITY.</h2>
                 <p>The amount of any tax and penalty imposed by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.44" title="Chapter 3.44 ADMISSIONS TAX—HORSE RACING">this chapter</a> is a debt to the City, and any person conducting any such horse racing or harness racing meeting in violation of any of the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.44" title="Chapter 3.44 ADMISSIONS TAX—HORSE RACING">this chapter</a> is liable to an action in the name of the City in any court of competent jurisdiction for the amount of taxes and penalties imposed and an attachment shall issue on a verified complaint without any bond or affidavit given on behalf of plaintiff.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -279,7 +283,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.44.100" data-order="|3|3.44|3.44.100|" ref-path="3.44.100" class="h__section">3.44.100 PAYMENT UNDER PROTEST—GENERALLY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.44.100" data-order="|3|3.44|3.44.100|" data-ref-path="3.44.100" class="h__section">3.44.100 PAYMENT UNDER PROTEST—GENERALLY.</h2>
                 <p>After the taxes mentioned in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.44" title="Chapter 3.44 ADMISSIONS TAX—HORSE RACING">this chapter</a> are payable, any person may pay such taxes under protest. A payment under protest is not a voluntary payment.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -287,7 +291,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.44.110" data-order="|3|3.44|3.44.110|" ref-path="3.44.110" class="h__section">3.44.110 PROTEST—FORM—CONTENTS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.44.110" data-order="|3|3.44|3.44.110|" data-ref-path="3.44.110" class="h__section">3.44.110 PROTEST—FORM—CONTENTS.</h2>
                 <p>The protest shall be in writing, specifying:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.44.110#(1)">(1)</span> Whether the entire payment is claimed to be void, or, if only part, what portion;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.44.110#(2)">(2)</span> The grounds on which the claim is founded.</p>
@@ -297,7 +301,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.44.120" data-order="|3|3.44|3.44.120|" ref-path="3.44.120" class="h__section">3.44.120 PROTEST—NUMBERING—FILING.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.44.120" data-order="|3|3.44|3.44.120|" data-ref-path="3.44.120" class="h__section">3.44.120 PROTEST—NUMBERING—FILING.</h2>
                 <p>The written protest shall be numbered by the Tax Collector and filed in his or her office.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -305,7 +309,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.44.130" data-order="|3|3.44|3.44.130|" ref-path="3.44.130" class="h__section">3.44.130 SUIT FOR RECOVERY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.44.130" data-order="|3|3.44|3.44.130|" data-ref-path="3.44.130" class="h__section">3.44.130 SUIT FOR RECOVERY.</h2>
                 <p>Within sixty days after the payment under protest, or within sixty days after the effective date of this section, whichever is the later, an action may be brought against the City in the Superior Court of the state, in and for the county, to recover the taxes paid under protest.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -313,7 +317,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.44.140" data-order="|3|3.44|3.44.140|" ref-path="3.44.140" class="h__section">3.44.140 RIGHT OF ACTION—LIMITATIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.44.140" data-order="|3|3.44|3.44.140|" data-ref-path="3.44.140" class="h__section">3.44.140 RIGHT OF ACTION—LIMITATIONS.</h2>
                 <p>The action may be brought only:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.44.140#(1)">(1)</span> As to the portion of the tax payment claimed to be void;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.44.140#(2)">(2)</span> On the grounds specified in the protest;</p>
@@ -324,12 +328,12 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.48" data-order="|3|3.48|" ref-path="3.48" class="h__chapter">Chapter 3.48 REAL PROPERTY DOCUMENT TRANSFER TAX</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.48" data-order="|3|3.48|" data-ref-path="3.48" class="h__chapter">Chapter 3.48 REAL PROPERTY DOCUMENT TRANSFER TAX</h2>
                 <section class="line-group annotations">
                   <h4>Editor's Notes</h4>
                   <p>For the statutory provisions regarding the document transfer tax see West's Cal. Rev. &amp; T.C.A. §§ 11901 et seq.</p>
                 </section>
-                <h2 id="/us/ca/cities/san-mateo/code/3.48.010" data-order="|3|3.48|3.48.010|" ref-path="3.48.010" class="h__section">3.48.010 AMOUNT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.48.010" data-order="|3|3.48|3.48.010|" data-ref-path="3.48.010" class="h__section">3.48.010 AMOUNT.</h2>
                 <p>There is imposed on each deed, instrument or writing by which any lands, tenements, or other real property within the City are sold, granted, assigned, conveyed or otherwise transferred to, or vested in, the purchaser or purchasers, or any other person or persons when the consideration or value of the interest or property conveyed exceeds one hundred dollars, a tax at the rate of one-half of one percent of said consideration or value.</p>
                 <p>As used herein, "consideration or value" means the total consideration, valued in money of the United States, paid or delivered or contracted to be paid or delivered in return for the transfer of real property, including the amount of any indebtedness, existing immediately prior to the transfer which is secured by a lien, deed of trust or other encumbrance on the property conveyed and which continues to be secured by such lien, deed of trust or encumbrance after said transfer, and also including the amount of any indebtedness which is secured by a lien, deed of trust or encumbrance given or placed upon the property in connection with the transfer to secure the payment of the purchase price or any part thereof which remains unpaid at the time of the transfer.</p>
                 <p>"Consideration or value" also includes the amount of any special assessment levied or imposed upon the property by a public body, district or agency, where said special assessment is a lien or encumbrance on the property and the purchaser or transferee agrees to pay such special assessment or takes the property subject to the lien of such special assessment.</p>
@@ -349,7 +353,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.48.020" data-order="|3|3.48|3.48.020|" ref-path="3.48.020" class="h__section">3.48.020 PAYMENT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.48.020" data-order="|3|3.48|3.48.020|" data-ref-path="3.48.020" class="h__section">3.48.020 PAYMENT.</h2>
                 <p>The tax imposed by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.48.010" title="3.48.010 AMOUNT.">Section 3.48.010</a> shall be paid by any person who makes, signs or issues any document or instrument subject to the tax, or for whose use or benefit the same is made, signed or issued, and such persons shall be jointly and severally liable for payment thereof; provided, that with respect to a transfer made upon the termination of a partnership within the meaning of Section 708 of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/26" title="Title 26 SUBDIVISIONS">Title 26</a> of the United States Code, as amended, for the purposes of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.48" title="Chapter 3.48 REAL PROPERTY DOCUMENT TRANSFER TAX">this chapter</a>, it shall be assumed that a document was executed by the partnership whereby there was transferred for market value all realty held by such partnership at the time of such termination; providing further, that with respect to the realty held by such partnership, not more than one tax shall be imposed pursuant to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.48" title="Chapter 3.48 REAL PROPERTY DOCUMENT TRANSFER TAX">this chapter</a> by reason of such termination and any documents making transfer pursuant thereto.</p>
                 <p>All revenues received by the City from the levy of the tax imposed by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.48" title="Chapter 3.48 REAL PROPERTY DOCUMENT TRANSFER TAX">this chapter</a> shall be deposited and paid into the general fund.</p>
                 <aside class="annotations" role="note">
@@ -358,7 +362,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.48.030" data-order="|3|3.48|3.48.030|" ref-path="3.48.030" class="h__section">3.48.030 EXEMPTIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.48.030" data-order="|3|3.48|3.48.030|" data-ref-path="3.48.030" class="h__section">3.48.030 EXEMPTIONS.</h2>
                 <p>The tax imposed pursuant to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.48.010" title="3.48.010 AMOUNT.">Section 3.48.010</a> shall not apply to:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.48.030#(1)">(1)</span> Any document given to secure a debt, or a transfer to a beneficiary or mortgagee when it is taken in lieu of foreclosure;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.48.030#(2)">(2)</span> Any document to which the United States or any agency or instrumentality thereof; any state or territory, or political subdivision thereof; or the District of Columbia is a party; provided, that the tax may be collected by assessment from any other party liable therefor;</p>
@@ -383,7 +387,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.48.040" data-order="|3|3.48|3.48.040|" ref-path="3.48.040" class="h__section">3.48.040 COLLECTION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.48.040" data-order="|3|3.48|3.48.040|" data-ref-path="3.48.040" class="h__section">3.48.040 COLLECTION.</h2>
                 <p>The fiscal director of the City shall collect the tax hereby imposed and deposit the same to the general fund. The collection may be delegated, in part, by agreement with the county of San Mateo to provide for payment to and through the county recorder upon recordation of the document of transfer upon such terms and conditions as shall be approved by the City Council.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.48.040#(1)">(1)</span> Penalty. The tax imposed by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.48" title="Chapter 3.48 REAL PROPERTY DOCUMENT TRANSFER TAX">this chapter</a> is due and payable at the time the deed, instrument or writing effecting a transfer subject to the tax is delivered, and is delinquent if unpaid at the time of recordation thereof. In the event that the tax is not paid prior to becoming delinquent, a delinquency penalty of ten percent of the amount of tax due shall accrue. In the event a portion of the tax is unpaid prior to becoming delinquent, the penalty shall only accrue as to the portion remaining unpaid. An additional penalty of ten percent shall accrue if the tax remains unpaid on the ninetieth day following the date of the original delinquency. Interest shall accrue at the rate of one-half of one percent a month, or fraction thereof, on the amount of tax, exclusive of penalties, from the date the tax becomes delinquent to the date of payment. Interest and penalty accrued shall become part of the tax.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.48.040#(2)">(2)</span> Tax as Debt. The amount of any tax, penalty and interest imposed by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.48" title="Chapter 3.48 REAL PROPERTY DOCUMENT TRANSFER TAX">this chapter</a> shall be deemed a debt to the City. Any person owing the tax to the City shall be liable to an action brought in the name of the City for the recovery of such amount. The provisions of this section shall not be deemed a limitation upon the City to bring any other action, whether criminal, at law, or in equity arising out of the failure to pay a tax, penalty, or interest imposed, or other failure to comply with the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.48" title="Chapter 3.48 REAL PROPERTY DOCUMENT TRANSFER TAX">this chapter</a>.</p>
@@ -393,7 +397,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.48.060" data-order="|3|3.48|3.48.060|" ref-path="3.48.060" class="h__section">3.48.060 OPERATIVE DATE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.48.060" data-order="|3|3.48|3.48.060|" data-ref-path="3.48.060" class="h__section">3.48.060 OPERATIVE DATE.</h2>
                 <p><a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.48" title="Chapter 3.48 REAL PROPERTY DOCUMENT TRANSFER TAX">This chapter</a>, as amended, shall become operative on July 1, 1977.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -401,8 +405,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.50" data-order="|3|3.50|" ref-path="3.50" class="h__chapter">Chapter 3.50 TRANSACTIONS AND USE TAX</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/3.50.010" data-order="|3|3.50|3.50.010|" ref-path="3.50.010" class="h__section">3.50.010 TITLE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.50" data-order="|3|3.50|" data-ref-path="3.50" class="h__chapter">Chapter 3.50 TRANSACTIONS AND USE TAX</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.50.010" data-order="|3|3.50|3.50.010|" data-ref-path="3.50.010" class="h__section">3.50.010 TITLE.</h2>
                 <p><a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.50" title="Chapter 3.50 TRANSACTIONS AND USE TAX">This chapter</a> shall be known as the City of San Mateo Transactions and Use Tax Ordinance. The City of San Mateo hereinafter shall be called "City." <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.50" title="Chapter 3.50 TRANSACTIONS AND USE TAX">This chapter</a> shall be applicable in the incorporated territory of the City.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -410,7 +414,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.50.020" data-order="|3|3.50|3.50.020|" ref-path="3.50.020" class="h__section">3.50.020 OPERATIVE DATE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.50.020" data-order="|3|3.50|3.50.020|" data-ref-path="3.50.020" class="h__section">3.50.020 OPERATIVE DATE.</h2>
                 <p>"Operative date" means the first day of the first calendar quarter commencing more than 110 days after the adoption of the ordinance codified in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.50" title="Chapter 3.50 TRANSACTIONS AND USE TAX">this chapter</a>, the date of such adoption being as set forth below.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -418,7 +422,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.50.030" data-order="|3|3.50|3.50.030|" ref-path="3.50.030" class="h__section">3.50.030 PURPOSE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.50.030" data-order="|3|3.50|3.50.030|" data-ref-path="3.50.030" class="h__section">3.50.030 PURPOSE.</h2>
                 <p>The ordinance codified in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.50" title="Chapter 3.50 TRANSACTIONS AND USE TAX">this chapter</a> is adopted to achieve the following, among other purposes, and directs that the provisions hereof be interpreted in order to accomplish those purposes:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.50.030#(a)">(a)</span> To impose a retail transactions and use tax in accordance with the provisions of Part 1.6 (commencing with Section 7251) of Division <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2&amp;lawCode=RTC" title="">2 of the Revenue and Taxation Code</a> and Section 7285.9 of Part 1.7 of Division 2 which authorizes the City to adopt this tax ordinance which shall be operative if a majority of the electors voting on the measure vote to approve the imposition of the tax at an election called for that purpose.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.50.030#(b)">(b)</span> To adopt a retail transactions and use tax ordinance that incorporates provisions identical to those of the Sales and Use Tax Law of the State of California insofar as those provisions are not inconsistent with the requirements and limitations contained in Part 1.6 of Division <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2&amp;lawCode=RTC" title="">2 of the Revenue and Taxation Code</a>.</p>
@@ -430,7 +434,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.50.040" data-order="|3|3.50|3.50.040|" ref-path="3.50.040" class="h__section">3.50.040 CONTRACT WITH STATE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.50.040" data-order="|3|3.50|3.50.040|" data-ref-path="3.50.040" class="h__section">3.50.040 CONTRACT WITH STATE.</h2>
                 <p>Prior to the operative date, the City shall contract with the State Board of Equalization to perform all functions incident to the administration and operation of this transactions and use tax ordinance; provided, that if the City shall not have contracted with the State Board of Equalization prior to the operative date, it shall nevertheless so contract and in such a case the operative date shall be the first day of the first calendar quarter following the execution of such a contract.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -438,7 +442,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.50.050" data-order="|3|3.50|3.50.050|" ref-path="3.50.050" class="h__section">3.50.050 TRANSACTIONS TAX RATE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.50.050" data-order="|3|3.50|3.50.050|" data-ref-path="3.50.050" class="h__section">3.50.050 TRANSACTIONS TAX RATE.</h2>
                 <p>For the privilege of selling tangible personal property at retail, a tax is hereby imposed upon all retailers in the incorporated territory of the City at the rate of one quarter of one percent of the gross receipts of any retailer from the sale of all tangible personal property sold at retail in said territory on and after the operative date of the ordinance codified in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.50" title="Chapter 3.50 TRANSACTIONS AND USE TAX">this chapter</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -446,7 +450,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.50.060" data-order="|3|3.50|3.50.060|" ref-path="3.50.060" class="h__section">3.50.060 PLACE OF SALE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.50.060" data-order="|3|3.50|3.50.060|" data-ref-path="3.50.060" class="h__section">3.50.060 PLACE OF SALE.</h2>
                 <p>For the purposes of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.50" title="Chapter 3.50 TRANSACTIONS AND USE TAX">this chapter</a>, all retail sales are consummated at the place of business of the retailer unless the tangible personal property sold is delivered by the retailer or agent to an out-of-State destination or to a common carrier for delivery to an out-of-State destination. The gross receipts from such sales shall include delivery charges, when such charges are subject to the state sales and use tax, regardless of the place to which delivery is made. In the event a retailer has no permanent place of business in the State or has more than one place of business, the place or places at which the retail sales are consummated shall be determined under rules and regulations to be prescribed and adopted by the State Board of Equalization.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -454,7 +458,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.50.070" data-order="|3|3.50|3.50.070|" ref-path="3.50.070" class="h__section">3.50.070 USE TAX RATE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.50.070" data-order="|3|3.50|3.50.070|" data-ref-path="3.50.070" class="h__section">3.50.070 USE TAX RATE.</h2>
                 <p>An excise tax is hereby imposed on the storage, use or other consumption in the City of tangible personal property purchased from any retailer on and after the operative date of the ordinance codified in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.50" title="Chapter 3.50 TRANSACTIONS AND USE TAX">this chapter</a> for storage, use or other consumption in said territory at the rate of one quarter of one percent (0.25%) of the sales price of the property. The sales price shall include delivery charges when such charges are subject to State sales or use tax regardless of the place to which delivery is made.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -462,7 +466,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.50.080" data-order="|3|3.50|3.50.080|" ref-path="3.50.080" class="h__section">3.50.080 ADOPTION OF PROVISIONS OF STATE LAW.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.50.080" data-order="|3|3.50|3.50.080|" data-ref-path="3.50.080" class="h__section">3.50.080 ADOPTION OF PROVISIONS OF STATE LAW.</h2>
                 <p>Except as otherwise provided in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.50" title="Chapter 3.50 TRANSACTIONS AND USE TAX">this chapter</a> and except insofar as they are inconsistent with the provisions of Part 1.6 of Division <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2&amp;lawCode=RTC" title="">2 of the Revenue and Taxation Code</a>, all of the provisions of Part 1 (commencing with Section 6001) of Division <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2&amp;lawCode=RTC" title="">2 of the Revenue and Taxation Code</a> are hereby adopted and made a part of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.50" title="Chapter 3.50 TRANSACTIONS AND USE TAX">this chapter</a> as though fully set forth herein.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -470,7 +474,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.50.090" data-order="|3|3.50|3.50.090|" ref-path="3.50.090" class="h__section">3.50.090 LIMITATIONS ON ADOPTION OF STATE LAW AND COLLECTION OF USE TAXES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.50.090" data-order="|3|3.50|3.50.090|" data-ref-path="3.50.090" class="h__section">3.50.090 LIMITATIONS ON ADOPTION OF STATE LAW AND COLLECTION OF USE TAXES.</h2>
                 <p>In adopting the provisions of Part 1 of Division <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2&amp;lawCode=RTC" title="">2 of the Revenue and Taxation Code</a>:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.50.090#(a)">(a)</span> Wherever the State of California is named or referred to as the taxing agency, the name of this City shall be substituted therefor. However, the substitution shall not be made when:</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.50.090#(a)(1)">(1)</span> The word "State" is used as a part of the title of the State Controller, State Treasurer, State Board of Control, State Board of Equalization, State Treasury, or the Constitution of the State of California;</p>
@@ -486,7 +490,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.50.100" data-order="|3|3.50|3.50.100|" ref-path="3.50.100" class="h__section">3.50.100 PERMIT NOT REQUIRED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.50.100" data-order="|3|3.50|3.50.100|" data-ref-path="3.50.100" class="h__section">3.50.100 PERMIT NOT REQUIRED.</h2>
                 <p>If a seller's permit has been issued to a retailer under <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=6067&amp;lawCode=RTC" title="">Section 6067 of the Revenue and Taxation Code</a>, an additional transactor's permit shall not be required by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.50" title="Chapter 3.50 TRANSACTIONS AND USE TAX">this chapter</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -494,7 +498,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.50.110" data-order="|3|3.50|3.50.110|" ref-path="3.50.110" class="h__section">3.50.110 EXEMPTIONS AND EXCLUSIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.50.110" data-order="|3|3.50|3.50.110|" data-ref-path="3.50.110" class="h__section">3.50.110 EXEMPTIONS AND EXCLUSIONS.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.50.110#(a)">(a)</span> There shall be excluded from the measure of the transactions tax and the use tax the amount of any sales tax or use tax imposed by the State of California or by any city, city and county, or county pursuant to the Bradley-Burns Uniform Local Sales and Use Tax Law or the amount of any State-administered transactions or use tax.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.50.110#(b)">(b)</span> There are exempted from the computation of the amount of transactions tax the gross receipts from:</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.50.110#(b)(1)">(1)</span> Sales of tangible personal property, other than fuel or petroleum products, to operators of aircraft to be used or consumed principally outside the county in which the sale is made and directly and exclusively in the use of such aircraft as common carriers of persons or property under the authority of the laws of this State, the United States, or any foreign government.</p>
@@ -519,7 +523,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.50.120" data-order="|3|3.50|3.50.120|" ref-path="3.50.120" class="h__section">3.50.120 AMENDMENT OR REPEAL.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.50.120" data-order="|3|3.50|3.50.120|" data-ref-path="3.50.120" class="h__section">3.50.120 AMENDMENT OR REPEAL.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.50.120#(a)">(a)</span> All amendments subsequent to the effective date of the ordinance codified in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.50" title="Chapter 3.50 TRANSACTIONS AND USE TAX">this chapter</a> to Part 1 of Division <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2&amp;lawCode=RTC" title="">2 of the Revenue and Taxation Code</a> relating to sales and use taxes and which are not inconsistent with Part 1.6 and Part 1.7 of Division <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2&amp;lawCode=RTC" title="">2 of the Revenue and Taxation Code</a>, and all amendments to Part 1.6 and Part 1.7 of Division <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2&amp;lawCode=RTC" title="">2 of the Revenue and Taxation Code</a>, shall automatically become a part of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.50" title="Chapter 3.50 TRANSACTIONS AND USE TAX">this chapter</a>; provided, however, that no such amendment shall operate so as to affect the rate of tax imposed by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.50" title="Chapter 3.50 TRANSACTIONS AND USE TAX">this chapter</a>.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.50.120#(b)">(b)</span> The City Council may amend <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.50" title="Chapter 3.50 TRANSACTIONS AND USE TAX">this chapter</a> without voter approval only to make minor technical adjustments consistent with the purposes set forth in this ordinance and applicable laws or as necessary to comply with the law.</p>
                 <aside class="annotations" role="note">
@@ -528,7 +532,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.50.130" data-order="|3|3.50|3.50.130|" ref-path="3.50.130" class="h__section">3.50.130 ENJOINING COLLECTION FORBIDDEN.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.50.130" data-order="|3|3.50|3.50.130|" data-ref-path="3.50.130" class="h__section">3.50.130 ENJOINING COLLECTION FORBIDDEN.</h2>
                 <p>No injunction or writ of mandate or other legal or equitable process shall issue in any suit, action or proceeding in any court against the State or the City, or against any officer of the State or the City, to prevent or enjoin the collection under this ordinance, or Part 1.6 of Division <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2&amp;lawCode=RTC" title="">2 of the Revenue and Taxation Code</a>, of any tax or any amount of tax required to be collected.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -536,7 +540,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.50.140" data-order="|3|3.50|3.50.140|" ref-path="3.50.140" class="h__section">3.50.140 SEVERABILITY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.50.140" data-order="|3|3.50|3.50.140|" data-ref-path="3.50.140" class="h__section">3.50.140 SEVERABILITY.</h2>
                 <p>If any provision of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.50" title="Chapter 3.50 TRANSACTIONS AND USE TAX">this chapter</a> or the application thereof to any person or circumstance is held invalid, the remainder of the chapter and the application of such provision to other persons or circumstances shall not be affected thereby.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -544,7 +548,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.50.150" data-order="|3|3.50|3.50.150|" ref-path="3.50.150" class="h__section">3.50.150 USE OF PROCEEDS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.50.150" data-order="|3|3.50|3.50.150|" data-ref-path="3.50.150" class="h__section">3.50.150 USE OF PROCEEDS.</h2>
                 <p>The proceeds from the transactions and use tax imposed by this ordinance shall be for general governmental purposes of the City and shall be received into the general fund of the City. Nothing herein shall bind the City to use the proceeds for any specific purpose or function.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -552,7 +556,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.50.160" data-order="|3|3.50|3.50.160|" ref-path="3.50.160" class="h__section">3.50.160 FISCAL ACCOUNTABILITY PROVISIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.50.160" data-order="|3|3.50|3.50.160|" data-ref-path="3.50.160" class="h__section">3.50.160 FISCAL ACCOUNTABILITY PROVISIONS.</h2>
                 <p>The amount generated by this new general purpose revenue source and how it was used shall be included in the annual audit of the City's financial operations by an independent certified public accountant. In addition, there shall be a committee consisting of five members of the public to review and report on the receipt of revenue and expenditure of funds from the tax authorized by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.50" title="Chapter 3.50 TRANSACTIONS AND USE TAX">this chapter</a>. The committee shall review the annual auditor's report and shall make recommendations to the City Council on the use of the tax revenue. The committee's report and recommendations shall be completed by a date to allow for it to be considered as part of the annual budget process. The committee members shall serve four-year terms. The initial terms of the first appointed committee members shall be pared by lot so that each year one or more terms will expire.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -560,7 +564,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.50.170" data-order="|3|3.50|3.50.170|" ref-path="3.50.170" class="h__section">3.50.170 TERMINATION DATE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.50.170" data-order="|3|3.50|3.50.170|" data-ref-path="3.50.170" class="h__section">3.50.170 TERMINATION DATE.</h2>
                 <p>The authority to levy the tax imposed by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.50" title="Chapter 3.50 TRANSACTIONS AND USE TAX">this chapter</a> shall expire on March 31, 2048.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -568,12 +572,12 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.52" data-order="|3|3.52|" ref-path="3.52" class="h__chapter">Chapter 3.52 SALES AND USE TAX</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.52" data-order="|3|3.52|" data-ref-path="3.52" class="h__chapter">Chapter 3.52 SALES AND USE TAX</h2>
                 <section class="line-group annotations">
                   <h4>Editor's Notes</h4>
                   <p>For the statutory provisions regarding the Uniform Local Sales and Use Tax Act, see Cal. Rev. &amp; T.C.A. &amp; 7200 et seq.</p>
                 </section>
-                <h2 id="/us/ca/cities/san-mateo/code/3.52.010" data-order="|3|3.52|3.52.010|" ref-path="3.52.010" class="h__section">3.52.010 SALES TAX—AMOUNT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.52.010" data-order="|3|3.52|3.52.010|" data-ref-path="3.52.010" class="h__section">3.52.010 SALES TAX—AMOUNT.</h2>
                 <p>For the privilege of selling tangible personal property at retail a tax is imposed upon all retailers in the City at the rate of ninety-five one-hundredths of one percent of the gross receipts of the retailer from the sale of all tangible personal property sold at retail in the City on and after the operative date of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.52" title="Chapter 3.52 SALES AND USE TAX">this chapter</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -581,7 +585,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.52.020" data-order="|3|3.52|3.52.020|" ref-path="3.52.020" class="h__section">3.52.020 SALES TAX—PLACE OF CONSUMMATION OF RETAIL SALES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.52.020" data-order="|3|3.52|3.52.020|" data-ref-path="3.52.020" class="h__section">3.52.020 SALES TAX—PLACE OF CONSUMMATION OF RETAIL SALES.</h2>
                 <p>For the purposes of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.52" title="Chapter 3.52 SALES AND USE TAX">this chapter</a>, all retail sales are consummated at the place of business of the retailer unless the tangible personal property sold is delivered by the retailer or his or her agent to an out-of-state destination or to a common carrier for delivery to an out-of-state destination. The gross receipts from such sales shall include delivery charges, when such charges are subject to the state sales and use tax, regardless of the place to which delivery is made. In the event a retailer has no permanent place of business in the state or has more than one place of business, the place or places at which the retail sales are consummated shall be determined under rules and regulations to be prescribed and adopted by the board of equalization.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -589,7 +593,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.52.030" data-order="|3|3.52|3.52.030|" ref-path="3.52.030" class="h__section">3.52.030 SALES TAX—APPLICABILITY OF STATE CODE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.52.030" data-order="|3|3.52|3.52.030|" data-ref-path="3.52.030" class="h__section">3.52.030 SALES TAX—APPLICABILITY OF STATE CODE.</h2>
                 <p>Except as hereinafter provided, and except insofar as they are inconsistent with the provisions of Part 1.5 of Division <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2&amp;lawCode=RTC" title="">2 of the Revenue and Taxation Code</a> of the state, all of the provisions of Part 1 of Division 2 of said code, as amended and in force and effect on January 1, 1961, applicable to sales taxes are adopted and made a part of this section as though fully set forth herein.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -597,7 +601,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.52.040" data-order="|3|3.52|3.52.040|" ref-path="3.52.040" class="h__section">3.52.040 SALES TAX—SUBSTITUTIONS FOR NAMES IN STATE CODE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.52.040" data-order="|3|3.52|3.52.040|" data-ref-path="3.52.040" class="h__section">3.52.040 SALES TAX—SUBSTITUTIONS FOR NAMES IN STATE CODE.</h2>
                 <p>Wherever, and to the extent that, in Part 1 of Division <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2&amp;lawCode=RTC" title="">2 of the Revenue and Taxation Code</a>, the state of California is named or referred to as the taxing agency, the City of San Mateo shall be substituted therefor. Nothing in this section shall be deemed to require the substitution of the name of the City of San Mateo for the word "state" when that word is used as part of the title of the State Controller, the State Board of Equalization, or the name of the State Treasury, or of the Constitution of the state of California; nor shall the name of the City be substituted for that of the state in any section when the result of that substitution would require action to be taken by or against the City or any agency thereof, rather than by or against the State Board of Equalization, in performing the functions incident to the administration or operation of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.52" title="Chapter 3.52 SALES AND USE TAX">this chapter</a>; and neither shall the substitution be deemed to have been made in those sections, including, but not necessarily limited to, sections referring to the exterior boundaries of the state, where the result of the substitution would be to provide an exemption from this tax with respect to certain gross receipts which would not otherwise be exempt from this tax while those gross receipts remain subject to tax by the state under the provisions of Part 1 of Division <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2&amp;lawCode=RTC" title="">2 of the Revenue and Taxation Code</a>; nor to impose this tax with respect to certain gross receipts which would not be subject to tax by the state under the said provisions of that code; and, in addition, the name of the City shall not be substituted for that of the state in Sections 6701, 6702 (except in the last sentence thereof), 6711, 6715, 6737, 6797 and <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=6828&amp;lawCode=RTC" title="">6828 of the Revenue and Taxation Code</a> as adopted.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -605,7 +609,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.52.050" data-order="|3|3.52|3.52.050|" ref-path="3.52.050" class="h__section">3.52.050 SALES TAX—RETAILER'S PERMIT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.52.050" data-order="|3|3.52|3.52.050|" data-ref-path="3.52.050" class="h__section">3.52.050 SALES TAX—RETAILER'S PERMIT.</h2>
                 <p>If a seller's permit has been issued to a retailer under <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=6067&amp;lawCode=RTC" title="">Section 6067 of the Revenue and Taxation Code</a>, an additional seller's permit shall not be required by reason of this section.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -613,7 +617,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.52.060" data-order="|3|3.52|3.52.060|" ref-path="3.52.060" class="h__section">3.52.060 SALES TAX—EXCLUSION FROM GROSS RECEIPTS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.52.060" data-order="|3|3.52|3.52.060|" data-ref-path="3.52.060" class="h__section">3.52.060 SALES TAX—EXCLUSION FROM GROSS RECEIPTS.</h2>
                 <p>There shall be excluded from the gross receipts by which the tax is measured:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.52.060#(a)">(a)</span> The amount of any sales or use tax imposed by the State of California upon a retailer or consumer.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.52.060#(b)">(b)</span> The gross receipts from the sale of tangible personal property to operators of aircraft to be used or consumed principally outside the City in which the sale is made and directly and exclusively in the use of such aircraft as common carriers of persons or property under the authority of the laws of this state, the United States, or any foreign government.</p>
@@ -627,7 +631,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.52.065" data-order="|3|3.52|3.52.065|" ref-path="3.52.065" class="h__section">3.52.065 SALES TAX—EXCLUSION FROM GROSS RECEIPTS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.52.065" data-order="|3|3.52|3.52.065|" data-ref-path="3.52.065" class="h__section">3.52.065 SALES TAX—EXCLUSION FROM GROSS RECEIPTS.</h2>
                 <p>There shall be excluded from the gross receipts by which the tax is measured:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.52.065#(a)">(a)</span> The amount of any sales or use tax imposed by the State of California upon a retailer or consumer.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.52.065#(b)">(b)</span> The gross receipts from the sale of tangible personal property to operators of waterborne vessels to be used or consumed principally outside the City in which the sale is made and directly and exclusively in the carriage of persons or property in such vessels for commercial purposes.</p>
@@ -642,7 +646,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.52.070" data-order="|3|3.52|3.52.070|" ref-path="3.52.070" class="h__section">3.52.070 USE TAX—AMOUNT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.52.070" data-order="|3|3.52|3.52.070|" data-ref-path="3.52.070" class="h__section">3.52.070 USE TAX—AMOUNT.</h2>
                 <p>An excise tax is imposed on the storage, use or other consumption in the City of tangible personal property purchased from any retailer on or after the operative date of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.52" title="Chapter 3.52 SALES AND USE TAX">this chapter</a> for storage, use or other consumption in the City at the rate of ninety-five one hundredths of one percent of the sales price of the property. The sales price shall include delivery charges when such charges are subject to state sales or use tax regardless of the place to which delivery is made.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -650,7 +654,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.52.080" data-order="|3|3.52|3.52.080|" ref-path="3.52.080" class="h__section">3.52.080 USE TAX—APPLICABILITY OF STATE CODE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.52.080" data-order="|3|3.52|3.52.080|" data-ref-path="3.52.080" class="h__section">3.52.080 USE TAX—APPLICABILITY OF STATE CODE.</h2>
                 <p>Except as hereinafter provided, and except insofar as they are inconsistent with the provisions of <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=RTC&amp;tocTitle=+Public+Utilities+Code+-+RTC" title="">Part 1.5 of Division 2 of the said Revenue and Taxation Code</a>, all of the provisions of Part 1 of Division 2 of said code, as amended and in force and effect on January 1, 1961, applicable to use taxes are adopted and made a part of this section as though fully set forth herein.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -658,7 +662,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.52.090" data-order="|3|3.52|3.52.090|" ref-path="3.52.090" class="h__section">3.52.090 USE TAX—SUBSTITUTIONS FOR NAMES IN STATE CODE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.52.090" data-order="|3|3.52|3.52.090|" data-ref-path="3.52.090" class="h__section">3.52.090 USE TAX—SUBSTITUTIONS FOR NAMES IN STATE CODE.</h2>
                 <p>Wherever, and to the extent that, in Part 1 of Division <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2&amp;lawCode=RTC" title="">2 of the Revenue and Taxation Code</a> the state of California is named or referred to as the taxing agency, the name of the City of San Mateo shall be substituted therefor. Nothing in this section shall be deemed to require the substitution of the name of the City of San Mateo for the word "state" when that word is used as part of the title of the State Controller, the State Treasurer, the State Board of Control, the State Board of Equalization, or the name of the State Treasury, or of the Constitution of the state of California; nor shall the name of the City be substituted for that of the state in any section when the result of that substitution would require action to be taken by or against the City or any agency thereof rather than by or against the State Board of Equalization, in performing the functions incident to the administration or operation of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.52" title="Chapter 3.52 SALES AND USE TAX">this chapter</a>; and neither shall the substitution be deemed to have been made in those sections, including, but not necessarily limited to, sections referring to the exterior boundaries of the state, where the result of the substitution would be to provide an exemption from this tax with respect to certain storage, use or other consumption of tangible personal property which would not otherwise be exempt from this tax while such storage, use or other consumption remains subject to tax by the state under the provisions of Part 1 of Division <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2&amp;lawCode=RTC" title="">2 of the Revenue and Taxation Code</a>, or to impose this tax with respect to certain storage, use or other consumption of tangible personal property which would not be subject to tax by the state under the said provisions of that code; and in addition, the name of the City shall not be substituted for that of the state in Sections <a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=6701&amp;lawCode=RTC" title="">6701</a>, <a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=6702&amp;lawCode=RTC" title="">6702</a> (except in the last sentence thereof), <a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=6711&amp;lawCode=RTC" title="">6711</a>, <a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=6715&amp;lawCode=RTC" title="">6715</a>, <a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=6737&amp;lawCode=RTC" title="">6737</a>, <a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=6797&amp;lawCode=RTC" title="">6797</a> and <a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=6828&amp;lawCode=RTC" title="">6828</a> of the said <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=RTC&amp;tocTitle=+Public+Utilities+Code+-+RTC" title="">Revenue and Taxation Code</a> as adopted, and the name of the City shall not be substituted for the word "state" in the phrase "retailer engaged in business in this state" in <a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=6203&amp;lawCode=RTC" title="">Section 6203</a> nor in the definition of that phrase in <a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=6203&amp;lawCode=RTC" title="">Section 6203</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -666,7 +670,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.52.100" data-order="|3|3.52|3.52.100|" ref-path="3.52.100" class="h__section">3.52.100 USE TAX—EXEMPTIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.52.100" data-order="|3|3.52|3.52.100|" data-ref-path="3.52.100" class="h__section">3.52.100 USE TAX—EXEMPTIONS.</h2>
                 <p>There shall be exempt from the tax due under this section:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.52.100#(a)">(a)</span> The amount of any sales or use tax imposed by the State of California upon a retailer or consumer.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.52.100#(b)">(b)</span> The storage, use or other consumption of tangible personal property, the gross receipts from the sale of which has been subject to sales tax under a sales and use tax ordinance enacted in accordance with Part 1.5 of Division <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2&amp;lawCode=RTC" title="">2 of the Revenue and Taxation Code</a> by any city and county, county, or city in this state.</p>
@@ -681,7 +685,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.52.105" data-order="|3|3.52|3.52.105|" ref-path="3.52.105" class="h__section">3.52.105 USE TAX—EXEMPTIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.52.105" data-order="|3|3.52|3.52.105|" data-ref-path="3.52.105" class="h__section">3.52.105 USE TAX—EXEMPTIONS.</h2>
                 <p>There shall be exempt from the tax due under this section:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.52.105#(a)">(a)</span> The amount of any sales or use tax imposed by the State of California upon a retailer or consumer.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.52.105#(b)">(b)</span> The storage, use or other consumption of tangible personal property, the gross receipts from the sale of which has been subject to sales tax under a sales and use tax ordinance enacted in accordance with Part 1.5 of Division <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2&amp;lawCode=RTC" title="">2 of the Revenue and Taxation Code</a> by any city and county, county, or city in this state.</p>
@@ -697,7 +701,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.52.110" data-order="|3|3.52|3.52.110|" ref-path="3.52.110" class="h__section">3.52.110 AMENDMENTS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.52.110" data-order="|3|3.52|3.52.110|" data-ref-path="3.52.110" class="h__section">3.52.110 AMENDMENTS.</h2>
                 <p>All amendments of the <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=RTC&amp;tocTitle=+Public+Utilities+Code+-+RTC" title="">Revenue and Taxation Code</a> enacted subsequent to the effective date of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.52" title="Chapter 3.52 SALES AND USE TAX">this chapter</a> which relate to the sales and use tax and which are not inconsistent with part 1.5 of Division <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2&amp;lawCode=RTC" title="">2 of the Revenue and Taxation Code</a> shall automatically become a part of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.52" title="Chapter 3.52 SALES AND USE TAX">this chapter</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -705,7 +709,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.52.120" data-order="|3|3.52|3.52.120|" ref-path="3.52.120" class="h__section">3.52.120 ENJOINING COLLECTION FORBIDDEN.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.52.120" data-order="|3|3.52|3.52.120|" data-ref-path="3.52.120" class="h__section">3.52.120 ENJOINING COLLECTION FORBIDDEN.</h2>
                 <p>No injunction or writ of mandate or other legal or equitable process shall issue in any suit, action or proceeding in any court against the state or this city, or against any officer of the state or this city, to prevent or enjoin the collection under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.52" title="Chapter 3.52 SALES AND USE TAX">this chapter</a>, or Part 1.5 of Division <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2&amp;lawCode=RTC" title="">2 of the Revenue and Taxation Code</a>, of any tax or any amount of tax required to be collected.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -713,7 +717,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.52.130" data-order="|3|3.52|3.52.130|" ref-path="3.52.130" class="h__section">3.52.130 EFFECTIVE DATE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.52.130" data-order="|3|3.52|3.52.130|" data-ref-path="3.52.130" class="h__section">3.52.130 EFFECTIVE DATE.</h2>
                 <p><a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.52" title="Chapter 3.52 SALES AND USE TAX">This chapter</a> shall become operative on January 1, 1961, and prior thereto this city shall contract with the State Board of Equalization to perform all functions incident to the administration and operation of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.52" title="Chapter 3.52 SALES AND USE TAX">this chapter</a> relating to sales and use taxes; provided, that if this has not contracted with the said State Board of Equalization, as above set forth, prior to January 1, 1961, <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.52" title="Chapter 3.52 SALES AND USE TAX">this chapter</a> shall not be operative until the first day of the first calendar quarter following the execution of such a contract by the City and by the State Board of Equalization, provided further that <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.52" title="Chapter 3.52 SALES AND USE TAX">this chapter</a> shall not become operative prior to the operative date of the Uniform Local Sales and Use Tax Ordinance of the county.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -721,7 +725,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.52.140" data-order="|3|3.52|3.52.140|" ref-path="3.52.140" class="h__section">3.52.140 APPLICATIONS OF PROVISIONS RELATING TO EXCLUSIONS AND EXEMPTIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.52.140" data-order="|3|3.52|3.52.140|" data-ref-path="3.52.140" class="h__section">3.52.140 APPLICATIONS OF PROVISIONS RELATING TO EXCLUSIONS AND EXEMPTIONS.</h2>
                 <p>The provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.52" title="Chapter 3.52 SALES AND USE TAX">this chapter</a> relating to exclusions and exemptions shall become operative as follows:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.52.140#(a)">(a)</span> Sections <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.52.060" title="3.52.060 SALES TAX—EXCLUSION FROM GROSS RECEIPTS.">3.52.060</a> and <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.52.100" title="3.52.100 USE TAX—EXEMPTIONS.">3.52.100</a> shall be operative January 1, 1984.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.52.140#(b)">(b)</span> Sections <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.52.065" title="3.52.065 SALES TAX—EXCLUSION FROM GROSS RECEIPTS.">3.52.065</a> and <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.52.105" title="3.52.105 USE TAX—EXEMPTIONS.">3.52.105</a> shall be operative on the operative date of any act of the Legislature of the State of California which amends or repeals and reenacts <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7202&amp;lawCode=RTC" title="">Section 7202 of the Revenue and Taxation Code</a> to provide an exemption from city sales and use taxes for operators of waterborne vessels in the same, or substantially the same, language as that existing in subdivision (i)(7) and (i)(8) of <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7202&amp;lawCode=RTC" title="">Section 7202 of the Revenue and Taxation Code</a> as those subdivisions read on October 1, 1983.</p>
@@ -731,8 +735,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.54" data-order="|3|3.54|" ref-path="3.54" class="h__chapter">Chapter 3.54 SEWER SERVICE CHARGES AND CONNECTION FEES</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/3.54.010" data-order="|3|3.54|3.54.010|" ref-path="3.54.010" class="h__section">3.54.010 PURPOSE; ADMINISTRATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.54" data-order="|3|3.54|" data-ref-path="3.54" class="h__chapter">Chapter 3.54 SEWER SERVICE CHARGES AND CONNECTION FEES</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.54.010" data-order="|3|3.54|3.54.010|" data-ref-path="3.54.010" class="h__section">3.54.010 PURPOSE; ADMINISTRATION.</h2>
                 <p>The purpose and intent of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.54" title="Chapter 3.54 SEWER SERVICE CHARGES AND CONNECTION FEES">this chapter</a> is to provide for sewer service charges and connection charges to be imposed upon the owner(s) of every parcel of land within the City served by the City's sanitary sewer system and wastewater treatment plant.</p>
                 <p><a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.54" title="Chapter 3.54 SEWER SERVICE CHARGES AND CONNECTION FEES">This chapter</a> shall be interpreted and administered in accordance with the provisions of Article XIIID of the Constitution of the State of California and sections <a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=53750&amp;lawCode=GOV" title="">53750</a> through <a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=53758&amp;lawCode=GOV" title="">53758</a> of the <a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=GOV&amp;tocTitle=+Public+Utilities+Code+-+GOV" title="">Government Code</a>.</p>
                 <p>The Director of Public Works is authorized to administer and enforce the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.54" title="Chapter 3.54 SEWER SERVICE CHARGES AND CONNECTION FEES">this chapter</a> and shall adopt regulations necessary to effectuate such authority.</p>
@@ -742,7 +746,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.54.020" data-order="|3|3.54|3.54.020|" ref-path="3.54.020" class="h__section">3.54.020 DEFINITIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.54.020" data-order="|3|3.54|3.54.020|" data-ref-path="3.54.020" class="h__section">3.54.020 DEFINITIONS.</h2>
                 <p>For the purposes of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.54" title="Chapter 3.54 SEWER SERVICE CHARGES AND CONNECTION FEES">this chapter</a>, the following words and phrases shall have the following meanings:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.54.020#(a)">(a)</span> "Commercial" means all uses other than residential.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.54.020#(b)">(b)</span> "Connection" means each separate residential, lodging, or commercial and industrial, and institutional unit connected to an internal plumbing drainage system or external sewer lateral.</p>
@@ -768,7 +772,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.54.030" data-order="|3|3.54|3.54.030|" ref-path="3.54.030" class="h__section">3.54.030 SEWER SERVICE CHARGES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.54.030" data-order="|3|3.54|3.54.030|" data-ref-path="3.54.030" class="h__section">3.54.030 SEWER SERVICE CHARGES.</h2>
                 <p>The Council shall, by ordinance, establish the sewer service charge, to be imposed on the owner(s) of every parcel of land within the City served by the City's sanitary sewer system and wastewater treatment plant. The sewer service charges shall be based on customer class. For governmental entities, or other users whose operations have unusual or unique circumstances related to the return of water to the sewer system, the City may enter into a contract to provide sewer service at a charge different from that calculated based on customer class. Such a contract shall be subject to approval by the Director of Public Works and may be proposed at any time.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -782,7 +786,7 @@
                   <p>For sewer service charges for fiscal years 2018-2019 through 2022-2023 see <a class="internal-link " href="/us/ca/cities/san-mateo/ordinances/2018/1#2" title="Section 2.">Ord. No. 2018-1 Section 2</a>.</p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.54.040" data-order="|3|3.54|3.54.040|" ref-path="3.54.040" class="h__section">3.54.040 COLLECTION OF CHARGES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.54.040" data-order="|3|3.54|3.54.040|" data-ref-path="3.54.040" class="h__section">3.54.040 COLLECTION OF CHARGES.</h2>
                 <p>The sewer service charges provided for in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.54" title="Chapter 3.54 SEWER SERVICE CHARGES AND CONNECTION FEES">this chapter</a> shall be collected on tax rolls in the same manner and by the same persons and at the same time as, together with and not separately from, City general property taxes as provided in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.38" title="Chapter 3.38 PROPERTY TAXATION">Chapter 3.38</a>. Irrigation meters shall be exempt from the sewer service charge. In addition, the City may, by agreement, provide that individual charges for specified parcels shall be collected apart from the tax roll when unusual circumstances warrant such a collection process.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -794,7 +798,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.54.050" data-order="|3|3.54|3.54.050|" ref-path="3.54.050" class="h__section">3.54.050 LIEN FOR CHARGES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.54.050" data-order="|3|3.54|3.54.050|" data-ref-path="3.54.050" class="h__section">3.54.050 LIEN FOR CHARGES.</h2>
                 <p>The amount of the sewer service charge shall constitute a lien against the parcel of land against which the charge has been imposed as of noon on the first Monday in March immediately preceding the date of the levy. Thereafter, unless otherwise provided by agreement pursuant to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.54.040" title="3.54.040 COLLECTION OF CHARGES.">Section 3.54.040</a>, the amount of the charges shall be collected at the same time and in the same manner and by the same persons as, together with and not separately from, the general taxes on the property, and shall be delinquent at the same time and thereafter be subject to the same delinquency penalties.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -802,7 +806,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.54.060" data-order="|3|3.54|3.54.060|" ref-path="3.54.060" class="h__section">3.54.060 SEWER CONNECTION CHARGES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.54.060" data-order="|3|3.54|3.54.060|" data-ref-path="3.54.060" class="h__section">3.54.060 SEWER CONNECTION CHARGES.</h2>
                 <p>Before making a connection to the sanitary sewer system, a permit shall be obtained from the Building Official. No connection permit shall be issued except upon payment of the applicable sewer connection charge. The sewer connection charge shall be established by resolution of the City Council.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -810,7 +814,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.54.070" data-order="|3|3.54|3.54.070|" ref-path="3.54.070" class="h__section">3.54.070 SEWER SERVICE FUND.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.54.070" data-order="|3|3.54|3.54.070|" data-ref-path="3.54.070" class="h__section">3.54.070 SEWER SERVICE FUND.</h2>
                 <p>There is established the "Sewer Service Fund" to which the Finance Director shall transfer all sewer service charges and connection charges collected. This fund shall only be used for the costs associated with providing sanitary sewer and wastewater treatment service, including construction, reconstruction, maintenance, operation, and direct and indirect financing costs, and for accumulation of a depreciation reserve fund for such purposes in an amount as the Council may determine is appropriate.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -818,7 +822,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.54.080" data-order="|3|3.54|3.54.080|" ref-path="3.54.080" class="h__section">3.54.080 SOUTH TRUNK SEWER AREA IMPACT FEE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.54.080" data-order="|3|3.54|3.54.080|" data-ref-path="3.54.080" class="h__section">3.54.080 SOUTH TRUNK SEWER AREA IMPACT FEE.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.54.080#(a)">(a)</span> As of March 1, 2008, there is hereby imposed on all development, whether new development or redevelopment, in the South Trunk Sewer Area (generally that area extending south from the Dale Avenue Pump Station utility corridor parallel to Highway 101, and upstream in or parallel to East 16th Avenue, South Delaware Street through the Bay Meadows area, and Railroad Avenue and South El Camino Real, and extending up Borel Avenue, West Hillsdale Boulevard, and Saratoga Drive but excluding Bay Meadows Phase I and Phase II) a sewer area development impact fee for each type of sewer connection.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.54.080#(b)">(b)</span> The impact fee shall be collected at the same time the sewer connection charge imposed under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.54" title="Chapter 3.54 SEWER SERVICE CHARGES AND CONNECTION FEES">this chapter</a> is collected and shall be placed in the sewer service fund established pursuant to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.54" title="Chapter 3.54 SEWER SERVICE CHARGES AND CONNECTION FEES">this chapter</a>.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.54.080#(c)">(c)</span> The amount of impact fee charged shall be established by resolution of the City Council and based upon dwelling unit equivalents as follows:</p>
@@ -872,8 +876,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.56" data-order="|3|3.56|" ref-path="3.56" class="h__chapter">Chapter 3.56 TRANSIENT OCCUPANCY TAX</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/3.56.010" data-order="|3|3.56|3.56.010|" ref-path="3.56.010" class="h__section">3.56.010 TITLE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.56" data-order="|3|3.56|" data-ref-path="3.56" class="h__chapter">Chapter 3.56 TRANSIENT OCCUPANCY TAX</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.56.010" data-order="|3|3.56|3.56.010|" data-ref-path="3.56.010" class="h__section">3.56.010 TITLE.</h2>
                 <p><a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.56" title="Chapter 3.56 TRANSIENT OCCUPANCY TAX">This chapter</a> shall be known as, and may be cited as, the "uniform transient occupancy tax of the City of San Mateo."</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -881,7 +885,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.56.020" data-order="|3|3.56|3.56.020|" ref-path="3.56.020" class="h__section">3.56.020 DEFINITIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.56.020" data-order="|3|3.56|3.56.020|" data-ref-path="3.56.020" class="h__section">3.56.020 DEFINITIONS.</h2>
                 <p>Except where the context otherwise requires, the definitions given in this section govern the construction of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.56" title="Chapter 3.56 TRANSIENT OCCUPANCY TAX">this chapter</a>:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.56.020#(a)">(a)</span> "Hotel" means any structure, or any portion of any structure which is occupied or intended or designed for occupancy by transients for dwelling, lodging or sleeping purposes, and includes any hotel, inn, tourist home or house, motel, studio hotel, bachelor hotel, lodging house, rooming house, apartment house, dormitory, public or private club, mobile home or house trailer at a fixed location, or other similar structure or portion thereof.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.56.020#(b)">(b)</span> "Occupancy" means the use or possession, or the right to the use or possession of any room or rooms or portions thereof, in any hotel for dwelling, lodging or sleeping purposes.</p>
@@ -895,7 +899,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.56.030" data-order="|3|3.56|3.56.030|" ref-path="3.56.030" class="h__section">3.56.030 GENERAL TAX.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.56.030" data-order="|3|3.56|3.56.030|" data-ref-path="3.56.030" class="h__section">3.56.030 GENERAL TAX.</h2>
                 <p>For the privilege of occupancy in any hotel, each transient is subject to and shall pay a general tax in the amount of 10% of the rent charged by the operator. Said tax constitutes a debt owed by the transient to the City which is extinguished only by payment to the operator or to the City. The transient shall pay the tax to the operator of the hotel at the time the rent is paid. If the rent is paid in installments, a proportionate share of the tax shall be paid with each installment. The unpaid tax shall be due upon the transient's ceasing to occupy space in the hotel. If for any reason the tax due is not paid to the operator of the hotel, the Tax Collector may require that such tax shall be paid directly to the Tax Collector.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -907,7 +911,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.56.035" data-order="|3|3.56|3.56.035|" ref-path="3.56.035" class="h__section">3.56.035 SPECIAL TAX.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.56.035" data-order="|3|3.56|3.56.035|" data-ref-path="3.56.035" class="h__section">3.56.035 SPECIAL TAX.</h2>
                 <p>In addition to the general transient occupancy tax imposed pursuant to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.56.030" title="3.56.030 GENERAL TAX.">Section 3.56.030</a>, there shall be imposed a two percent (2%) special tax for the purpose of financing capital improvements within the City; provided that the special tax proceeds shall first be expended for the following police and fire facilities:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.56.035#(a)">(a)</span> Police Station. Seismic upgrading, gender modifications, Americans with Disabilities Act modifications, remodel lobby and an addition of approximately 7,500 square feet, and related works and structures necessary or convenient for said improvements; and</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.56.035#(b)">(b)</span> Fire Stations. Seismic upgrading, gender modifications, Americans with Disabilities Act modifications, building system upgrades, minor functional improvements, and related works and structures necessary or convenient for said improvements.</p>
@@ -918,7 +922,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.56.040" data-order="|3|3.56|3.56.040|" ref-path="3.56.040" class="h__section">3.56.040 EXEMPTIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.56.040" data-order="|3|3.56|3.56.040|" data-ref-path="3.56.040" class="h__section">3.56.040 EXEMPTIONS.</h2>
                 <p>No tax shall be imposed upon:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.56.040#(a)">(a)</span> Any person as to whom, or any occupancy as to which, it is beyond the power of the City to impose the tax herein provided;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.56.040#(b)">(b)</span> Occupancy of rooms by officers or employees of a legal entity which has a written lease upon said rooms for at least one (1) year, and which leased rooms are not available to the general public at all times during the lease period. Said rooms must exceed 50% of the total units in the facility to qualify for the exemption;</p>
@@ -929,7 +933,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.56.050" data-order="|3|3.56|3.56.050|" ref-path="3.56.050" class="h__section">3.56.050 OPERATOR DUTIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.56.050" data-order="|3|3.56|3.56.050|" data-ref-path="3.56.050" class="h__section">3.56.050 OPERATOR DUTIES.</h2>
                 <p>Each operator shall collect the tax imposed by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.56" title="Chapter 3.56 TRANSIENT OCCUPANCY TAX">this chapter</a> to the same extent and at the same time as the rent is collected from every transient. The amount of tax shall be separately stated from the amount of the rent charged, and each transient shall receive a receipt for payment from the operator. No operator of a hotel shall advertise or state in any manner, whether directly or indirectly, that the tax or any part thereof will be assumed or absorbed by the operator, or that it will not be added to the rent, or that, if added, any part will be refunded except in the manner hereinafter provided.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -937,7 +941,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.56.060" data-order="|3|3.56|3.56.060|" ref-path="3.56.060" class="h__section">3.56.060 REGISTRATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.56.060" data-order="|3|3.56|3.56.060|" data-ref-path="3.56.060" class="h__section">3.56.060 REGISTRATION.</h2>
                 <p>Prior to the date upon which the tax hereby imposed becomes collectable, or within 30 days after commencing business, whichever is later, each operator of any hotel renting occupancy to transients shall register the hotel with the license bureau and obtain therefrom a transient occupancy registration certificate to be at all times posted in a conspicuous place on the premises. Said certificate shall, among other things, state the following:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.56.060#(a)">(a)</span> The name of the operator;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.56.060#(b)">(b)</span> The address of the hotel;</p>
@@ -949,7 +953,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.56.070" data-order="|3|3.56|3.56.070|" ref-path="3.56.070" class="h__section">3.56.070 REPORTING—REMITTING.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.56.070" data-order="|3|3.56|3.56.070|" data-ref-path="3.56.070" class="h__section">3.56.070 REPORTING—REMITTING.</h2>
                 <p>Each operator shall, on or before the last day of each month, make a return to the Tax Collector, on forms provided by the Tax Collector, of the total rents charged and the amount of tax calculated for transient occupancies for the preceding month. At the time the return is filed, the full amount of the tax collected shall be remitted to the Tax Collector. The Tax Collector may establish shorter reporting periods for any certificate holder if he or she deems it necessary in order to insure collection of the tax and he or she may require further information in the return. Returns and payments are due immediately upon cessation of business for any reason. All taxes collected by operators pursuant to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.56" title="Chapter 3.56 TRANSIENT OCCUPANCY TAX">this chapter</a> shall be held in trust for the account of the City until payment thereof is made to the Tax Collector.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -957,7 +961,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.56.080" data-order="|3|3.56|3.56.080|" ref-path="3.56.080" class="h__section">3.56.080 PENALTIES—INTEREST.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.56.080" data-order="|3|3.56|3.56.080|" data-ref-path="3.56.080" class="h__section">3.56.080 PENALTIES—INTEREST.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.56.080#(a)">(a)</span> Original Delinquency. Any operator who fails to remit any tax imposed by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.56" title="Chapter 3.56 TRANSIENT OCCUPANCY TAX">this chapter</a> within the time required shall pay a penalty of 10% of the amount of the tax in addition to the amount of the tax.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.56.080#(b)">(b)</span> Continued Delinquency. Any operator who fails to remit any delinquent remittance on or before a period of 30 days following the date on which the remittance first became delinquent shall pay a second delinquency penalty of 10% of the amount of the tax in addition to the amount of the tax and the 10% penalty first imposed. An additional penalty of 10% shall be paid for each 30 days thereafter which the remittance is delinquent.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.56.080#(c)">(c)</span> Fraud. If the Tax Collector determines that the nonpayment of any remittance due under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.56" title="Chapter 3.56 TRANSIENT OCCUPANCY TAX">this chapter</a> is due to fraud, the penalty of 25% of the amount of the tax shall be added thereto in addition to the penalties stated in subsections (a) and (b) of this section.</p>
@@ -969,7 +973,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.56.090" data-order="|3|3.56|3.56.090|" ref-path="3.56.090" class="h__section">3.56.090 FAILURE TO COLLECT AND REPORT—TAX DETERMINATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.56.090" data-order="|3|3.56|3.56.090|" data-ref-path="3.56.090" class="h__section">3.56.090 FAILURE TO COLLECT AND REPORT—TAX DETERMINATION.</h2>
                 <p>If any operator fails or refuses to collect the tax and to make, within the time provided in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.56" title="Chapter 3.56 TRANSIENT OCCUPANCY TAX">this chapter</a>, any report and remittance of the tax or any portion thereof required by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.56" title="Chapter 3.56 TRANSIENT OCCUPANCY TAX">this chapter</a>, the Tax Collector shall proceed in such manner as he or she may deem best to obtain facts and information on which to base his or her estimate of the tax due. As soon as the Tax Collector procures such facts and information as he or she is able to obtain upon which to base the assessment of any tax imposed by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.56" title="Chapter 3.56 TRANSIENT OCCUPANCY TAX">this chapter</a> and payable by any operator who has failed or refused to collect the same and to make such report and remittance, the Tax Collector shall proceed to determine and assess against such operator the tax, interest and penalties provided for by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.56" title="Chapter 3.56 TRANSIENT OCCUPANCY TAX">this chapter</a>. In case such determination is made, the Tax Collector shall give a notice of the amount so assessed by serving it personally or by depositing it in the United States mail, postage prepaid, addressed to the operator so assessed at his or her last known place of address. Such operator may within 10 days after the serving or mailing of such notice make application in writing to the Tax Collector for a hearing on the amount assessed. If application by the operator for a hearing is not made within the time prescribed, the tax, interest and penalties, if any, determined by the Tax Collector, shall become final and conclusive and immediately due and payable. If such application is made, the Tax Collector shall give not less than five (5) days' written notice in the manner prescribed herein to the operator to show cause at a time and place fixed in said notice why said amount specified therein should not be fixed for such tax, interest and penalties. At such hearing, the operator may appear and offer evidence why such specified tax, interest and penalties should not be so fixed. After such hearing the Tax Collector shall determine the proper tax to be remitted and shall thereafter give written notice to the person in the manner prescribed herein of such determination and the amount of such tax, interest and penalties. The amount determined to be due shall be payable after 15 days unless an appeal is taken as provided in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.56.130" title="3.56.130 APPEAL.">Section 3.56.130</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -977,7 +981,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.56.100" data-order="|3|3.56|3.56.100|" ref-path="3.56.100" class="h__section">3.56.100 RECORDS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.56.100" data-order="|3|3.56|3.56.100|" data-ref-path="3.56.100" class="h__section">3.56.100 RECORDS.</h2>
                 <p>It shall be the duty of every operator liable for the collection and payment to the City of any tax imposed by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.56" title="Chapter 3.56 TRANSIENT OCCUPANCY TAX">this chapter</a> to keep and preserve for a period of three (3) years, all records as may be necessary to determine the amount of such tax as he or she may have been liable for the collection of and payment to the City, which records the Tax Collector shall have the right to inspect at all reasonable times.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -985,7 +989,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.56.110" data-order="|3|3.56|3.56.110|" ref-path="3.56.110" class="h__section">3.56.110 REFUNDS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.56.110" data-order="|3|3.56|3.56.110|" data-ref-path="3.56.110" class="h__section">3.56.110 REFUNDS.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.56.110#(a)">(a)</span> An operator may claim a refund or take as credit against taxes collected and remitted the amount overpaid, paid more than once or erroneously or illegally collected or received when it is established in a manner prescribed by the Tax Collector that the person from whom the tax has been collected was not a transient; provided, however, that neither a refund nor a credit shall be allowed unless the amount of the tax so collected has either been refunded to the transient or credited to rent subsequently payable by the transient to the operator.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.56.110#(b)">(b)</span> A transient may obtain a refund of taxes overpaid or paid more than once or erroneously or illegally collected or received by the City by filing a claim in the manner provided in subsection (a) of this section, but only when the tax was paid by the transient directly to the Tax Collector, or when the transient having paid the tax to the operator, established to the satisfaction of the Tax Collector that the transient has been unable to obtain a refund from the operator who collected the tax.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.56.110#(c)">(c)</span> No refund shall be paid under the provisions of this section unless the claimant establishes his or her right thereto by written records showing entitlement thereto.</p>
@@ -995,7 +999,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.56.120" data-order="|3|3.56|3.56.120|" ref-path="3.56.120" class="h__section">3.56.120 ACTIONS TO COLLECT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.56.120" data-order="|3|3.56|3.56.120|" data-ref-path="3.56.120" class="h__section">3.56.120 ACTIONS TO COLLECT.</h2>
                 <p>Any tax required to be paid by any transient under the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.56" title="Chapter 3.56 TRANSIENT OCCUPANCY TAX">this chapter</a> is a debt owed by the transient to the City. Any such tax collected by an operator which has not been paid to the City shall be deemed a debt owed by the operator to the City. Any person owing money to the City under the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.56" title="Chapter 3.56 TRANSIENT OCCUPANCY TAX">this chapter</a> is liable to an action brought in the name of the City for the recovery of such amount.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1003,7 +1007,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.56.130" data-order="|3|3.56|3.56.130|" ref-path="3.56.130" class="h__section">3.56.130 APPEAL.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.56.130" data-order="|3|3.56|3.56.130|" data-ref-path="3.56.130" class="h__section">3.56.130 APPEAL.</h2>
                 <p>Any operator aggrieved by any decision of the Tax Collector with respect to the amount of such tax, interest and penalties, if any, may appeal to the City Manager by filing a notice of appeal with the City Manager within 15 days of the serving or mailing of the determination of tax due. The City Manager or designee shall fix a time and place for hearing such appeal, and the City Manager or designee shall give notice in writing to such operator at his or her last known place of address. The findings of the City Manager or designee shall be final and conclusive and shall be served upon the appellant in the manner prescribed above for service of notice of hearing. Any amount found to be due shall be immediately due and payable upon the service of notice.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1015,7 +1019,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.56.140" data-order="|3|3.56|3.56.140|" ref-path="3.56.140" class="h__section">3.56.140 SPECIAL FUND.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.56.140" data-order="|3|3.56|3.56.140|" data-ref-path="3.56.140" class="h__section">3.56.140 SPECIAL FUND.</h2>
                 <p>There shall be established and maintained a special fund called the transient occupancy tax fund into which shall be deposited all taxes and penalties collected pursuant to the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.56" title="Chapter 3.56 TRANSIENT OCCUPANCY TAX">this chapter</a>. The Council may, from time to time, allocate any or all of said taxes and penalties collected as it deems proper; and, provided that said fund shall be liable for any expenses incurred by reason of the administration and collection of the tax imposed by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.56" title="Chapter 3.56 TRANSIENT OCCUPANCY TAX">this chapter</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1023,8 +1027,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.58" data-order="|3|3.58|" ref-path="3.58" class="h__chapter">Chapter 3.58 PARK AND RECREATION LAND AND FACILITIES TAX</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/3.58.010" data-order="|3|3.58|3.58.010|" ref-path="3.58.010" class="h__section">3.58.010 TITLE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.58" data-order="|3|3.58|" data-ref-path="3.58" class="h__chapter">Chapter 3.58 PARK AND RECREATION LAND AND FACILITIES TAX</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.58.010" data-order="|3|3.58|3.58.010|" data-ref-path="3.58.010" class="h__section">3.58.010 TITLE.</h2>
                 <p><a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.58" title="Chapter 3.58 PARK AND RECREATION LAND AND FACILITIES TAX">This chapter</a> shall be known as, and may be cited as, the "park and recreation land and facilities tax of the City of San Mateo."</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1032,7 +1036,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.58.020" data-order="|3|3.58|3.58.020|" ref-path="3.58.020" class="h__section">3.58.020 IMPOSITION OF TAX.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.58.020" data-order="|3|3.58|3.58.020|" data-ref-path="3.58.020" class="h__section">3.58.020 IMPOSITION OF TAX.</h2>
                 <p>Every person undertaking the construction within the City of any residential building which requires issuance of a building permit pursuant to the requirements of this code, shall pay a tax of thirty cents for every one hundred dollars of valuation stated in the application for building permit.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1040,7 +1044,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.58.030" data-order="|3|3.58|3.58.030|" ref-path="3.58.030" class="h__section">3.58.030 EXCLUSIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.58.030" data-order="|3|3.58|3.58.030|" data-ref-path="3.58.030" class="h__section">3.58.030 EXCLUSIONS.</h2>
                 <p>The tax imposed hereby shall not apply to the following:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.58.030#(a)">(a)</span> Minor construction or improvements which do not increase the floor area;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.58.030#(b)">(b)</span> Reconstruction resulting from earthquake, flood, fire, or other damage or destruction over which the owner had no control and which does not increase floor area over that which previously existed. Reconstruction which adds to floor area which previously existed shall, to that extent, be subject to the tax imposed hereby;</p>
@@ -1054,7 +1058,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.58.040" data-order="|3|3.58|3.58.040|" ref-path="3.58.040" class="h__section">3.58.040 PAYMENT OF TAX.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.58.040" data-order="|3|3.58|3.58.040|" data-ref-path="3.58.040" class="h__section">3.58.040 PAYMENT OF TAX.</h2>
                 <p>The tax imposed hereunder shall be due and payable prior to the issuance of a building permit, provided however, that there shall be a refund of such tax in the event that the building permit is not used.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1062,7 +1066,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.58.050" data-order="|3|3.58|3.58.050|" ref-path="3.58.050" class="h__section">3.58.050 CREDIT FOR PRIVATE OPEN SPACE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.58.050" data-order="|3|3.58|3.58.050|" data-ref-path="3.58.050" class="h__section">3.58.050 CREDIT FOR PRIVATE OPEN SPACE.</h2>
                 <p>Where private open space for park and recreational purposes is provided in a proposed residential development and such space is to be privately owned and maintained by the future residents thereof, such areas shall be credited against the requirement of tax to be paid, as set forth herein, provided the City Council, giving due consideration to the recommendations of the Planning Commission, determines it is in the public interest to do so, and the following standards are met:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.58.050#(a)">(a)</span> Yards, court areas, setbacks and other open areas required to be maintained by the zoning and building regulations shall not be included in the computation of such private open space;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.58.050#(b)">(b)</span> The private ownership and maintenance of the open space is adequately provided for by written agreement;</p>
@@ -1080,7 +1084,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.58.060" data-order="|3|3.58|3.58.060|" ref-path="3.58.060" class="h__section">3.58.060 ESTABLISHMENT OF STANDARDS AND PROCEDURES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.58.060" data-order="|3|3.58|3.58.060|" data-ref-path="3.58.060" class="h__section">3.58.060 ESTABLISHMENT OF STANDARDS AND PROCEDURES.</h2>
                 <p>The council may be resolution provide for further standards and procedures by which the amount of credit allowable under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.58.050" title="3.58.050 CREDIT FOR PRIVATE OPEN SPACE.">Section 3.58.050</a> may be ascertained.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1088,7 +1092,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.58.070" data-order="|3|3.58|3.58.070|" ref-path="3.58.070" class="h__section">3.58.070 REVENUE MEASURE—SPECIAL FUND.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.58.070" data-order="|3|3.58|3.58.070|" data-ref-path="3.58.070" class="h__section">3.58.070 REVENUE MEASURE—SPECIAL FUND.</h2>
                 <p>The provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.58" title="Chapter 3.58 PARK AND RECREATION LAND AND FACILITIES TAX">this chapter</a> are adopted pursuant to the taxing power of the City and solely for the purpose of producing revenue. All sums collected pursuant to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.58" title="Chapter 3.58 PARK AND RECREATION LAND AND FACILITIES TAX">this chapter</a> shall be deposited in the park and recreation fund and shall be used solely for acquisition and improvement of park lands or construction of recreational facilities.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1096,8 +1100,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.60" data-order="|3|3.60|" ref-path="3.60" class="h__chapter">Chapter 3.60 PURCHASING</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/3.60.010" data-order="|3|3.60|3.60.010|" ref-path="3.60.010" class="h__section">3.60.010 PURPOSE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.60" data-order="|3|3.60|" data-ref-path="3.60" class="h__chapter">Chapter 3.60 PURCHASING</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.60.010" data-order="|3|3.60|3.60.010|" data-ref-path="3.60.010" class="h__section">3.60.010 PURPOSE.</h2>
                 <p>The purpose of this ordinance is to establish purchasing procedures for the City of San Mateo. The City Council finds that a flexible purchasing system that allows for consideration of price, quality, reliability, workmanship, compatibility of products (such as computers and cellular equipment or design and furniture), and other relevant factors is in the public's best interests and that no single factor should be determinative in every case.</p>
                 <p>The City Council further finds that the complexity of City of San Mateo purchases and construction contracts, in conjunction with the complexities of the private marketplace, require that city staff and this Council have flexibility to select among the purchasing alternatives set forth in this ordinance in order to obtain the best products, services, and construction in the public's interest.</p>
                 <aside class="annotations" role="note">
@@ -1106,7 +1110,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.60.020" data-order="|3|3.60|3.60.020|" ref-path="3.60.020" class="h__section">3.60.020 AUTHORITY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.60.020" data-order="|3|3.60|3.60.020|" data-ref-path="3.60.020" class="h__section">3.60.020 AUTHORITY.</h2>
                 <p>The City Council shall be the awarding authority for any purchase or contract of $100,000.00 or more. The City Manager shall be the awarding authority for any purchase or contract of less than $100,000.00 and may in his or her discretion delegate authority to the department and/or division heads at designated dollar levels. The City Attorney shall be the awarding authority for legal matters.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1114,7 +1118,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.60.030" data-order="|3|3.60|3.60.030|" ref-path="3.60.030" class="h__section">3.60.030 BIDS AND SPECIFICATIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.60.030" data-order="|3|3.60|3.60.030|" data-ref-path="3.60.030" class="h__section">3.60.030 BIDS AND SPECIFICATIONS.</h2>
                 <p>Bids shall be obtained for purchases and contracts within the awarding authority of the City Council, except as exempted by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.60.050" title="3.60.050 EXCEPTIONS.">Section 3.60.050</a>. For other purchases and contracts, wherever possible at least two quotations shall be obtained, provided that the failure to obtain quotations shall not be deemed mandatory so as to invalidate a purchase or contract.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1122,7 +1126,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.60.040" data-order="|3|3.60|3.60.040|" ref-path="3.60.040" class="h__section">3.60.040 AWARD PROCEDURES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.60.040" data-order="|3|3.60|3.60.040|" data-ref-path="3.60.040" class="h__section">3.60.040 AWARD PROCEDURES.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.60.040#(a)">(a)</span> City Council Award Procedure. The following procedures shall apply:</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.60.040#(a)(1)">(1)</span> Notice Inviting Bids. The notice inviting bids shall describe the project to be done or the purchase to be made and shall set a date for the opening of bids. The notice shall be published once in the official newspaper not less than five days prior to the date and time set for opening of bids.</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.60.040#(a)(2)">(2)</span> Opening of Bids. All bids shall be sealed, identified as such and submitted to the City Clerk or the department supervising the project on or before the date and time set for opening. Bids received after the specified time shall be returned to the bidder unopened; provided, however, the bids received prior to the opening of the first bids shall be considered to be timely. Bids shall be opened in public at the time specified in the notice.</p>
@@ -1138,7 +1142,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.60.050" data-order="|3|3.60|3.60.050|" ref-path="3.60.050" class="h__section">3.60.050 EXCEPTIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.60.050" data-order="|3|3.60|3.60.050|" data-ref-path="3.60.050" class="h__section">3.60.050 EXCEPTIONS.</h2>
                 <p>Notwithstanding any other provision of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.60" title="Chapter 3.60 PURCHASING">this chapter</a>, the requirements of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.60" title="Chapter 3.60 PURCHASING">this chapter</a> shall not apply:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.60.050#(a)">(a)</span> where any emergency exists affecting or threatening to affect the public health, safety, or welfare;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.60.050#(b)">(b)</span> where calling for bids is impracticable, unavailing, or impossible and the awarding authority based on the amount of the purchase/ contract sets forth findings designating the reasons;</p>
@@ -1158,7 +1162,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.60.055" data-order="|3|3.60|3.60.055|" ref-path="3.60.055" class="h__section">3.60.055 SUBSTITUTION OF SUBCONTRACTORS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.60.055" data-order="|3|3.60|3.60.055|" data-ref-path="3.60.055" class="h__section">3.60.055 SUBSTITUTION OF SUBCONTRACTORS.</h2>
                 <p>If a subcontractor is substituted for a subcontractor listed in the original bid for reasons set forth in Section 4107 (a) of the Public Contracts Code or for a reason that the City Manger or designee determines to be proper, the City Manager or designee shall follow the procedures set forth in the <a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=4107&amp;lawCode=PCC" title="">Section 4107</a> (a) of the <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=PCC&amp;tocTitle=+Public+Utilities+Code+-+PCC" title="">Public Contract Code</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1166,7 +1170,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.60.060" data-order="|3|3.60|3.60.060|" ref-path="3.60.060" class="h__section">3.60.060 PREQUALIFICATION OF BIDDERS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.60.060" data-order="|3|3.60|3.60.060|" data-ref-path="3.60.060" class="h__section">3.60.060 PREQUALIFICATION OF BIDDERS.</h2>
                 <p>The City Manager or designee may require a pre-qualification process for bidders, suppliers, or professionals (hereinafter collectively referred to as "bidder(s)"). The pre-qualification process shall require at a minimum that prospective bidders answer questions that are contained in a pre-qualification questionnaire. Notice of the pre-qualification requirement shall be given in the same manner as is required to receive bids or proposals and once pre-qualification notice is given additional notice shall not be required to receive the bids or proposals. Responses to the pre-qualification requirements shall be provided within the time frames designated and any written responses shall be provided in a sealed envelope under penalty of perjury.</p>
                 <p>The pre-qualification questionnaire shall include, but not be limited, to questions pertaining to the following criteria:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.60.060#(a)">(a)</span> The familiarity and experience of the prospective bidder with the particular type of purchase or contract designated;</p>
@@ -1188,7 +1192,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.60.065" data-order="|3|3.60|3.60.065|" ref-path="3.60.065" class="h__section">3.60.065 APPEAL FROM DENIAL OF PREQUALIFICATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.60.065" data-order="|3|3.60|3.60.065|" data-ref-path="3.60.065" class="h__section">3.60.065 APPEAL FROM DENIAL OF PREQUALIFICATION.</h2>
                 <p>If a person disputes a prequalification denial under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.60.060" title="3.60.060 PREQUALIFICATION OF BIDDERS.">Section 3.60.060</a>, an appeal may be filed with the City Manager or designee not later than 10 calendar days after the decision. Notice of the prequalification denial shall be provided by certified mail to the address provided by the bidder on its application for prequalification, along with designation of the time period for dispute. A bidder may request the basis for the denial and any evidence relied upon by the City. The decision shall be final if no timely appeal is filed. An appeal shall be in writing specifying the particular grounds for appeal. All matters not set forth in the written request for reconsideration shall be deemed waived.</p>
                 <p>The City Manager or designee shall designate a time to receive evidence and further shall establish the procedures for the appeal. The City Manager or designee shall allow a disqualified bidder to rebut any evidence previously received by the City and to submit additional evidence of qualification.</p>
                 <p>The decision of the City Manager or designee shall be made prior to the receipt of bids to which the prequalification applies and shall be final.</p>
@@ -1198,7 +1202,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.60.070" data-order="|3|3.60|3.60.070|" ref-path="3.60.070" class="h__section">3.60.070 AUTHORIZED PURCHASING ALTERNATIVES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.60.070" data-order="|3|3.60|3.60.070|" data-ref-path="3.60.070" class="h__section">3.60.070 AUTHORIZED PURCHASING ALTERNATIVES.</h2>
                 <p>The following purchasing and bid alternatives are expressly approved and may be used in the discretion of the supervising City department. Where bid procedures are designated, either open market or noticed bids are to be used depending on the amount of the contract. Where professional services are designated, they may be used.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.60.070#(a)">(a)</span> Use of bids of the State of California or of the City of San Mateo that (1) are not older than 12 months and (2) met the general requirements of notice set forth in this ordinance. No further bids need to be obtained.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.60.070#(b)">(b)</span> Use of bids from other cities that (1) are not older than 6 months and (2) met the general requirements of notice set forth in this ordinance. No further bids need to be obtained.</p>
@@ -1221,7 +1225,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.60.080" data-order="|3|3.60|3.60.080|" ref-path="3.60.080" class="h__section">3.60.080 LIABILITY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.60.080" data-order="|3|3.60|3.60.080|" data-ref-path="3.60.080" class="h__section">3.60.080 LIABILITY.</h2>
                 <p>The failure to comply with the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.60" title="Chapter 3.60 PURCHASING">this chapter</a> shall not invalidate or set-aside any expenditure or contract. No section of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.60" title="Chapter 3.60 PURCHASING">this chapter</a> shall impose a mandatory duty on the City, or on any officer, official, agent, employee, board, or council thereof. Instead, if any section purports to impose a mandatory duty of enforcement, said section shall be deemed to invest the City, and the appropriate officer, official, agent, employee, board, or council with discretion to enforce the section or not to enforce it.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1229,7 +1233,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.60.090" data-order="|3|3.60|3.60.090|" ref-path="3.60.090" class="h__section">3.60.090 QUARTERLY REPORT TO CITY COUNCIL.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.60.090" data-order="|3|3.60|3.60.090|" data-ref-path="3.60.090" class="h__section">3.60.090 QUARTERLY REPORT TO CITY COUNCIL.</h2>
                 <p>The Finance Director shall make a quarterly report to the City Council of purchases/contracts by the City between $25,000-$100,000, including department and type of contract, date of award, names of vendors/consultants, amount of contract, quotations received, exceptions, procedures used, and pre-qualification questions.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1237,8 +1241,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.61" data-order="|3|3.61|" ref-path="3.61" class="h__chapter">Chapter 3.61 PREVAILING WAGES</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/3.61.010" data-order="|3|3.61|3.61.010|" ref-path="3.61.010" class="h__section">3.61.010 PAYMENT OF PREVAILING WAGES FOR PUBLIC WORKS PROJECTS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.61" data-order="|3|3.61|" data-ref-path="3.61" class="h__chapter">Chapter 3.61 PREVAILING WAGES</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.61.010" data-order="|3|3.61|3.61.010|" data-ref-path="3.61.010" class="h__section">3.61.010 PAYMENT OF PREVAILING WAGES FOR PUBLIC WORKS PROJECTS.</h2>
                 <p>Except as provided in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.61.020" title="3.61.020 EXCEPTIONS.">Section 3.61.020</a>, the City shall require the payment of prevailing wages for all of its public works projects to the same extent and in the same manner such wages would be required to be paid, if the City was subject to the requirements imposed upon contracts entered into by general law cities pursuant to the provisions of Article 2, Chapter 1, Part 7, Division <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2&amp;lawCode=LAB" title="">2 of the California Labor Code</a>, as those provisions may be amended from time to time. Any notice inviting bids for such public works projects shall include notification of the provisions of this section.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1246,7 +1250,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.61.020" data-order="|3|3.61|3.61.020|" ref-path="3.61.020" class="h__section">3.61.020 EXCEPTIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.61.020" data-order="|3|3.61|3.61.020|" data-ref-path="3.61.020" class="h__section">3.61.020 EXCEPTIONS.</h2>
                 <p>In accordance with <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1782&amp;lawCode=LAB" title="">Labor Code Section 1782</a>, the City's prevailing wage requirement does not apply to the following:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.61.020#(a)">(a)</span> A contract of $25,000.00 or less when the contract is for construction work;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.61.020#(b)">(b)</span> A contract of $15,000.00 or less when the contract is for alteration, demolition, repair, or maintenance work; or</p>
@@ -1261,8 +1265,8 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.62" data-order="|3|3.62|" ref-path="3.62" class="h__chapter">Chapter 3.62 ACQUISITION—LEASING—DISPOSITION—CITY PROPERTY</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/3.62.010" data-order="|3|3.62|3.62.010|" ref-path="3.62.010" class="h__section">3.62.010 PURPOSE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.62" data-order="|3|3.62|" data-ref-path="3.62" class="h__chapter">Chapter 3.62 ACQUISITION—LEASING—DISPOSITION—CITY PROPERTY</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.62.010" data-order="|3|3.62|3.62.010|" data-ref-path="3.62.010" class="h__section">3.62.010 PURPOSE.</h2>
                 <p>Pursuant to the authority of Charter Section 1.03, the City Council is vested with the authority, and may exercise all powers necessary or appropriate, to provide for the general welfare of its inhabitants. The purpose and intent of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.62" title="Chapter 3.62 ACQUISITION—LEASING—DISPOSITION—CITY PROPERTY">this chapter</a> is to exercise those powers to establish procedures for acquisition, leasing and disposition of city property, both real and personal, and whether the same be acquired by eminent domain, grant, purchase, lease, gift, devise, contract, or by other means.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1270,7 +1274,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.62.020" data-order="|3|3.62|3.62.020|" ref-path="3.62.020" class="h__section">3.62.020 ACQUISITION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.62.020" data-order="|3|3.62|3.62.020|" data-ref-path="3.62.020" class="h__section">3.62.020 ACQUISITION.</h2>
                 <p>The acquisition of real property by power of eminent domain, negotiated purchase, lease or otherwise shall be by action of the City Council or City Manager, as set forth in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.62" title="Chapter 3.62 ACQUISITION—LEASING—DISPOSITION—CITY PROPERTY">this chapter</a>. In acquisitions of real property by action other than condemnation, it shall not be necessary to obtain an appraisal of value, but the Council may so authorize or require.</p>
                 <p>The City Manager or designee is authorized to purchase affordable ownership residential units in the City, at the purchase price prescribed in the applicable affordability agreement, for purposes of resale to a qualified buyer, as defined in the applicable affordability agreement.</p>
                 <p>The Council may accept or reject any gift, bequest, devise of real or personal property made to or for the City, or to any of its Boards, Commissions or officers in their official capacity or in trust for any public purpose. It may hold and dispose of the property and the income therefrom for such uses as the Council may determine.</p>
@@ -1280,7 +1284,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.62.030" data-order="|3|3.62|3.62.030|" ref-path="3.62.030" class="h__section">3.62.030 LEASES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.62.030" data-order="|3|3.62|3.62.030|" data-ref-path="3.62.030" class="h__section">3.62.030 LEASES.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.62.030#(a)">(a)</span> Personal Property. When a lease of City property or the property of another is for a term not to exceed one year and involves a consideration of twenty-five thousand dollars or less, it may be approved by the City Manager. If it is for a term in excess of one year, or involves a consideration of more than twenty-five thousand dollars, then it may be approved by the City Council.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.62.030#(b)">(b)</span> Real Property. When a lease of City property or the property of another is for a term not to exceed one year and involves a consideration of twenty-five thousand dollars or less, it may be approved by the City Manager. All other leases of City property may be approved by the City Council.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.62.030#(c)">(c)</span> Term. No lease of City property may be granted for a term to exceed ninety-nine years, except that marsh, tide and submerged lands granted to the City by the State may be leased for a longer period if permitted by the terms of such grant.</p>
@@ -1290,7 +1294,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.62.040" data-order="|3|3.62|3.62.040|" ref-path="3.62.040" class="h__section">3.62.040 SALE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.62.040" data-order="|3|3.62|3.62.040|" data-ref-path="3.62.040" class="h__section">3.62.040 SALE.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.62.040#(a)">(a)</span> Personal Property. Personal property which is outmoded, obsolete, no longer usable for the public purpose intended, in a state of disrepair requiring serviceable costs in excess of its salvage value, in need of replacement to maintain a reasonable standard of public service, or of no benefit or surplus to the needs of the City, may be disposed of by sale or discarded.</p>
                 <p>When sales of City personal property involve a value or consideration of twenty-five thousand dollars or less, they may be approved by the City Manager. All sales involving a value or consideration of twenty-five thousand dollars or more may be approved by the City Council. Sales at public auction may occur without approval of the City Council or City Manager.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.62.040#(b)">(b)</span> Real Property. Real property, whether the same be land or improvements, or both, may be sold by approval of the City Council upon a finding that such sale is for the public interest and convenience with the adoption of a resolution of intention to sell, incorporating such finding. The resolution of intention may contain those provisions that the City Council deems appropriate and may:</p>
@@ -1306,7 +1310,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.62.050" data-order="|3|3.62|3.62.050|" ref-path="3.62.050" class="h__section">3.62.050 BID PROCEDURES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.62.050" data-order="|3|3.62|3.62.050|" data-ref-path="3.62.050" class="h__section">3.62.050 BID PROCEDURES.</h2>
                 <p>The leasing, sale, or disposition of City property will be governed by the following procedures:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.62.050#(a)">(a)</span> Personal Property. All personal property having value only as scrap may be accumulated to be sold as a lot for the highest bid. Said bid may be made and honored for a calendar year, or less, as the City Manager may determine. All other personal property may be sold at an auction or by advertising for bids in accordance with either the "Council Award Procedure" or the "Manager Award Procedure" set forth in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.60" title="Chapter 3.60 PURCHASING">Chapter 3.60</a>, depending on the awarding authority. By 4/5 vote of the City Council bids may be waived if: (1) disposition is made to a non-profit entity provided that the Council finds the disposition to be of public benefit; or (2) if the property is of a type for which there is no otherwise available market. Used and unneeded computers and computer equipment may be donated to schools within the City of San Mateo without compliance with this section.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.62.050#(b)">(b)</span> Real Property. The bid provisions of the "Council Award Procedure" set forth in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.60" title="Chapter 3.60 PURCHASING">Chapter 3.60</a> will apply to the sale of City real property. Leasing of City real property is subject to the bid provisions of the "Council Award Procedure" or the "Manager Award Procedure" set forth in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.60" title="Chapter 3.60 PURCHASING">Chapter 3.60</a>, depending on the awarding authority.</p>
@@ -1317,7 +1321,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.62.060" data-order="|3|3.62|3.62.060|" ref-path="3.62.060" class="h__section">3.62.060 LIABILITY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.62.060" data-order="|3|3.62|3.62.060|" data-ref-path="3.62.060" class="h__section">3.62.060 LIABILITY.</h2>
                 <p>Failure to comply with the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.62" title="Chapter 3.62 ACQUISITION—LEASING—DISPOSITION—CITY PROPERTY">this chapter</a> shall not invalidate or set aside any contract. No section of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.62" title="Chapter 3.62 ACQUISITION—LEASING—DISPOSITION—CITY PROPERTY">this chapter</a> shall impose a mandatory duty on the City, or on any officer, official, agent, employee, board, council or commission thereof. Instead, if any section purports to impose a mandatory duty of enforcement, said section shall be deemed to invest the City, and the appropriate officer, official, agent, employee, Board, Council or Commission with discretion to enforce the section, or not to enforce it.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1325,7 +1329,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.62.070" data-order="|3|3.62|3.62.070|" ref-path="3.62.070" class="h__section">3.62.070 LOW OR MODERATE INCOME HOUSING.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.62.070" data-order="|3|3.62|3.62.070|" data-ref-path="3.62.070" class="h__section">3.62.070 LOW OR MODERATE INCOME HOUSING.</h2>
                 <p>Notwithstanding any other provisions of law, the Council may authorize a disposition of property without requiring bids and without the need to adopt a resolution of intention when it finds that the disposition is in the best interests of the City and states the reasons therefor and when the sale is for the development of low or moderate income housing. Disposition may be on such terms and conditions as the Council deems appropriate and may include a requirement that the property be used for low or moderate income housing, in whole or in part, for a specific period of time. Disposition to the San Mateo Redevelopment Agency may be accomplished pursuant to this section.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1333,8 +1337,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.64" data-order="|3|3.64|" ref-path="3.64" class="h__chapter">Chapter 3.64 FEES</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/3.64.010" data-order="|3|3.64|3.64.010|" ref-path="3.64.010" class="h__section">3.64.010 FEES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.64" data-order="|3|3.64|" data-ref-path="3.64" class="h__chapter">Chapter 3.64 FEES</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.64.010" data-order="|3|3.64|3.64.010|" data-ref-path="3.64.010" class="h__section">3.64.010 FEES.</h2>
                 <p>Prior to submittal of the annual budget, the City Manager shall submit to the City Council the fees proposed for the next fiscal year. The prior year's fees shall continue if the City Manager does not submit new proposed fees. If the proposed fees do not represent a percentage increase exceeding the percentage increase for the preceding twelve (12) month period as shown by the San Francisco Bay Area Consumer Price Index of the Bureau of Labor Statistics, United States Department of Labor, under the heading All Items, or any index substituted by the Department of Labor therefor, the proposed fees shall become effective on the following July 1, unless a different date is set forth in the submission, provided however that the Council may amend the fees before the effective date. If the proposed fees represent a percentage increase exceeding the percentage increase in the Consumer Price Index, they must be approved by the Council before becoming effective. Notwithstanding the above, the Council may amend any fee at any time.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1342,7 +1346,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.64.020" data-order="|3|3.64|3.64.020|" ref-path="3.64.020" class="h__section">3.64.020 PENALTIES AND INTEREST.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.64.020" data-order="|3|3.64|3.64.020|" data-ref-path="3.64.020" class="h__section">3.64.020 PENALTIES AND INTEREST.</h2>
                 <p>Any fee imposed by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.64" title="Chapter 3.64 FEES">this chapter</a> shall be due and payable within thirty days after the bill is mailed by the City. The fees shall be delinquent if not paid within said thirty days. Any person who fails to remit any fee within the time required shall pay a penalty of ten percent of the amount due, per month to a maximum of three months, plus interest at the rate of 1-1/2 percent per month, or fraction thereof, computed from the delinquent date of the fee until and including the date of payment.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1350,7 +1354,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/3.64.030" data-order="|3|3.64|3.64.030|" ref-path="3.64.030" class="h__section">3.64.030 FEES FOR CODE ENFORCEMENT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/3.64.030" data-order="|3|3.64|3.64.030|" data-ref-path="3.64.030" class="h__section">3.64.030 FEES FOR CODE ENFORCEMENT.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.64.030#(a)">(a)</span> Nuisances. The Council is authorized to adopt fees for administrative costs incurred in the enforcement of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/7" title="Title 7 HEALTH, SANITATION, AND PUBLIC NUISANCES">Title 7</a>. No fee shall be charged if a property owner or agent abates the nuisance or violation within thirty (30) days after first notification of the violation is mailed by the City.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/3.64.030#(b)">(b)</span> Other Violations. The City shall be authorized to adopt fees for costs incurred in the enforcement of Municipal Code violations which result in a requirement for a planning application or building permit, if such application is made or permit applied for more than thirty days after notification of the violation is mailed.</p>
                 <aside class="annotations" role="note">
@@ -1362,7 +1366,7 @@
               </div>
             </article>
           </main>
-          <nav id="area__navigation_mini" class="ui ns__document__oll-core" role="region" aria-label="Previous and next article links">
+          <nav id="area__navigation_mini" class="ns__document__oll-core" aria-label="Previous and next article links">
             <section>
               <a href="/us/ca/cities/san-mateo/code/2" aria-label="Title 2 ADMINISTRATION AND PERSONNEL">
                 <div class="h__ui">Previous</div>
@@ -1377,7 +1381,7 @@
             </section>
           </nav>
         </div>
-      </section>
+      </div>
       <footer id="section__footer" class="ns__document__oll-core">
         <div id="section__footer__inner" class="ns__document__oll-core">
           <div id="area__footer__content" class="ns__document__oll-core">

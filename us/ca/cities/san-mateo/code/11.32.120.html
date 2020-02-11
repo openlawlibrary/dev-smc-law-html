@@ -53,15 +53,17 @@
     <script src="/_reader/js/main.js"> </script>
   </head>
   <body>
-    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true">
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
       <p id="message"> </p>
     </div>
-    <a href="#area__content" class="skip-link">Skip to main content</a>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
     <div id="grid" class="ns__document__oll-core">
       <header id="section__header" class="ns__document__oll-core">
         <div id="section__header__inner" class="ns__document__oll-core">
           <div id="area__logo" class="ns__document__oll-core">
-            <a href="/" class="logo" alt="San Mateo Law Library">
+            <a href="/" class="logo" aria-label="Logo - Return to home page">
               <img src="/us/ngo/oll/_document/v2/images/logo/logo.png" srcset="/us/ngo/oll/_document/v2/images/logo/logo.png 1x, /us/ngo/oll/_document/v2/images/logo/logo@2x.png 2x" alt="San Mateo Law Library logo"/>
             </a>
           </div>
@@ -70,11 +72,13 @@
           </div>
         </div>
       </header>
-      <section id="section__content" class="ns__document__oll-core">
+      <div id="section__content" class="ns__document__oll-core">
         <div id="section__content__inner" class="ns__document__oll-core">
-          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region">
-            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-hidden="true" aria-label="Mobile menu toggler"/>
-            <label for="menu-trigger" aria-label="Toggle mobile menu"> </label>
+          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
             <nav role="navigation" aria-label="Breadcrumb navigation">
               <div class="h__ui">Navigation</div>
               <ul class="ancestors">
@@ -98,7 +102,7 @@
           </section>
           <main id="area__content" class="ns__document__oll-core">
             <div class="h__document-title">City of San Mateo Municipal Code.</div>
-            <article class="content" role="document" ref-path="11.32.120">
+            <article class="content" role="document" data-ref-path="11.32.120">
               <div class="tuf-authenticate">
                 <h1 class="h__toc" id="/us/ca/cities/san-mateo/code/11.32.120">11.32.120 RESIDENTIAL PARKING PERMIT POLICIES AND PROCEDURES.</h1>
                 <p>A Residential Parking Permit Program is hereby approved and authorized for use in all residential districts or appurtenant to any authorized residential use. The excessive parking of nonresident vehicles on residential streets is detrimental to the integrity of the residential neighborhood. The purpose of this section is to avoid such detriment and allow residents to park upon streets in their own neighborhoods. The Director of Public Works is authorized to propose policies and procedures implementing a Residential Parking Permit Program. Those policies and procedures shall be reviewed by the Sustainability and Infrastructure Commission who shall thereafter make recommendations to the City Council for adoption. Such policies and procedures shall be consistent with the purpose of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/11.32" title="Chapter 11.32 STOPPING, STANDING AND PARKING">this chapter</a>. Violations of the Residential Parking Permit Program Policies and Procedures are enforceable in the same manner and to the same extent as are violations of the other provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/11" title="Title 11 VEHICLES AND TRAFFIC">this title</a>.</p>
@@ -111,7 +115,7 @@
               </div>
             </article>
           </main>
-          <nav id="area__navigation_mini" class="ui ns__document__oll-core" role="region" aria-label="Previous and next article links">
+          <nav id="area__navigation_mini" class="ns__document__oll-core" aria-label="Previous and next article links">
             <section>
               <a href="/us/ca/cities/san-mateo/code/11.32.105" aria-label="11.32.105 PARKING OF OVERSIZED VEHICLES AND TRAILERS UNCONNECTED TO VEHICLES.">
                 <div class="h__ui">Previous</div>
@@ -126,7 +130,7 @@
             </section>
           </nav>
         </div>
-      </section>
+      </div>
       <footer id="section__footer" class="ns__document__oll-core">
         <div id="section__footer__inner" class="ns__document__oll-core">
           <div id="area__footer__content" class="ns__document__oll-core">

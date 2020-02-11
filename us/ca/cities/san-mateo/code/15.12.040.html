@@ -53,15 +53,17 @@
     <script src="/_reader/js/main.js"> </script>
   </head>
   <body>
-    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true">
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
       <p id="message"> </p>
     </div>
-    <a href="#area__content" class="skip-link">Skip to main content</a>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
     <div id="grid" class="ns__document__oll-core">
       <header id="section__header" class="ns__document__oll-core">
         <div id="section__header__inner" class="ns__document__oll-core">
           <div id="area__logo" class="ns__document__oll-core">
-            <a href="/" class="logo" alt="San Mateo Law Library">
+            <a href="/" class="logo" aria-label="Logo - Return to home page">
               <img src="/us/ngo/oll/_document/v2/images/logo/logo.png" srcset="/us/ngo/oll/_document/v2/images/logo/logo.png 1x, /us/ngo/oll/_document/v2/images/logo/logo@2x.png 2x" alt="San Mateo Law Library logo"/>
             </a>
           </div>
@@ -70,11 +72,13 @@
           </div>
         </div>
       </header>
-      <section id="section__content" class="ns__document__oll-core">
+      <div id="section__content" class="ns__document__oll-core">
         <div id="section__content__inner" class="ns__document__oll-core">
-          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region">
-            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-hidden="true" aria-label="Mobile menu toggler"/>
-            <label for="menu-trigger" aria-label="Toggle mobile menu"> </label>
+          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
             <nav role="navigation" aria-label="Breadcrumb navigation">
               <div class="h__ui">Navigation</div>
               <ul class="ancestors">
@@ -98,7 +102,7 @@
           </section>
           <main id="area__content" class="ns__document__oll-core">
             <div class="h__document-title">City of San Mateo Municipal Code.</div>
-            <article class="content" role="document" ref-path="15.12.040">
+            <article class="content" role="document" data-ref-path="15.12.040">
               <div class="tuf-authenticate">
                 <h1 class="h__toc" id="/us/ca/cities/san-mateo/code/15.12.040">15.12.040 BIDDING PROCEDURE.</h1>
                 <p>Such advertisement shall also contain a statement that the franchise will be struck off, sold and awarded to the person who makes the highest cash bid therefor; provided, only, that at the time of the opening of such bid, any responsible person present or represented may bid for such franchise or privilege a sum of not less than ten percent above the highest sealed bid therefor, and such bid so made may be raised not less than ten percent by any other responsible bidder or bidders, and such bidding may so continue until finally such franchise is struck off, sold and awarded by council to the highest bidder therefor in lawful money of the United States of America. Each sealed bid shall be accompanied with cash or a certified check payable to the City treasurer for the full amount of such bid, and no sealed bid shall be considered, unless such cash or check is enclosed therewith, and the successful bidder shall deposit at least ten percent of the amount of his or her bid with the City Clerk before the franchise has been struck off to him. If he or she has failed to make such deposit immediately, then, and in that case, his or her bid shall not be received, and shall be considered as void, and such franchise shall then and there be again offered for sale to the bidder who makes the highest cash bid therefor, subject to the same conditions as to the deposit, as abovementioned. Said procedure shall be had until such franchise is struck off, sold and awarded to a bidder who shall make the necessary deposit of at least ten percent of his or her bid therefor, as herein provided. Such successful bidder shall deposit with the City Clerk, within twenty-four hours of acceptance of his or her bid, the remaining ninety percent of the amount thereof, and in case he or she has then failed to do so, then such deposit theretofore made, shall be forfeited, and such award of such franchise shall be void, and such franchise shall then and there by council be again offered for sale to the highest bidder or bidders therefor, in the same manner, and under the same restrictions as hereinbefore provided, and in case such bidder has failed to deposit with the City Clerk the remaining ninety percent of his or her bid within twenty-four hours after its acceptance, the award to him or her shall be forfeited, and no further proceedings for a sale of such franchise shall be had, unless the same is readvertised and again offered for sale, in the manner hereinbefore provided.</p>
@@ -111,7 +115,7 @@
               </div>
             </article>
           </main>
-          <nav id="area__navigation_mini" class="ui ns__document__oll-core" role="region" aria-label="Previous and next article links">
+          <nav id="area__navigation_mini" class="ns__document__oll-core" aria-label="Previous and next article links">
             <section>
               <a href="/us/ca/cities/san-mateo/code/15.12.030" aria-label="15.12.030 ESTIMATE OF RECEIPTS ON GRANT OF EXTENSION.">
                 <div class="h__ui">Previous</div>
@@ -126,7 +130,7 @@
             </section>
           </nav>
         </div>
-      </section>
+      </div>
       <footer id="section__footer" class="ns__document__oll-core">
         <div id="section__footer__inner" class="ns__document__oll-core">
           <div id="area__footer__content" class="ns__document__oll-core">

@@ -53,15 +53,17 @@
     <script src="/_reader/js/main.js"> </script>
   </head>
   <body>
-    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true">
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
       <p id="message"> </p>
     </div>
-    <a href="#area__content" class="skip-link">Skip to main content</a>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
     <div id="grid" class="ns__document__oll-core">
       <header id="section__header" class="ns__document__oll-core">
         <div id="section__header__inner" class="ns__document__oll-core">
           <div id="area__logo" class="ns__document__oll-core">
-            <a href="/" class="logo" alt="San Mateo Law Library">
+            <a href="/" class="logo" aria-label="Logo - Return to home page">
               <img src="/us/ngo/oll/_document/v2/images/logo/logo.png" srcset="/us/ngo/oll/_document/v2/images/logo/logo.png 1x, /us/ngo/oll/_document/v2/images/logo/logo@2x.png 2x" alt="San Mateo Law Library logo"/>
             </a>
           </div>
@@ -70,11 +72,13 @@
           </div>
         </div>
       </header>
-      <section id="section__content" class="ns__document__oll-core">
+      <div id="section__content" class="ns__document__oll-core">
         <div id="section__content__inner" class="ns__document__oll-core">
-          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region">
-            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-hidden="true" aria-label="Mobile menu toggler"/>
-            <label for="menu-trigger" aria-label="Toggle mobile menu"> </label>
+          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
             <nav role="navigation" aria-label="Breadcrumb navigation">
               <div class="h__ui">Navigation</div>
               <ul class="ancestors">
@@ -98,7 +102,7 @@
           </section>
           <main id="area__content" class="ns__document__oll-core">
             <div class="h__document-title">City of San Mateo Municipal Code.</div>
-            <article class="content" role="document" ref-path="5.48.010">
+            <article class="content" role="document" data-ref-path="5.48.010">
               <div class="tuf-authenticate">
                 <h1 class="h__toc" id="/us/ca/cities/san-mateo/code/5.48.010">5.48.010 INTERSTATE COMMERCE.</h1>
                 <p class="text-indent-1"><span class="level-num" id="(a)">(a)</span> Every peddler, solicitor or other person, claiming to be entitled to exemption from the payment of any tax provided for in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/5" title="Title 5 BUSINESS LICENSES AND REGULATIONS">this title</a> upon the ground that such tax casts a burden upon his or her right to engage in commerce with foreign nations or among the several states, or conflicts with the laws of the United States respecting interstate commerce, shall file a verified statement with the bureau disclosing the interstate or other character of his or her business entitling such exemption. Such statement shall contain the name and location of the company or firm for which the orders are to be solicited or secured, the name of the nearest local or state manager, if any, and his or her address, the kind of goods, wares or merchandise to be delivered, the place from which the same are to be shipped or forwarded, the method of solicitation or taking orders, the location of any warehouse, factory or plant within the state, the method of delivery, the name and location of the residence of the applicant, and any other facts necessary to establish such claim of exemption. A copy of the order blank, contract form, or other papers used by such person in taking orders shall be attached to the affidavit for the information of the bureau.</p>
@@ -121,7 +125,7 @@
               </div>
             </article>
           </main>
-          <nav id="area__navigation_mini" class="ui ns__document__oll-core" role="region" aria-label="Previous and next article links">
+          <nav id="area__navigation_mini" class="ns__document__oll-core" aria-label="Previous and next article links">
             <section>
               <a href="/us/ca/cities/san-mateo/code/5.48" aria-label="Chapter 5.48 PEDDLERS AND SOLICITORS—EXEMPTIONS">
                 <div class="h__ui">Previous</div>
@@ -136,7 +140,7 @@
             </section>
           </nav>
         </div>
-      </section>
+      </div>
       <footer id="section__footer" class="ns__document__oll-core">
         <div id="section__footer__inner" class="ns__document__oll-core">
           <div id="area__footer__content" class="ns__document__oll-core">

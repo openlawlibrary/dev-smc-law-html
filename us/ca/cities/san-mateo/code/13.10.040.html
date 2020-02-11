@@ -53,15 +53,17 @@
     <script src="/_reader/js/main.js"> </script>
   </head>
   <body>
-    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true">
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
       <p id="message"> </p>
     </div>
-    <a href="#area__content" class="skip-link">Skip to main content</a>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
     <div id="grid" class="ns__document__oll-core">
       <header id="section__header" class="ns__document__oll-core">
         <div id="section__header__inner" class="ns__document__oll-core">
           <div id="area__logo" class="ns__document__oll-core">
-            <a href="/" class="logo" alt="San Mateo Law Library">
+            <a href="/" class="logo" aria-label="Logo - Return to home page">
               <img src="/us/ngo/oll/_document/v2/images/logo/logo.png" srcset="/us/ngo/oll/_document/v2/images/logo/logo.png 1x, /us/ngo/oll/_document/v2/images/logo/logo@2x.png 2x" alt="San Mateo Law Library logo"/>
             </a>
           </div>
@@ -70,11 +72,13 @@
           </div>
         </div>
       </header>
-      <section id="section__content" class="ns__document__oll-core">
+      <div id="section__content" class="ns__document__oll-core">
         <div id="section__content__inner" class="ns__document__oll-core">
-          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region">
-            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-hidden="true" aria-label="Mobile menu toggler"/>
-            <label for="menu-trigger" aria-label="Toggle mobile menu"> </label>
+          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
             <nav role="navigation" aria-label="Breadcrumb navigation">
               <div class="h__ui">Navigation</div>
               <ul class="ancestors">
@@ -98,7 +102,7 @@
           </section>
           <main id="area__content" class="ns__document__oll-core">
             <div class="h__document-title">City of San Mateo Municipal Code.</div>
-            <article class="content" role="document" ref-path="13.10.040">
+            <article class="content" role="document" data-ref-path="13.10.040">
               <div class="tuf-authenticate">
                 <h1 class="h__toc" id="/us/ca/cities/san-mateo/code/13.10.040">13.10.040 ACTIVITIES ALLOWED WITHOUT PERMITS.</h1>
                 <p>Some activities and uses are allowed without permit in the public square. The public squares are specified for purposes of public expression and are designated as public forums for the dissemination of both verbal and written messages, subject to reasonable time and manner restrictions set forth in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.10.045" title="13.10.045 PUBLIC SQUARE TIME AND MANNER RESTRICTIONS.">Section 13.10.045</a>. Public demonstrations or picketing or leafleting, except as allowed herein in a public square, are not allowed within park facilities. Notwithstanding such limitation, nothing herein shall be construed to limit the use of parks for purposes of public expression by groups of less than 50 persons, when such parks are open to the public, or to limit such use by permit of any park property or facility by groups of all sizes, or such use of adjacent public forums, such as sidewalks within the public right-of-way. The following areas are designated as public squares: (1) the large interior lawn area in the middle of Central Park containing the flagpole; (2) the lawn area 50 feet west of the skate park, 50 feet east of the garden plots whose southern boundary is in line with the southern boundary of the skate park and whose northern boundary is in line with southern boundary of the basketball court area at Beresford Park; (3) the lawn area behind the ballfield bleachers at Bayside Joinville Park; and (4) the passive lawn area east of the King Park picnic area bordered by the ballfield, the parking lot and the main pathway through the park.</p>
@@ -111,7 +115,7 @@
               </div>
             </article>
           </main>
-          <nav id="area__navigation_mini" class="ui ns__document__oll-core" role="region" aria-label="Previous and next article links">
+          <nav id="area__navigation_mini" class="ns__document__oll-core" aria-label="Previous and next article links">
             <section>
               <a href="/us/ca/cities/san-mateo/code/13.10.030" aria-label="13.10.030 PERMITS—REQUIREMENTS.">
                 <div class="h__ui">Previous</div>
@@ -126,7 +130,7 @@
             </section>
           </nav>
         </div>
-      </section>
+      </div>
       <footer id="section__footer" class="ns__document__oll-core">
         <div id="section__footer__inner" class="ns__document__oll-core">
           <div id="area__footer__content" class="ns__document__oll-core">

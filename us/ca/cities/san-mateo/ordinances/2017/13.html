@@ -49,15 +49,17 @@
     <script src="/_reader/js/main.js"> </script>
   </head>
   <body>
-    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true">
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
       <p id="message"> </p>
     </div>
-    <a href="#area__content" class="skip-link">Skip to main content</a>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
     <div id="grid" class="ns__document__oll-core">
       <header id="section__header" class="ns__document__oll-core">
         <div id="section__header__inner" class="ns__document__oll-core">
           <div id="area__logo" class="ns__document__oll-core">
-            <a href="/" class="logo" alt="San Mateo Law Library">
+            <a href="/" class="logo" aria-label="Logo - Return to home page">
               <img src="/us/ngo/oll/_document/v2/images/logo/logo.png" srcset="/us/ngo/oll/_document/v2/images/logo/logo.png 1x, /us/ngo/oll/_document/v2/images/logo/logo@2x.png 2x" alt="San Mateo Law Library logo"/>
             </a>
           </div>
@@ -66,11 +68,13 @@
           </div>
         </div>
       </header>
-      <section id="section__content" class="ns__document__oll-core">
+      <div id="section__content" class="ns__document__oll-core">
         <div id="section__content__inner" class="ns__document__oll-core">
-          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region">
-            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-hidden="true" aria-label="Mobile menu toggler"/>
-            <label for="menu-trigger" aria-label="Toggle mobile menu"> </label>
+          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
             <nav role="navigation" aria-label="Breadcrumb navigation">
               <div class="h__ui">Navigation</div>
               <ul class="ancestors">
@@ -98,7 +102,7 @@
                 <p>WHEREAS, on September 14, 2017, the San Mateo Sustainability Commission held a duly noticed public hearing and recommended that the proposed amendment to <a class="internal-link " href="/us/ca/cities/san-mateo/code/8.28" title="Chapter 8.28 BEES">Chapter 8.28 of the San Mateo Municipal Code</a> be adopted by City Council; and</p>
                 <p>WHEREAS, on October 16, 2017 the City Council considered the proposed amendments;</p>
                 <p>NOW, THEREFORE, THE CITY COUNCIL OF THE CITY OF SAN MATEO, CALIFORNIA, ORDAINS that:</p>
-                <div class="p--section" ref-path="&#xA7;1"><h2 class="h__inline-text" id="1">Section 1.</h2> <p><a class="internal-link " href="/us/ca/cities/san-mateo/code/8.28" title="Chapter 8.28 BEES">Chapter 8.28 of the San Mateo Municipal Code</a> is hereby amended to read:</p></div>
+                <div class="p--section" data-ref-path="&#xA7;1"><h2 class="h__inline-text" id="1">Section 1.</h2> <p><a class="internal-link " href="/us/ca/cities/san-mateo/code/8.28" title="Chapter 8.28 BEES">Chapter 8.28 of the San Mateo Municipal Code</a> is hereby amended to read:</p></div>
                 <h3 class="quote" id="">Chapter 8.28 BEES</h3>
                 <div class="quote">
                   <p>8.28.010. Keeping of Bees – Conditions.</p>
@@ -111,10 +115,10 @@
                 <p class="quote">Beekeepers shall manage the direction and angle of the bee flyway from the entrance of the hive by properly siting and orienting the hives and by using flyway barriers as needed to modify the angle in order to keep the flyway over the beekeeper's property until the bees are flying eight or more feet above the ground</p>
                 <h4 class="h6 text--bold quote">8.28.020 NUISANCE WHEN.</h4>
                 <p class="quote">No person shall manage bees under such conditions as to create a source of constant annoyance or discomfort to any person.</p>
-                <div class="p--section" ref-path="&#xA7;2"><h2 class="h__inline-text" id="2">Section 2. PUBLICATION.</h2> <p>This Ordinance shall be published in summary in a newspaper of general circulation, and posted in the City Clerk's Office and on the City's website, all in accord with <a class="internal-link " href="/us/ca/cities/san-mateo/charter/2.15" title="2.15 Ordinances, Generally.">Section 2.15 of the City Charter</a>.</p></div>
-                <div class="p--section" ref-path="&#xA7;3"><h2 class="h__inline-text" id="3">Section 3. SEVERABILITY.</h2> <p>In the event any section, clause or provision of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3" title="Title 3 TAXATION AND FINANCE">this chapter</a> shall be determined invalid or unconstitutional, such section, clause or provision shall be deemed severable and all other sections or portions hereof shall remain in full force and effect.</p></div>
-                <div class="p--section" ref-path="&#xA7;4"><h2 class="h__inline-text" id="4">Section 4. ENVIRONMENTAL DETERMINATION.</h2> <p>In accordance with <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=21065&amp;lawCode=PRC" title="">California Public Resources Code 21065</a> adoption of this Ordinance is not a "project" subject to CEQA because it can be seen with certainty that it will not cause a change in the environment.</p></div>
-                <div class="p--section" ref-path="&#xA7;5"><h2 class="h__inline-text" id="5">Section 5. EFFECTIVE DATE.</h2> <p>This Ordinance was introduced on October 16, 2017 and adopted on November 6, 2017, and will take effect thirty days after its date of adoption.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;2"><h2 class="h__inline-text" id="2">Section 2. PUBLICATION.</h2> <p>This Ordinance shall be published in summary in a newspaper of general circulation, and posted in the City Clerk's Office and on the City's website, all in accord with <a class="internal-link " href="/us/ca/cities/san-mateo/charter/2.15" title="2.15 Ordinances, Generally.">Section 2.15 of the City Charter</a>.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;3"><h2 class="h__inline-text" id="3">Section 3. SEVERABILITY.</h2> <p>In the event any section, clause or provision of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3" title="Title 3 TAXATION AND FINANCE">this chapter</a> shall be determined invalid or unconstitutional, such section, clause or provision shall be deemed severable and all other sections or portions hereof shall remain in full force and effect.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;4"><h2 class="h__inline-text" id="4">Section 4. ENVIRONMENTAL DETERMINATION.</h2> <p>In accordance with <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=21065&amp;lawCode=PRC" title="">California Public Resources Code 21065</a> adoption of this Ordinance is not a "project" subject to CEQA because it can be seen with certainty that it will not cause a change in the environment.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;5"><h2 class="h__inline-text" id="5">Section 5. EFFECTIVE DATE.</h2> <p>This Ordinance was introduced on October 16, 2017 and adopted on November 6, 2017, and will take effect thirty days after its date of adoption.</p></div>
                 <p>The foregoing ordinance was adopted by the City Council of the City of San Mateo, State of California by the following vote:</p>
                 <div class="table_wrap">
                   <table>
@@ -153,7 +157,7 @@
             </section>
           </section>
         </div>
-      </section>
+      </div>
       <footer id="section__footer" class="ns__document__oll-core">
         <div id="section__footer__inner" class="ns__document__oll-core">
           <div id="area__footer__content" class="ns__document__oll-core">

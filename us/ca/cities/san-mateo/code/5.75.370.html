@@ -53,15 +53,17 @@
     <script src="/_reader/js/main.js"> </script>
   </head>
   <body>
-    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true">
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
       <p id="message"> </p>
     </div>
-    <a href="#area__content" class="skip-link">Skip to main content</a>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
     <div id="grid" class="ns__document__oll-core">
       <header id="section__header" class="ns__document__oll-core">
         <div id="section__header__inner" class="ns__document__oll-core">
           <div id="area__logo" class="ns__document__oll-core">
-            <a href="/" class="logo" alt="San Mateo Law Library">
+            <a href="/" class="logo" aria-label="Logo - Return to home page">
               <img src="/us/ngo/oll/_document/v2/images/logo/logo.png" srcset="/us/ngo/oll/_document/v2/images/logo/logo.png 1x, /us/ngo/oll/_document/v2/images/logo/logo@2x.png 2x" alt="San Mateo Law Library logo"/>
             </a>
           </div>
@@ -70,11 +72,13 @@
           </div>
         </div>
       </header>
-      <section id="section__content" class="ns__document__oll-core">
+      <div id="section__content" class="ns__document__oll-core">
         <div id="section__content__inner" class="ns__document__oll-core">
-          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region">
-            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-hidden="true" aria-label="Mobile menu toggler"/>
-            <label for="menu-trigger" aria-label="Toggle mobile menu"> </label>
+          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
             <nav role="navigation" aria-label="Breadcrumb navigation">
               <div class="h__ui">Navigation</div>
               <ul class="ancestors">
@@ -98,7 +102,7 @@
           </section>
           <main id="area__content" class="ns__document__oll-core">
             <div class="h__document-title">City of San Mateo Municipal Code.</div>
-            <article class="content" role="document" ref-path="5.75.370">
+            <article class="content" role="document" data-ref-path="5.75.370">
               <div class="tuf-authenticate">
                 <h1 class="h__toc" id="/us/ca/cities/san-mateo/code/5.75.370">5.75.370 TAXIMETER—REQUIRED.</h1>
                 <p>No application for a permit to operate a taxicab in this City shall be granted or renewed to any owner or driver of any taxicab within this City, and no taxicab which is now operating under a license permit, shall be permitted to operate after June 1, 1949, unless such vehicle is equipped with a taximeter of such type, style, and design as may be approved by the City Manager, and it shall be the duty of every owner operating a taxicab to keep such taximeter in perfect condition so that such taximeter will at all times correctly and accurately indicate the legal charge for the distance traveled, and waiting time. Such taximeter shall be at all times subject to inspection by the Chief of Police, and the Chief of Police is authorized at his or her instance or upon complaint of any person, to investigate such taximeter or cause it to be investigated, and upon the discovery of any inaccuracy in such meter, to remove or cause to be removed such vehicle equipped with the taximeter from the streets of the City until such time as the taximeter has been correctly adjusted; provided, that the City Manager may in writing permit the operation of a taxicab unequipped with a taximeter on the terms and conditions, including, but not limited to, rates, and for the time specified in such a written permit, a copy of which permit must be displayed in the passenger's compartment of a taxicab.</p>
@@ -115,7 +119,7 @@
               </div>
             </article>
           </main>
-          <nav id="area__navigation_mini" class="ui ns__document__oll-core" role="region" aria-label="Previous and next article links">
+          <nav id="area__navigation_mini" class="ns__document__oll-core" aria-label="Previous and next article links">
             <section>
               <a href="/us/ca/cities/san-mateo/code/5.75.340" aria-label="5.75.340 REVOCATION OR SUSPENSION NOTICE.">
                 <div class="h__ui">Previous</div>
@@ -130,7 +134,7 @@
             </section>
           </nav>
         </div>
-      </section>
+      </div>
       <footer id="section__footer" class="ns__document__oll-core">
         <div id="section__footer__inner" class="ns__document__oll-core">
           <div id="area__footer__content" class="ns__document__oll-core">

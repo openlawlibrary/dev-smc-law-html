@@ -53,15 +53,17 @@
     <script src="/_reader/js/main.js"> </script>
   </head>
   <body>
-    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true">
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
       <p id="message"> </p>
     </div>
-    <a href="#area__content" class="skip-link">Skip to main content</a>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
     <div id="grid" class="ns__document__oll-core">
       <header id="section__header" class="ns__document__oll-core">
         <div id="section__header__inner" class="ns__document__oll-core">
           <div id="area__logo" class="ns__document__oll-core">
-            <a href="/" class="logo" alt="San Mateo Law Library">
+            <a href="/" class="logo" aria-label="Logo - Return to home page">
               <img src="/us/ngo/oll/_document/v2/images/logo/logo.png" srcset="/us/ngo/oll/_document/v2/images/logo/logo.png 1x, /us/ngo/oll/_document/v2/images/logo/logo@2x.png 2x" alt="San Mateo Law Library logo"/>
             </a>
           </div>
@@ -70,11 +72,13 @@
           </div>
         </div>
       </header>
-      <section id="section__content" class="ns__document__oll-core">
+      <div id="section__content" class="ns__document__oll-core">
         <div id="section__content__inner" class="ns__document__oll-core">
-          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region">
-            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-hidden="true" aria-label="Mobile menu toggler"/>
-            <label for="menu-trigger" aria-label="Toggle mobile menu"> </label>
+          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
             <nav role="navigation" aria-label="Breadcrumb navigation">
               <div class="h__ui">Navigation</div>
               <ul class="ancestors">
@@ -98,7 +102,7 @@
           </section>
           <main id="area__content" class="ns__document__oll-core">
             <div class="h__document-title">City of San Mateo Municipal Code.</div>
-            <article class="content" role="document" ref-path="5.69.010">
+            <article class="content" role="document" data-ref-path="5.69.010">
               <div class="tuf-authenticate">
                 <h1 class="h__toc" id="/us/ca/cities/san-mateo/code/5.69.010">5.69.010 PROHIBITED SALES.</h1>
                 <p>No person shall advertise, represent or hold out that any sale of goods, wares, or merchandise, or a sale of any department of goods, wares and merchandise, is an insurance, bankruptcy, liquidation, mortgage, insolvent's, assignee's, executors, administrator's, receiver's, or trustee's, or any closing out sale, or removal, or a sale of goods, wares, or merchandise damaged by fire, smoke or water, or a sale of goods from the stock of a bankrupt, receiver, trustee, insurance company, receivership, or trusteeship, and no person shall advertise, represent or hold out that any sale of goods, wares or merchandise, is anticipatory to, or to avoid the termination, closing, liquidating, revision, winding up, discontinuance, conclusion or abandonment of the business in connection with such sale, and no person shall advertise or make any representation in any such manner as reasonably to convey to the public the belief that upon the disposal of any such stock of goods on hand the business will cease and be discontinued, including, but not limited to, sales advertised, held out or represented as adjuster's sale, adjustment sale, administrator's sale, alteration sale, assignee's sale, bankrupt sale, benefit of administrator's sale, benefit of trustee's sale, building coming down sale, closing sale, closing out sale, damaged goods sale, end sale, executor's sale, final days' sale, fire sale, forced out sale, forced out of business sale, insolvent sale, last days' sale, lease expires sale, liquidation sale, loss of lease sale, mortgage sale, receiver's sale, removal sale, reorganization sale, salvage sale, smoke sale, smoke and water sale, trustee's sale, quitting business sale, wholesale cleaning out sale, and also including, but not limited to, sales the advertisement of which contains the word "creditor" or "creditors" unless he or she first obtains a permit to conduct such a sale from the Tax Collector.</p>
@@ -119,7 +123,7 @@
               </div>
             </article>
           </main>
-          <nav id="area__navigation_mini" class="ui ns__document__oll-core" role="region" aria-label="Previous and next article links">
+          <nav id="area__navigation_mini" class="ns__document__oll-core" aria-label="Previous and next article links">
             <section>
               <a href="/us/ca/cities/san-mateo/code/5.69" aria-label="Chapter 5.69 CLOSING OUT SALES">
                 <div class="h__ui">Previous</div>
@@ -134,7 +138,7 @@
             </section>
           </nav>
         </div>
-      </section>
+      </div>
       <footer id="section__footer" class="ns__document__oll-core">
         <div id="section__footer__inner" class="ns__document__oll-core">
           <div id="area__footer__content" class="ns__document__oll-core">

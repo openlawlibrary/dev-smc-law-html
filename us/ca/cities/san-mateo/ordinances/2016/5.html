@@ -49,15 +49,17 @@
     <script src="/_reader/js/main.js"> </script>
   </head>
   <body>
-    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true">
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
       <p id="message"> </p>
     </div>
-    <a href="#area__content" class="skip-link">Skip to main content</a>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
     <div id="grid" class="ns__document__oll-core">
       <header id="section__header" class="ns__document__oll-core">
         <div id="section__header__inner" class="ns__document__oll-core">
           <div id="area__logo" class="ns__document__oll-core">
-            <a href="/" class="logo" alt="San Mateo Law Library">
+            <a href="/" class="logo" aria-label="Logo - Return to home page">
               <img src="/us/ngo/oll/_document/v2/images/logo/logo.png" srcset="/us/ngo/oll/_document/v2/images/logo/logo.png 1x, /us/ngo/oll/_document/v2/images/logo/logo@2x.png 2x" alt="San Mateo Law Library logo"/>
             </a>
           </div>
@@ -66,11 +68,13 @@
           </div>
         </div>
       </header>
-      <section id="section__content" class="ns__document__oll-core">
+      <div id="section__content" class="ns__document__oll-core">
         <div id="section__content__inner" class="ns__document__oll-core">
-          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region">
-            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-hidden="true" aria-label="Mobile menu toggler"/>
-            <label for="menu-trigger" aria-label="Toggle mobile menu"> </label>
+          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
             <nav role="navigation" aria-label="Breadcrumb navigation">
               <div class="h__ui">Navigation</div>
               <ul class="ancestors">
@@ -97,7 +101,7 @@
                 <p>WHEREAS, the City's Climate Action Plan recommended that the City review local amendments to the Energy Code to promote increased energy efficiency and the use of renewable energy sources; and</p>
                 <p>WHEREAS, the City has completed an analysis and has determined that the requirements of the local amendments to the Energy Code would provide a positive cost benefit to new construction within the City of San Mateo.</p>
                 <p>NOW, THEREFORE, THE CITY COUNCIL OF THE CITY OF SAN MATEO DOES ORDAIN AS FOLLOWS:</p>
-                <div class="p--section" ref-path="&#xA7;1"><h2 class="h__inline-text" id="1">Section 1.</h2> <p><a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/23.24" title="Chapter 23.24 ENERGY CODE">Chapter 23.24</a>, Energy Code, is hereby incorporated to adopt California Energy Code, 2016 Edition with Local Amendments to read:</p></div>
+                <div class="p--section" data-ref-path="&#xA7;1"><h2 class="h__inline-text" id="1">Section 1.</h2> <p><a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/23.24" title="Chapter 23.24 ENERGY CODE">Chapter 23.24</a>, Energy Code, is hereby incorporated to adopt California Energy Code, 2016 Edition with Local Amendments to read:</p></div>
                 <h3 class="quote" id="">Chapter 23.24 – Energy Code</h3>
                 <p class="toc-heading quote">Sections:</p>
                 <div class="quote">
@@ -141,10 +145,10 @@
                 <h4 class="h6 text--bold quote">23.24.040 INFEASIBILITY EXEMPTION</h4>
                 <p class="text-indent-1 quote"><span class="level-num" id="">A.</span> Exemption. If an applicant for a Covered Project believes that circumstances exist that makes it infeasible to meet the requirements of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/23.24" title="Chapter 23.24 ENERGY CODE">this Chapter</a>, the applicant may request an exemption as set forth in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/23.06.015" title="23.06.015 MODIFICATIONS. [Repealed]">Section 23.06.015</a> of the Municipal Code.  In applying for the</p>
                 <p class="quote">exemption, the burden is on the Applicant to show infeasibility.</p>
-                <div class="p--section" ref-path="&#xA7;2"><h2 class="h__inline-text" id="2">Section 2.</h2> <p>The Council adopts the findings for the local amendments to the California energy Code, 2016 Edition, attached hereto as Exhibit A and incorporated herein by reference.</p></div>
-                <div class="p--section" ref-path="&#xA7;3"><h2 class="h__inline-text" id="3">Section 3.</h2> <p>If any section, subsection, clause or phrase of this Ordinance is for any reason held to be invalid, such decision shall not affect the validity of the remaining portion or sections of the Ordinance. The Council hereby declares that it should have adopted the Ordinance and each section, subsection, sentence, clause or phrase thereof irrespective of the fact that any one or more sections, subsections, sentences, clauses or phrases be held invalid.</p></div>
-                <div class="p--section" ref-path="&#xA7;4"><h2 class="h__inline-text" id="4">Section 4.</h2> <p>The Council finds that this project is exempt from the provisions of the California Environmental Quality Act ("CEQA"), pursuant to Section 15601 of the CEQA Guidelines, because it can be seen with certainty that there is no possibility that the amendments herein adopted will have a significant effect on the environment.</p></div>
-                <div class="p--section" ref-path="&#xA7;5"><h2 class="h__inline-text" id="5">Section 5.</h2> <p>This Ordinance was introduced on May 16, 2016 and adopted on June 6, 2016 and shall be effective on the commencement of the thirty-first day after the date of its adoption or upon the effective date of the California Energy Code, 2016 Edition, whichever comes latter.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;2"><h2 class="h__inline-text" id="2">Section 2.</h2> <p>The Council adopts the findings for the local amendments to the California energy Code, 2016 Edition, attached hereto as Exhibit A and incorporated herein by reference.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;3"><h2 class="h__inline-text" id="3">Section 3.</h2> <p>If any section, subsection, clause or phrase of this Ordinance is for any reason held to be invalid, such decision shall not affect the validity of the remaining portion or sections of the Ordinance. The Council hereby declares that it should have adopted the Ordinance and each section, subsection, sentence, clause or phrase thereof irrespective of the fact that any one or more sections, subsections, sentences, clauses or phrases be held invalid.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;4"><h2 class="h__inline-text" id="4">Section 4.</h2> <p>The Council finds that this project is exempt from the provisions of the California Environmental Quality Act ("CEQA"), pursuant to Section 15601 of the CEQA Guidelines, because it can be seen with certainty that there is no possibility that the amendments herein adopted will have a significant effect on the environment.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;5"><h2 class="h__inline-text" id="5">Section 5.</h2> <p>This Ordinance was introduced on May 16, 2016 and adopted on June 6, 2016 and shall be effective on the commencement of the thirty-first day after the date of its adoption or upon the effective date of the California Energy Code, 2016 Edition, whichever comes latter.</p></div>
                 <p>The foregoing ordinance was adopted by the City Council of the City of San Mateo, State of California by the following vote:</p>
                 <div class="table_wrap">
                   <table>
@@ -238,7 +242,7 @@
             </section>
           </section>
         </div>
-      </section>
+      </div>
       <footer id="section__footer" class="ns__document__oll-core">
         <div id="section__footer__inner" class="ns__document__oll-core">
           <div id="area__footer__content" class="ns__document__oll-core">

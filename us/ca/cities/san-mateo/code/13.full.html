@@ -53,15 +53,17 @@
     <script src="/_reader/js/main.js"> </script>
   </head>
   <body>
-    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true">
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
       <p id="message"> </p>
     </div>
-    <a href="#area__content" class="skip-link">Skip to main content</a>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
     <div id="grid" class="ns__document__oll-core">
       <header id="section__header" class="ns__document__oll-core">
         <div id="section__header__inner" class="ns__document__oll-core">
           <div id="area__logo" class="ns__document__oll-core">
-            <a href="/" class="logo" alt="San Mateo Law Library">
+            <a href="/" class="logo" aria-label="Logo - Return to home page">
               <img src="/us/ngo/oll/_document/v2/images/logo/logo.png" srcset="/us/ngo/oll/_document/v2/images/logo/logo.png 1x, /us/ngo/oll/_document/v2/images/logo/logo@2x.png 2x" alt="San Mateo Law Library logo"/>
             </a>
           </div>
@@ -70,11 +72,13 @@
           </div>
         </div>
       </header>
-      <section id="section__content" class="ns__document__oll-core">
+      <div id="section__content" class="ns__document__oll-core">
         <div id="section__content__inner" class="ns__document__oll-core">
-          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region">
-            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-hidden="true" aria-label="Mobile menu toggler"/>
-            <label for="menu-trigger" aria-label="Toggle mobile menu"> </label>
+          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
             <nav role="navigation" aria-label="Breadcrumb navigation">
               <div class="h__ui">Navigation</div>
               <ul class="ancestors">
@@ -92,15 +96,15 @@
           </section>
           <main id="area__content" class="ns__document__oll-core">
             <div class="h__document-title">City of San Mateo Municipal Code.</div>
-            <article class="content" role="document" ref-path="13">
+            <article class="content" role="document" data-ref-path="13">
               <div class="tuf-authenticate">
                 <h1 class="h__toc" id="/us/ca/cities/san-mateo/code/13">Title 13 PARKS AND RECREATION</h1>
-                <h2 id="/us/ca/cities/san-mateo/code/13.01" data-order="|13|13.01|" ref-path="13.01" class="h__chapter">Chapter 13.01 DEFINITIONS</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.01" data-order="|13|13.01|" data-ref-path="13.01" class="h__chapter">Chapter 13.01 DEFINITIONS</h2>
                 <section class="line-group annotations">
                   <h4>Editor's Notes</h4>
                   <p>For provisions relating to the park and recreation commission, see <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.27" title="Chapter 2.27 PARK AND RECREATION COMMISSION">Chapter 2.27</a>. For provisions relating to the department of parks and recreation, see <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.45" title="Chapter 2.45 DEPARTMENT OF PARKS AND RECREATION">Chapter 2.45</a>.</p>
                 </section>
-                <h2 id="/us/ca/cities/san-mateo/code/13.01.001" data-order="|13|13.01|13.01.001|" ref-path="13.01.001" class="h__section">13.01.001 DEFINITIONS GENERALLY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.01.001" data-order="|13|13.01|13.01.001|" data-ref-path="13.01.001" class="h__section">13.01.001 DEFINITIONS GENERALLY.</h2>
                 <p>The definitions in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.01" title="Chapter 13.01 DEFINITIONS">this chapter</a> shall be applied to terms used in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13" title="Title 13 PARKS AND RECREATION">this Title</a>*.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -108,7 +112,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.01.005" data-order="|13|13.01|13.01.005|" ref-path="13.01.005" class="h__section">13.01.005 AMPLIFIED SOUND.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.01.005" data-order="|13|13.01|13.01.005|" data-ref-path="13.01.005" class="h__section">13.01.005 AMPLIFIED SOUND.</h2>
                 <p>"Amplified sound" means the use of amplified equipment, including microphone sound equipment, boom boxes, car stereos or other amplified sound or music devices.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -116,7 +120,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.01.010" data-order="|13|13.01|13.01.010|" ref-path="13.01.010" class="h__section">13.01.010 CORE BUSINESS OF PARKS AND RECREATION DEPARTMENT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.01.010" data-order="|13|13.01|13.01.010|" data-ref-path="13.01.010" class="h__section">13.01.010 CORE BUSINESS OF PARKS AND RECREATION DEPARTMENT.</h2>
                 <p>"Core business of the parks and recreation department" means activities and uses that are integral to the Department's mission to enrich community through people, parks and programs including providing an appropriate mix of safe, well maintained and well designed parks, open spaces and community center facilities that are accessible for all residents; creating enriching leisure opportunities for all age groups that support lifetime users and enhance the physical, intellectual, social and cultural growth and development of our residents and preserving and protecting the City's natural resources including its urban forest, public open spaces, pedestrian and bicycle trails and landscaped medians and islands.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -128,7 +132,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.01.015" data-order="|13|13.01|13.01.015|" ref-path="13.01.015" class="h__section">13.01.015 ENVIRONMENTALLY SENSITIVE AREA.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.01.015" data-order="|13|13.01|13.01.015|" data-ref-path="13.01.015" class="h__section">13.01.015 ENVIRONMENTALLY SENSITIVE AREA.</h2>
                 <p>"Environmentally sensitive area" is any area in which plant or animal life or their habitats are either rare or especially valuable because of their special nature or role in an ecosystem and which could be easily disturbed or degraded by human activities and developments.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -136,7 +140,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.01.020" data-order="|13|13.01|13.01.020|" ref-path="13.01.020" class="h__section">13.01.020 FACILITY MANAGER.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.01.020" data-order="|13|13.01|13.01.020|" data-ref-path="13.01.020" class="h__section">13.01.020 FACILITY MANAGER.</h2>
                 <p>The manager in charge of any Park Property or Facility. The Facility Manager shall be designated for any particular Park Property or Facility by the Director of Parks and Recreation. There shall be only one Facility Manager for each Park Property and Facility at any given time.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -144,7 +148,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.01.025" data-order="|13|13.01|13.01.025|" ref-path="13.01.025" class="h__section">13.01.025 FACILITY SPECIFIC REGULATIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.01.025" data-order="|13|13.01|13.01.025|" data-ref-path="13.01.025" class="h__section">13.01.025 FACILITY SPECIFIC REGULATIONS.</h2>
                 <p>"Facility Specific Regulations" means a regulation applicable to a particular Park Property or Facility. Facility Specific Regulations are intended to promote the orderly and smooth operation of the park or facility and shall be posted in a public area at the park or facility or a sign notifying the public of the availability of a list of Facility Specific Regulations shall be posted in a public area. (See <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.20.070" title="13.20.070 FACILITY SPECIFIC REGULATIONS.">Section 13.20.070</a>)</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -152,7 +156,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.01.035" data-order="|13|13.01|13.01.035|" ref-path="13.01.035" class="h__section">13.01.035 OBSCENE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.01.035" data-order="|13|13.01|13.01.035|" data-ref-path="13.01.035" class="h__section">13.01.035 OBSCENE.</h2>
                 <p>Anything when taken as a whole, predominantly appeals to the prurient, shameful, or morbid interests of minors and which is patently offensive to prevailing standards in the adult community as a whole with respect to what is suitable material for minors and when taken as a whole, lacks serious literary, artistic, political, or scientific value for minors.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -160,7 +164,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.01.040" data-order="|13|13.01|13.01.040|" ref-path="13.01.040" class="h__section">13.01.040 ORGANIZED ATHLETIC GROUP.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.01.040" data-order="|13|13.01|13.01.040|" data-ref-path="13.01.040" class="h__section">13.01.040 ORGANIZED ATHLETIC GROUP.</h2>
                 <p>"Organized athletic group" means any group that meets on a regular basis with a similar composition of members for athletic activities or that is currently participating in or registered to participate in an athletic league which provides scheduled games.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -168,7 +172,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.01.042" data-order="|13|13.01|13.01.042|" ref-path="13.01.042" class="h__section">13.01.042 PARK.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.01.042" data-order="|13|13.01|13.01.042|" data-ref-path="13.01.042" class="h__section">13.01.042 PARK.</h2>
                 <p>"Park" when used in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13" title="Title 13 PARKS AND RECREATION">this Title</a> shall mean those properties designated as dedicated Parks under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.10" title="Chapter 13.10 PARK PERMITS">Chapter 13.10</a> of this Code and any other City property open to the public for recreational purposes but excluding Park Facilities.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -176,7 +180,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.01.043" data-order="|13|13.01|13.01.043|" ref-path="13.01.043" class="h__section">13.01.043 PARK FACILITY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.01.043" data-order="|13|13.01|13.01.043|" data-ref-path="13.01.043" class="h__section">13.01.043 PARK FACILITY.</h2>
                 <p>"Park Facility" includes the King Center Recreation building and pool, the Beresford Recreation Center building, the Joinville Pool and building, the San Mateo Senior Center, the City Park maintenance facility on Pacific Avenue, Shoreview Recreation Center, Lakeshore Recreation Center building and all buildings located within Central Park and at the Municipal Golf Course.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -184,7 +188,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.01.045" data-order="|13|13.01|13.01.045|" ref-path="13.01.045" class="h__section">13.01.045 PARK PROPERTIES AND FACILITIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.01.045" data-order="|13|13.01|13.01.045|" data-ref-path="13.01.045" class="h__section">13.01.045 PARK PROPERTIES AND FACILITIES.</h2>
                 <p>Whenever "park property(ies) and/or facility(ies)" appear in this code, it shall mean all grounds and facilities under the supervision of the department of parks and recreation. This includes but is not limited to municipal parks, pools, recreation centers, golf course, park maintenance facilities and all parking lots and structures involved in these facilities and school district facilities when scheduled or programmed by the City.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -192,7 +196,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.01.050" data-order="|13|13.01|13.01.050|" ref-path="13.01.050" class="h__section">13.01.050 PERSONAL WATERCRAFT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.01.050" data-order="|13|13.01|13.01.050|" data-ref-path="13.01.050" class="h__section">13.01.050 PERSONAL WATERCRAFT.</h2>
                 <p>"Personal watercraft" means a vessel 13 feet in length or less, propelled by machinery, that is designed to be operated by a person sitting, standing, or kneeling on the vessel rather than in the conventional manner of sitting or standing inside the vessel as defined by <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=651&amp;lawCode=HNC" title="">Section 651(s) of the California Harbors and Navigation</a>s Code.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -200,7 +204,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.01.055" data-order="|13|13.01|13.01.055|" ref-path="13.01.055" class="h__section">13.01.055 PUBLIC SQUARE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.01.055" data-order="|13|13.01|13.01.055|" data-ref-path="13.01.055" class="h__section">13.01.055 PUBLIC SQUARE.</h2>
                 <p><strong>"</strong>Public square" means designated spaces within the City's park properties and facilities that are exempt from the permit requirements outlined in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.10" title="Chapter 13.10 PARK PERMITS">Chapter 13.10</a> Park Permits.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -208,7 +212,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.01.060" data-order="|13|13.01|13.01.060|" ref-path="13.01.060" class="h__section">13.01.060 SPECIAL EVENT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.01.060" data-order="|13|13.01|13.01.060|" data-ref-path="13.01.060" class="h__section">13.01.060 SPECIAL EVENT.</h2>
                 <p>"Special Event" means any event which is scheduled to take place within the City's park properties and facilities, which may require special accommodations, regulations, or waiver of the normal rules or controls, or is likely to generate a crowd of spectators sufficient in size to obstruct, delay or interfere with the normal flow of pedestrian or vehicular traffic, which may generate a crowd of sufficient size to restrict access to park properties and facilities or any event which is likely to result in the need for public safety reasons, for police regulation, monitoring and control.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -216,8 +220,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.05" data-order="|13|13.05|" ref-path="13.05" class="h__chapter">Chapter 13.05 GENERAL PROVISIONS</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/13.05.010" data-order="|13|13.05|13.05.010|" ref-path="13.05.010" class="h__section">13.05.010 TRESPASS—GENERALLY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.05" data-order="|13|13.05|" data-ref-path="13.05" class="h__chapter">Chapter 13.05 GENERAL PROVISIONS</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.05.010" data-order="|13|13.05|13.05.010|" data-ref-path="13.05.010" class="h__section">13.05.010 TRESPASS—GENERALLY.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.05.010#(a)">(a)</span> Except as provided for in this Code, it is unlawful for any person to enter upon any park property or facility, or portion thereof, that has been restricted to the exclusive use of certain persons or activities pursuant to a City permit or a recreational program of the City.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.05.010#(b)">(b)</span> The City Manager, Chief of Police, Director of Parks and Recreation, or designated representatives are authorized to exclude from any park property or facility any person violating the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13" title="Title 13 PARKS AND RECREATION">this Title</a> or any of the Facility Specific Regulations promulgated under it. It is unlawful for any person so excluded to fail to leave the park property or facility forthwith or to thereafter enter the park property or facility, except with the express consent of the City Manager, Chief of Police, Director of Parks and Recreation, or designated representative.</p>
                 <aside class="annotations" role="note">
@@ -233,7 +237,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.05.020" data-order="|13|13.05|13.05.020|" ref-path="13.05.020" class="h__section">13.05.020 HOURS—DESIGNATED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.05.020" data-order="|13|13.05|13.05.020|" data-ref-path="13.05.020" class="h__section">13.05.020 HOURS—DESIGNATED.</h2>
                 <p>Except as provided in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.05.030" title="13.05.030 HOURS—EXCEPTIONS.">Section 13.05.030</a>, it is unlawful to enter, use, cross, or remain in any park property or facility between the hours of 10:00 p.m. and 6:00 a.m. the following morning.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -245,7 +249,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.05.030" data-order="|13|13.05|13.05.030|" ref-path="13.05.030" class="h__section">13.05.030 HOURS—EXCEPTIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.05.030" data-order="|13|13.05|13.05.030|" data-ref-path="13.05.030" class="h__section">13.05.030 HOURS—EXCEPTIONS.</h2>
                 <p>The hours established by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.05.020" title="13.05.020 HOURS—DESIGNATED.">Section 13.05.020</a> shall not apply to:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.05.030#(a)">(a)</span> The Poplar Creek Golf Course. It is unlawful to enter, use, cross, or remain in the City golf course between sunset and sunrise. It is also unlawful to be on the golf course between sunrise and sunset on December 25. This shall not apply to the Golf Course Pro Shop or Restaurant facility, the hours of which shall be governed by vendor agreement with the City.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.05.030#(b)">(b)</span> Recreation Programs/Private Permits/Special Event Permits. Persons may be allowed in park facilities after 10:00 p.m. if they are involved in a recreation program authorized by the Park and Recreation Department or have obtained a private facility permit or special event permit for the period of time that the program is scheduled or the period of time authorized by permit.</p>
@@ -265,7 +269,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.05.040" data-order="|13|13.05|13.05.040|" ref-path="13.05.040" class="h__section">13.05.040 ENFORCEMENT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.05.040" data-order="|13|13.05|13.05.040|" data-ref-path="13.05.040" class="h__section">13.05.040 ENFORCEMENT.</h2>
                 <p>The City Manager, Chief of Police, Director of Parks and Recreation or designated representative are responsible for enforcing the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.05" title="Chapter 13.05 GENERAL PROVISIONS">this chapter</a> and all facility specific regulations applicable to the administration, operation, use and maintenance of the park properties and facilities. Notwithstanding this provision, other City officials have authority to enforce <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13" title="Title 13 PARKS AND RECREATION">this title</a> as allowed under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/1.04.040" title="1.04.040 NUISANCE.">Section 1.04.040</a> of this code.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -273,7 +277,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.05.050" data-order="|13|13.05|13.05.050|" ref-path="13.05.050" class="h__section">13.05.050 CLOSURE OF PARKS AND RECREATIONAL AREAS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.05.050" data-order="|13|13.05|13.05.050|" data-ref-path="13.05.050" class="h__section">13.05.050 CLOSURE OF PARKS AND RECREATIONAL AREAS.</h2>
                 <p>The City Manager, Chief of Police, Director of Parks and Recreation or designated representative may close any park property or facility and in conjunction therewith may also cause the removal of any and all persons whose presence on the premises is disruptive to the safe use of the park property or facility.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -285,7 +289,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.05.060" data-order="|13|13.05|13.05.060|" ref-path="13.05.060" class="h__section">13.05.060 FEES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.05.060" data-order="|13|13.05|13.05.060|" data-ref-path="13.05.060" class="h__section">13.05.060 FEES.</h2>
                 <p>Based on council adopted policy and revenue guidelines, and in consultation with the Park and Recreation Commission, the Director of Parks and Recreation or designated representative shall establish the fees to be charged when appropriate for the use of park properties and facilities and recreation programs. These include the use of picnic areas, athletic fields, recreation centers, swimming pools, tennis courts, Marina Lagoon launch ramp and use, the issuance of street and heritage tree removal applications, and all other fees and charges made by the Department of Parks and Recreation with the exception of municipal golf courses. Municipal golf course fees and charges shall be proposed by the Director of Parks and Recreation or designated representative, in consultation with the Park and Recreation Commission, to be established by the City Council by resolution.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -293,7 +297,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.05.070" data-order="|13|13.05|13.05.070|" ref-path="13.05.070" class="h__section">13.05.070 PARK IMPACT FEE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.05.070" data-order="|13|13.05|13.05.070|" data-ref-path="13.05.070" class="h__section">13.05.070 PARK IMPACT FEE.</h2>
                 <p>This section establishes a park impact fee for residential units that are not subject to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/26.64" title="Chapter 26.64 DEDICATION OF LAND FOR COMMUNITY PURPOSES">Chapter 26.64</a>, Dedication of Land for Community Purposes. The park impact fee shall be based on the value of real property in the City of San Mateo and shall be calculated in the same manner as the land dedication or in-lieu park fees are calculated in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/26.64" title="Chapter 26.64 DEDICATION OF LAND FOR COMMUNITY PURPOSES">Chapter 26.64</a> of this code.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.05.070#(a)">(a)</span> The park impact fee shall apply to the construction of new residential units that are not subject to the requirements of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/26.64" title="Chapter 26.64 DEDICATION OF LAND FOR COMMUNITY PURPOSES">Chapter 26.64</a> of this code and which are not one-family detached dwellings or secondary units allowed under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/27.19" title="Chapter 27.19 ACCESSORY DWELLING UNIT AND JUNIOR ACCESSORY DWELLING UNIT—RESIDENTIAL ZONES">Chapter 27.19</a>. The park impact fee shall not apply to additions to existing structures, unless another residential unit is created thereby and then only for the added unit.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.05.070#(b)">(b)</span> No building permit for a residential unit subject to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.05" title="Chapter 13.05 GENERAL PROVISIONS">this chapter</a> shall be issued unless and until the park impact fee has been paid or appropriate security has been given for the payment of the fee. In no event shall a certificate of occupancy be issued for any property subject to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.05" title="Chapter 13.05 GENERAL PROVISIONS">this chapter</a> until the park impact fee has been fully paid or land dedication is complete.</p>
@@ -303,7 +307,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.05.080" data-order="|13|13.05|13.05.080|" ref-path="13.05.080" class="h__section">13.05.080 PARK MASTER PLANS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.05.080" data-order="|13|13.05|13.05.080|" data-ref-path="13.05.080" class="h__section">13.05.080 PARK MASTER PLANS.</h2>
                 <p>Notwithstanding any other provision of this code, the following procedures shall be used in reviewing the master plans of park properties and facilities.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.05.080#(a)">(a)</span> The Park and Recreation Department will submit its preferred alternative master plan to the Community Development Department for review in accordance with applicable laws.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.05.080#(b)">(b)</span> The Parks and Recreation Commission will hold a public hearing on the master plan and accompanying environmental documents. At a minimum, written notice of the hearing will be provided to property owners within 300 feet of the outer boundaries of the property involved in the master plan. For park properties of regional significance or those including specialized facilities or unusual conditions, written notice over a greater area will be given commensurate with the public importance of the master plan.</p>
@@ -314,8 +318,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.10" data-order="|13|13.10|" ref-path="13.10" class="h__chapter">Chapter 13.10 PARK PERMITS</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/13.10.010" data-order="|13|13.10|13.10.010|" ref-path="13.10.010" class="h__section">13.10.010 SPECIAL EVENTS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.10" data-order="|13|13.10|" data-ref-path="13.10" class="h__chapter">Chapter 13.10 PARK PERMITS</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.10.010" data-order="|13|13.10|13.10.010|" data-ref-path="13.10.010" class="h__section">13.10.010 SPECIAL EVENTS.</h2>
                 <p>The City shall provide for the permitted use of park properties and facilities for special events in accordance with <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.34" title="Chapter 17.34 SPECIAL EVENTS">Chapter 17.34</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -323,7 +327,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.10.020" data-order="|13|13.10|13.10.020|" ref-path="13.10.020" class="h__section">13.10.020 PERMITS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.10.020" data-order="|13|13.10|13.10.020|" data-ref-path="13.10.020" class="h__section">13.10.020 PERMITS.</h2>
                 <p>The City Manager, Director of Parks and Recreation or designated representative may issue permits in order to provide for special events or any reservation for exclusive use of park properties or facilities. Use permits are required for the following uses or activities:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.10.020#(a)">(a)</span> Any use or activity that involves 50 or more people.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.10.020#(b)">(b)</span> Any use or activity that involves the establishment of a free-standing structure, including, but not limited to, jumpers and bounce houses.</p>
@@ -343,7 +347,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.10.030" data-order="|13|13.10|13.10.030|" ref-path="13.10.030" class="h__section">13.10.030 PERMITS—REQUIREMENTS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.10.030" data-order="|13|13.10|13.10.030|" data-ref-path="13.10.030" class="h__section">13.10.030 PERMITS—REQUIREMENTS.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.10.030#(a)">(a)</span> The following regulations apply to the issuance of park permits:</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.10.030#(a)(1)">(1)</span> No park properties or facilities will be reserved for more than one year in advance of the time of use except by approval of the City Manager or Director of Parks and Recreation or designated representative.</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.10.030#(a)(2)">(2)</span> City of San Mateo residents will receive first priority for permits at the time of application. Once a permit is issued, the permittee will not lose his or her permit due to resident priority. Park permits will be processed in the order of receipt of a completed application form.</p>
@@ -360,7 +364,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.10.040" data-order="|13|13.10|13.10.040|" ref-path="13.10.040" class="h__section">13.10.040 ACTIVITIES ALLOWED WITHOUT PERMITS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.10.040" data-order="|13|13.10|13.10.040|" data-ref-path="13.10.040" class="h__section">13.10.040 ACTIVITIES ALLOWED WITHOUT PERMITS.</h2>
                 <p>Some activities and uses are allowed without permit in the public square. The public squares are specified for purposes of public expression and are designated as public forums for the dissemination of both verbal and written messages, subject to reasonable time and manner restrictions set forth in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.10.045" title="13.10.045 PUBLIC SQUARE TIME AND MANNER RESTRICTIONS.">Section 13.10.045</a>. Public demonstrations or picketing or leafleting, except as allowed herein in a public square, are not allowed within park facilities. Notwithstanding such limitation, nothing herein shall be construed to limit the use of parks for purposes of public expression by groups of less than 50 persons, when such parks are open to the public, or to limit such use by permit of any park property or facility by groups of all sizes, or such use of adjacent public forums, such as sidewalks within the public right-of-way. The following areas are designated as public squares: (1) the large interior lawn area in the middle of Central Park containing the flagpole; (2) the lawn area 50 feet west of the skate park, 50 feet east of the garden plots whose southern boundary is in line with the southern boundary of the skate park and whose northern boundary is in line with southern boundary of the basketball court area at Beresford Park; (3) the lawn area behind the ballfield bleachers at Bayside Joinville Park; and (4) the passive lawn area east of the King Park picnic area bordered by the ballfield, the parking lot and the main pathway through the park.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -368,7 +372,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.10.045" data-order="|13|13.10|13.10.045|" ref-path="13.10.045" class="h__section">13.10.045 PUBLIC SQUARE TIME AND MANNER RESTRICTIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.10.045" data-order="|13|13.10|13.10.045|" data-ref-path="13.10.045" class="h__section">13.10.045 PUBLIC SQUARE TIME AND MANNER RESTRICTIONS.</h2>
                 <p>The following restrictions shall apply in areas designated as a public square:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.10.045#(a)">(a)</span> No amplified sound is allowed except with permit under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.10.020" title="13.10.020 PERMITS.">Section 13.10.020</a>.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.10.045#(b)">(b)</span> No distribution or publication of written material, nor dissemination of any verbal message, nor depiction or portrayal of a theatrical nature, that is obscene, is allowed.</p>
@@ -383,8 +387,8 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.20" data-order="|13|13.20|" ref-path="13.20" class="h__chapter">Chapter 13.20 PARK REGULATIONS</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/13.20.010" data-order="|13|13.20|13.20.010|" ref-path="13.20.010" class="h__section">13.20.010 Prohibited Conduct.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.20" data-order="|13|13.20|" data-ref-path="13.20" class="h__chapter">Chapter 13.20 PARK REGULATIONS</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.20.010" data-order="|13|13.20|13.20.010|" data-ref-path="13.20.010" class="h__section">13.20.010 Prohibited Conduct.</h2>
                 <p>The following acts and uses are prohibited in park properties and facilities.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.20.010#(a)">(a)</span> Damage, degrade, deface, place graffiti upon or in any way vandalize park properties and facilities.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.20.010#(b)">(b)</span> Litter, as described in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.08.010" title="17.08.010 DIRT OR RUBBISH.">Section 17.08.010</a>.  If no proper receptacles are provided, all litter shall be carried away from the premises by the person, group or organization responsible for its presence and properly disposed of elsewhere. This is to include the dumping of all household debris, trash and green waste.</p>
@@ -407,7 +411,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.20.020" data-order="|13|13.20|13.20.020|" ref-path="13.20.020" class="h__section">13.20.020 AMPLIFIED SOUND.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.20.020" data-order="|13|13.20|13.20.020|" data-ref-path="13.20.020" class="h__section">13.20.020 AMPLIFIED SOUND.</h2>
                 <p>The use of amplified sound is prohibited without a permit allowing use of amplified sound except for events which are sponsored, co-sponsored, or staged in cooperation with the City. For permitted activities, sound levels shall not exceed 60 decibels (dB), measured from the boundaries of the areas designated for use of amplification equipment on the permit. In addition, maximum sound levels will be limited so as not to interfere with the reasonable enjoyment of the public in adjacent public areas or of private citizens within adjacent private property. The intent of this provision is to afford a comfortable enjoyment of life or property to the entire community. Amplified sound, of any type, is subject to the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/7.30.080" title="7.30.080 AMPLIFIED SOUND—REGULATIONS.">Section 7.30.080</a> of the municipal code.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -419,7 +423,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.20.030" data-order="|13|13.20|13.20.030|" ref-path="13.20.030" class="h__section">13.20.030 ALCOHOLIC BEVERAGES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.20.030" data-order="|13|13.20|13.20.030|" data-ref-path="13.20.030" class="h__section">13.20.030 ALCOHOLIC BEVERAGES.</h2>
                 <p>It is prohibited to possess or consume alcoholic beverages in park properties and facilities except as designated by permit issued under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13" title="Title 13 PARKS AND RECREATION">this title</a>. Applicants shall comply with State Alcoholic Beverage Control requirements.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -427,7 +431,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.20.040" data-order="|13|13.20|13.20.040|" ref-path="13.20.040" class="h__section">13.20.040 ANIMALS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.20.040" data-order="|13|13.20|13.20.040|" data-ref-path="13.20.040" class="h__section">13.20.040 ANIMALS.</h2>
                 <p>The following regulations apply to animals in park properties and facilities:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.20.040#(a)">(a)</span> With the exception of dogs on leashes, no domesticated animals will be permitted in any park property or facility except as authorized by the Director of Parks and Recreation or designated representative.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.20.040#(b)">(b)</span> Any dogs permitted in parks shall be continually under leash pursuant to Municipal Code <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/8.02.070" title="8.02.070 PROHIBITED CONDUCT (County § 6.04.070).">Section 8.02.070</a> excepting in designated City parks for dogs off leash as defined in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/8.02.070" title="8.02.070 PROHIBITED CONDUCT (County § 6.04.070).">Section 8.02.070</a> in the animal control ordinance.</p>
@@ -440,7 +444,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.20.050" data-order="|13|13.20|13.20.050|" ref-path="13.20.050" class="h__section">13.20.050 SMALL BALLFIELDS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.20.050" data-order="|13|13.20|13.20.050|" data-ref-path="13.20.050" class="h__section">13.20.050 SMALL BALLFIELDS.</h2>
                 <p>No persons over 12 years old shall be allowed to hit hardballs at any ballfields with an outfield perimeter fence of less than 250 feet.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -448,7 +452,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.20.060" data-order="|13|13.20|13.20.060|" ref-path="13.20.060" class="h__section">13.20.060 PARKING LOTS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.20.060" data-order="|13|13.20|13.20.060|" data-ref-path="13.20.060" class="h__section">13.20.060 PARKING LOTS.</h2>
                 <p>The parking lots provided at park properties and facilities are to be used solely by patrons and those persons utilizing the programs, facilities or services of the Park and Recreation Department. No overnight parking is allowed in any parking lot serving an immediate area of any municipal park or recreation facility unless prior authorization is given by the Director of Parks and Recreation or designated representative.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -456,7 +460,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.20.070" data-order="|13|13.20|13.20.070|" ref-path="13.20.070" class="h__section">13.20.070 FACILITY SPECIFIC REGULATIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.20.070" data-order="|13|13.20|13.20.070|" data-ref-path="13.20.070" class="h__section">13.20.070 FACILITY SPECIFIC REGULATIONS.</h2>
                 <p>The Director of Parks and Recreation shall have the authority to promulgate facility specific regulations. In addition to the authority granted under Sections <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.05.010" title="13.05.010 TRESPASS—GENERALLY.">13.05.010</a> and <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.05.050" title="13.05.050 CLOSURE OF PARKS AND RECREATIONAL AREAS.">13.05.050</a> of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13" title="Title 13 PARKS AND RECREATION">this title</a>, any person found to be in violation of a facility specific regulation promulgated by the Director or Parks and Recreation, shall be subject to removal from the park property or facility upon request of the facility manager. Such request, when made to law enforcement after refusal to comply, shall be a basis for forcible removal, citation or arrest.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -468,7 +472,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.20.080" data-order="|13|13.20|13.20.080|" ref-path="13.20.080" class="h__section">13.20.080 POSTING OF ADVERTISING MATERIALS OR HANDBILLS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.20.080" data-order="|13|13.20|13.20.080|" data-ref-path="13.20.080" class="h__section">13.20.080 POSTING OF ADVERTISING MATERIALS OR HANDBILLS.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.20.080#(a)">(a)</span> It is prohibited for any person to paste, glue, tack, staple, or otherwise post any sign, placard, advertisement, inscription, or decoration for any special event or any purpose on any park property or facility without the prior permission of the Director of Parks and Recreation or designee. Consent to post written materials in accord with this subsection shall be given for materials relating to events or programs aligned or supportive of the core business of the Parks and Recreation Department, as defined in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.01.010" title="13.01.010 CORE BUSINESS OF PARKS AND RECREATION DEPARTMENT.">Section 13.01.010</a>, subject to reasonable time, place and manner restrictions. Posting or placement of all other materials is prohibited.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.20.080#(b)">(b)</span> Representatives designated by the Director of Parks and Recreation will manage community notice boards located at the dog park at Seal Point Park and outside the Arboretum Society to assure that no obscene materials are posted in those locations and to remove materials over 30 days old.</p>
                 <aside class="annotations" role="note">
@@ -477,8 +481,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.25" data-order="|13|13.25|" ref-path="13.25" class="h__chapter">Chapter 13.25 MARINA LAGOON REGULATIONS</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/13.25.010" data-order="|13|13.25|13.25.010|" ref-path="13.25.010" class="h__section">13.25.010 LOCAL, STATE AND FEDERAL REGULATIONS—ENFORCEMENT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.25" data-order="|13|13.25|" data-ref-path="13.25" class="h__chapter">Chapter 13.25 MARINA LAGOON REGULATIONS</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.25.010" data-order="|13|13.25|13.25.010|" data-ref-path="13.25.010" class="h__section">13.25.010 LOCAL, STATE AND FEDERAL REGULATIONS—ENFORCEMENT.</h2>
                 <p>The use of Marina Lagoon shall be governed by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.25" title="Chapter 13.25 MARINA LAGOON REGULATIONS">this chapter</a>, all applicable sections of the <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=HNC&amp;tocTitle=+Public+Utilities+Code+-+HNC" title="">Harbors and Navigation Code</a> as the same may be from time to time amended, and all applicable regulations of the State Department of Boating and Waterways, State Department of Parks and Recreation, and the United States Coast Guard. Enforcement of all such laws and regulations shall be made by the police and the harbor patrol officer of the Department of Parks and Recreation who shall be authorized to arrest or issue citations for violations.</p>
                 <p>It is unlawful to use Marina Lagoon except in accordance with all such local, state and federal regulations applicable thereto.</p>
                 <aside class="annotations" role="note">
@@ -487,7 +491,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.25.015" data-order="|13|13.25|13.25.015|" ref-path="13.25.015" class="h__section">13.25.015 TRESPASS—MARINA LAGOON.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.25.015" data-order="|13|13.25|13.25.015|" data-ref-path="13.25.015" class="h__section">13.25.015 TRESPASS—MARINA LAGOON.</h2>
                 <p>It is unlawful for any person to enter upon the Marina Lagoon, except as provided for in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.25" title="Chapter 13.25 MARINA LAGOON REGULATIONS">this chapter</a>. No persons shall enter upon the banks of Marina Lagoon outside designated park and recreation areas for any purpose whatsoever, except in cases of emergency to protect life and/or property; provided that the Council may grant permits to abutting property owners for access to the waters of Marina Lagoon. The City Manager, Chief of Police, Director of Parks and Recreation or designated representative are authorized to have excluded from the Marina Lagoon any person violating the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13" title="Title 13 PARKS AND RECREATION">this title</a> or any of the rules and regulations applicable thereto. Any person thus excluded who fails to leave the Marina Lagoon forthwith, or who thereafter enters therein or thereupon, except with the consent of the City Manager, Chief of Police, Director of Parks and Recreation or designated representative or their assistants, is guilty of a violation of this section and is subject to arrest by law enforcement.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -499,7 +503,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.25.020" data-order="|13|13.25|13.25.020|" ref-path="13.25.020" class="h__section">13.25.020 REGULATIONS—GENERAL.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.25.020" data-order="|13|13.25|13.25.020|" data-ref-path="13.25.020" class="h__section">13.25.020 REGULATIONS—GENERAL.</h2>
                 <p>The following general regulations apply to activities in and on any portion of the Marina Lagoon.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.25.020#(a)">(a)</span> No craft may be moored or docked overnight at any public dock, shore line, or in the Lagoon. Berthing of craft at private docks with encroachment permits shall be allowed.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.25.020#(b)">(b)</span> No type of aircraft, ultra-light glider, or kite may be used or towed on Marina Lagoon.</p>
@@ -515,7 +519,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.25.030" data-order="|13|13.25|13.25.030|" ref-path="13.25.030" class="h__section">13.25.030 USE AND SPEED ZONES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.25.030" data-order="|13|13.25|13.25.030|" data-ref-path="13.25.030" class="h__section">13.25.030 USE AND SPEED ZONES.</h2>
                 <p>Marina Lagoon is divided into eight use and speed zones. The boundaries and use of said zones are described as follows:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.25.030#(a)">(a)</span> Zone A: Motor Boating and Water Skiing. From the dam near Third Avenue southerly to a posted point opposite the prolongation of Harrison Avenue;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.25.030#(b)">(b)</span> Zone B: Nonmotor Boating, Sailing and Special Events. From the end of Zone A to a point 500 ft. south of the existing 19th Avenue overpass;</p>
@@ -535,7 +539,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.25.035" data-order="|13|13.25|13.25.035|" ref-path="13.25.035" class="h__section">13.25.035 RESTRICTIONS ON USE OF ZONES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.25.035" data-order="|13|13.25|13.25.035|" data-ref-path="13.25.035" class="h__section">13.25.035 RESTRICTIONS ON USE OF ZONES.</h2>
                 <p>The use restrictions for the zones described in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.25.030" title="13.25.030 USE AND SPEED ZONES.">13.25.030</a> are as follows:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.25.035#(a)">(a)</span> It is unlawful to water ski in any Zone except Zones A and E or as permitted in Zones B and D pursuant to a City-issued permit for a special event.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.25.035#(b)">(b)</span> It is unlawful to operate any vessel in the Mariner's Island Channel of Zone A.</p>
@@ -553,7 +557,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.25.040" data-order="|13|13.25|13.25.040|" ref-path="13.25.040" class="h__section">13.25.040 SPEED LIMITS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.25.040" data-order="|13|13.25|13.25.040|" data-ref-path="13.25.040" class="h__section">13.25.040 SPEED LIMITS.</h2>
                 <p>Subject to the directions of a peace officer, or harbor patrol officer, it is unlawful for any person to violate the following speed limits on Marina Lagoon:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.25.040#(a)">(a)</span> The maximum speed at any time in Zones A, C, and E shall be thirty-five miles per hour.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.25.040#(b)">(b)</span> Motor boats traversing Zones B and D shall not be operated at a speed in excess of five miles per hour and at a speed that creates a wake.</p>
@@ -568,7 +572,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.25.050" data-order="|13|13.25|13.25.050|" ref-path="13.25.050" class="h__section">13.25.050 REGULATIONS – WATER SKIING.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.25.050" data-order="|13|13.25|13.25.050|" data-ref-path="13.25.050" class="h__section">13.25.050 REGULATIONS – WATER SKIING.</h2>
                 <p>The following regulations apply to allowed waterskiing activities in or on any portion of Marina Lagoon.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.25.050#(a)">(a)</span> Waterskiing activity shall not be permitted before sunrise and after sunset but in no case shall it be permitted before 6:00 a.m., Monday through Friday and 8:00 a.m., Saturday, Sunday and California State recognized holidays.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.25.050#(b)">(b)</span> No boat towing a water skier and no towed skier shall come closer than 50 feet to any dock, way, landing float, or shoreline.</p>
@@ -586,7 +590,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.25.060" data-order="|13|13.25|13.25.060|" ref-path="13.25.060" class="h__section">13.25.060 FEES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.25.060" data-order="|13|13.25|13.25.060|" data-ref-path="13.25.060" class="h__section">13.25.060 FEES.</h2>
                 <p>Upon payment of user fees, the City of San Mateo shall provide a sticker to be visibly affixed to the starboard side of the windshield of boats so equipped, or positioned near the stern on the starboard side of the hull. Single daily use fees in and out shall be evidenced by a receipt for payment of said fee. Boats propelled solely by hand or sail shall be exempt from Marina Lagoon use fees unless using the boat ramp.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -594,7 +598,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.25.070" data-order="|13|13.25|13.25.070|" ref-path="13.25.070" class="h__section">13.25.070 SPECIAL EVENTS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.25.070" data-order="|13|13.25|13.25.070|" data-ref-path="13.25.070" class="h__section">13.25.070 SPECIAL EVENTS.</h2>
                 <p>The Director of Parks and Recreation or designated representative, may, upon terms and conditions deemed necessary to protect the public peace and safety, grant the exclusive use of any portion of the Marina Lagoon, to any organization or group which intends to stage a special event which, in his or her /her opinion, is of a general public interest.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -602,7 +606,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.25.080" data-order="|13|13.25|13.25.080|" ref-path="13.25.080" class="h__section">13.25.080 ENCROACHMENTS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.25.080" data-order="|13|13.25|13.25.080|" data-ref-path="13.25.080" class="h__section">13.25.080 ENCROACHMENTS.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.25.080#(a)">(a)</span> The Director of Public Works may issue permits allowing encroachments upon city-owned or controlled areas of Marina Lagoon by the owners of abutting property. Said permits shall be for the construction and maintenance of improvements approved by the Department of Public Works including, but not limited to, docks, ramps, fences and slope treatment and are subject to the Regional Permit issued for such encroachments by the Army Corps of Engineers.</p>
                 <p>The Department of Public Works shall develop standards and procedures for the installation and maintenance of the approved encroachments, taking into consideration, among other things, the seasonal water levels.</p>
                 <p>Before any permit may be issued, the applicant shall:</p>
@@ -617,7 +621,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.25.090" data-order="|13|13.25|13.25.090|" ref-path="13.25.090" class="h__section">13.25.090 REMOVAL OR DEPOSIT OF MATERIAL.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.25.090" data-order="|13|13.25|13.25.090|" data-ref-path="13.25.090" class="h__section">13.25.090 REMOVAL OR DEPOSIT OF MATERIAL.</h2>
                 <p>It is unlawful for any person to excavate, fill, remove or deposit material within Marina Lagoon except under permit as herein provided.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -625,8 +629,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.28" data-order="|13|13.28|" ref-path="13.28" class="h__chapter">Chapter 13.28 COUNTY PARK REGULATIONS</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/13.28.010" data-order="|13|13.28|13.28.010|" ref-path="13.28.010" class="h__section">13.28.010 ADOPTING BY REFERENCE SECTIONS 3.68.010 THROUGH 3.68.160 OF THE SAN MATEO COUNTY CODE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.28" data-order="|13|13.28|" data-ref-path="13.28" class="h__chapter">Chapter 13.28 COUNTY PARK REGULATIONS</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.28.010" data-order="|13|13.28|13.28.010|" data-ref-path="13.28.010" class="h__section">13.28.010 ADOPTING BY REFERENCE SECTIONS 3.68.010 THROUGH 3.68.160 OF THE SAN MATEO COUNTY CODE.</h2>
                 <p>Pursuant to <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=50022.9&amp;lawCode=GOV" title="">Government Code Section 50022.9</a>, <a class="internal-link " href="https://library.municode.com/ca/san_mateo_county/codes/code_of_ordinances?nodeId=16029" title="">Sections ‍3.68.010 through ‍33.68.160 of the San Mateo County Code</a>, set forth in <a class="internal-link " href="https://library.municode.com/ca/san_mateo_county/codes/code_of_ordinances?nodeId=16029" title="">Chapter ‍3.68 of Title 3</a>, consisting of County Park and Recreation Area Rules under the Supervision of the San Mateo County Parks and Recreation Commission, are adopted by reference and incorporated in the San Mateo Municipal Code as though fully set forth herein. The purpose of this section and of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.28.020" title="13.28.020 VIOLATIONS—A MISDEMEANOR.">Section 13.28.020</a> is to make the regulations enforceable by San Mateo County at Coyote Point Park.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -638,7 +642,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.28.020" data-order="|13|13.28|13.28.020|" ref-path="13.28.020" class="h__section">13.28.020 VIOLATIONS—A MISDEMEANOR.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.28.020" data-order="|13|13.28|13.28.020|" data-ref-path="13.28.020" class="h__section">13.28.020 VIOLATIONS—A MISDEMEANOR.</h2>
                 <p>Any person violating any of the provisions or failing to comply with any of the mandatory requirements, of Sections 3.68.010 through 3.68.160, as mentioned in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.28.010" title="13.28.010 ADOPTING BY REFERENCE SECTIONS 3.68.010 THROUGH 3.68.160 OF THE SAN MATEO COUNTY CODE.">Section 13.28.010</a>, is guilty of a misdemeanor or infraction as charged pursuant to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/1.04" title="Chapter 1.04 GENERAL PENALTY">Chapter 1.04</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -650,8 +654,8 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.30" data-order="|13|13.30|" ref-path="13.30" class="h__chapter">Chapter 13.30 DEDICATION OF PARKS AND OPEN SPACE</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/13.30.010" data-order="|13|13.30|13.30.010|" ref-path="13.30.010" class="h__section">13.30.010 IMPLEMENTATION OF ARTICLE X OF THE CHARTER.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.30" data-order="|13|13.30|" data-ref-path="13.30" class="h__chapter">Chapter 13.30 DEDICATION OF PARKS AND OPEN SPACE</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.30.010" data-order="|13|13.30|13.30.010|" data-ref-path="13.30.010" class="h__section">13.30.010 IMPLEMENTATION OF ARTICLE X OF THE CHARTER.</h2>
                 <p>Article X of the Charter was enacted by the voters to authorize the permanent dedication of City-owned lands to park, playground, recreation, or open space purposes. Article X empowered the City Council to make dedications in its discretion. <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.30" title="Chapter 13.30 DEDICATION OF PARKS AND OPEN SPACE">This chapter</a> is enacted to implement permanent dedications by ordinance as is authorized by Article X.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -659,7 +663,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.30.020" data-order="|13|13.30|13.30.020|" ref-path="13.30.020" class="h__section">13.30.020 PURPOSE OF DEDICATIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.30.020" data-order="|13|13.30|13.30.020|" data-ref-path="13.30.020" class="h__section">13.30.020 PURPOSE OF DEDICATIONS.</h2>
                 <p>In accordance with Article X of the Charter lands when dedicated may not thereafter be sold or otherwise disposed of, nor converted to different purposes, except pursuant to majority vote of the electorate. A minor portion of dedicated lands may be conveyed without an election pursuant to the procedure designated in Article X. A dedication shall be not interpreted to diminish in any manner the discretion of the City Council (1) to choose the appropriate level of funding to maintain the dedicated lands or (2) to require that the City Council continue any single use on the dedicated lands.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -667,7 +671,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.30.030" data-order="|13|13.30|13.30.030|" ref-path="13.30.030" class="h__section">13.30.030 SCOPE OF DEDICATIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.30.030" data-order="|13|13.30|13.30.030|" data-ref-path="13.30.030" class="h__section">13.30.030 SCOPE OF DEDICATIONS.</h2>
                 <p>Only lands owned by the City of San Mateo which are over 4 acres in area may be dedicated by the City Council in its discretion; provided, however, that lands of less than 4 acres may be dedicated when they are contiguous with and incorporated into lands previously dedicated. Easements of record shall not be eliminated by a dedication.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -675,7 +679,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.30.040" data-order="|13|13.30|13.30.040|" ref-path="13.30.040" class="h__section">13.30.040 PUBLIC WORKS USES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.30.040" data-order="|13|13.30|13.30.040|" data-ref-path="13.30.040" class="h__section">13.30.040 PUBLIC WORKS USES.</h2>
                 <p>In the ordinance of dedication the City Council may exclude areas from dedication and, unless otherwise expressly included in the ordinance, all public streets shall be excluded. No dedication shall prevent the utilization of dedicated lands: (1) for public works uses that (a) are in the public interest and (b) either were present at the time of dedication or are proposed to protect the dedicated lands or surrounding properties; (2) for public works uses that are themselves park, playground, recreation, or open space uses, such as flow lands, flood plains, dikes, marshes, lagoons, pump stations, etc.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -720,7 +724,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.30.100" data-order="|13|13.30|13.30.100|" ref-path="13.30.100" class="h__section">13.30.100 BERESFORD PARK.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.30.100" data-order="|13|13.30|13.30.100|" data-ref-path="13.30.100" class="h__section">13.30.100 BERESFORD PARK.</h2>
                 <p>All that real property known as "Beresford Park", consisting of 18.5 acres, m.o.l., Assessors Parcel No. 039-260-010, as shown on Exhibit "A" attached hereto. The provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.30.040" title="13.30.040 PUBLIC WORKS USES.">Section 13.30.040</a> are incorporated by reference as though fully set forth.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -728,7 +732,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.30.110" data-order="|13|13.30|13.30.110|" ref-path="13.30.110" class="h__section">13.30.110 CENTRAL PARK.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.30.110" data-order="|13|13.30|13.30.110|" data-ref-path="13.30.110" class="h__section">13.30.110 CENTRAL PARK.</h2>
                 <p>All that real property known as "Central Park", consisting of 16.3 acres, m.o.l., Assessor's Parcel No. 034-200-100, as shown on Exhibit "A-1" attached hereto. The provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.30.040" title="13.30.040 PUBLIC WORKS USES.">section 13.30.040</a> are incorporated by reference as though fully set forth.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -736,7 +740,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.30.120" data-order="|13|13.30|13.30.120|" ref-path="13.30.120" class="h__section">13.30.120 FIESTA MEADOWS PARK.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.30.120" data-order="|13|13.30|13.30.120|" data-ref-path="13.30.120" class="h__section">13.30.120 FIESTA MEADOWS PARK.</h2>
                 <p>All that real property known as "Fiesta Meadows Park", consisting of 4.8 acres, m.o.l., Assessor's Parcels No. 035-340-140, 240, as shown on Exhibit "A-2" attached hereto. The provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.30.040" title="13.30.040 PUBLIC WORKS USES.">Section 13.30.040</a> are incorporated by reference as though fully set forth.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -744,7 +748,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.30.130" data-order="|13|13.30|13.30.130|" ref-path="13.30.130" class="h__section">13.30.130 KING PARK.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.30.130" data-order="|13|13.30|13.30.130|" data-ref-path="13.30.130" class="h__section">13.30.130 KING PARK.</h2>
                 <p>All that real property known as "King Park", consisting of 6.1 acres, m.o.l., Assessor's Parcel No. 033-063-060, as shown on Exhibit "A-3" attached hereto. The provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.30.040" title="13.30.040 PUBLIC WORKS USES.">section 13.30.040</a> are incorporated by reference as though fully set forth.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -752,7 +756,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.30.140" data-order="|13|13.30|13.30.140|" ref-path="13.30.140" class="h__section">13.30.140 LAKESHORE PARK.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.30.140" data-order="|13|13.30|13.30.140|" data-ref-path="13.30.140" class="h__section">13.30.140 LAKESHORE PARK.</h2>
                 <p>All that real property known as "Lakeshore Park", consisting of 4.2 acres, m.o.l., including the contiguous beach area, Assessor's Parcels No. 040-150-100, 110, as shown on Exhibit "A-4" attached hereto. The provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.30.040" title="13.30.040 PUBLIC WORKS USES.">Section 13.30.040</a> are incorporated by reference as though fully set forth.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -760,7 +764,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.30.150" data-order="|13|13.30|13.30.150|" ref-path="13.30.150" class="h__section">13.30.150 LAURELWOOD PARK.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.30.150" data-order="|13|13.30|13.30.150|" data-ref-path="13.30.150" class="h__section">13.30.150 LAURELWOOD PARK.</h2>
                 <p>All that real property known as "Laurelwood Park", as shown on Exhibit A-5 consisting of 2 pages and in documents recorded in the Official Records of San Mateo County Volume 6422, Page 63; Volume 5715, Page 197; Volume 6065, Page 169; Volume 6045, Page 693; Volume 4068, Page 585; Volume 5715; Page 197; Volume 4068, Page 583; Volume 4334, Page 654; Volume 4387, Page 6; Parcel #2 of Instrument No. 88043231; and Parcel E of Sugarloaf No. 1, Volume 99 Maps, Pages 42-45; provided, however, that Parcels 1 2 as shown on Parcel Map No. 303 recorded in the Official Records of San Mateo County in Book 6422 of Maps, Page 63 and Lot 39 in Block 5 and Lot 8 in Block 6 as shown on Laurelwood Map No. 5 recorded in the Official Records of San Mateo County in Book 55 of Maps, Page 41 are not included in Laurelwood Park.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -768,7 +772,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.30.160" data-order="|13|13.30|13.30.160|" ref-path="13.30.160" class="h__section">13.30.160 LAURIE MEADOWS PARK.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.30.160" data-order="|13|13.30|13.30.160|" data-ref-path="13.30.160" class="h__section">13.30.160 LAURIE MEADOWS PARK.</h2>
                 <p>All that real property known as "Laurie Meadows Park", consisting of 5.5 acres, m.o.l., Assessor's Parcels No. 040-170-360, 040-350-460, as shown on Exhibit "A-6" attached hereto. The provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.30.040" title="13.30.040 PUBLIC WORKS USES.">Section 13.30.040</a> are incorporated by reference as though fully set forth.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -776,7 +780,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.30.170" data-order="|13|13.30|13.30.170|" ref-path="13.30.170" class="h__section">13.30.170 LOS PRADOS PARK.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.30.170" data-order="|13|13.30|13.30.170|" data-ref-path="13.30.170" class="h__section">13.30.170 LOS PRADOS PARK.</h2>
                 <p>All that real property known as "Los Prados Park", consisting of 12.6 acres, m.o.l., Assessor's Parcel No. 040-163-260, as shown on Exhibit "A-7" attached hereto. The provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.30.040" title="13.30.040 PUBLIC WORKS USES.">Section 13.30.040</a> are incorporated by reference as though fully set forth.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -784,7 +788,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.30.180" data-order="|13|13.30|13.30.180|" ref-path="13.30.180" class="h__section">13.30.180 MARINA LAGOON.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.30.180" data-order="|13|13.30|13.30.180|" data-ref-path="13.30.180" class="h__section">13.30.180 MARINA LAGOON.</h2>
                 <p>All that real property known as "Marina Lagoon", a waterway within the City of San Mateo and a part of the City's granted lands in trust from the California Legislature, as shown on Exhibit "A-8" attached hereto; provided, however, that no docks, ramps, or other private encroachments are dedicated. The provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.30.040" title="13.30.040 PUBLIC WORKS USES.">Section 13.30.040</a> are incorporated by reference as though fully set forth.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -792,7 +796,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.30.190" data-order="|13|13.30|13.30.190|" ref-path="13.30.190" class="h__section">13.30.190 MUNICIPAL GOLF COURSE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.30.190" data-order="|13|13.30|13.30.190|" data-ref-path="13.30.190" class="h__section">13.30.190 MUNICIPAL GOLF COURSE.</h2>
                 <p>All that real property known as the "Poplar Creek Golf Course", consisting of 105 acres, m.o.l., Assessor's Parcel No. 029-350-020, as shown on Exhibit "A-9" attached hereto. The provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.30.040" title="13.30.040 PUBLIC WORKS USES.">Section 13.30.040</a> are incorporated by reference as though fully set forth.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -800,7 +804,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.30.200" data-order="|13|13.30|13.30.200|" ref-path="13.30.200" class="h__section">13.30.200 SHOREVIEW PARK.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.30.200" data-order="|13|13.30|13.30.200|" data-ref-path="13.30.200" class="h__section">13.30.200 SHOREVIEW PARK.</h2>
                 <p>All that real property known as "Shoreview Park", consisting of 4.8 acres, m.o.l., Assessor's Parcel No. 033-363-130, as shown on Exhibit "A-10" attached hereto. The provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.30.040" title="13.30.040 PUBLIC WORKS USES.">section 13.30.040</a> are incorporated by reference as though fully set forth.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -808,7 +812,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.30.210" data-order="|13|13.30|13.30.210|" ref-path="13.30.210" class="h__section">13.30.210 SUGARLOAF.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.30.210" data-order="|13|13.30|13.30.210|" data-ref-path="13.30.210" class="h__section">13.30.210 SUGARLOAF.</h2>
                 <p>All that real property known as "Sugarloaf", consisting of 187 acres, m.o.l., as described in Exhibit "A-11" consisting of 2 pages attached hereto. The provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.30.040" title="13.30.040 PUBLIC WORKS USES.">Section 13.30.040</a> are incorporated by reference as though fully set forth.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -816,7 +820,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.30.220" data-order="|13|13.30|13.30.220|" ref-path="13.30.220" class="h__section">13.30.220 TIDELANDS PARK.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.30.220" data-order="|13|13.30|13.30.220|" data-ref-path="13.30.220" class="h__section">13.30.220 TIDELANDS PARK.</h2>
                 <p>All that real property known as "Tidelands Park", consisting of 15.8 acres, m.o.l., Assessor's Parcel Nos. 035-490-020, 035-501-380 and in that document recorded in the Official Records of San Mateo County Volume 6569, Page 508, as shown on Exhibit "A-12" consisting of 4 pages attached hereto. The provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.30.040" title="13.30.040 PUBLIC WORKS USES.">Section 13.30.040</a> are incorporated by reference as though fully set forth.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -824,8 +828,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.35" data-order="|13|13.35|" ref-path="13.35" class="h__chapter">Chapter 13.35 STREET TREES</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/13.35.010" data-order="|13|13.35|13.35.010|" ref-path="13.35.010" class="h__section">13.35.010 INTENT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.35" data-order="|13|13.35|" data-ref-path="13.35" class="h__chapter">Chapter 13.35 STREET TREES</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.35.010" data-order="|13|13.35|13.35.010|" data-ref-path="13.35.010" class="h__section">13.35.010 INTENT.</h2>
                 <p><a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.35" title="Chapter 13.35 STREET TREES">This chapter</a> is adopted for the following purposes:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.35.010#(a)">(a)</span> To foster the planting of trees along the streets of the City;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.35.010#(b)">(b)</span> To promote and maintain the aesthetic value of the streets of the City;</p>
@@ -838,7 +842,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.35.020" data-order="|13|13.35|13.35.020|" ref-path="13.35.020" class="h__section">13.35.020 DEFINITIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.35.020" data-order="|13|13.35|13.35.020|" data-ref-path="13.35.020" class="h__section">13.35.020 DEFINITIONS.</h2>
                 <p>Terms used in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.35" title="Chapter 13.35 STREET TREES">this chapter</a> shall be defined as follows or are as defined in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.52" title="Chapter 13.52 HERITAGE TREES">Chapter 13.52</a>:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.35.020#(a)">(a)</span> "Center divider strip" means the center section of a street, whether set off by curbs or not and whether planted or not, which separates opposing traffic;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.35.020#(b)">(b)</span> "Commission" means park and recreation commission of the City;</p>
@@ -862,7 +866,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.35.030" data-order="|13|13.35|13.35.030|" ref-path="13.35.030" class="h__section">13.35.030 NOTICES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.35.030" data-order="|13|13.35|13.35.030|" data-ref-path="13.35.030" class="h__section">13.35.030 NOTICES.</h2>
                 <p>All notices provided to be given by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.35" title="Chapter 13.35 STREET TREES">this chapter</a>, unless otherwise directed, shall be in writing and caused to be mailed by the Director, postage paid, to the owner of the real property involved, as his or her name and address appear on the last equalized assessment roll for municipal taxes. If such real property is occupied by other than the owner, a like copy shall also be left with the occupant. The failure of any property owner to receive the notice shall not affect the validity of any proceedings taken pursuant to the notice.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -870,7 +874,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.35.040" data-order="|13|13.35|13.35.040|" ref-path="13.35.040" class="h__section">13.35.040 APPEAL.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.35.040" data-order="|13|13.35|13.35.040|" data-ref-path="13.35.040" class="h__section">13.35.040 APPEAL.</h2>
                 <p>Any person denied a permit under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.35" title="Chapter 13.35 STREET TREES">this chapter</a> or required to provide replacement under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.35.105" title="13.35.105 PLANTING—REPLACEMENT OF REMOVED/DAMAGED TREES.">Section 13.35.105</a> or assessed penalties or restrictions under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.35.110" title="13.35.110 ADDITIONAL REMEDIES.">Section 13.35.110</a> shall have the right to appeal that determination to the City Manager or designee using the procedures set forth in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/1.11" title="Chapter 1.11 CIVIL PENALTIES">Chapter 1.11</a> of this Code. Notwithstanding the limitations set forth in that section regarding Civil Penalties, Civil Penalties under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.35" title="Chapter 13.35 STREET TREES">this chapter</a> shall be limited to the amounts allowed under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.35" title="Chapter 13.35 STREET TREES">Chapter 13.35</a>.110.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -878,7 +882,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.35.050" data-order="|13|13.35|13.35.050|" ref-path="13.35.050" class="h__section">13.35.050 SUPERVISION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.35.050" data-order="|13|13.35|13.35.050|" data-ref-path="13.35.050" class="h__section">13.35.050 SUPERVISION.</h2>
                 <p>The supervision and management of the trees upon the streets and public areas within the City is vested in the Director and designated representatives, who with the advice and counsel of the Commission, will recommend for adoption by the City Council regulations for the setting out, planting, care, trimming, removal and maintenance of such trees pursuant to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.35" title="Chapter 13.35 STREET TREES">this chapter</a>. It shall be the duty of the Director with the advice and counsel of the Commission, to cause the planting, trimming, pruning, spraying and caring for any official Street Tree according to the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.35" title="Chapter 13.35 STREET TREES">this chapter</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -886,7 +890,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.35.060" data-order="|13|13.35|13.35.060|" ref-path="13.35.060" class="h__section">13.35.060 STREET TREES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.35.060" data-order="|13|13.35|13.35.060|" data-ref-path="13.35.060" class="h__section">13.35.060 STREET TREES.</h2>
                 <p>The Director shall designate those trees species existing or hereafter planted in the City which are not infested with pests or disease, or hazardous to the public health and safety or dangerous to public improvements and utilities as official Street Trees species.</p>
                 <p>The Director shall prepare and submit to the Commission for approval and adoption, a comprehensive master plan of Street Trees for all streets of the City where planting areas are available and provided for trees. The plan may be revised from time to time and shall be reviewed regularly. In accordance with the plan, the Director shall proceed each year to plant or remove and replace trees to the extent that funds are made available by the City Council or otherwise exist in the tree planting fund.</p>
                 <aside class="annotations" role="note">
@@ -895,7 +899,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.35.070" data-order="|13|13.35|13.35.070|" ref-path="13.35.070" class="h__section">13.35.070 PLANTING PERMIT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.35.070" data-order="|13|13.35|13.35.070|" data-ref-path="13.35.070" class="h__section">13.35.070 PLANTING PERMIT.</h2>
                 <p>No person, other than the Director or his or her authorized representative, shall plant or set out any tree within the Public Right of Way without first procuring a written permit to do so from the Director. The request for such a permit shall state the type and number of trees to be planted or set out the location and such other information as may from time to time be required by the Director.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -907,7 +911,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.35.080" data-order="|13|13.35|13.35.080|" ref-path="13.35.080" class="h__section">13.35.080 TRIMMING AND REMOVAL—NOTICE AND PERMIT REQUIRED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.35.080" data-order="|13|13.35|13.35.080|" data-ref-path="13.35.080" class="h__section">13.35.080 TRIMMING AND REMOVAL—NOTICE AND PERMIT REQUIRED.</h2>
                 <p>No person or entity, other than the City staff, or any public utility corporation to the extent necessary for maintaining overhead wires, shall trim or cause to be trimmed, below or above the ground, or remove or cause to be removed, any tree in the planting strip along any street, or any tree growing upon private property to the extent that its roots or branches encroach on street, without first procuring a permit to do so from the Director. The request for such a permit shall state the type and number of trees to be trimmed or removed, the location and such other information as may from time to time be required by the Director. The cost of all work designated by the permit shall be borne by the party securing the permit. Permits for trimming and removal may, in the Director's discretion, contain replanting conditions.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -919,7 +923,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.35.085" data-order="|13|13.35|13.35.085|" ref-path="13.35.085" class="h__section">13.35.085 VIOLATIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.35.085" data-order="|13|13.35|13.35.085|" data-ref-path="13.35.085" class="h__section">13.35.085 VIOLATIONS.</h2>
                 <p>It is unlawful for any person or entity to remove, trim, or damage to the extent described in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.35.105#(b)" title="">Section 13.35.105(b)</a>, a Street Tree without having first obtained a permit to do so. This applies to any person who takes such action, or instructs another to take such action and to any tree removal company, landscape professional or other entity that initiates or participates in such unlawful act.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -934,7 +938,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.35.090" data-order="|13|13.35|13.35.090|" ref-path="13.35.090" class="h__section">13.35.090 PERMITS—APPLICATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.35.090" data-order="|13|13.35|13.35.090|" data-ref-path="13.35.090" class="h__section">13.35.090 PERMITS—APPLICATION.</h2>
                 <p>The permits provided in Sections <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.35.070" title="13.35.070 PLANTING PERMIT.">13.35.070</a> and <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.35.080" title="13.35.080 TRIMMING AND REMOVAL—NOTICE AND PERMIT REQUIRED.">13.35.080</a> shall be issued by the Director and be subject to the terms of the permit and/or applicable regulations.</p>
                 <p>In processing an application for a permit, consideration shall be given the following:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.35.090#(a)">(a)</span> Whether the planting is adaptable to the location proposed;</p>
@@ -948,7 +952,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.35.100" data-order="|13|13.35|13.35.100|" ref-path="13.35.100" class="h__section">13.35.100 EMERGENCY REMOVAL OF STREET TREES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.35.100" data-order="|13|13.35|13.35.100|" data-ref-path="13.35.100" class="h__section">13.35.100 EMERGENCY REMOVAL OF STREET TREES.</h2>
                 <p>All Street Trees presenting an immediate threat to life, property, or the condition of public improvements, may be removed by the City without notice. In such event, the total cost of the removal shall be borne by the City unless the threat was caused by an illegal or negligent act of another and in that event the responsible party shall remain liable.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -956,7 +960,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.35.105" data-order="|13|13.35|13.35.105|" ref-path="13.35.105" class="h__section">13.35.105 PLANTING—REPLACEMENT OF REMOVED/DAMAGED TREES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.35.105" data-order="|13|13.35|13.35.105|" data-ref-path="13.35.105" class="h__section">13.35.105 PLANTING—REPLACEMENT OF REMOVED/DAMAGED TREES.</h2>
                 <p>In all cases where Street Trees are removed or damaged to the extent described in subsection (b) below, the Director may require replacement by anyone participating in an unlawful act, as defined in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.35.085" title="13.35.085 VIOLATIONS.">section 13.35.085</a>, or the permittee, in accordance with the following:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.35.105#(a)">(a)</span> Tree replacement shall be in accordance with the Street Tree Master Plan and shall be a maximum of a 48" box tree for each Street Tree removed, as determined in the discretion of the Director, depending on the value of the tree removed and whether the removal was in violation of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.35" title="Chapter 13.35 STREET TREES">this chapter</a>. Replacement, as determined by the Director may be in a different location than the location from which removal occurred.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.35.105#(b)">(b)</span> In the event Trimming of a Street Tree or other cause results in damage to the tree compromising its health or structural integrity or is severely detrimental to its overall aesthetics, the Director may require replacement by the person or entity causing the damage.</p>
@@ -978,7 +982,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.35.110" data-order="|13|13.35|13.35.110|" ref-path="13.35.110" class="h__section">13.35.110 ADDITIONAL REMEDIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.35.110" data-order="|13|13.35|13.35.110|" data-ref-path="13.35.110" class="h__section">13.35.110 ADDITIONAL REMEDIES.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.35.110#(a)">(a)</span> Penalties. In addition to the replacement requirements described in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.35.105" title="13.35.105 PLANTING—REPLACEMENT OF REMOVED/DAMAGED TREES.">Section 13.35.105</a>, if the Director finds that any person or entity has violated <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.35" title="Chapter 13.35 STREET TREES">this chapter</a> by participating in any act constituting a violation under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.35.085" title="13.35.085 VIOLATIONS.">section 13.35.085</a> of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.35" title="Chapter 13.35 STREET TREES">this chapter</a>, the Director may impose a penalty of up to $5,000 per participant per tree for such unlawful act.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.35.110#(b)">(b)</span> In addition to all other remedies set forth in this code or otherwise provided by law, the following remedies shall be available to the City for violation of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.35" title="Chapter 13.35 STREET TREES">this chapter</a>:</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.35.110#(b)(1)">(1)</span> Anyone violating the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.35" title="Chapter 13.35 STREET TREES">this chapter</a> may be directed by the Building Official or other inspector to stop work conducted under a City permit on either public or private property when such work caused or contributed to the violation and to prepare a mitigation plan to correct the violation and mitigate the damage inflicted. Once the violation is corrected and mitigation implemented, the Building Official or other inspector shall allow construction to resume. The mitigation plan shall be filed and approved by the City Arborist, agreed to in writing by the property owner(s) and either implemented or guaranteed by the posting of adequate bond or other security. The mitigation plan shall include measures for protection of any remaining Street Trees or heritage trees on the property or in the adjacent right-of-way and shall provide for replacement of each tree removed or damaged at locations approved by the Director. The replacement ratio shall be determined by the Director according to the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.35" title="Chapter 13.35 STREET TREES">this chapter</a>.</p>
@@ -994,8 +998,8 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.52" data-order="|13|13.52|" ref-path="13.52" class="h__chapter">Chapter 13.52 HERITAGE TREES</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/13.52.010" data-order="|13|13.52|13.52.010|" ref-path="13.52.010" class="h__section">13.52.010 INTENT—PURPOSE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.52" data-order="|13|13.52|" data-ref-path="13.52" class="h__chapter">Chapter 13.52 HERITAGE TREES</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.52.010" data-order="|13|13.52|13.52.010|" data-ref-path="13.52.010" class="h__section">13.52.010 INTENT—PURPOSE.</h2>
                 <p><a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.52" title="Chapter 13.52 HERITAGE TREES">This chapter</a> is adopted because the City has been forested with a variety of healthy and valuable trees which must be protected and preserved, the preservation and reforestation of which is necessary for the health and welfare of the citizens of this city in order to preserve the scenic beauty; maintain property values; prevent erosion of topsoil; protect against flood hazards and the risk of landslides; counteract the pollutants in the air; maintain the climatic balance and decrease wind velocities; and relieve the public costs of installing and maintaining stormwater drainage systems. To this end it is reasonable to expect property owners to maintain their trees in a satisfactory condition to keep the City of San Mateo as a sylvan place to live.</p>
                 <p>It is the intent of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.52" title="Chapter 13.52 HERITAGE TREES">this chapter</a> to establish regulations for the protection, removal and preservation of heritage trees within the City in order to retain as many trees as possible consistent with the purpose hereof and the reasonable economic enjoyment of private property.</p>
                 <aside class="annotations" role="note">
@@ -1004,7 +1008,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.52.020" data-order="|13|13.52|13.52.020|" ref-path="13.52.020" class="h__section">13.52.020 DEFINITION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.52.020" data-order="|13|13.52|13.52.020|" data-ref-path="13.52.020" class="h__section">13.52.020 DEFINITION.</h2>
                 <p>Terms used in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.52" title="Chapter 13.52 HERITAGE TREES">this chapter</a> shall be defined as follows:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.52.020#(a)">(a)</span> Heritage tree is any of the following:</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.52.020#(a)(1)">(1)</span> Any bay (Umbellularia californica), buckeye (Aesculus spp.), oak (Quercus spp.), cedar (Cedrus) or redwood (Sequoia) tree that has a diameter of ten (10) inches or more measured at forty-eight (48) inches above natural grade;</p>
@@ -1028,7 +1032,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.52.025" data-order="|13|13.52|13.52.025|" ref-path="13.52.025" class="h__section">13.52.025 TREE PROTECTION AND PRESERVATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.52.025" data-order="|13|13.52|13.52.025|" data-ref-path="13.52.025" class="h__section">13.52.025 TREE PROTECTION AND PRESERVATION.</h2>
                 <p>Any person who owns, controls, has custody or possession of any real property within the City shall use reasonable efforts to maintain and preserve all heritage trees located thereon in a state of good health, pursuant to the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.52" title="Chapter 13.52 HERITAGE TREES">this chapter</a>.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.52.025#(a)">(a)</span> Any application for discretionary development approval for real property or for any other Development Project shall be accompanied by a signed statement by the property owner or authorized agent which discloses whether any heritage trees exist on the property and describes on the plans associated with the application the location of each such tree, its species, trunk size and drip line area. In addition, the location of any tree within thirty feet of the area proposed for construction that is within the public right-of-way shall be shown on the plans and identified by species.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.52.025#(b)">(b)</span> With regard to any tree required to be identified under section (a) above, (hereafter "protected tree"), any exterior construction work associated with any Development Project performed within a radius measured from the trunk center equal to ten times the diameter of the tree trunk measured at 4' above grade shall require the preparation and submittal of a Tree Protection Plan for review and approval by the City Arborist prior to the issuance of any permit for a Development Project. The Tree Protection Plan shall be prepared by a certified arborist.</p>
@@ -1062,7 +1066,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.52.030" data-order="|13|13.52|13.52.030|" ref-path="13.52.030" class="h__section">13.52.030 VIOLATIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.52.030" data-order="|13|13.52|13.52.030|" data-ref-path="13.52.030" class="h__section">13.52.030 VIOLATIONS.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.52.030#(a)">(a)</span> It is unlawful for any person or entity to remove, or cause to be removed any heritage tree from any property in the City without obtaining a permit to do so. This applies to any owner, possessor or manager of property who removes or allows or instructs another to remove a heritage tree and to any other person, tree removal company or other entity that actually removes or participates in the removal of the heritage tree.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.52.030#(b)">(b)</span> Exception. In case of emergency when a tree is hazardous or dangerous to life or property it may be removed by order of any member of the police or fire departments. Provided further, that any franchised public utility or representative of the City may remove or prune trees which interfere with the safe and efficient operation of the public service for which they are responsible, but only to the extent made necessary by such interference. Subject to the provisions of Chapter 7.24 and 13.35, trees not covered by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.52" title="Chapter 13.52 HERITAGE TREES">this chapter</a> may be removed without permit.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.52.030#(c)">(c)</span> It is unlawful for any person or entity to cause damage to a heritage tree compromising its health or structural integrity according to accepted industry standards or to cause damage that is severely detrimental to its overall aesthetics or to remove fencing or other protective barrier surrounding a heritage tree that was required as a condition of development on the property or to violate the terms of any Tree Protection Plan.</p>
@@ -1077,7 +1081,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.52.040" data-order="|13|13.52|13.52.040|" ref-path="13.52.040" class="h__section">13.52.040 REMOVAL—PERMIT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.52.040" data-order="|13|13.52|13.52.040|" data-ref-path="13.52.040" class="h__section">13.52.040 REMOVAL—PERMIT.</h2>
                 <p>Any person or entity desiring to remove or prune one or more heritage trees shall apply to the Director for a permit. The application for a permit shall be made on forms provided for this purpose and shall state, among other things, the number and location of the trees to be removed or pruned by types and the reason for removal or pruning of each. The request for such a permit may only be made by the owner or owners of the property on which the trees are located or for pruning by an adjacent property owner of heritage tree limbs extending onto that adjacent property, after notice of the application to the property owner where the heritage tree is located. Heritage tree permits are valid for six months from date of issue. Extensions may be authorized by the Director. The applicant may submit an arborist's report with the permit application to show cause for removal or pruning. Pruning permit applications shall include pruning specifications prepared by a certified arborist.</p>
                 <p>The Director shall review each application and shall consider and determine the following in rendering a decision:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.52.040#(a)">(a)</span> The condition of the tree or trees with respect to disease, danger of falling, proximity to existing or proposed structures and interference with utility services;</p>
@@ -1096,7 +1100,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.52.050" data-order="|13|13.52|13.52.050|" ref-path="13.52.050" class="h__section">13.52.050 REFORESTATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.52.050" data-order="|13|13.52|13.52.050|" data-ref-path="13.52.050" class="h__section">13.52.050 REFORESTATION.</h2>
                 <p>Permits for heritage tree removal, removals without permits and causing damage to heritage trees shall require replanting conditions in accordance with the following guidelines:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.52.050#(a)">(a)</span> Trees removed under jurisdiction of a planning approval pursuant to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/27.71" title="Chapter 27.71 LANDSCAPE FOR PLANNING APPLICATIONS">Chapter 27.71</a> shall conform with the replacement conditions specified in the planning approval.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.52.050#(b)">(b)</span> Trees removed with a valid tree removal permit shall be replaced in accordance with the direction of the Director. Replacement direction shall include direction on the location and species of the replacement tree. Tree replacement shall be one 24" box size tree approved by the Director, for each tree removed.</p>
@@ -1116,7 +1120,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.52.055" data-order="|13|13.52|13.52.055|" ref-path="13.52.055" class="h__section">13.52.055 REMEDIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.52.055" data-order="|13|13.52|13.52.055|" data-ref-path="13.52.055" class="h__section">13.52.055 REMEDIES.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.52.055#(a)">(a)</span> Penalties. In addition to the Reforestation requirements described in Section 13.52.050(c)(e), if the Director finds that any person has violated <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.52" title="Chapter 13.52 HERITAGE TREES">this chapter</a> by participating in any act constituting a violation under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.52.030" title="13.52.030 VIOLATIONS.">Section 13.52.030</a>, the Director may impose a penalty of up to $5,000 per participant per tree for such illegal act.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.52.055#(b)">(b)</span> In addition to all other remedies set forth in this code or otherwise provided by law, the following remedies shall be available to the City for violation of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.52" title="Chapter 13.52 HERITAGE TREES">this chapter</a>:</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.52.055#(b)(1)">(1)</span> Any person or entity violating the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.52" title="Chapter 13.52 HERITAGE TREES">this chapter</a> may be directed by the Building Official or inspector to stop work and to prepare a mitigation plan to correct the violation and mitigate the damage inflicted. Once the violation is corrected and mitigation implemented, the Building Official or inspector shall allow construction to resume. The mitigation plan shall be filed and approved by the City Arborist, agreed to in writing by the property owner(s) and either implemented or guaranteed by the posting of adequate bond or other security. The mitigation plan shall include measures for protection of any remaining heritage trees on the property and shall provide for replacement of each tree removed or damaged on the property or at locations approved by the Director. The replacement ratio shall be determined by the Director according to the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.52" title="Chapter 13.52 HERITAGE TREES">this chapter</a>.</p>
@@ -1135,7 +1139,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.52.060" data-order="|13|13.52|13.52.060|" ref-path="13.52.060" class="h__section">13.52.060 APPLICABILITY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.52.060" data-order="|13|13.52|13.52.060|" data-ref-path="13.52.060" class="h__section">13.52.060 APPLICABILITY.</h2>
                 <p>The provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.52" title="Chapter 13.52 HERITAGE TREES">this chapter</a> shall apply to all persons or entities, including the City of San Mateo, or as specifically regulated under other provisions of the San Mateo Municipal Code. A person or entity who has received approval of a planning application which is also subject to the landscape regulations contained in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/27.71" title="Chapter 27.71 LANDSCAPE FOR PLANNING APPLICATIONS">Chapter 27.71</a>, need only obtain a site development permit pursuant to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/23.40" title="Chapter 23.40 SITE DEVELOPMENT CODE">Chapter 23.40</a> from the planning division for the removal and/or pruning of heritage trees on the property proposed for development.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1143,7 +1147,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.52.070" data-order="|13|13.52|13.52.070|" ref-path="13.52.070" class="h__section">13.52.070 NOTIFICATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.52.070" data-order="|13|13.52|13.52.070|" data-ref-path="13.52.070" class="h__section">13.52.070 NOTIFICATION.</h2>
                 <p>A decision by the Director shall be rendered for each permit application. If a permit is approved, it will include conditions for the tree removal in accordance with <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.52.050" title="13.52.050 REFORESTATION.">Section 13.52.050</a>. The Director shall give written notification of the decision to the applicant and abutting property owners and include therein a copy of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.52.080" title="13.52.080 APPEAL.">Section 13.52.080</a>. If such real property is occupied by other than the owner, a like copy shall also be left with the occupant. The failure of any property owner to receive the notice shall not affect the validity of any proceedings taken pursuant to the notice.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1151,7 +1155,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/13.52.080" data-order="|13|13.52|13.52.080|" ref-path="13.52.080" class="h__section">13.52.080 APPEAL.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/13.52.080" data-order="|13|13.52|13.52.080|" data-ref-path="13.52.080" class="h__section">13.52.080 APPEAL.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/13.52.080#(a)">(a)</span> Permit Applications. Any person may request the Director to reconsider the decision on a permit application made under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.52" title="Chapter 13.52 HERITAGE TREES">this chapter</a>. Such a request shall be in writing, signed by the person making the request, state the reasons the request is made and be filed with the Director not later than five p.m. of the tenth calendar day after the decision. The Director shall review the request and render a decision.</p>
                 <p>Any person may appeal the reconsidered decision of the Director to the Park and Recreation Commission by filing an appeal in writing with the Director not later than five p.m. of the tenth calendar day after the decision. The Director shall set the matter for review by the Commission at its next convenient regular meeting and provide notice by mail of the Commission hearing to the appellant and applicant at least five days prior thereto. The decision of the Commission shall be de novo.</p>
                 <p>This decision may be appealed to the Council in the same manner as to the Commission by filing a written appeal with the City Clerk not later than five p.m. of the tenth calendar day after the final decision.</p>
@@ -1170,7 +1174,7 @@
               </div>
             </article>
           </main>
-          <nav id="area__navigation_mini" class="ui ns__document__oll-core" role="region" aria-label="Previous and next article links">
+          <nav id="area__navigation_mini" class="ns__document__oll-core" aria-label="Previous and next article links">
             <section>
               <a href="/us/ca/cities/san-mateo/code/12" aria-label="Title 12 RESERVED">
                 <div class="h__ui">Previous</div>
@@ -1185,7 +1189,7 @@
             </section>
           </nav>
         </div>
-      </section>
+      </div>
       <footer id="section__footer" class="ns__document__oll-core">
         <div id="section__footer__inner" class="ns__document__oll-core">
           <div id="area__footer__content" class="ns__document__oll-core">

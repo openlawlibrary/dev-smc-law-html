@@ -49,15 +49,17 @@
     <script src="/_reader/js/main.js"> </script>
   </head>
   <body>
-    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true">
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
       <p id="message"> </p>
     </div>
-    <a href="#area__content" class="skip-link">Skip to main content</a>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
     <div id="grid" class="ns__document__oll-core">
       <header id="section__header" class="ns__document__oll-core">
         <div id="section__header__inner" class="ns__document__oll-core">
           <div id="area__logo" class="ns__document__oll-core">
-            <a href="/" class="logo" alt="San Mateo Law Library">
+            <a href="/" class="logo" aria-label="Logo - Return to home page">
               <img src="/us/ngo/oll/_document/v2/images/logo/logo.png" srcset="/us/ngo/oll/_document/v2/images/logo/logo.png 1x, /us/ngo/oll/_document/v2/images/logo/logo@2x.png 2x" alt="San Mateo Law Library logo"/>
             </a>
           </div>
@@ -66,11 +68,13 @@
           </div>
         </div>
       </header>
-      <section id="section__content" class="ns__document__oll-core">
+      <div id="section__content" class="ns__document__oll-core">
         <div id="section__content__inner" class="ns__document__oll-core">
-          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region">
-            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-hidden="true" aria-label="Mobile menu toggler"/>
-            <label for="menu-trigger" aria-label="Toggle mobile menu"> </label>
+          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
             <nav role="navigation" aria-label="Breadcrumb navigation">
               <div class="h__ui">Navigation</div>
               <ul class="ancestors">
@@ -88,12 +92,12 @@
               <div class="tuf-authenticate">
                 <h1 class="h__toc" id="/us/ca/cities/san-mateo/drafting-manual">City of San Mateo Legislative Drafting Manual.</h1>
                 <p>The purpose of this guide is to provide a uniform style and thoughtful/necessary considerations for drafting City of San Mateo Municipal Codes and Ordinances.  Our goal is to inform staff with little previous experience, and assist those who have had some experience collaborating with departments and the City Attorney's office.</p>
-                <div class="p--section" ref-path="&#xA7;1"><h2 class="h__inline-text" id="1">Section 1. Division of Responsibilities.</h2> <p/></div>
+                <div class="p--section" data-ref-path="&#xA7;1"><h2 class="h__inline-text" id="1">Section 1. Division of Responsibilities.</h2> <p/></div>
                 <p class="text-indent-1"><span class="level-num" id="1(a)">(a)</span> Department staff responsible for the ordinance should work with the attorney assigned to their department to complete the project.  The department staff shall describe the goals of the project and explain the concepts to be incorporated into the ordinance. Generally, it will be the responsibility of the attorney to draft the ordinance.</p>
                 <p class="text-indent-1"><span class="level-num" id="1(b)">(b)</span> In any code amendment, the drafter shall take time to eliminate duplicative provisions in a particular chapter, section, or subsection.</p>
                 <p class="text-indent-1"><span class="level-num" id="1(c)">(c)</span> The drafter shall consider powers and duties of boards, commissions, or officers, as defined, and if new responsibility is proposed, appropriate amendment should be made.</p>
                 <p class="text-indent-1"><span class="level-num" id="1(d)">(d)</span> The City Clerk's Office is responsible for the final formatting of all ordinances and for the publication of ordinances, or ordinance summaries, as required by the city's charter.</p>
-                <div class="p--section" ref-path="&#xA7;2"><h2 class="h__inline-text" id="2">Section 2. General Formatting Guidelines.</h2> <p/></div>
+                <div class="p--section" data-ref-path="&#xA7;2"><h2 class="h__inline-text" id="2">Section 2. General Formatting Guidelines.</h2> <p/></div>
                 <p class="text-indent-1"><span class="level-num" id="2(a)">(a)</span> Page layout.</p>
                 <p class="text-indent-2"><span class="level-num" id="2(a)(1)">(1)</span> Top, Left, &amp; Right margins at .75, Bottom at .50</p>
                 <p class="text-indent-2"><span class="level-num" id="2(a)(2)">(2)</span> Text is formatted to be ragged right.</p>
@@ -145,7 +149,7 @@
                 <p class="text-indent-3"><span class="level-num" id="2(e)(3)(A)">(A)</span> Unnumbered subsections belonging to a section shall have a 0" left indent and a 0" first line indent.</p>
                 <p class="text-indent-3"><span class="level-num" id="2(e)(3)(B)">(B)</span> Unnumbered subsections belonging to a numbered subsection shall be indented to match the numbered subsection.</p>
                 <p class="text-indent-2"><span class="level-num" id="2(e)(4)">(4)</span> <span class="level-heading">Lists.</span> When a series of subsections are to be construed together as a list, all except the last shall end with a semicolon. A conjunction, such as "or" or "and" shall be placed after the semicolon of the next-to-last subsection. The last subsection shall end with a period.</p>
-                <div class="p--section" ref-path="&#xA7;3"><h2 class="h__inline-text" id="3">Section 3. Code guidelines.</h2> <p/></div>
+                <div class="p--section" data-ref-path="&#xA7;3"><h2 class="h__inline-text" id="3">Section 3. Code guidelines.</h2> <p/></div>
                 <p class="text-indent-1"><span class="level-num" id="3(a)">(a)</span> <span class="level-heading">Titles.</span></p>
                 <p class="text-indent-2"><span class="level-num" id="3(a)(1)">(1)</span> Titles shall be numbered with sequential Arabic numerals: "Title &lt;title num&gt;".</p>
                 <p class="text-indent-2"><span class="level-num" id="3(a)(2)">(2)</span> A title case title is required without a trailing period.</p>
@@ -167,7 +171,7 @@
                 <p class="text-indent-1"><span class="level-num" id="3(e)">(e)</span> <span class="level-heading">Citations.</span></p>
                 <p class="text-indent-2"><span class="level-num" id="3(e)(1)">(1)</span> There shall be no reference in the Code to an Ordinance.</p>
                 <p class="text-indent-2"><span class="level-num" id="3(e)(2)">(2)</span> Statutes of the State or Federal government may be referred to when, and only when, they are not to be codified.  For example, the City's tidelands trust grant is in a statute that will not be codified; however, laws regarding State redevelopment will almost always be codified in either the <a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=GOV&amp;tocTitle=+Public+Utilities+Code+-+GOV" title="">Government Code</a> or the <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=HSC&amp;tocTitle=+Public+Utilities+Code+-+HSC" title="">Health and Safety Code</a>.</p>
-                <div class="p--section" ref-path="&#xA7;4"><h2 class="h__inline-text" id="4">Section 4. Ordinance guidelines.</h2> <p/></div>
+                <div class="p--section" data-ref-path="&#xA7;4"><h2 class="h__inline-text" id="4">Section 4. Ordinance guidelines.</h2> <p/></div>
                 <p class="text-indent-1"><span class="level-num" id="4(a)">(a)</span> Banner and Title.</p>
                 <p class="text-indent-2"><span class="level-num" id="4(a)(1)">(1)</span> The banner and title shall be in the following form:</p>
                 <p class="quote center">
@@ -235,7 +239,7 @@
             </section>
           </section>
         </div>
-      </section>
+      </div>
       <footer id="section__footer" class="ns__document__oll-core">
         <div id="section__footer__inner" class="ns__document__oll-core">
           <div id="area__footer__content" class="ns__document__oll-core">

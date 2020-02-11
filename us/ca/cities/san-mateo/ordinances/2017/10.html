@@ -49,15 +49,17 @@
     <script src="/_reader/js/main.js"> </script>
   </head>
   <body>
-    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true">
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
       <p id="message"> </p>
     </div>
-    <a href="#area__content" class="skip-link">Skip to main content</a>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
     <div id="grid" class="ns__document__oll-core">
       <header id="section__header" class="ns__document__oll-core">
         <div id="section__header__inner" class="ns__document__oll-core">
           <div id="area__logo" class="ns__document__oll-core">
-            <a href="/" class="logo" alt="San Mateo Law Library">
+            <a href="/" class="logo" aria-label="Logo - Return to home page">
               <img src="/us/ngo/oll/_document/v2/images/logo/logo.png" srcset="/us/ngo/oll/_document/v2/images/logo/logo.png 1x, /us/ngo/oll/_document/v2/images/logo/logo@2x.png 2x" alt="San Mateo Law Library logo"/>
             </a>
           </div>
@@ -66,11 +68,13 @@
           </div>
         </div>
       </header>
-      <section id="section__content" class="ns__document__oll-core">
+      <div id="section__content" class="ns__document__oll-core">
         <div id="section__content__inner" class="ns__document__oll-core">
-          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region">
-            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-hidden="true" aria-label="Mobile menu toggler"/>
-            <label for="menu-trigger" aria-label="Toggle mobile menu"> </label>
+          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
             <nav role="navigation" aria-label="Breadcrumb navigation">
               <div class="h__ui">Navigation</div>
               <ul class="ancestors">
@@ -97,7 +101,7 @@
                 <p>WHEREAS, health hazards related to smoking, and breathing second-hand smoke, can include certain cancers and adverse respiratory effects and worsen the quality of life for citizens with existing allergies and respiratory diseases; and</p>
                 <p>WHEREAS, City finds it necessary to improve the definition of "multi-use residence" based on interpretation issues in the current code;</p>
                 <p>NOW, THEREFORE, THE CITY COUNCIL OF THE CITY OF SAN MATEO, CALIFORNIA, ORDAINS that:</p>
-                <div class="p--section" ref-path="&#xA7;1"><h2 class="h__inline-text" id="1">Section 1.</h2> <p><a class="internal-link " href="/us/ca/cities/san-mateo/code/7.40" title="Chapter 7.40 SMOKING CONTROL">Chapter 7.40 of the San Mateo Municipal Code</a> is hereby amended to read:</p></div>
+                <div class="p--section" data-ref-path="&#xA7;1"><h2 class="h__inline-text" id="1">Section 1.</h2> <p><a class="internal-link " href="/us/ca/cities/san-mateo/code/7.40" title="Chapter 7.40 SMOKING CONTROL">Chapter 7.40 of the San Mateo Municipal Code</a> is hereby amended to read:</p></div>
                 <h3 class="quote" id="">Chapter 7.40 SMOKING CONTROL</h3>
                 <div class="quote">
                   <p>7.40.010. Findings and purpose.</p>
@@ -163,8 +167,8 @@
                 <h4 class="h6 text--bold quote">7.40.110 Self-Service Displays Prohibited.</h4>
                 <p class="text-indent-1 quote"><span class="level-num" id="">(a)</span> No person, firm, association, or corporation shall sell, permit to be sold, or offer for sale any cigarette or other tobacco product by means of self-service displays or by any means other than vendor-assisted sales.</p>
                 <p class="text-indent-1 quote"><span class="level-num" id="">(b)</span> Self-service display shall mean an open display of tobacco products that the public has access to without the intervention or assistance of an employee. Vendor assisted shall mean that only a store employee has access to the tobacco product and assists the customer by supplying the product.  (Ord. 2015-15 § 1; Ord. 1995-24 § 2)</p>
-                <div class="p--section" ref-path="&#xA7;2"><h2 class="h__inline-text" id="2">Section 2. PUBLICATION.</h2> <p>This Ordinance shall be published in summary in a newspaper of general circulation, posted in the City Clerk's Office, and posted on the City's website, all in accord with <a class="internal-link " href="/us/ca/cities/san-mateo/charter/2.15" title="2.15 Ordinances, Generally.">Section 2.15 of the City Charter</a>.</p></div>
-                <div class="p--section" ref-path="&#xA7;3"><h2 class="h__inline-text" id="3">Section 3. LEGISLATIVE HISTORY AND EFFECTIVE DATE.</h2> <p>This Ordinance was introduced on June 19, 2017 and adopted on July 17, 2017, and shall be effective thirty days after its date of adoption.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;2"><h2 class="h__inline-text" id="2">Section 2. PUBLICATION.</h2> <p>This Ordinance shall be published in summary in a newspaper of general circulation, posted in the City Clerk's Office, and posted on the City's website, all in accord with <a class="internal-link " href="/us/ca/cities/san-mateo/charter/2.15" title="2.15 Ordinances, Generally.">Section 2.15 of the City Charter</a>.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;3"><h2 class="h__inline-text" id="3">Section 3. LEGISLATIVE HISTORY AND EFFECTIVE DATE.</h2> <p>This Ordinance was introduced on June 19, 2017 and adopted on July 17, 2017, and shall be effective thirty days after its date of adoption.</p></div>
                 <p>The foregoing ordinance was adopted by the City Council of the City of San Mateo, State of California by the following vote:</p>
                 <div class="table_wrap">
                   <table>
@@ -203,7 +207,7 @@
             </section>
           </section>
         </div>
-      </section>
+      </div>
       <footer id="section__footer" class="ns__document__oll-core">
         <div id="section__footer__inner" class="ns__document__oll-core">
           <div id="area__footer__content" class="ns__document__oll-core">

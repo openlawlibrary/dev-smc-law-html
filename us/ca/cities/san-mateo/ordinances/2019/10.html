@@ -49,15 +49,17 @@
     <script src="/_reader/js/main.js"> </script>
   </head>
   <body>
-    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true">
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
       <p id="message"> </p>
     </div>
-    <a href="#area__content" class="skip-link">Skip to main content</a>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
     <div id="grid" class="ns__document__oll-core">
       <header id="section__header" class="ns__document__oll-core">
         <div id="section__header__inner" class="ns__document__oll-core">
           <div id="area__logo" class="ns__document__oll-core">
-            <a href="/" class="logo" alt="San Mateo Law Library">
+            <a href="/" class="logo" aria-label="Logo - Return to home page">
               <img src="/us/ngo/oll/_document/v2/images/logo/logo.png" srcset="/us/ngo/oll/_document/v2/images/logo/logo.png 1x, /us/ngo/oll/_document/v2/images/logo/logo@2x.png 2x" alt="San Mateo Law Library logo"/>
             </a>
           </div>
@@ -66,11 +68,13 @@
           </div>
         </div>
       </header>
-      <section id="section__content" class="ns__document__oll-core">
+      <div id="section__content" class="ns__document__oll-core">
         <div id="section__content__inner" class="ns__document__oll-core">
-          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region">
-            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-hidden="true" aria-label="Mobile menu toggler"/>
-            <label for="menu-trigger" aria-label="Toggle mobile menu"> </label>
+          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
             <nav role="navigation" aria-label="Breadcrumb navigation">
               <div class="h__ui">Navigation</div>
               <ul class="ancestors">
@@ -98,7 +102,7 @@
                 <p>WHEREAS, <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=17958&amp;lawCode=HSC" title="">California Health and Safety Code Section 17958</a> requires that the City, in order to make local amendments, find that the local amendments are reasonably necessary due to local climatic, geographical, or topographical conditions; and</p>
                 <p>WHEREAS, the City's Section 17958 findings are attached as Exhibit A to this Ordinance;</p>
                 <p>NOW, THEREFORE, THE CITY COUNCIL OF THE CITY OF SAN MATEO CALIFORNIA ORDAINS AS THAT:</p>
-                <div class="p--section" ref-path="&#xA7;1"><h2 class="h__inline-text" id="1">Section 1.</h2> <p><a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/23.70" title="Chapter 23.70 GREEN BUILDING CODE">Chapter 23.70</a>, "Green Building Code," is hereby amended to read:</p></div>
+                <div class="p--section" data-ref-path="&#xA7;1"><h2 class="h__inline-text" id="1">Section 1.</h2> <p><a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/23.70" title="Chapter 23.70 GREEN BUILDING CODE">Chapter 23.70</a>, "Green Building Code," is hereby amended to read:</p></div>
                 <h3 class="quote" id="">Chapter 23.70 Green Building Code</h3>
                 <div class="quote">
                   <p>23.70.010. Adoption</p>
@@ -143,11 +147,11 @@
                 <p class="text-indent-1 quote"><span class="level-num" id="">2.</span> Where there is evidence substantiating that additional local utility infrastructure design requirements, directly related to the implementation of these requirements, may have a significant adverse impact the construction cost of the project.</p>
                 <h4 class="h6 text--bold quote">23.70.080 Expiration</h4>
                 <p class="quote">These local code amendments shall sunset the when the California Green Building Standards Code, 2019 Edition, is no longer in effect.</p>
-                <div class="p--section" ref-path="&#xA7;2"><h2 class="h__inline-text" id="2">Section 2.</h2> <p>The Council adopts the findings supporting the local amendments to the California Green Building Standards Code, 2019 Edition, attached hereto as Exhibit A and incorporated herein by reference.</p></div>
-                <div class="p--section" ref-path="&#xA7;3"><h2 class="h__inline-text" id="3">Section 3. Environmental determination.</h2> <p>In accordance with CEQA Guidelines Section 15308, adoption of this Ordinance is categorically exempt from CEQA because adoption of these green building standards is authorized by the state and is intended to assure the protection of the environment by reducing greenhouse gas emissions.</p></div>
-                <div class="p--section" ref-path="&#xA7;4"><h2 class="h__inline-text" id="4">Section 4. Severability.</h2> <p>If any section, subsection, sentence, clause or phrase of this ordinance is for any reason held to be invalid, such decision shall not affect the validity of the remaining portions of this ordinance.  The City Council hereby declares that it should have adopted the ordinance and each section, subsection, sentence, clause or phrase thereof, irrespective of the fact that any one or more sections, subsections, sentences, clauses or phrases be declared invalid or unconstitutional.</p></div>
-                <div class="p--section" ref-path="&#xA7;5"><h2 class="h__inline-text" id="5">Section 5. Publication.</h2> <p>This ordinance shall be published in summary in the San Mateo Daily Journal, posted in the City Clerk's Office, and posted on the City's website, all in accordance with <a class="internal-link " href="/us/ca/cities/san-mateo/charter/2.15" title="2.15 Ordinances, Generally.">Section 2.15 of the City Charter</a>.</p></div>
-                <div class="p--section" ref-path="&#xA7;6"><h2 class="h__inline-text" id="6">Section 6. Legislative history and effective date.</h2> <p>This ordinance was introduced on August 19, 2019, and adopted on September 3, 2019, and shall be effective on January 1, 2020</p></div>
+                <div class="p--section" data-ref-path="&#xA7;2"><h2 class="h__inline-text" id="2">Section 2.</h2> <p>The Council adopts the findings supporting the local amendments to the California Green Building Standards Code, 2019 Edition, attached hereto as Exhibit A and incorporated herein by reference.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;3"><h2 class="h__inline-text" id="3">Section 3. Environmental determination.</h2> <p>In accordance with CEQA Guidelines Section 15308, adoption of this Ordinance is categorically exempt from CEQA because adoption of these green building standards is authorized by the state and is intended to assure the protection of the environment by reducing greenhouse gas emissions.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;4"><h2 class="h__inline-text" id="4">Section 4. Severability.</h2> <p>If any section, subsection, sentence, clause or phrase of this ordinance is for any reason held to be invalid, such decision shall not affect the validity of the remaining portions of this ordinance.  The City Council hereby declares that it should have adopted the ordinance and each section, subsection, sentence, clause or phrase thereof, irrespective of the fact that any one or more sections, subsections, sentences, clauses or phrases be declared invalid or unconstitutional.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;5"><h2 class="h__inline-text" id="5">Section 5. Publication.</h2> <p>This ordinance shall be published in summary in the San Mateo Daily Journal, posted in the City Clerk's Office, and posted on the City's website, all in accordance with <a class="internal-link " href="/us/ca/cities/san-mateo/charter/2.15" title="2.15 Ordinances, Generally.">Section 2.15 of the City Charter</a>.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;6"><h2 class="h__inline-text" id="6">Section 6. Legislative history and effective date.</h2> <p>This ordinance was introduced on August 19, 2019, and adopted on September 3, 2019, and shall be effective on January 1, 2020</p></div>
                 <p>The foregoing ordinance was adopted by the City Council of the City of San Mateo, California by the following vote:</p>
                 <div class="table_wrap">
                   <table>
@@ -242,7 +246,7 @@
             </section>
           </section>
         </div>
-      </section>
+      </div>
       <footer id="section__footer" class="ns__document__oll-core">
         <div id="section__footer__inner" class="ns__document__oll-core">
           <div id="area__footer__content" class="ns__document__oll-core">

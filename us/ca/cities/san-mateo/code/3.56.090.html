@@ -53,15 +53,17 @@
     <script src="/_reader/js/main.js"> </script>
   </head>
   <body>
-    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true">
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
       <p id="message"> </p>
     </div>
-    <a href="#area__content" class="skip-link">Skip to main content</a>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
     <div id="grid" class="ns__document__oll-core">
       <header id="section__header" class="ns__document__oll-core">
         <div id="section__header__inner" class="ns__document__oll-core">
           <div id="area__logo" class="ns__document__oll-core">
-            <a href="/" class="logo" alt="San Mateo Law Library">
+            <a href="/" class="logo" aria-label="Logo - Return to home page">
               <img src="/us/ngo/oll/_document/v2/images/logo/logo.png" srcset="/us/ngo/oll/_document/v2/images/logo/logo.png 1x, /us/ngo/oll/_document/v2/images/logo/logo@2x.png 2x" alt="San Mateo Law Library logo"/>
             </a>
           </div>
@@ -70,11 +72,13 @@
           </div>
         </div>
       </header>
-      <section id="section__content" class="ns__document__oll-core">
+      <div id="section__content" class="ns__document__oll-core">
         <div id="section__content__inner" class="ns__document__oll-core">
-          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region">
-            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-hidden="true" aria-label="Mobile menu toggler"/>
-            <label for="menu-trigger" aria-label="Toggle mobile menu"> </label>
+          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
             <nav role="navigation" aria-label="Breadcrumb navigation">
               <div class="h__ui">Navigation</div>
               <ul class="ancestors">
@@ -98,7 +102,7 @@
           </section>
           <main id="area__content" class="ns__document__oll-core">
             <div class="h__document-title">City of San Mateo Municipal Code.</div>
-            <article class="content" role="document" ref-path="3.56.090">
+            <article class="content" role="document" data-ref-path="3.56.090">
               <div class="tuf-authenticate">
                 <h1 class="h__toc" id="/us/ca/cities/san-mateo/code/3.56.090">3.56.090 FAILURE TO COLLECT AND REPORT—TAX DETERMINATION.</h1>
                 <p>If any operator fails or refuses to collect the tax and to make, within the time provided in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.56" title="Chapter 3.56 TRANSIENT OCCUPANCY TAX">this chapter</a>, any report and remittance of the tax or any portion thereof required by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.56" title="Chapter 3.56 TRANSIENT OCCUPANCY TAX">this chapter</a>, the Tax Collector shall proceed in such manner as he or she may deem best to obtain facts and information on which to base his or her estimate of the tax due. As soon as the Tax Collector procures such facts and information as he or she is able to obtain upon which to base the assessment of any tax imposed by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.56" title="Chapter 3.56 TRANSIENT OCCUPANCY TAX">this chapter</a> and payable by any operator who has failed or refused to collect the same and to make such report and remittance, the Tax Collector shall proceed to determine and assess against such operator the tax, interest and penalties provided for by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.56" title="Chapter 3.56 TRANSIENT OCCUPANCY TAX">this chapter</a>. In case such determination is made, the Tax Collector shall give a notice of the amount so assessed by serving it personally or by depositing it in the United States mail, postage prepaid, addressed to the operator so assessed at his or her last known place of address. Such operator may within 10 days after the serving or mailing of such notice make application in writing to the Tax Collector for a hearing on the amount assessed. If application by the operator for a hearing is not made within the time prescribed, the tax, interest and penalties, if any, determined by the Tax Collector, shall become final and conclusive and immediately due and payable. If such application is made, the Tax Collector shall give not less than five (5) days' written notice in the manner prescribed herein to the operator to show cause at a time and place fixed in said notice why said amount specified therein should not be fixed for such tax, interest and penalties. At such hearing, the operator may appear and offer evidence why such specified tax, interest and penalties should not be so fixed. After such hearing the Tax Collector shall determine the proper tax to be remitted and shall thereafter give written notice to the person in the manner prescribed herein of such determination and the amount of such tax, interest and penalties. The amount determined to be due shall be payable after 15 days unless an appeal is taken as provided in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.56.130" title="3.56.130 APPEAL.">Section 3.56.130</a>.</p>
@@ -111,7 +115,7 @@
               </div>
             </article>
           </main>
-          <nav id="area__navigation_mini" class="ui ns__document__oll-core" role="region" aria-label="Previous and next article links">
+          <nav id="area__navigation_mini" class="ns__document__oll-core" aria-label="Previous and next article links">
             <section>
               <a href="/us/ca/cities/san-mateo/code/3.56.080" aria-label="3.56.080 PENALTIES—INTEREST.">
                 <div class="h__ui">Previous</div>
@@ -126,7 +130,7 @@
             </section>
           </nav>
         </div>
-      </section>
+      </div>
       <footer id="section__footer" class="ns__document__oll-core">
         <div id="section__footer__inner" class="ns__document__oll-core">
           <div id="area__footer__content" class="ns__document__oll-core">

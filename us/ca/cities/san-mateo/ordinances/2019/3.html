@@ -49,15 +49,17 @@
     <script src="/_reader/js/main.js"> </script>
   </head>
   <body>
-    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true">
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
       <p id="message"> </p>
     </div>
-    <a href="#area__content" class="skip-link">Skip to main content</a>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
     <div id="grid" class="ns__document__oll-core">
       <header id="section__header" class="ns__document__oll-core">
         <div id="section__header__inner" class="ns__document__oll-core">
           <div id="area__logo" class="ns__document__oll-core">
-            <a href="/" class="logo" alt="San Mateo Law Library">
+            <a href="/" class="logo" aria-label="Logo - Return to home page">
               <img src="/us/ngo/oll/_document/v2/images/logo/logo.png" srcset="/us/ngo/oll/_document/v2/images/logo/logo.png 1x, /us/ngo/oll/_document/v2/images/logo/logo@2x.png 2x" alt="San Mateo Law Library logo"/>
             </a>
           </div>
@@ -66,11 +68,13 @@
           </div>
         </div>
       </header>
-      <section id="section__content" class="ns__document__oll-core">
+      <div id="section__content" class="ns__document__oll-core">
         <div id="section__content__inner" class="ns__document__oll-core">
-          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region">
-            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-hidden="true" aria-label="Mobile menu toggler"/>
-            <label for="menu-trigger" aria-label="Toggle mobile menu"> </label>
+          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
             <nav role="navigation" aria-label="Breadcrumb navigation">
               <div class="h__ui">Navigation</div>
               <ul class="ancestors">
@@ -103,11 +107,11 @@
                 <p>WHEREAS, on April 15, 2019, the City Council approved modifications to the previously approved project, a Second Addendum to the PEIR, and specifically authorized the use of several nearby City-owned properties for construction staging and parking; and</p>
                 <p>WHEREAS, the applicable provisions of the Zoning Code do not permit the use of off-site locations for construction-related support functions in the Open Space and Shoreline Zoning districts;</p>
                 <p>NOW, THEREFORE, THE CITY COUNCIL OF THE CITY OF SAN MATEO, CALIFORNIA, HEREBY ORDAINS that:</p>
-                <div class="p--section" ref-path="&#xA7;1"><h2 class="h__inline-text" id="1">Section 1.</h2> <p>The following city-owned properties are exempted from the provisions of the Zoning Code: APN 035-113-026, APN 035-490-480, APN 033-441-190, and an existing parking area known as the Anchor Road Parking Lot.</p></div>
-                <div class="p--section" ref-path="&#xA7;2"><h2 class="h__inline-text" id="2">Section 2. ENVIRONMENTAL DETERMINATION.</h2> <p>The use of off-site locations for construction staging was discussed in the PEIR and in the various Addenda used for the Clean Water Program improvements which were certified and adopted by the City Council in accordance with the provisions of Section 15090 of the California Environmental Quality Act (CEQA) Guidelines.</p></div>
-                <div class="p--section" ref-path="&#xA7;3"><h2 class="h__inline-text" id="3">Section 3. SEVERABILITY.</h2> <p>In the event any section, clause or provision of this Ordinance shall be determined invalid or unconstitutional, such section, clause or provision shall be deemed severable and all other sections or portions hereof shall remain in full force and effect.  It is the intent of the City Council that it would have adopted all other portions of this Ordinance irrespective of any such portion declared to be invalid or unconstitutional.</p></div>
-                <div class="p--section" ref-path="&#xA7;4"><h2 class="h__inline-text" id="4">Section 4. PUBLICATION.</h2> <p>In accordance with <a class="internal-link " href="/us/ca/cities/san-mateo/charter/2.15" title="2.15 Ordinances, Generally.">City Charter Section 2.15</a>, this Ordinance shall be published once in a newspaper of general circulation before becoming effective.</p></div>
-                <div class="p--section" ref-path="&#xA7;5"><h2 class="h__inline-text" id="5">Section 5. LEGISLATIVE HISTORY AND EFFECTIVE DATE.</h2> <p>This Ordinance was introduced on April 15, 2019 adopted on May 6, 2019 and shall take effect 30 days after adoption.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;1"><h2 class="h__inline-text" id="1">Section 1.</h2> <p>The following city-owned properties are exempted from the provisions of the Zoning Code: APN 035-113-026, APN 035-490-480, APN 033-441-190, and an existing parking area known as the Anchor Road Parking Lot.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;2"><h2 class="h__inline-text" id="2">Section 2. ENVIRONMENTAL DETERMINATION.</h2> <p>The use of off-site locations for construction staging was discussed in the PEIR and in the various Addenda used for the Clean Water Program improvements which were certified and adopted by the City Council in accordance with the provisions of Section 15090 of the California Environmental Quality Act (CEQA) Guidelines.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;3"><h2 class="h__inline-text" id="3">Section 3. SEVERABILITY.</h2> <p>In the event any section, clause or provision of this Ordinance shall be determined invalid or unconstitutional, such section, clause or provision shall be deemed severable and all other sections or portions hereof shall remain in full force and effect.  It is the intent of the City Council that it would have adopted all other portions of this Ordinance irrespective of any such portion declared to be invalid or unconstitutional.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;4"><h2 class="h__inline-text" id="4">Section 4. PUBLICATION.</h2> <p>In accordance with <a class="internal-link " href="/us/ca/cities/san-mateo/charter/2.15" title="2.15 Ordinances, Generally.">City Charter Section 2.15</a>, this Ordinance shall be published once in a newspaper of general circulation before becoming effective.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;5"><h2 class="h__inline-text" id="5">Section 5. LEGISLATIVE HISTORY AND EFFECTIVE DATE.</h2> <p>This Ordinance was introduced on April 15, 2019 adopted on May 6, 2019 and shall take effect 30 days after adoption.</p></div>
                 <p>The foregoing ordinance was adopted by the City Council of the City of San Mateo, California by the following vote:</p>
                 <div class="table_wrap">
                   <table>
@@ -147,7 +151,7 @@
             </section>
           </section>
         </div>
-      </section>
+      </div>
       <footer id="section__footer" class="ns__document__oll-core">
         <div id="section__footer__inner" class="ns__document__oll-core">
           <div id="area__footer__content" class="ns__document__oll-core">

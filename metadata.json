@@ -1,16 +1,16 @@
 {
   "meta": {
     "build": {
-      "build-date": "2020-02-07",
+      "build-date": "2020-02-11",
       "codified-date": "2020-03-04",
       "platform": {
         "reproducible": "false",
-        "version": "2020.1.0"
+        "version": "2020.2.0"
       },
       "repositories": {
         "repository": {
           "commit": "a653b4b5f1f1b6b789293a6051e5da326c74972e",
-          "name": "law-xml"
+          "name": "smc-law-xml"
         }
       }
     },

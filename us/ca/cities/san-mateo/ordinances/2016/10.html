@@ -49,15 +49,17 @@
     <script src="/_reader/js/main.js"> </script>
   </head>
   <body>
-    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true">
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
       <p id="message"> </p>
     </div>
-    <a href="#area__content" class="skip-link">Skip to main content</a>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
     <div id="grid" class="ns__document__oll-core">
       <header id="section__header" class="ns__document__oll-core">
         <div id="section__header__inner" class="ns__document__oll-core">
           <div id="area__logo" class="ns__document__oll-core">
-            <a href="/" class="logo" alt="San Mateo Law Library">
+            <a href="/" class="logo" aria-label="Logo - Return to home page">
               <img src="/us/ngo/oll/_document/v2/images/logo/logo.png" srcset="/us/ngo/oll/_document/v2/images/logo/logo.png 1x, /us/ngo/oll/_document/v2/images/logo/logo@2x.png 2x" alt="San Mateo Law Library logo"/>
             </a>
           </div>
@@ -66,11 +68,13 @@
           </div>
         </div>
       </header>
-      <section id="section__content" class="ns__document__oll-core">
+      <div id="section__content" class="ns__document__oll-core">
         <div id="section__content__inner" class="ns__document__oll-core">
-          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region">
-            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-hidden="true" aria-label="Mobile menu toggler"/>
-            <label for="menu-trigger" aria-label="Toggle mobile menu"> </label>
+          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
             <nav role="navigation" aria-label="Breadcrumb navigation">
               <div class="h__ui">Navigation</div>
               <ul class="ancestors">
@@ -94,7 +98,7 @@
               <div class="tuf-authenticate">
                 <h1 class="h__toc" id="/us/ca/cities/san-mateo/ordinances/2016/10">Ord. No. 2016-10. Amending Title 23 of the San Mateo Municipal Code to Amend Chapter 23.06 Administrative Code, Adopt the 2016 Edition of the California Building, Residential, Electrical, Mechanical, Plumbing and Existing Building Codes with Local Amendments; and Repeal Chapter 23.44 Swimming Pools.</h1>
                 <p>The City Council of the City of San Mateo, California, ordains as follows:</p>
-                <div class="p--section" ref-path="&#xA7;1"><h2 class="h__inline-text" id="1">Section 1.</h2> <p><a class="internal-link " href="/us/ca/cities/san-mateo/code/23.06" title="Chapter 23.06 ADMINISTRATIVE CODE">Chapter 23.06 (Administrative Code) of the San Mateo Municipal code</a> is hereby amended to read:</p></div>
+                <div class="p--section" data-ref-path="&#xA7;1"><h2 class="h__inline-text" id="1">Section 1.</h2> <p><a class="internal-link " href="/us/ca/cities/san-mateo/code/23.06" title="Chapter 23.06 ADMINISTRATIVE CODE">Chapter 23.06 (Administrative Code) of the San Mateo Municipal code</a> is hereby amended to read:</p></div>
                 <h3 class="quote" id="">Chapter 23.06 – Administration</h3>
                 <div class="quote">
                   <p>23.06.010. Adoption</p>
@@ -400,7 +404,7 @@
                 <p class="quote">Fire and Health Protection. The chief of the fire department and the health officer that has jurisdiction shall have concurrent jurisdiction, respectively, with the building official in the enforcement of all those provisions of this code relating to or involving protection against fire, or the maintenance of public health.  The building official, fire chief, and/or health officer, or their authorized representative, may enter any building or premises for the purpose of inspection or enforcing the provisions of this code.</p>
                 <p class="quote">Whenever any building work is being done contrary to the provisions of this code, the building official, or his authorized representative, may order the work stopped by notice in writing served on the contractor, or his representative, or any persons engaged in doing or causing that work to be done, and any such persons shall forthwith stop that work until authorized by the building official to resume the work.</p>
                 <p class="quote">In case the work is being done in such a manner as to increase the fire hazard or jeopardize the public health, the fire chief and the health officer shall have concurrent jurisdiction with the building official to stop the work as provided above.</p>
-                <div class="p--section" ref-path="&#xA7;2"><h2 class="h__inline-text" id="2">Section 2.</h2> <p><a class="internal-link " href="/us/ca/cities/san-mateo/code/23.07" title="Chapter 23.07 RESIDENTIAL CODE">Chapter 23.07 (Residential Code) of the San Mateo Municipal code</a> is hereby amended to read:</p></div>
+                <div class="p--section" data-ref-path="&#xA7;2"><h2 class="h__inline-text" id="2">Section 2.</h2> <p><a class="internal-link " href="/us/ca/cities/san-mateo/code/23.07" title="Chapter 23.07 RESIDENTIAL CODE">Chapter 23.07 (Residential Code) of the San Mateo Municipal code</a> is hereby amended to read:</p></div>
                 <h3 class="quote" id="">Chapter 23.07 RESIDENTIAL CODE</h3>
                 <div class="quote">
                   <p>23.07.010. Adoption.</p>
@@ -434,13 +438,13 @@
                 <p class="quote">See Sections <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/23.28.160" title="23.28.160 AUTOMATIC SPRINKLER SYSTEMS&#x2014;WHERE REQUIRED&#x2014;AMENDED. [Repealed]">23.28.160</a> through 23.28 180 for Fire Sprinkler Requirements</p>
                 <h4 class="h6 text--bold quote">23.07.080 SECTIONS R902.1, R902.1.1, R902.1.3 Roofing Requirements AMENDED</h4>
                 <p class="quote"><strong>Section R902.1 Roofing covering materials.</strong> Roofs shall be covered with materials as set forth in Sections R904 and R905. A minimum Class A or B roofing shall be installed in areas designated by this section or where the edge of the roof is less than 3 feet from a lot line. Classes A or B roofing required by this section to be listed shall be tested in accordance with UL 790 or ASTM E 108.</p>
-                <div class="p--section" ref-path=""><h2 class="h__inline-text" id="">23.07.110 Table R602.10.3(3) and Section R602.10.4.4 Prohibit the Use of Gypsum Board and Limit the Use of Portland Cement Plaster as Prescriptive Wall Bracing Materials in Seismic Design Categories D0, D1 and D2 AMENDED</h2> <p/></div>
+                <div class="p--section" data-ref-path=""><h2 class="h__inline-text" id="">23.07.110 Table R602.10.3(3) and Section R602.10.4.4 Prohibit the Use of Gypsum Board and Limit the Use of Portland Cement Plaster as Prescriptive Wall Bracing Materials in Seismic Design Categories D0, D1 and D2 AMENDED</h2> <p/></div>
                 <p class="text-indent-1 quote"><span class="level-num" id="">(1)</span> Add a new footnote "f" to the end of CRC Table R602.10.3(3), to read:</p>
                 <p class="quote">f. In Seismic Design Categories D<sub>0</sub>, D<sub>1</sub>, and D<sub>2</sub>, Method GB is not permitted and the use of Method PCP is limited to one-story single family dwellings and accessory structures.</p>
                 <p class="text-indent-1 quote"><span class="level-num" id="">(2)</span> Add the "f" footnote notation in the title of Table R602.10.3(3), to read:   TABLE R602.10.3(3)<sup>f</sup></p>
                 <p class="text-indent-1 quote"><span class="level-num" id="">(3)</span> Add a new subsection R602.10.4.4, to read:</p>
                 <p class="quote"><strong>R602.10.4.4 Limits on methods GB and PCP</strong>.  In Seismic Design Categories D<sub>0</sub>, D<sub>1</sub>, and D<sub>2</sub>, Method GB is not permitted for use as intermittent braced wall panels, but gypsum board is permitted to be installed when required by this Section to be placed on the opposite side of the studs from other types of braced wall panel sheathing.   In Seismic Design Categories D<sub>0</sub>, D<sub>1</sub>, and D<sub>2</sub>, the use of Method PCP is limited to one-story single family dwellings and accessory structures.</p>
-                <div class="p--section" ref-path="&#xA7;3"><h2 class="h__inline-text" id="3">Section 3.</h2> <p><a class="internal-link " href="/us/ca/cities/san-mateo/code/23.08" title="Chapter 23.08 BUILDING CODE">Chapter 23.08 (Building Code) of the San Mateo Municipal code</a> is hereby amended to read:</p></div>
+                <div class="p--section" data-ref-path="&#xA7;3"><h2 class="h__inline-text" id="3">Section 3.</h2> <p><a class="internal-link " href="/us/ca/cities/san-mateo/code/23.08" title="Chapter 23.08 BUILDING CODE">Chapter 23.08 (Building Code) of the San Mateo Municipal code</a> is hereby amended to read:</p></div>
                 <h3 class="quote" id="">Chapter 23.08 BUILDING CODE</h3>
                 <div class="quote">
                   <p>23.08.010. Adoption.</p>
@@ -514,7 +518,7 @@
                 <p class="quote">The special inspections and verifications for concrete construction shall be as required by this section and Table 1705.3.</p>
                 <p class="quote"><strong>Exception: </strong>Special inspections shall not be required for:</p>
                 <p class="text-indent-1 quote"><span class="level-num" id="">(1)</span> Isolated spread concrete footings of buildings three stories or less above grade plane that are fully supported on earth or rock, where the structural design of the footing is based on a specified compressive strength, f'c, no greater than 2,500 pound per square inch (psi) (17.2 Mpa).</p>
-                <div class="p--section" ref-path=""><h2 class="h__inline-text" id="">23.08.130 Section 1905.1.7, Plain Concrete in Earthquake Resisting Structures AMENDED</h2> <p><strong>1905.1.8 ACI 318, Section 14.1.4. </strong>Delete ACI 318, Section 14.1.4, and replace with the following:</p></div>
+                <div class="p--section" data-ref-path=""><h2 class="h__inline-text" id="">23.08.130 Section 1905.1.7, Plain Concrete in Earthquake Resisting Structures AMENDED</h2> <p><strong>1905.1.8 ACI 318, Section 14.1.4. </strong>Delete ACI 318, Section 14.1.4, and replace with the following:</p></div>
                 <p class="quote">14.1.4 - Plain concrete in structures assigned to Seismic Design Category C, D, E or F.</p>
                 <p class="quote">14.1.4.1- Structures assigned to Seismic Design Category C, D, E or F shall not have elements of structural plain concrete, except as follows:</p>
                 <p class="quote">
@@ -539,14 +543,14 @@
                 <p class="quote"><strong>Barrier height and clearances. </strong>The top of the barrier shall be not less than 60 inches above grade measured on the side of the barrier that faces away from the swimming pool. The vertical clearance between grade and the bottom of the barrier shall not be greater than 2 inches (51mm) measured on the side of the barrier faces away from the swimming pool. Where the top of the structure is above grade, the barrier is authorized to be at the ground level or mounted on top of the pool structure, and the vertical clearance between the top of the pool structure and the bottom of the barrier shall not be greater than 4 inches (102mm).</p>
                 <h4 class="h6 text--bold quote">23.08.170 SECTION 3109.6 added – Pool Equipment Enclosure.</h4>
                 <p class="quote"><strong>Pool Equipment Enclosure</strong>. Pumps and other swimming pool equipment which produce sound above the level of 35 dba shall not be located within twenty-five feet of any neighboring property unless such equipment is enclosed in an enclosure that will reduce the sound at the property line to a level of 35 dba or less. Swimming pool heaters need not be enclosed in a pool equipment enclosure.</p>
-                <div class="p--section" ref-path="&#xA7;4"><h2 class="h__inline-text" id="4">Section 4.</h2> <p><a class="internal-link " href="/us/ca/cities/san-mateo/code/23.09" title="Chapter 23.09 EXISTING BUILDING CODE">Chapter 23.09 EXISTING BUILDING CODE of the San Mateo Municipal code</a> is hereby amended to read:</p></div>
+                <div class="p--section" data-ref-path="&#xA7;4"><h2 class="h__inline-text" id="4">Section 4.</h2> <p><a class="internal-link " href="/us/ca/cities/san-mateo/code/23.09" title="Chapter 23.09 EXISTING BUILDING CODE">Chapter 23.09 EXISTING BUILDING CODE of the San Mateo Municipal code</a> is hereby amended to read:</p></div>
                 <h4 class="h6 text--bold quote">23.09.010 ADOPTION.</h4>
                 <p class="text-indent-1 quote"><span class="level-num" id="">(a)</span> The code published by the International Code Council entitled California Existing Building Code, 2016 Edition, as adopted and amended by the State of California, are hereinafter called "existing building code," and are adopted as the rules, regulations and standards within this city as to all matters therein contained except that:</p>
                 <p class="text-indent-2 quote"><span class="level-num" id="">(1)</span> <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/23.06" title="Chapter 23.06 ADMINISTRATIVE CODE">Chapter 23.06</a> (Administration) applies to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/23.09" title="Chapter 23.09 EXISTING BUILDING CODE">this chapter</a> on administrative requirements.</p>
                 <p class="text-indent-2 quote"><span class="level-num" id="">(2)</span> Certain sections of the Existing Code have heretofore been amended and may hereafter be amended. As amended, they are adopted;</p>
                 <p class="text-indent-1 quote"><span class="level-num" id="">(b)</span> No section of the Existing Building Code shall imply a mandatory duty of enforcement on the City, or on any officer, official, agent, employee, board, council or commission thereof. Instead, if any section purports to impose a mandatory duty of enforcement, that section shall invest the City, and the appropriate officer, official, agent, employee, board, council or commission with discretion to enforce the section or not to enforce it.</p>
                 <p class="text-indent-1 quote"><span class="level-num" id="">(c)</span> A copy of the Existing Building Code shall at all times be kept on file in the office of the City Clerk.</p>
-                <div class="p--section" ref-path="&#xA7;5"><h2 class="h__inline-text" id="5">Section 5.</h2> <p><a class="internal-link " href="/us/ca/cities/san-mateo/code/23.10" title="Chapter 23.10 EARTHQUAKE HAZARD REDUCTION CODE [Repealed]">Chapter 23.10 (Earthquake Hazard Reduction Code) of the San Mateo Municipal code</a> is hereby amended to read:</p></div>
+                <div class="p--section" data-ref-path="&#xA7;5"><h2 class="h__inline-text" id="5">Section 5.</h2> <p><a class="internal-link " href="/us/ca/cities/san-mateo/code/23.10" title="Chapter 23.10 EARTHQUAKE HAZARD REDUCTION CODE [Repealed]">Chapter 23.10 (Earthquake Hazard Reduction Code) of the San Mateo Municipal code</a> is hereby amended to read:</p></div>
                 <h3 class="quote" id="">Chapter 23.10 EARTHQUAKE HAZARD REDUCTION CODE</h3>
                 <div class="quote">
                   <p>23.10.010. Adoption.</p>
@@ -558,7 +562,7 @@
                 <p class="text-indent-1 quote"><span class="level-num" id="">(a)</span> The code published by International Code Council entitled California Existing Building Code 2016 Appendix Chapter A1 is adopted as the rules, regulations and standards within this city as to all matters therein contained, except as otherwise provided in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/23.10" title="Chapter 23.10 EARTHQUAKE HAZARD REDUCTION CODE [Repealed]">this Chapter</a>.</p>
                 <p class="text-indent-1 quote"><span class="level-num" id="">(b)</span> No section of this appendix shall impose a mandatory duty of enforcement on the city, or on any officer, official, agent, employee, board, council or commission thereof. Instead, if any section purports to impose a mandatory duty of enforcement, that section shall invest the city, and the appropriate officer, official, agent, employee, board, council, or commission with discretion to enforce the section, or not to enforce it.</p>
                 <p class="text-indent-1 quote"><span class="level-num" id="">(c)</span> A copy of the California Existing Building Code shall at all times be kept on file in the Office of the City Clerk.</p>
-                <div class="p--section" ref-path=""><h2 class="h__inline-text" id="">23.10.012 Section A103 – DEFINITIONS</h2> <p/></div>
+                <div class="p--section" data-ref-path=""><h2 class="h__inline-text" id="">23.10.012 Section A103 – DEFINITIONS</h2> <p/></div>
                 <p class="text-indent-1 quote"><span class="level-num" id="">(a)</span> <span class="level-heading">HIGH RISK BUILDING:</span> Any building (except essential and hazardous facilities listed in Section A102.2) having an occupant load of 100 or more, as determined by 2016 CBC Section 1004.</p>
                 <p class="text-indent-1 quote"><span class="level-num" id="">(b)</span> <span class="level-heading">LOW RISK BUILDING:</span> Any building (except essential and hazardous facilities listed in Section A102.2) having an occupant load of less than 100 occupants as determined by 2016 CBC Section 1004.</p>
                 <h4 class="h6 text--bold quote">23.10.014 ADMINISTRATION.</h4>
@@ -580,7 +584,7 @@
                 <p class="text-indent-2 quote"><span class="level-num" id="">(2)</span> Time limits. The owner of a building within the scope of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/23.10" title="Chapter 23.10 EARTHQUAKE HAZARD REDUCTION CODE [Repealed]">this Chapter</a> shall comply with the requirements set forth above by submitting the following to the building official for review within the stated time limits:</p>
                 <p class="text-indent-3 quote"><span class="level-num" id="">1.</span> Within one year after the service of the order, a structural analysis, which is subject to approval by the building official, and which shall demonstrate that the building meets the minimum requirements of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/23.10" title="Chapter 23.10 EARTHQUAKE HAZARD REDUCTION CODE [Repealed]">this Chapter</a>; or</p>
                 <p class="text-indent-3 quote"><span class="level-num" id="">2.</span> Within one year after the service of the order, a structural analysis and plans for the proposed structural alterations of the building necessary to comply with the minimum requirements of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/23.10" title="Chapter 23.10 EARTHQUAKE HAZARD REDUCTION CODE [Repealed]">this chapter</a>. After plans are submitted and approved by the building official, the owner shall obtain a building permit, commence and complete the required construction within four years from service of the order, for high-risk buildings, and within six years from service of the order for low-risk buildings.</p>
-                <div class="p--section" ref-path="&#xA7;6"><h2 class="h__inline-text" id="6">Section 6.</h2> <p><a class="internal-link " href="/us/ca/cities/san-mateo/code/23.12" title="Chapter 23.12 ELECTRICAL CODE">Chapter 23.12 (Electrical Code) of the San Mateo Municipal code</a> is hereby amended to read:</p></div>
+                <div class="p--section" data-ref-path="&#xA7;6"><h2 class="h__inline-text" id="6">Section 6.</h2> <p><a class="internal-link " href="/us/ca/cities/san-mateo/code/23.12" title="Chapter 23.12 ELECTRICAL CODE">Chapter 23.12 (Electrical Code) of the San Mateo Municipal code</a> is hereby amended to read:</p></div>
                 <h3 class="quote" id="">Chapter 23.12 ELECTRICAL CODE</h3>
                 <div class="quote">
                   <p>23.12.010. Adoption</p>
@@ -591,7 +595,7 @@
                 <p class="text-indent-1 quote"><span class="level-num" id="">(c)</span> The provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/23.06" title="Chapter 23.06 ADMINISTRATIVE CODE">Chapter 23.06</a> Administration, shall apply to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/23.12" title="Chapter 23.12 ELECTRICAL CODE">this chapter</a>.</p>
                 <p class="text-indent-1 quote"><span class="level-num" id="">(d)</span> No section of the California Electrical Code shall impose a mandatory duty of enforcement on the city, or on any officer, official, agent, employee, board, council or commission thereof. Instead, if any section purports to impose a mandatory duty of enforcement, said section shall be deemed to invest the city, and the appropriate officer, official, agent, employee, board, council, or commission thereof with discretion to enforce the section, or not to enforce it.</p>
                 <p class="text-indent-1 quote"><span class="level-num" id="">(e)</span> A copy of the California Electrical Code shall at all times be kept on file in the office of the City Clerk.</p>
-                <div class="p--section" ref-path="&#xA7;7"><h2 class="h__inline-text" id="7">Section 7.</h2> <p><a class="internal-link " href="/us/ca/cities/san-mateo/code/23.16" title="Chapter 23.16 PLUMBING CODE">Chapter 23.16 (Plumbing Code) of the San Mateo Municipal code</a> is hereby amended to read:</p></div>
+                <div class="p--section" data-ref-path="&#xA7;7"><h2 class="h__inline-text" id="7">Section 7.</h2> <p><a class="internal-link " href="/us/ca/cities/san-mateo/code/23.16" title="Chapter 23.16 PLUMBING CODE">Chapter 23.16 (Plumbing Code) of the San Mateo Municipal code</a> is hereby amended to read:</p></div>
                 <h3 class="quote" id="">Chapter 23.16 PLUMBING CODE</h3>
                 <div class="quote">
                   <p>23.16.010. Adoption.</p>
@@ -607,7 +611,7 @@
                 <p class="quote">Section 719.0 is amended by adding Section 719.7 as follows:</p>
                 <h4 class="h6 text--bold quote">719.7 Cleanout.</h4>
                 <p class="quote">Cleanouts shall be installed adjacent to the property line where the private sewer system connects to the public sanitary sewer lateral and in conformance with the California Plumbing Code. All such line cleanouts shall be extended to grade with materials and according to specifications approved by the Director of Public Works, or his designee, and terminate within a concrete box.</p>
-                <div class="p--section" ref-path="&#xA7;8"><h2 class="h__inline-text" id="8">Section 8.</h2> <p><a class="internal-link " href="/us/ca/cities/san-mateo/code/23.20" title="Chapter 23.20 MECHANICAL CODE">Chapter 23.20 (Mechanical Code) of the San Mateo Municipal code</a> is hereby amended to read:</p></div>
+                <div class="p--section" data-ref-path="&#xA7;8"><h2 class="h__inline-text" id="8">Section 8.</h2> <p><a class="internal-link " href="/us/ca/cities/san-mateo/code/23.20" title="Chapter 23.20 MECHANICAL CODE">Chapter 23.20 (Mechanical Code) of the San Mateo Municipal code</a> is hereby amended to read:</p></div>
                 <h3 class="quote" id="">Chapter 23.20 MECHANICAL CODE</h3>
                 <div class="quote">
                   <p>23.20.010. Adoption.</p>
@@ -620,13 +624,13 @@
                 <p class="text-indent-2 quote"><span class="level-num" id="">(1)</span> Sections 104.2 are not adopted. Instead, <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/23.06" title="Chapter 23.06 ADMINISTRATIVE CODE">Chapter 23.06</a> applies to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/23.20" title="Chapter 23.20 MECHANICAL CODE">this chapter</a>;</p>
                 <p class="text-indent-1 quote"><span class="level-num" id="">(b)</span> No section of the mechanical code shall impose a mandatory duty of enforcement on the city, or on any officer, official, agent, employee, board, council or commission thereof. Instead, if any section purports to impose a mandatory duty of enforcement, said section shall be deemed to invest the City, and the appropriate officer, official, agent, employee, board, council or commission thereof with discretion to enforce the section or not enforce it.</p>
                 <p class="text-indent-1 quote"><span class="level-num" id="">(c)</span> A copy of the mechanical code shall at all times be kept on file in the office of the City Clerk.</p>
-                <div class="p--section" ref-path="&#xA7;9"><h2 class="h__inline-text" id="9">Section 9.</h2> <p><a class="internal-link " href="/us/ca/cities/san-mateo/code/23.44" title="Chapter 23.44 ELECTRIC VEHICLE CHARGING STATIONS">Chapter 23.44 (Swimming Pools) of the San Mateo Municipal code</a> is hereby repealed.</p></div>
-                <div class="p--section" ref-path="&#xA7;10"><h2 class="h__inline-text" id="10">Section 10.</h2> <p>The Council adopts the finding for the local amendments to the California Building Standards Code, 2016 Edition, attached hereto as Exhibit A and incorporated herein by reference.</p></div>
-                <div class="p--section" ref-path="&#xA7;11"><h2 class="h__inline-text" id="11">Section 11. SEVERABILITY.</h2> <p>If any section, subsection, clause, or phrase of this Ordinance is for any reason held to be invalid, such decision shall not affect the validity of the remaining portion or sections of the Ordinance. The Council hereby declares that it should have adopted the Ordinance and each section, subsection, clause, or phrase thereof irrespective of the fact that any one or more sections, subsections, clauses, or phrases be held invalid.</p></div>
-                <div class="p--section" ref-path="&#xA7;12"><h2 class="h__inline-text" id="12">Section 12. ENVIRONMENTAL DETERMINATION.</h2> <p>The Council finds that this Ordinance is exempt from the provisions of the California Environmental Quality Act pursuant to section 15601 of the CEQA Guidelines because it can be seen with certainty that there is no possibility that the amendments herein adopted will have a significant effect on the environment.</p></div>
-                <div class="p--section" ref-path="&#xA7;13"><h2 class="h__inline-text" id="13">Section 13. PUBLICATION.</h2> <p>This Ordinance shall be published in summary in a newspaper of general circulation, posted in the City Clerk's Office, and posted on the City's website, all in accord with <a class="internal-link " href="/us/ca/cities/san-mateo/charter/2.15" title="2.15 Ordinances, Generally.">Section 2.15 of the City Charter</a>.</p></div>
-                <div class="p--section" ref-path="&#xA7;14"><h2 class="h__inline-text" id="14">Section 14. LEGISLATIVE HISTORY AND EFFECTIVE DATE.</h2> <p>This Ordinance was introduced on November 7, 2016 and adopted on November 21, 2016 and shall be effective January 1, 2017.</p></div>
-                <div class="p--section" ref-path="&#xA7;15"><h2 class="h__inline-text" id="15">Section 15.</h2> <p>The City Clerk is directed to send this Ordinance to the California Building Standards Commission.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;9"><h2 class="h__inline-text" id="9">Section 9.</h2> <p><a class="internal-link " href="/us/ca/cities/san-mateo/code/23.44" title="Chapter 23.44 ELECTRIC VEHICLE CHARGING STATIONS">Chapter 23.44 (Swimming Pools) of the San Mateo Municipal code</a> is hereby repealed.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;10"><h2 class="h__inline-text" id="10">Section 10.</h2> <p>The Council adopts the finding for the local amendments to the California Building Standards Code, 2016 Edition, attached hereto as Exhibit A and incorporated herein by reference.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;11"><h2 class="h__inline-text" id="11">Section 11. SEVERABILITY.</h2> <p>If any section, subsection, clause, or phrase of this Ordinance is for any reason held to be invalid, such decision shall not affect the validity of the remaining portion or sections of the Ordinance. The Council hereby declares that it should have adopted the Ordinance and each section, subsection, clause, or phrase thereof irrespective of the fact that any one or more sections, subsections, clauses, or phrases be held invalid.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;12"><h2 class="h__inline-text" id="12">Section 12. ENVIRONMENTAL DETERMINATION.</h2> <p>The Council finds that this Ordinance is exempt from the provisions of the California Environmental Quality Act pursuant to section 15601 of the CEQA Guidelines because it can be seen with certainty that there is no possibility that the amendments herein adopted will have a significant effect on the environment.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;13"><h2 class="h__inline-text" id="13">Section 13. PUBLICATION.</h2> <p>This Ordinance shall be published in summary in a newspaper of general circulation, posted in the City Clerk's Office, and posted on the City's website, all in accord with <a class="internal-link " href="/us/ca/cities/san-mateo/charter/2.15" title="2.15 Ordinances, Generally.">Section 2.15 of the City Charter</a>.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;14"><h2 class="h__inline-text" id="14">Section 14. LEGISLATIVE HISTORY AND EFFECTIVE DATE.</h2> <p>This Ordinance was introduced on November 7, 2016 and adopted on November 21, 2016 and shall be effective January 1, 2017.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;15"><h2 class="h__inline-text" id="15">Section 15.</h2> <p>The City Clerk is directed to send this Ordinance to the California Building Standards Commission.</p></div>
                 <p>The foregoing ordinance was adopted by the City Council of the City of San Mateo, State of California by the following vote:</p>
                 <div class="table_wrap">
                   <table>
@@ -707,7 +711,7 @@
             </section>
           </section>
         </div>
-      </section>
+      </div>
       <footer id="section__footer" class="ns__document__oll-core">
         <div id="section__footer__inner" class="ns__document__oll-core">
           <div id="area__footer__content" class="ns__document__oll-core">

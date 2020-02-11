@@ -49,15 +49,17 @@
     <script src="/_reader/js/main.js"> </script>
   </head>
   <body>
-    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true">
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
       <p id="message"> </p>
     </div>
-    <a href="#area__content" class="skip-link">Skip to main content</a>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
     <div id="grid" class="ns__document__oll-core">
       <header id="section__header" class="ns__document__oll-core">
         <div id="section__header__inner" class="ns__document__oll-core">
           <div id="area__logo" class="ns__document__oll-core">
-            <a href="/" class="logo" alt="San Mateo Law Library">
+            <a href="/" class="logo" aria-label="Logo - Return to home page">
               <img src="/us/ngo/oll/_document/v2/images/logo/logo.png" srcset="/us/ngo/oll/_document/v2/images/logo/logo.png 1x, /us/ngo/oll/_document/v2/images/logo/logo@2x.png 2x" alt="San Mateo Law Library logo"/>
             </a>
           </div>
@@ -66,11 +68,13 @@
           </div>
         </div>
       </header>
-      <section id="section__content" class="ns__document__oll-core">
+      <div id="section__content" class="ns__document__oll-core">
         <div id="section__content__inner" class="ns__document__oll-core">
-          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region">
-            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-hidden="true" aria-label="Mobile menu toggler"/>
-            <label for="menu-trigger" aria-label="Toggle mobile menu"> </label>
+          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
             <nav role="navigation" aria-label="Breadcrumb navigation">
               <div class="h__ui">Navigation</div>
               <ul class="ancestors">
@@ -110,12 +114,12 @@
                 <p>WHEREAS, under <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=366.2&amp;lawCode=PUC" title="">Public Utilities Code section 366.2</a>, customers have the right to opt-out of a CCA program and continue to receive service from the incumbent utility. Customers who wish to continue to receive service from the incumbent utility will be able to do so; and</p>
                 <p>WHEREAS, on November 2, 2015, the City Council held a study session at which time interested persons had an opportunity to testify either in support or opposition to implementation of the Peninsula Clean Energy CCA program in the City; and</p>
                 <p>NOW, THEREFORE, THE CITY COUNCIL OF THE CITY OF SAN MATEO, CALIFORNIA, ORDAINS that:</p>
-                <div class="p--section" ref-path="&#xA7;1"><h2 class="h__inline-text" id="1">Section 1.</h2> <p>The above recitations are true and correct and material to this Ordinance.</p></div>
-                <div class="p--section" ref-path="&#xA7;2"><h2 class="h__inline-text" id="2">Section 2. AUTHORIZATION TO IMPLEMENT A COMMUNITY CHOICE AGGREGATION PROGRAM.</h2> <p>Based upon the forgoing, and in order to provide business and residents within the City of San Mateo with a choice of power providers and with the benefits described above, the City Council of the City of San Mateo ordains that it shall implement a community choice aggregation program within its jurisdiction by participating as a group with the County of San Mateo and other cities and towns as described above in the Community Choice Aggregation program of the Peninsula Clean Energy Authority, as generally described in the Joint Powers Agreement.</p></div>
-                <div class="p--section" ref-path="&#xA7;3"><h2 class="h__inline-text" id="3">Section 3. SEVERABILITY.</h2> <p>In the event any section, clause or provision of this Ordinance shall be determined invalid or unconstitutional, such section, clause or provision shall be deemed severable and all other sections or portions hereof shall remain in full force and effect.  It is the intent of the City Council that it would have adopted all other portions of this Ordinance irrespective of any such portion declared to be invalid or unconstitutional.</p></div>
-                <div class="p--section" ref-path="&#xA7;4"><h2 class="h__inline-text" id="4">Section 4. ENVIRONMENTAL DETERMINATION.</h2> <p>This ordinance is exempt from the requirements of the California Environmental Quality Act (CEQA) pursuant to the CEQA Guidelines, as it is not a "project" as it has no potential to result in a direct or reasonably foreseeable indirect physical change to the environment because energy will be transported through existing infrastructure (14 Cal. Code Regs. § 15378(a)). Further, this ordinance is exempt from CEQA as there is no possibility that this ordinance or its implementation would have a significant effect on the environment (14 Cal. Code Regs. § 15061(b)(3)). This ordinance is also categorically exempt because it is an action taken by a regulatory agency to assume the maintenance, restoration, enhancement or protection of the environment (14 Cal. Code Regs. § 15308). The City Manager's Office shall cause a Notice of Exemption to be filed as authorized by CEQA and the CEQA guidelines. In the event that new power transmission facilities are planned for construction, those construction projects will receive separate environmental review.</p></div>
-                <div class="p--section" ref-path="&#xA7;3"><h2 class="h__inline-text" id="3">Section 3. PUBLICATION.</h2> <p>This Ordinance shall be in full force and effective 30 days after its adoption, and shall be published and posted as required by law.</p></div>
-                <div class="p--section" ref-path="&#xA7;5"><h2 class="h__inline-text" id="5">Section 5. LEGISLATIVE HISTORY AND EFFECTIVE DATE.</h2> <p>This Ordinance was introduced on January 4, 2016, and adopted on January 19, 2016, and shall be effective thirty days after its date of adoption.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;1"><h2 class="h__inline-text" id="1">Section 1.</h2> <p>The above recitations are true and correct and material to this Ordinance.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;2"><h2 class="h__inline-text" id="2">Section 2. AUTHORIZATION TO IMPLEMENT A COMMUNITY CHOICE AGGREGATION PROGRAM.</h2> <p>Based upon the forgoing, and in order to provide business and residents within the City of San Mateo with a choice of power providers and with the benefits described above, the City Council of the City of San Mateo ordains that it shall implement a community choice aggregation program within its jurisdiction by participating as a group with the County of San Mateo and other cities and towns as described above in the Community Choice Aggregation program of the Peninsula Clean Energy Authority, as generally described in the Joint Powers Agreement.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;3"><h2 class="h__inline-text" id="3">Section 3. SEVERABILITY.</h2> <p>In the event any section, clause or provision of this Ordinance shall be determined invalid or unconstitutional, such section, clause or provision shall be deemed severable and all other sections or portions hereof shall remain in full force and effect.  It is the intent of the City Council that it would have adopted all other portions of this Ordinance irrespective of any such portion declared to be invalid or unconstitutional.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;4"><h2 class="h__inline-text" id="4">Section 4. ENVIRONMENTAL DETERMINATION.</h2> <p>This ordinance is exempt from the requirements of the California Environmental Quality Act (CEQA) pursuant to the CEQA Guidelines, as it is not a "project" as it has no potential to result in a direct or reasonably foreseeable indirect physical change to the environment because energy will be transported through existing infrastructure (14 Cal. Code Regs. § 15378(a)). Further, this ordinance is exempt from CEQA as there is no possibility that this ordinance or its implementation would have a significant effect on the environment (14 Cal. Code Regs. § 15061(b)(3)). This ordinance is also categorically exempt because it is an action taken by a regulatory agency to assume the maintenance, restoration, enhancement or protection of the environment (14 Cal. Code Regs. § 15308). The City Manager's Office shall cause a Notice of Exemption to be filed as authorized by CEQA and the CEQA guidelines. In the event that new power transmission facilities are planned for construction, those construction projects will receive separate environmental review.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;3"><h2 class="h__inline-text" id="3">Section 3. PUBLICATION.</h2> <p>This Ordinance shall be in full force and effective 30 days after its adoption, and shall be published and posted as required by law.</p></div>
+                <div class="p--section" data-ref-path="&#xA7;5"><h2 class="h__inline-text" id="5">Section 5. LEGISLATIVE HISTORY AND EFFECTIVE DATE.</h2> <p>This Ordinance was introduced on January 4, 2016, and adopted on January 19, 2016, and shall be effective thirty days after its date of adoption.</p></div>
                 <p>The foregoing ordinance was adopted by the City Council of the City of San Mateo, State of California by the following vote:</p>
                 <div class="table_wrap">
                   <table>
@@ -154,7 +158,7 @@
             </section>
           </section>
         </div>
-      </section>
+      </div>
       <footer id="section__footer" class="ns__document__oll-core">
         <div id="section__footer__inner" class="ns__document__oll-core">
           <div id="area__footer__content" class="ns__document__oll-core">

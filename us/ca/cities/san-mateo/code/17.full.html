@@ -53,15 +53,17 @@
     <script src="/_reader/js/main.js"> </script>
   </head>
   <body>
-    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true">
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
       <p id="message"> </p>
     </div>
-    <a href="#area__content" class="skip-link">Skip to main content</a>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
     <div id="grid" class="ns__document__oll-core">
       <header id="section__header" class="ns__document__oll-core">
         <div id="section__header__inner" class="ns__document__oll-core">
           <div id="area__logo" class="ns__document__oll-core">
-            <a href="/" class="logo" alt="San Mateo Law Library">
+            <a href="/" class="logo" aria-label="Logo - Return to home page">
               <img src="/us/ngo/oll/_document/v2/images/logo/logo.png" srcset="/us/ngo/oll/_document/v2/images/logo/logo.png 1x, /us/ngo/oll/_document/v2/images/logo/logo@2x.png 2x" alt="San Mateo Law Library logo"/>
             </a>
           </div>
@@ -70,11 +72,13 @@
           </div>
         </div>
       </header>
-      <section id="section__content" class="ns__document__oll-core">
+      <div id="section__content" class="ns__document__oll-core">
         <div id="section__content__inner" class="ns__document__oll-core">
-          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region">
-            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-hidden="true" aria-label="Mobile menu toggler"/>
-            <label for="menu-trigger" aria-label="Toggle mobile menu"> </label>
+          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
             <nav role="navigation" aria-label="Breadcrumb navigation">
               <div class="h__ui">Navigation</div>
               <ul class="ancestors">
@@ -92,20 +96,20 @@
           </section>
           <main id="area__content" class="ns__document__oll-core">
             <div class="h__document-title">City of San Mateo Municipal Code.</div>
-            <article class="content" role="document" ref-path="17">
+            <article class="content" role="document" data-ref-path="17">
               <div class="tuf-authenticate">
                 <h1 class="h__toc" id="/us/ca/cities/san-mateo/code/17">Title 17 STREETS AND SIDEWALKS</h1>
                 <section class="line-group annotations">
                   <h4>Editor's Notes</h4>
                   <p>For the provision of the City Charter which authorizes the City to make public improvements including the improving, widening or opening of streets or highways under and in pursuance of State law or procedure ordinances adopted by the Council or electors see Section 5.25. For the statutory provisions regarding the construction, improvement and repair of streets and sidewalks by cities see Cal. Gov. C. § 40401.</p>
                 </section>
-                <h2 id="/us/ca/cities/san-mateo/code/17.08" data-order="|17|17.08|" ref-path="17.08" class="h__chapter">Chapter 17.08 OBSTRUCTIONS—LITTER</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.08" data-order="|17|17.08|" data-ref-path="17.08" class="h__chapter">Chapter 17.08 OBSTRUCTIONS—LITTER</h2>
                 <section class="line-group annotations">
                   <h4>Editor's Notes</h4>
                   <p>For the statutory provisions regarding the prevention by a city of encroachments on city streets, see <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=38775&amp;lawCode=GOV" title="">Gov. Code § 38775</a>. For provisions relating to liability for injury, see <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/15.20" title="Chapter 15.20 FRANCHISE—LIABILITY">Chapter 15.20</a>.</p>
                   <p>For provisions relating to street standards, see Chapter 21.36 of this code.</p>
                 </section>
-                <h2 id="/us/ca/cities/san-mateo/code/17.08.010" data-order="|17|17.08|17.08.010|" ref-path="17.08.010" class="h__section">17.08.010 DIRT OR RUBBISH.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.08.010" data-order="|17|17.08|17.08.010|" data-ref-path="17.08.010" class="h__section">17.08.010 DIRT OR RUBBISH.</h2>
                 <p>No person shall throw into, or deposit upon, any street, or in the bed, or on the banks of any creek, lagoon, storm drain, or any other part of any public grounds, within this City, except in such places as may be designated for that purpose by the Council, by ordinance or otherwise, any glass, broken ware, empty cans, dirt, rubbish, garbage, filth, oil, gasoline, solvent or other petroleum distillates or any other flammable, poisonous or noxious matter, nor shall such material be deposited in private premises where such deposits would become a public nuisance. No person shall empty, or throw, or deposit, in any manhole, catch basin, sump or flushing hole of any sewer or storm drain any glass, broken ware, hay, straw, dirt, rubbish, garbage, filth, butcher's offal, or any animal or vegetable matter, or oil, gasoline, solvent or other petroleum distillates or any other flammable, poisonous or noxious matter.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -120,7 +124,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.08.020" data-order="|17|17.08|17.08.020|" ref-path="17.08.020" class="h__section">17.08.020 Placing Certain Objects in the Public Right-of-Way Prohibited.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.08.020" data-order="|17|17.08|17.08.020|" data-ref-path="17.08.020" class="h__section">17.08.020 Placing Certain Objects in the Public Right-of-Way Prohibited.</h2>
                 <p>No person shall place or cause to be placed, anywhere upon any public way, right-of-way, street, or sidewalk, and no person owning, occupying, or having the control of any premises shall suffer to remain in front thereof, upon any sidewalk, in the public right-of-way, of the half of the street or way next to such premises any appliances, furniture, bench, inoperable vehicles, boats, machinery, foods, merchandise, implement box, debris box, mailbox, or other object, which shall be an obstruction for more than one hour at a time.</p>
                 <p>The foregoing shall not apply to:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.08.020#(a)">(a)</span> Goods or merchandise in actual course of receipt, delivery, or removal;</p>
@@ -144,7 +148,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.08.050" data-order="|17|17.08|17.08.050|" ref-path="17.08.050" class="h__section">17.08.050 GLASS—REMOVAL REQUIRED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.08.050" data-order="|17|17.08|17.08.050|" data-ref-path="17.08.050" class="h__section">17.08.050 GLASS—REMOVAL REQUIRED.</h2>
                 <p>Each person shall sweep up and forthwith remove from any street any and all pieces, bits or particles of glass, porcelain or like material which ever formed a portion of any bottle, electric insulator or other object of glass, porcelain or like material which had been conveyed, carried or handled by him or her at either at, or shortly before, the time of its breakage.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -152,7 +156,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.08.060" data-order="|17|17.08|17.08.060|" ref-path="17.08.060" class="h__section">17.08.060 INSURANCE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.08.060" data-order="|17|17.08|17.08.060|" data-ref-path="17.08.060" class="h__section">17.08.060 INSURANCE.</h2>
                 <p>An applicant for an encroachment permit shall file a certificate of insurance evidencing insurance coverage for bodily and property damage liability in such amounts as may be requested by the City.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -160,7 +164,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.08.070" data-order="|17|17.08|17.08.070|" ref-path="17.08.070" class="h__section">17.08.070 PAVING, CONSTRUCTION, EXCAVATION, OBSTRUCTION—PERMIT AND RESTORATION—REQUIRED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.08.070" data-order="|17|17.08|17.08.070|" data-ref-path="17.08.070" class="h__section">17.08.070 PAVING, CONSTRUCTION, EXCAVATION, OBSTRUCTION—PERMIT AND RESTORATION—REQUIRED.</h2>
                 <p>No person shall place or use, or cause to be placed or used, any material, machinery or apparatus for building, paving, construction, excavation, demolition or other purposes, on any street, sidewalk or public place, without a permit having been first obtained from the Superintendent of Streets. Such permit shall specify the portion of the sidewalk or street to be used and the period of such use, as well as the equipment to be used and the purpose for which it is to be used. The permit shall also specify the condition to which the street, sidewalk or public property must be restored.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -178,7 +182,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.08.080" data-order="|17|17.08|17.08.080|" ref-path="17.08.080" class="h__section">17.08.080 PAVING, CONSTRUCTION, EXCAVATION, OBSTRUCTION—PERMIT—PERFORMANCE DEPOSIT—LIABILITY INDEMNIFICATION—REQUIRED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.08.080" data-order="|17|17.08|17.08.080|" data-ref-path="17.08.080" class="h__section">17.08.080 PAVING, CONSTRUCTION, EXCAVATION, OBSTRUCTION—PERMIT—PERFORMANCE DEPOSIT—LIABILITY INDEMNIFICATION—REQUIRED.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.08.080#(a)">(a)</span> The permit and specifications for restoration mentioned and required by the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.08.070" title="17.08.070 PAVING, CONSTRUCTION, EXCAVATION, OBSTRUCTION—PERMIT AND RESTORATION—REQUIRED.">Section 17.08.070</a> shall be in such form as may be specified by the Superintendent of Streets, and shall be granted and issued upon the deposit, with the application therefor, with the Superintendent of Streets, of bond or cash deposit in an amount and form to be fixed and determined by the Superintendent of Streets, of bond or cash deposit in an amount and form to be fixed and determined by the Superintendent of Streets, but not to exceed the actual cost of all work to be done in the encroachment area, including restoration, but not less than $5,000.00 in any event, together with evidence of the insurance of coverage required by subsection (c) of this section.</p>
                 <p>The bond or cash deposit shall guarantee to the City that the permittee will comply with the terms and conditions of his or her contractual obligation assumed in accepting the permit and will remove, or cause to be removed, all dirt, debris, or materials of any kind from the street, to the satisfaction of the Superintendent of Streets, immediately upon the completion of the proposed work, or at such time prior thereto, when, in the judgment of the Superintendent of Streets, the public interest and convenience will be subserved by the removal of the same, or any portion thereof, and that said person will repair all damage done by him or her to the street, gutter, curb, sidewalk, or any City property, and complete such further restoration as may be specified on the permit.</p>
                 <p>On the completion of the removal of such dirt, debris and materials, and the repair of all damage done to the street, gutter, curb, sidewalk, or any City property, and required restoration thereof to the satisfaction of the Superintendent of Streets upon inspection, at the request of the permittee, the bond shall be released or the amount so deposited shall be returned to the person making the deposit.</p>
@@ -196,7 +200,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.08.090" data-order="|17|17.08|17.08.090|" ref-path="17.08.090" class="h__section">17.08.090 PAVING OR CONSTRUCTION MACHINES—BARRICADES AND LIGHTS REQUIRED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.08.090" data-order="|17|17.08|17.08.090|" data-ref-path="17.08.090" class="h__section">17.08.090 PAVING OR CONSTRUCTION MACHINES—BARRICADES AND LIGHTS REQUIRED.</h2>
                 <p>Permittee shall at all times properly barricade such material, machinery or apparatus for which such permit shall have been issued, and shall properly safeguard same by placing thereon in the nighttime sufficient warning lights and/or reflectors.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -208,7 +212,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.08.100" data-order="|17|17.08|17.08.100|" ref-path="17.08.100" class="h__section">17.08.100 NONCOMPLIANCE—PERMIT REVOCATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.08.100" data-order="|17|17.08|17.08.100|" data-ref-path="17.08.100" class="h__section">17.08.100 NONCOMPLIANCE—PERMIT REVOCATION.</h2>
                 <p>The Superintendent of Streets may revoke the permit of any permittee of the City who fails in the performance of any duty imposed by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.08" title="Chapter 17.08 OBSTRUCTIONS—LITTER">this chapter</a>. Before revoking any such permit, the Superintendent of Streets shall notify the permittee to appear before him or her and show cause why the permit should not be revoked, such notice to be given at least five days before the hearing. Any permittee whose permit is revoked hereunder shall be ineligible to receive a new permit for a period of six months after the date of its revocation. The provisions of this section shall not affect any punishment imposed under this code.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -216,7 +220,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.08.115" data-order="|17|17.08|17.08.115|" ref-path="17.08.115" class="h__section">17.08.115 CURB ADDRESS PAINTING.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.08.115" data-order="|17|17.08|17.08.115|" data-ref-path="17.08.115" class="h__section">17.08.115 CURB ADDRESS PAINTING.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.08.115#(a)">(a)</span> It is unlawful for any person to paint or place, or cause to be painted or placed, any address or other writing or graphic work upon any public curb, gutter, sidewalk, street, or highway in the City without first obtaining an encroachment permit to do so from the Superintendent of Streets. This subsection does not apply to painting by public agencies or public utilities.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.08.115#(b)">(b)</span> The Superintendent of Streets shall maintain rules and regulations governing the painting of addresses on curbs in the City, and such rules and regulations shall be submitted by the Superintendent of Streets to the Sustainability and Infrastructure Commission for approval. It is unlawful for any person to paint, or cause to be painted any address on any curb in the City in a way that does not comply with these rules and regulations. The Superintendent of Streets is hereby authorized to issue a City-wide encroachment permit to persons applying for such a permit for the painting of addresses on curbs in accordance with these rules and regulations.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.08.115#(c)">(c)</span> It is unlawful for any person to deface, alter, or obscure any address painted on a curb in the City without the express written or oral permission of the owner of the parcel of real property in front of which the curb address is located, and without further obscuring the entire address so as to avoid any confusion over the address.</p>
@@ -228,7 +232,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.08.120" data-order="|17|17.08|17.08.120|" ref-path="17.08.120" class="h__section">17.08.120 SIDEWALK SALE OR DISPLAY OF GOODS PROHIBITED—EXCEPTION—PERMIT. [Repealed]</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.08.120" data-order="|17|17.08|17.08.120|" data-ref-path="17.08.120" class="h__section">17.08.120 SIDEWALK SALE OR DISPLAY OF GOODS PROHIBITED—EXCEPTION—PERMIT. [Repealed]</h2>
                 <p>Repealed.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -240,7 +244,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.08.130" data-order="|17|17.08|17.08.130|" ref-path="17.08.130" class="h__section">17.08.130 PERMIT—ISSUANCE—MODIFICATION—DENIAL—REVOCATION—APPEAL—HEARING.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.08.130" data-order="|17|17.08|17.08.130|" data-ref-path="17.08.130" class="h__section">17.08.130 PERMIT—ISSUANCE—MODIFICATION—DENIAL—REVOCATION—APPEAL—HEARING.</h2>
                 <p>The Superintendent of Streets may issue such permits, permitted by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.08" title="Chapter 17.08 OBSTRUCTIONS—LITTER">this chapter</a>, with such modification as he or she may deem advisable, or deny such applications for permits, or revoke an issued permit as set forth in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.08" title="Chapter 17.08 OBSTRUCTIONS—LITTER">this chapter</a>. Each application for such permit must be accompanied by a fee in an amount as shall be set by resolution of the Council.</p>
                 <p>If such permit has been denied, granted with modification, or revoked, the applicant or permittee is dissatisfied with the denial, order for such modification, or revocation, he or she may appeal therefrom to the Sustainability and Infrastructure Commission.</p>
                 <p>The appeal must be filed, in writing, within 10 days after such action. If an appeal is not filed within such period, applicant shall be barred for a period of six months from date of the original application from making further application with reference to the same matter. The appeal shall be filed within such period with the Commission Secretary, who shall set the hearing thereon for the next regular meeting of the Commission, provided such next regular meeting is to be held not less than 10 days from the date of filing such appeal. If such meeting is to be held within less than 10 days thereafter, such hearing shall be set for the regular meeting next subsequent thereto. At the hearing, the Commission shall receive all evidence offered by applicant and the Superintendent, and may hear other evidence with reference thereto, and may continue such hearing from time to time. At the conclusion of such hearing, the Commission shall make its findings thereon. If it finds that the granting or restoration of such permit, without modification, or otherwise, will not be injurious to the public health, safety or welfare, it shall refer the appeal with its findings and recommendations to the City Council. Otherwise, it shall affirm his or her order, and the applicant may then appeal to the Council. The decision of the Council shall be final and conclusive. Appeal to the City Council shall be made within the same period of time and manner as to the Commission, except that the filing shall be with the City Clerk.</p>
@@ -251,7 +255,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.08.140" data-order="|17|17.08|17.08.140|" ref-path="17.08.140" class="h__section">17.08.140 RIGHT TO LOAD OR UNLOAD.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.08.140" data-order="|17|17.08|17.08.140|" data-ref-path="17.08.140" class="h__section">17.08.140 RIGHT TO LOAD OR UNLOAD.</h2>
                 <p>Nothing in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.08" title="Chapter 17.08 OBSTRUCTIONS—LITTER">this chapter</a> shall be deemed to interfere with the right of owners or occupants of premises to make a reasonable use of the sidewalk for the purpose of loading or unloading vehicles.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -259,7 +263,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.08.150" data-order="|17|17.08|17.08.150|" ref-path="17.08.150" class="h__section">17.08.150 PARKING METER REMOVAL AND REPLACEMENT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.08.150" data-order="|17|17.08|17.08.150|" data-ref-path="17.08.150" class="h__section">17.08.150 PARKING METER REMOVAL AND REPLACEMENT.</h2>
                 <p>When the use of a sidewalk or street for any of the purposes specified in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.08" title="Chapter 17.08 OBSTRUCTIONS—LITTER">this chapter</a> requires the removal of parking meters, the applicant for a parking meter removal permit shall pay the City the full cost of the removal and replacement of each meter necessarily removed and replaced. In addition, the applicant shall pay to the City a separate charge for loss of meter revenues, per meter, for each week or portion thereof that the meters are removed, payable prior to issuance of the permit. The charge shall be at the per meter rate established by City Council resolution.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -267,7 +271,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.08.160" data-order="|17|17.08|17.08.160|" ref-path="17.08.160" class="h__section">17.08.160 REPAIR OF VEHICLE ON PUBLIC PROPERTY PROHIBITED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.08.160" data-order="|17|17.08|17.08.160|" data-ref-path="17.08.160" class="h__section">17.08.160 REPAIR OF VEHICLE ON PUBLIC PROPERTY PROHIBITED.</h2>
                 <p>It is unlawful for any person to make any but emergency repairs to any vehicle, as defined in the <a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=VEH&amp;tocTitle=+Public+Utilities+Code+-+VEH" title="">Vehicle Code</a>, upon any portion of any property within the City owned, leased, or otherwise held by any public agency, except with the express permission of the public agency owning, leasing, or holding that property. As used in this section, "emergency repairs" means those repairs which are immediately necessary to put the vehicle into operable condition. In no event shall such emergency repairs be conducted for a period in excess of six hours. This section shall not be construed to amend or change any other laws of the City or the State, including, but not limited to, laws regarding trespassing, hours of closure, and obstructing public ways.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -279,7 +283,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.08.170" data-order="|17|17.08|17.08.170|" ref-path="17.08.170" class="h__section">17.08.170 PARKING LEAKING VEHICLES ON PUBLIC PROPERTY PROHIBITED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.08.170" data-order="|17|17.08|17.08.170|" data-ref-path="17.08.170" class="h__section">17.08.170 PARKING LEAKING VEHICLES ON PUBLIC PROPERTY PROHIBITED.</h2>
                 <p>It is unlawful for any person to park any vehicle on public property, if that person knows that the vehicle leaks oil, gasoline, transmission fluid, brake fluid, radiator fluid, or other fluid to such a degree as to cause a hazard or to cause damage to the public property. For purposes of this section, public property specifically includes, but is not limited to, public streets and public parking areas.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -291,7 +295,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.08.180" data-order="|17|17.08|17.08.180|" ref-path="17.08.180" class="h__section">17.08.180 CAMPER SHELLS, VEHICLE PARTS, DEBRIS BOXES ON STREETS PROHIBITED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.08.180" data-order="|17|17.08|17.08.180|" data-ref-path="17.08.180" class="h__section">17.08.180 CAMPER SHELLS, VEHICLE PARTS, DEBRIS BOXES ON STREETS PROHIBITED.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.08.180#(a)">(a)</span> It is unlawful to place or leave a camper shell or vehicle part on a street.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.08.180#(b)">(b)</span> Except pursuant to a permit under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.08.070" title="17.08.070 PAVING, CONSTRUCTION, EXCAVATION, OBSTRUCTION—PERMIT AND RESTORATION—REQUIRED.">Section 17.08.070</a>, it is unlawful to place or leave a debris box on a street.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.08.180#(c)">(c)</span> The Police Department may cause removal from a street, at the owner's expense, of any camper shell, vehicle part, or unpermitted debris box. The person engaged by the Department to effect the removal shall have a possessory lien for the reasonable cost of removing and storing the shell, part or box, and shall promptly ascertain the name and address of the owner and bill the owner for such cost by certified mail, return receipt requested, and having done so is authorized to sell the shell, part or box at private sale if the bill is not paid within 60 days after the billing, any sum received at such sale in excess of said reasonable cost to be remitted to the owner. A copy of this section shall be enclosed with the bill.</p>
@@ -305,7 +309,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.08.190" data-order="|17|17.08|17.08.190|" ref-path="17.08.190" class="h__section">17.08.190 DEFINITIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.08.190" data-order="|17|17.08|17.08.190|" data-ref-path="17.08.190" class="h__section">17.08.190 DEFINITIONS.</h2>
                 <p>As used in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.08" title="Chapter 17.08 OBSTRUCTIONS—LITTER">this chapter</a>:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.08.190#(a)">(a)</span> "Vehicle" means a device by which any person or property may be propelled, moved, or drawn upon a street, excepting a device moved exclusively by human power or used exclusively upon stationary rails or tracks.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.08.190#(b)">(b)</span> "Owner" includes registered owner.</p>
@@ -317,8 +321,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.10" data-order="|17|17.10|" ref-path="17.10" class="h__chapter">Chapter 17.10 WIRELESS COMMUNICATIONS FACILITIES IN THE PUBLIC RIGHT-OF-WAY</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/17.10.010" data-order="|17|17.10|17.10.010|" ref-path="17.10.010" class="h__section">17.10.010 PURPOSE AND INTENT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.10" data-order="|17|17.10|" data-ref-path="17.10" class="h__chapter">Chapter 17.10 WIRELESS COMMUNICATIONS FACILITIES IN THE PUBLIC RIGHT-OF-WAY</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.10.010" data-order="|17|17.10|17.10.010|" data-ref-path="17.10.010" class="h__section">17.10.010 PURPOSE AND INTENT.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.010#(a)">(a)</span> The City of San Mateo intends this <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10" title="Chapter 17.10 WIRELESS COMMUNICATIONS FACILITIES IN THE PUBLIC RIGHT-OF-WAY">Chapter 17.10</a> to establish reasonable, uniform and comprehensive standards and procedures for wireless facilities deployment, construction, installation, collocation, modification, operation, relocation and removal within the City's territorial boundaries, consistent with and to the extent permitted under federal and California state law. The standards and procedures contained in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10" title="Chapter 17.10 WIRELESS COMMUNICATIONS FACILITIES IN THE PUBLIC RIGHT-OF-WAY">this Chapter</a> are intended to, and should be applied to, protect and promote public health, safety and welfare, and also balance the benefits that flow from robust, advanced wireless services with the City's local values, which include without limitation the aesthetic character of the City, its neighborhoods and community. <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10" title="Chapter 17.10 WIRELESS COMMUNICATIONS FACILITIES IN THE PUBLIC RIGHT-OF-WAY">This Chapter</a> is also intended to reflect and promote the community interest by (1) ensuring that the balance between public and private interest is maintained on a case-by-case basis; (2) protecting the City's visual character from potential adverse impacts or visual blight created or exacerbated by wireless communications infrastructure; (3) protecting and preserving the City's environmental resources; and (4) promoting access to high-quality, advanced wireless services for the City's residents, businesses and visitors.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.010#(b)">(b)</span> <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10" title="Chapter 17.10 WIRELESS COMMUNICATIONS FACILITIES IN THE PUBLIC RIGHT-OF-WAY">This Chapter</a> is not intended to, nor shall it be interpreted or applied to: (1) prohibit or effectively prohibit any personal wireless service provider's ability to provide personal wireless services; (2) prohibit or effectively prohibit any entity's ability to provide any interstate or intrastate telecommunications service, subject to any competitively neutral and nondiscriminatory rules, regulations or other legal requirements for rights-of-way management; (3) unreasonably discriminate among providers of functionally equivalent services; (4) deny any request for authorization to place, construct or modify personal wireless service facilities on the basis of environmental effects of radio frequency emissions to the extent that such wireless facilities comply with existing or future FCC's regulations concerning such emissions; (5) prohibit any collocation or modification that the City may not deny under federal or California state law; (6) impose any unfair, unreasonable, discriminatory or anticompetitive fees that exceed the reasonable cost to provide the services for which the fee is charged; or (7) otherwise authorize the City to preempt any applicable federal or California law.</p>
                 <aside class="annotations" role="note">
@@ -327,7 +331,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.10.020" data-order="|17|17.10|17.10.020|" ref-path="17.10.020" class="h__section">17.10.020 GENERAL DEFINITIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.10.020" data-order="|17|17.10|17.10.020|" data-ref-path="17.10.020" class="h__section">17.10.020 GENERAL DEFINITIONS.</h2>
                 <p>The abbreviations, phrases, terms and words used in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10" title="Chapter 17.10 WIRELESS COMMUNICATIONS FACILITIES IN THE PUBLIC RIGHT-OF-WAY">this chapter</a> will have the meanings assigned to them in this section unless context indicates otherwise. Undefined phrases, terms or words in this section will have the meanings assigned to them in 47 U.S.C. § 153, as may be amended from time to time, and, if not defined therein, will have their ordinary meanings. In the event that any definition assigned to any phrase, term or word in this section conflicts with any federal or state-mandated definition, the federal or state-mandated definition will control.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.020#(a)">(a)</span> "<strong>accessory equipment</strong>" means any equipment other than the antenna(s) associated with a wireless facility, which includes, but is not limited to, cabling, generators, fans, air conditioning units, electrical panels, equipment cabinets, pedestals, meters, vaults, splice boxes and surface location markers.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.020#(b)">(b)</span> "<strong>approval authority</strong>" means the commission, board or official responsible for review of permit applications and vested with the authority to approve or deny such applications. The approval authority for a major wireless permit is the Sustainability and Infrastructure Commission or, on appeal, the City Council. The approval authority for a minor wireless permit is the Public Works Director or, on protest, the Sustainability and Infrastructure Commission. The approval authority for a section 6409 approval or a temporary wireless permit is the Public Works Director or, on appeal, the City Manager.</p>
@@ -358,7 +362,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.10.030" data-order="|17|17.10|17.10.030|" ref-path="17.10.030" class="h__section">17.10.030 APPLICABILITY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.10.030" data-order="|17|17.10|17.10.030|" data-ref-path="17.10.030" class="h__section">17.10.030 APPLICABILITY.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.030#(a)">(a)</span> <span class="level-heading">Applicable Wireless Facilities.</span> The provisions in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10" title="Chapter 17.10 WIRELESS COMMUNICATIONS FACILITIES IN THE PUBLIC RIGHT-OF-WAY">this Chapter</a> shall be applied to all existing wireless facilities within the City's public rights-of-way and all applications to construct, install, operate, collocate, modify, reconstruct, relocate or otherwise deploy wireless facilities within the City's public rights-of-way, except as may be expressly provided otherwise in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10" title="Chapter 17.10 WIRELESS COMMUNICATIONS FACILITIES IN THE PUBLIC RIGHT-OF-WAY">this Chapter</a>.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.030#(b)">(b)</span> <span class="level-heading">Exempt Wireless Facilities.</span> Notwithstanding <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10.030#(a)" title="">Section 17.10.030(a)</a>, the provisions in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10" title="Chapter 17.10 WIRELESS COMMUNICATIONS FACILITIES IN THE PUBLIC RIGHT-OF-WAY">this Chapter</a> will not be applicable to: (1) wireless facilities not proposed or currently located in the public right-of-way; (2) wireless facilities owned and operated by the City for public purposes; (3) amateur radio facilities; and (4) wireless facilities or equipment owned and operated by CPUC-regulated electric companies for use in connection with electrical power generation, transmission and distribution facilities subject to CPUC General Order 131-D.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.030#(c)">(c)</span> <span class="level-heading">Special Provisions for Section 6409 Approvals.</span> Notwithstanding <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10.030#(a)" title="">Section 17.10.030(a)</a>, all requests for approval to collocate, replace or remove transmission equipment at an existing wireless tower or base station located in the public right-of-way and submitted pursuant to Section 6409 will be reviewed under the application procedures in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10.050" title="17.10.050 APPLICATION REQUIREMENTS.">Section 17.10.050</a> and the standards in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10.130" title="17.10.130 SPECIAL PROVISIONS FOR SECTION 6409 APPROVALS.">Section 17.10.130</a>. To the extent that the applicant's request does not qualify for approval under Section 6409, the applicant may submit the same or a substantially similar application for a major or minor wireless permit under the general provisions in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10" title="Chapter 17.10 WIRELESS COMMUNICATIONS FACILITIES IN THE PUBLIC RIGHT-OF-WAY">this Chapter</a>.</p>
@@ -378,7 +382,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.10.040" data-order="|17|17.10|17.10.040|" ref-path="17.10.040" class="h__section">17.10.040 REQUIRED APPROVALS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.10.040" data-order="|17|17.10|17.10.040|" data-ref-path="17.10.040" class="h__section">17.10.040 REQUIRED APPROVALS.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.040#(a)">(a)</span> <span class="level-heading">Minor Wireless Permit.</span> A minor wireless permit, subject to the Director's prior review and approval in accordance with the procedures and design regulations in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10" title="Chapter 17.10 WIRELESS COMMUNICATIONS FACILITIES IN THE PUBLIC RIGHT-OF-WAY">this Chapter</a>, is required for:</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.040#(a)(1)">(1)</span> any new wireless facility proposed on an existing or replacement support structure with accessory equipment that does not cumulatively exceed nine cubic feet in volume; and</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.040#(a)(2)">(2)</span> any collocations, modifications or other changes to an existing wireless facility not subject to Section 6409 with accessory equipment that would not cumulatively exceed nine cubic feet in volume; and</p>
@@ -394,7 +398,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.10.050" data-order="|17|17.10|17.10.050|" ref-path="17.10.050" class="h__section">17.10.050 APPLICATION REQUIREMENTS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.10.050" data-order="|17|17.10|17.10.050|" data-ref-path="17.10.050" class="h__section">17.10.050 APPLICATION REQUIREMENTS.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.050#(a)">(a)</span> <span class="level-heading">Application Required.</span> The approval authority shall not approve any request for a minor wireless permit, major wireless permit, section 6409 approval or temporary wireless permit except upon a complete and duly filed application consistent with this Section and any other written rules the City or the Director may establish from time to time in any publicly-stated format.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.050#(b)">(b)</span> <span class="level-heading">Application Content.</span> All applications for a minor wireless permit, major wireless permit, section 6409 approval or temporary wireless permit must include all the information and materials required by the Director for the application. The City Council authorizes the Director to develop, publish and from time to time update or amend permit application requirements, forms, checklists, guidelines, informational handouts and other related materials that the Director finds necessary, appropriate or useful for processing any application governed under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10" title="Chapter 17.10 WIRELESS COMMUNICATIONS FACILITIES IN THE PUBLIC RIGHT-OF-WAY">this Chapter</a>. All applications shall, at a minimum, (1) require the applicant to demonstrate that the proposed project will be in planned compliance with all applicable health and safety laws, regulations or other rules, which includes without limitation all building codes, electric codes and all FCC rules for human exposure to RF emissions and (2) contain sufficient evidence (such as a valid CPCN) of the applicant's regulatory status as a telephone corporation under the <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=PUC&amp;tocTitle=+Public+Utilities+Code+-+PUC" title="">California Public Utilities Code</a>. The City Council further authorizes the Director to establish other reasonable rules and regulations, which may include without limitation regular hours for appointments with applicants, as the Director deems necessary or appropriate to organize, document and manage the application intake process. All such rules and regulations must be in written form and publicly stated to provide applicants with prior notice.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.050#(c)">(c)</span> <span class="level-heading">Procedures for a Duly Filed Application.</span> Any application for a major wireless permit, minor wireless permit or section 6409 approval will not be considered duly filed unless submitted in accordance with the procedures in this Section. Any application for a temporary wireless permit must be filed in accordance with the procedures in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10.110" title="17.10.110 TEMPORARY WIRELESS FACILITIES.">Section 17.10.110</a>.</p>
@@ -422,7 +426,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.10.060" data-order="|17|17.10|17.10.060|" ref-path="17.10.060" class="h__section">17.10.060 NOTICE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.10.060" data-order="|17|17.10|17.10.060|" data-ref-path="17.10.060" class="h__section">17.10.060 NOTICE.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.060#(a)">(a)</span> <span class="level-heading">Notice Requirements for Minor Wireless Permits.</span> The Director shall administratively review a complete and duly filed application for a minor wireless permit and may act on such application without prior notice, except as provided in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10.050#(d)" title="">Section 17.10.050(d)</a>, or a public hearing. Within five days after the Director's decision, notice of the decision shall be posted at the project site and mailed to all properties within 500 feet from the proposed project site measured radially from the centerline of the public right-of-way in both directions. The mailed and posted notice must contain: (1) a general description for the proposed project, which shall include photo simulations, samples or renderings that depict the finished installation in context with the surrounding natural and built environment; (2) the Director's decision; (3) the applicant's name and contact information as provided on the application submitted to the City; (4) contact information for the Department; and (5) instructions for how and when to file a protest with the Secretary of the Sustainability and Infrastructure Commission.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.060#(b)">(b)</span> <span class="level-heading">Notice Requirements for Major Wireless Permits.</span> Public notice and a hearing before the Sustainability and Infrastructure Commission shall be required for all major wireless permit applications. In addition to posted notice at the proposed project site, notice shall be mailed to all properties within 500 feet of the proposed project site measured radially from the centerline of the public right-of-way in both directions. The mailed and posted notice must contain: (1) a general description for the proposed project, which shall include photo simulations, samples or renderings that depict the finished installation in context with the surrounding natural and built environment; (2) the applicant's name and contact information as provided on the application submitted to the City; (4) contact information for the Department; and (5) the date, time and location for the public hearing.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.060#(c)">(c)</span> <span class="level-heading">Deemed-Approval Notice.</span> Not more than 30 days before the applicable FCC Shot Clock expires, and in addition to any public notice required prior to a decision, an applicant for a minor wireless permit or a major wireless permit must provide a posted notice at the project site that contains: (1) a statement the project will be automatically deemed approved pursuant to <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=65964.1&amp;lawCode=GOV" title="">California Government Code § 65964.1</a> unless the City approves or denies the application or the applicant voluntarily agrees to toll the timeframe for review within the next 30 days; (2) a general description for the proposed project; (3) the applicant's name and contact information as provided on the application submitted to the City; and (4) contact information for the Department. The public notice required under this Section will be deemed given when the applicant delivers written notice to the Director that shows the appropriate notice has been posted at the project site. Notwithstanding anything to the contrary in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10" title="Chapter 17.10 WIRELESS COMMUNICATIONS FACILITIES IN THE PUBLIC RIGHT-OF-WAY">this Chapter</a>, the approval authority shall be permitted to act on an application for a minor wireless permit or a major wireless permit at any time so long as any applicable prior public notice in this Section has occurred.</p>
@@ -446,7 +450,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.10.070" data-order="|17|17.10|17.10.070|" ref-path="17.10.070" class="h__section">17.10.070 DECISIONS; LIMITED EXCEPTIONS; PROTESTS; APPEALS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.10.070" data-order="|17|17.10|17.10.070|" data-ref-path="17.10.070" class="h__section">17.10.070 DECISIONS; LIMITED EXCEPTIONS; PROTESTS; APPEALS.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.070#(a)">(a)</span> <span class="level-heading">Required Findings for Approval.</span> The approval authority may approve or conditionally approve an application for a minor wireless permit or major wireless permit submitted under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10" title="Chapter 17.10 WIRELESS COMMUNICATIONS FACILITIES IN THE PUBLIC RIGHT-OF-WAY">this Chapter</a> when the approval authority finds all of the following:</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.070#(a)(1)">(1)</span> the proposed wireless facility complies with all applicable site location guidelines in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10.090" title="17.10.090 SITE LOCATION GUIDELINES.">Section 17.10.090</a> and design regulations in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10.100" title="17.10.100 DESIGN REGULATIONS.">Section 17.10.100</a>; and</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.070#(a)(2)">(2)</span> the applicant has demonstrated that its proposed wireless facility will be in compliance with all applicable FCC rules and regulations for human exposure to RF emissions; and</p>
@@ -476,7 +480,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.10.080" data-order="|17|17.10|17.10.080|" ref-path="17.10.080" class="h__section">17.10.080 STANDARD CONDITIONS OF APPROVAL.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.10.080" data-order="|17|17.10|17.10.080|" data-ref-path="17.10.080" class="h__section">17.10.080 STANDARD CONDITIONS OF APPROVAL.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.080#(a)">(a)</span> <span class="level-heading">Conditions Adopted by City Council Resolution.</span> The City Council may, either on its own motion or upon a recommendation from the Director, adopt by resolution standard conditions of approval for wireless facilities subject to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10" title="Chapter 17.10 WIRELESS COMMUNICATIONS FACILITIES IN THE PUBLIC RIGHT-OF-WAY">this Chapter</a>. All wireless facilities, whether approved by the approval authority or deemed approved or deemed granted by law shall be automatically subject to all such standard conditions of approval as may be adopted in a resolution by the City Council.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.080#(b)">(b)</span> <span class="level-heading">Modifications to Standard Conditions.</span> The approval authority (or the appellate authority) shall have discretion to modify or amend any standard conditions of approval on a case-by-case basis as may be necessary or appropriate to protect and promote the public health, safety and welfare, allow for the proper operation of the approved wireless facility, maintain compliance with applicable laws and/or to advance the goals or policies in the General Plan and any specific plan, the San Mateo Municipal Code and/or <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10" title="Chapter 17.10 WIRELESS COMMUNICATIONS FACILITIES IN THE PUBLIC RIGHT-OF-WAY">this Chapter</a>.</p>
                 <aside class="annotations" role="note">
@@ -485,7 +489,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.10.090" data-order="|17|17.10|17.10.090|" ref-path="17.10.090" class="h__section">17.10.090 SITE LOCATION GUIDELINES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.10.090" data-order="|17|17.10|17.10.090|" data-ref-path="17.10.090" class="h__section">17.10.090 SITE LOCATION GUIDELINES.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.090#(a)">(a)</span> <span class="level-heading">Preferred Locations.</span> When evaluating compliance with <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10" title="Chapter 17.10 WIRELESS COMMUNICATIONS FACILITIES IN THE PUBLIC RIGHT-OF-WAY">this Chapter</a>, the approval authority will take into account whether any or more preferred locations are technically feasible and potentially available. All applicants for a minor wireless permit or major wireless permit must propose new wireless facilities in locations within the public rights-of-way according to the following preferences, ordered from most preferred to least preferred:</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.090#(a)(1)">(1)</span> manufacturing districts;</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.090#(a)(2)">(2)</span> transportation corridor or transit-oriented development districts;</p>
@@ -513,7 +517,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.10.100" data-order="|17|17.10|17.10.100|" ref-path="17.10.100" class="h__section">17.10.100 DESIGN REGULATIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.10.100" data-order="|17|17.10|17.10.100|" data-ref-path="17.10.100" class="h__section">17.10.100 DESIGN REGULATIONS.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.100#(a)">(a)</span> <span class="level-heading">Generally Applicable Design Regulations.</span> All new wireless facilities and collocations, modifications or other changes to existing wireless facilities not covered under Section 6409 must conform to the generally applicable design regulations in this Section and the design and engineering standards adopted by the Director of Public Works.</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.100#(a)(1)">(1)</span> <span class="level-heading">General Concealment.</span> All wireless facilities must be concealed to the maximum extent feasible with design elements and techniques that mimic or blend with the underlying support structure, surrounding environment and adjacent uses and should promote attractive, harmonious, and economic use of property, buildings, civic facilities, and conform with an preserve the overall aesthetics and character of City neighborhoods. In addition, wireless facilities may not unreasonably subject the public use, for any purpose including expressive or aesthetic purposes, to inconvenience, discomfort, trouble, annoyance, hindrance, impediment or obstruction.</p>
                 <p class="text-indent-3"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.100#(a)(1)(A)">(A)</span> <span class="level-heading">Undergrounded Equipment.</span> To conceal the equipment to the maximum degree feasible, applicants must install all equipment (other than the antenna, antenna supports, ancillary wires, cables and any electric meter) underground in any area in which the existing utilities are not primarily located above ground. In all other areas, applicants shall install all equipment (other than the antenna, antenna supports, ancillary wires, cables and any electric meter) underground when the approval authority finds that the above-ground equipment would unreasonably interfere with the public's ability to use the right-of-way for uses that include without limitation travel, social, expressive and/or aesthetic uses. When making a determination on whether to require undergrounded equipment, the approval authority shall take into account whether and to what extent any other above-ground utilities exist near the proposed site. Mere additional expense to install and maintain an underground equipment enclosure does not exempt an applicant from this requirement.</p>
@@ -560,7 +564,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.10.110" data-order="|17|17.10|17.10.110|" ref-path="17.10.110" class="h__section">17.10.110 TEMPORARY WIRELESS FACILITIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.10.110" data-order="|17|17.10|17.10.110|" data-ref-path="17.10.110" class="h__section">17.10.110 TEMPORARY WIRELESS FACILITIES.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.110#(a)">(a)</span> <span class="level-heading">General Requirements for Temporary Wireless Facilities.</span> Except as provided in this Section, the requirements, procedures and standards in this section shall be applicable to all applications for a temporary wireless permit for a temporary wireless facility.</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.110#(a)(1)">(1)</span> <span class="level-heading">Applications for Temporary Wireless Facilities.</span> The Director shall not approve any temporary wireless facility subject to a temporary wireless permit except upon a duly filed application consistent with this Section and any other written application requirements or procedures the Director may publish in any publicly-stated format. Applicants for a temporary wireless permit must submit, at a minimum: (1) a temporary wireless permit application on the most current form prepared by the Department; (2) the applicable fee for the application; (3) a site plan that shows the proposed temporary wireless facility and its equipment, physical dimensions and placement on the proposed site relative to property lines and existing structures; (4) an RF compliance report in accordance with the City's requirements; and (5) an insurance certificate for general commercial liability that names the City as an additional insured, includes coverage for the time period in which the temporary wireless facility will be placed and a carries at least $1,000,000 in coverage per occurrence. Applications must be submitted in person to the Director unless the Director grants written consent to receive an application by mail or electronic means. No pre-submittal conference or appointment is required for a temporary wireless permit application.</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.110#(a)(2)">(2)</span> <span class="level-heading">Administrative Review for Temporary Wireless Facilities.</span> After the Director receives a duly filed application for a temporary wireless permit, the Director shall review the application for completeness. After the Director deems the application complete, the Director shall review the application for conformance with the required findings in this Section and render a written decision to the applicant. Any denials must include the reasons for the denial. The review shall be administrative in nature and shall not require notice or a public hearing.</p>
@@ -591,7 +595,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.10.120" data-order="|17|17.10|17.10.120|" ref-path="17.10.120" class="h__section">17.10.120 AMORTIZATION OF NONCONFORMING WIRELESS FACILITIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.10.120" data-order="|17|17.10|17.10.120|" data-ref-path="17.10.120" class="h__section">17.10.120 AMORTIZATION OF NONCONFORMING WIRELESS FACILITIES.</h2>
                 <p>Any non-conforming wireless facilities in existence at the time <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10" title="Chapter 17.10 WIRELESS COMMUNICATIONS FACILITIES IN THE PUBLIC RIGHT-OF-WAY">this Chapter</a> becomes effective must be brought into conformance with <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10" title="Chapter 17.10 WIRELESS COMMUNICATIONS FACILITIES IN THE PUBLIC RIGHT-OF-WAY">this Chapter</a> in accordance with the amortization schedule in this Section.  As used in this section, the "fair market value" will be the construction costs listed on the building permit or application for the subject wireless facility and the "minimum years" allowed will be measured from the date on which <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10" title="Chapter 17.10 WIRELESS COMMUNICATIONS FACILITIES IN THE PUBLIC RIGHT-OF-WAY">this Chapter</a> becomes effective.</p>
                 <div class="table_wrap">
                   <table>
@@ -625,7 +629,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.10.130" data-order="|17|17.10|17.10.130|" ref-path="17.10.130" class="h__section">17.10.130 SPECIAL PROVISIONS FOR SECTION 6409 APPROVALS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.10.130" data-order="|17|17.10|17.10.130|" data-ref-path="17.10.130" class="h__section">17.10.130 SPECIAL PROVISIONS FOR SECTION 6409 APPROVALS.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.130#(a)">(a)</span> <span class="level-heading">Applicability.</span> This Section applies to all requests for approval to collocate, replace or remove transmission equipment at an existing wireless tower or base station located in the public rights-of-way submitted pursuant to Section 6409. However, the applicant may voluntarily elect to seek a major or minor wireless permit under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10.030" title="17.10.030 APPLICABILITY.">Section 17.10.030</a>.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.130#(b)">(b)</span> <span class="level-heading">Additional Section 6409 Definitions.</span> In addition to the definitions in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.10.020" title="17.10.020 GENERAL DEFINITIONS.">Section 17.10.020</a>, the abbreviations, phrases, terms and words used in this Section will have the following meanings assigned to them unless context indicates otherwise. Undefined phrases, terms or words in this section will have the meanings assigned to them in 47 U.S.C. § 153, as may be amended from time to time, and, if not defined therein, will have their ordinary meanings. In the event that any definition assigned to any phrase, term or word in this section conflicts with any federal or state-mandated definition, the federal or state-mandated definition will control.</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.10.130#(b)(1)">(1)</span> "<strong>eligible facilities request</strong>" means the same as defined by the FCC in 47 C.F.R. § 1.40001(b)(3), as may be amended.</p>
@@ -663,8 +667,8 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.12" data-order="|17|17.12|" ref-path="17.12" class="h__chapter">Chapter 17.12 NEWSRACKS IN THE PUBLIC RIGHT-OF-WAY</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/17.12.010" data-order="|17|17.12|17.12.010|" ref-path="17.12.010" class="h__section">17.12.010 FINDINGS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.12" data-order="|17|17.12|" data-ref-path="17.12" class="h__chapter">Chapter 17.12 NEWSRACKS IN THE PUBLIC RIGHT-OF-WAY</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.12.010" data-order="|17|17.12|17.12.010|" data-ref-path="17.12.010" class="h__section">17.12.010 FINDINGS.</h2>
                 <p>
                   <strong>The Council finds that:</strong>
                 </p>
@@ -679,7 +683,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.12.020" data-order="|17|17.12|17.12.020|" ref-path="17.12.020" class="h__section">17.12.020 DEFINITIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.12.020" data-order="|17|17.12|17.12.020|" data-ref-path="17.12.020" class="h__section">17.12.020 DEFINITIONS.</h2>
                 <p>For the purposes of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12" title="Chapter 17.12 NEWSRACKS IN THE PUBLIC RIGHT-OF-WAY">this chapter</a>, the following words and phrases shall have the meanings respectively ascribed thereto:</p>
                 <p><strong>Abandoned News Dispenser or Compartment</strong>. A News Dispenser or Compartment that for ten days contains debris, garbage, trash, or no current publications, or remains empty, except that a News Dispenser or Compartment remaining empty due to labor strike or any temporary and extraordinary interruption of distribution or publication of the Publications sold or distributed from that News Dispenser shall not be deemed abandoned.</p>
                 <p><strong>Amortization Date</strong>. Six months from the effective date of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12" title="Chapter 17.12 NEWSRACKS IN THE PUBLIC RIGHT-OF-WAY">this chapter</a>.</p>
@@ -706,7 +710,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.12.030" data-order="|17|17.12|17.12.030|" ref-path="17.12.030" class="h__section">17.12.030 MANDATORY MODULAR STANDARDS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.12.030" data-order="|17|17.12|17.12.030|" data-ref-path="17.12.030" class="h__section">17.12.030 MANDATORY MODULAR STANDARDS.</h2>
                 <p>All News Dispensers within the Mandatory Modular Area shall be Modular Newsracks placed by the City, or at the option of the Director, placed by an Operator contracted with by the City. In conjunction with the Publishers and interested adjacent property or business owners, the Director of Public Works shall determine the number of Modular Newsracks and the size and the location at which they will be placed. The final determination of each placement of Modular Newsracks shall be in the discretion of the Director of Public Works, but shall be exercised based upon the following criteria:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.12.030#(a)">(a)</span> Is the placement consistent with the goal of eliminating pedestrian congestion and enhancing pedestrian safety in the Mandatory Modular Area?</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.12.030#(b)">(b)</span> Is the placement consistent with the goal of maintaining vehicular safety in the Mandatory Modular Area?</p>
@@ -738,7 +742,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.12.040" data-order="|17|17.12|17.12.040|" ref-path="17.12.040" class="h__section">17.12.040 PERMIT REQUIRED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.12.040" data-order="|17|17.12|17.12.040|" data-ref-path="17.12.040" class="h__section">17.12.040 PERMIT REQUIRED.</h2>
                 <p>No person shall place, install, maintain, or cause to be placed, installed, or maintained a News Dispenser on, within, or projecting into a public right of way, or shall place or maintain a Publication in a Modular Newsrack within the public right of way, without first securing a permit therefore from the Director of Public Works, or designee. Nothing in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12" title="Chapter 17.12 NEWSRACKS IN THE PUBLIC RIGHT-OF-WAY">this chapter</a> shall effect the placement of News Dispensers on Public Property, which shall not be governed by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12" title="Chapter 17.12 NEWSRACKS IN THE PUBLIC RIGHT-OF-WAY">this chapter</a> and shall be determined by the City of San Mateo in its proprietary capacity.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -746,7 +750,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.12.050" data-order="|17|17.12|17.12.050|" ref-path="17.12.050" class="h__section">17.12.050 APPLICATION FOR PERMIT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.12.050" data-order="|17|17.12|17.12.050|" data-ref-path="17.12.050" class="h__section">17.12.050 APPLICATION FOR PERMIT.</h2>
                 <p>Any Publisher who wishes to place, install or maintain a News Dispenser on, within, or projecting into any Public Right Of Way, or who desires space within existing Modular Newsracks, shall first submit an application to the Director of Public Works on a form provided by the Department of Public Works and which shall include the following:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.12.050#(a)">(a)</span> The name, business name, street address, telephone number and facsimile number of the applicant;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.12.050#(b)">(b)</span> The name, street address, and telephone number of a distributor or other responsible person whom the City may notify or contact at any time concerning the applicant's News Dispenser;</p>
@@ -761,7 +765,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.12.060" data-order="|17|17.12|17.12.060|" ref-path="17.12.060" class="h__section">17.12.060 ISSUANCE AND EXPIRATION OF PERMIT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.12.060" data-order="|17|17.12|17.12.060|" data-ref-path="17.12.060" class="h__section">17.12.060 ISSUANCE AND EXPIRATION OF PERMIT.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.12.060#(a)">(a)</span> <span class="level-heading">News Dispensers outside the Mandatory Modular Area.</span> After receiving a completed application form, the Director of Public Works shall issue a permit within thirty (30) calendar days to a Publisher if the proposed location and the News Dispenser comply with the standards set forth in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12" title="Chapter 17.12 NEWSRACKS IN THE PUBLIC RIGHT-OF-WAY">this chapter</a> and the other requirements of this section are met. If the application is incomplete or is otherwise deficient or the permit cannot be issued for any reason, the applicant shall be notified of the deficiencies or reasons within fifteen (15) calendar days of receipt of the original application form.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.12.060#(b)">(b)</span> <span class="level-heading">Modular Newsracks within the Mandatory Modular Area.</span></p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.12.060#(b)(1)">(1)</span> After receiving a completed application form, the Director of Public Works shall issue a permit within thirty (30) calendar days to a Publisher if there is unreserved compartment space available within the Mandatory Modular Area, the compartment complies with the standards set forth in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12" title="Chapter 17.12 NEWSRACKS IN THE PUBLIC RIGHT-OF-WAY">this chapter</a> and the other requirements of this section are met. The schedule and procedures for replacement of Freestanding Newsracks with Modular Newsracks shall be in accord with <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12.060" title="17.12.060 ISSUANCE AND EXPIRATION OF PERMIT.">Section 17.12.060</a> (i). If the Director deems an application to be incomplete or otherwise deficient or the permit cannot be issued for lack of available space or any reason, the applicant shall be notified of the deficiencies or reasons within fifteen (15) calendar days of receipt of the original application form.</p>
@@ -792,7 +796,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.12.070" data-order="|17|17.12|17.12.070|" ref-path="17.12.070" class="h__section">17.12.070 PRIORITIES IN MODULAR NEWSRACKS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.12.070" data-order="|17|17.12|17.12.070|" data-ref-path="17.12.070" class="h__section">17.12.070 PRIORITIES IN MODULAR NEWSRACKS.</h2>
                 <p>At such time as this Ordinance becomes effective, the Director shall begin the process of replacing Freestanding Newsracks with Modular Newsracks within the Mandatory Modular Area. For this initial replacement process, space within Modular Newsracks in the Mandatory Modular Area shall be assigned in the following order of priority:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.12.070#(a)">(a)</span> Priority amongst Publishers desiring space in the Area shall be based on a lottery system conducted by the Director. The number of available compartment spaces shall be determined applying the criteria set forth in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12.030" title="17.12.030 MANDATORY MODULAR STANDARDS.">Section 17.12.030</a>. A random selection from all of the participating Publishers for each non-site specific space shall be made by rounds. At such time as a Publisher has determined it has sufficient space for its needs, its name shall be eliminated from subsequent rounds. When the number of remaining rounds is the same as the original number of participating Publishers, the Director shall ask if any Publishers have yet to receive any compartment space. All Publishers who have yet to receive any compartment space shall then be given one compartment space. Any remaining spaces shall be randomly selected by rounds, as before, until there are no remaining spaces. A second random selection shall determine the specific location that each space will be assigned. Trading, selling, giving or other method of transferring assigned space to another Publisher, person or entity shall not be allowed. Any Publisher desiring additional space after the lottery process is complete shall be placed on the priority list discussed in subsection (d) below.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.12.070#(b)">(b)</span> Alternative Method. As an alternative to the lottery system, all participating Publishers may present to the Director an agreed upon distribution plan for the available spaces in the Mandatory Modular Area. If approved by the City Council applying the criteria set forth in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12.030" title="17.12.030 MANDATORY MODULAR STANDARDS.">Section 17.12.030</a>, this agreed upon distribution plan will become the basis for the initial modular assignments.</p>
@@ -812,7 +816,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.12.080" data-order="|17|17.12|17.12.080|" ref-path="17.12.080" class="h__section">17.12.080 NEWS DISPENSER STANDARDS AND DESIGN.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.12.080" data-order="|17|17.12|17.12.080|" data-ref-path="17.12.080" class="h__section">17.12.080 NEWS DISPENSER STANDARDS AND DESIGN.</h2>
                 <p>Any News Dispenser which is placed, installed or maintained on, within, or projecting into any Public Right Of Way shall comply with the following standards and design:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.12.080#(a)">(a)</span> Freestanding Newsracks.</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.12.080#(a)(1)">(1)</span> Color and Design. Freestanding Newsracks may be painted any color. Freestanding Newsracks may be of the following types: an 80 or 100 style or a Ganset style, or a type equivalent to one or more of the foregoing examples, as determined by the Director. As used herein "equivalent" means a Newsrack of the same general size and style.</p>
@@ -831,14 +835,14 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.12.090" data-order="|17|17.12|17.12.090|" ref-path="17.12.090" class="h__section">17.12.090 RESERVED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.12.090" data-order="|17|17.12|17.12.090|" data-ref-path="17.12.090" class="h__section">17.12.090 RESERVED.</h2>
                 <aside class="annotations" role="note">
                   <p>
       (Ord. No. 2004-2 § 1.)
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.12.100" data-order="|17|17.12|17.12.100|" ref-path="17.12.100" class="h__section">17.12.100 PROHIBITED IN ROADWAY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.12.100" data-order="|17|17.12|17.12.100|" data-ref-path="17.12.100" class="h__section">17.12.100 PROHIBITED IN ROADWAY.</h2>
                 <p>No person shall place, install or maintain any News Dispenser which projects into, or which rests, fully or in part, upon, along, or over any portion of a roadway.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -846,7 +850,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.12.110" data-order="|17|17.12|17.12.110|" ref-path="17.12.110" class="h__section">17.12.110 HARMFUL MATTER TO MINORS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.12.110" data-order="|17|17.12|17.12.110|" data-ref-path="17.12.110" class="h__section">17.12.110 HARMFUL MATTER TO MINORS.</h2>
                 <p>No harmful matter shall be displayed on or in any News Dispenser located in a public place, other than a public place from which minors are excluded, unless blinder racks or similar opaque coverings are placed in front of the matter so that the lower two-thirds (2/3) of the matter is not exposed to view.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -854,7 +858,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.12.120" data-order="|17|17.12|17.12.120|" ref-path="17.12.120" class="h__section">17.12.120 UNLAWFUL OBSTRUCTIONS: FREESTANDING NEWSRACKS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.12.120" data-order="|17|17.12|17.12.120|" data-ref-path="17.12.120" class="h__section">17.12.120 UNLAWFUL OBSTRUCTIONS: FREESTANDING NEWSRACKS.</h2>
                 <p>This section shall only apply to Freestanding Newsracks. Modular Newsracks shall be placed in accord with <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12.030" title="17.12.030 MANDATORY MODULAR STANDARDS.">section 17.12.030</a>.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.12.120#(a)">(a)</span> Freestanding Newsracks shall only be placed near a curb or adjacent to the wall of a building. Freestanding Newsracks placed near a curb shall be placed not less than eighteen inches (18") nor more than twenty-four inches (24") from the edge of the curb. Freestanding Newsracks placed adjacent to the wall of a building shall be placed parallel to said wall and not more than six inches (6") from the wall; Freestanding Newsracks placed at the edge of sidewalk furthest from the curb shall be placed parallel to, and within six inches (6") of, the edge of such sidewalk.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.12.120#(b)">(b)</span> No Freestanding Newsrack shall be chained, bolted, or otherwise attached to any property not owned by the permittee unless the permittee has obtained from the owner of the property and from the Public Works Inspector written permission to do so.</p>
@@ -887,7 +891,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.12.130" data-order="|17|17.12|17.12.130|" ref-path="17.12.130" class="h__section">17.12.130 MAINTENANCE OF NEWS DISPENSER.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.12.130" data-order="|17|17.12|17.12.130|" data-ref-path="17.12.130" class="h__section">17.12.130 MAINTENANCE OF NEWS DISPENSER.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.12.130#(a)">(a)</span> Each News Dispenser and Compartment shall be maintained by the Permittee in a clean and neat condition, free of graffiti, dirt, other residue, grease, and corrosion, and in good repair at all times. No News Dispenser shall be allowed to be chipped, faded, or cracked or shall contain broken or cracked plastic, glass, or structural parts, including the coin deposit/return mechanism. Adhesive labels, stickers, etc., shall not be displayed on News Dispensers except as required under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12" title="Chapter 17.12 NEWSRACKS IN THE PUBLIC RIGHT-OF-WAY">this chapter</a>.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.12.130#(b)">(b)</span> Any Abandoned News Dispenser or Compartment and any such that has not been maintained in accordance with this section is in violation of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12" title="Chapter 17.12 NEWSRACKS IN THE PUBLIC RIGHT-OF-WAY">this chapter</a> and shall be subject to the removal/recapture provisions.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.12.130#(c)">(c)</span> Any Compartment within a Modular Newsrack that is not used for the sale or distribution of Publications shall remain empty and shall not be used for any other purposes.</p>
@@ -899,7 +903,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.12.140" data-order="|17|17.12|17.12.140|" ref-path="17.12.140" class="h__section">17.12.140 REMOVAL OF FREESTANDING NEWSRACK/RECAPTURE OF COMPARTMENT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.12.140" data-order="|17|17.12|17.12.140|" data-ref-path="17.12.140" class="h__section">17.12.140 REMOVAL OF FREESTANDING NEWSRACK/RECAPTURE OF COMPARTMENT.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.12.140#(a)">(a)</span> In addition to other enforcement remedies available to the City, any News Dispenser or any Compartment installed, used or maintained in violation of any provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12" title="Chapter 17.12 NEWSRACKS IN THE PUBLIC RIGHT-OF-WAY">this chapter</a>, including the failure to pay renewal fees, or that has been abandoned, may be removed or recaptured in accord with this section.</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.12.140#(a)(1)">(1)</span> Notice of Violation. Before removal of any News Dispenser or recapture of any Compartment, the Director of Public Works or designee shall notify the owner or user of the violation or, if applicable, of the intent to determine it abandoned. Written notification by first class mail to the address shown on the Permit Application in conjunction with posting on the News Dispenser shall constitute adequate notice. If no Permit Application can be found for the News Dispenser, posting of the notice on the News Dispenser alone shall be sufficient. The notice shall direct the permittee, or if no permit has been issued, the owner/user of the News Dispenser or Compartment to contact the Director of Public Works or designee. Unless the notice of intent is to determine it an Abandoned News Dispenser or Compartment, (see Subsection (c) below) the notice shall also state the nature of the violation, shall specify actions necessary to correct the violation, and shall give the owner or user ten business days from the date of posting of the notice to either remedy the violation or to request a meeting before the Director or designee. The notice shall also provide a telephone contact number.</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.12.140#(a)(2)">(2)</span> Meeting and Decision. Any owner or user notified pursuant to subsection (1) above, may request a meeting with the Director or designee by making a written request within ten business days from the date appearing on the notice. The meeting shall be informal but oral and written evidence may be given by both sides. The Director or designee shall give his or her decision within ten business days after the date of the meeting. Unless the owner or user fails to appear at the meeting, any action by the City to remove the News Dispenser or recapture the Compartment shall be stayed pending the written decision following the meeting.</p>
@@ -919,7 +923,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.12.150" data-order="|17|17.12|17.12.150|" ref-path="17.12.150" class="h__section">17.12.150 APPEALS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.12.150" data-order="|17|17.12|17.12.150|" data-ref-path="17.12.150" class="h__section">17.12.150 APPEALS.</h2>
                 <p>The permittee, or applicant for a permit hereunder, or any owner of a News Dispenser or user thereof for which no permit has been issued or for which no application has been made, may appeal any decision or determination of a designee of the Director directly to the Director of Public Works by filing written notice of such appeal with the City Clerk within ten days of a decision or determination by the designee. Any decision made by the Director may be appealed to the City Manager by filing written notice of such appeal with the City Clerk within ten days of such decision or determination. The City Manager's decision shall be final. In the event of a timely request for judicial review, the decision of the City Manager shall be held in abeyance until a final judicial determination is made.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -927,7 +931,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.12.160" data-order="|17|17.12|17.12.160|" ref-path="17.12.160" class="h__section">17.12.160 IMPOUNDED FUNDS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.12.160" data-order="|17|17.12|17.12.160|" data-ref-path="17.12.160" class="h__section">17.12.160 IMPOUNDED FUNDS.</h2>
                 <p>All money contained or placed in any News Dispenser destroyed or otherwise disposed of pursuant to the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12" title="Chapter 17.12 NEWSRACKS IN THE PUBLIC RIGHT-OF-WAY">this chapter</a>, shall be retained by the City for a period of one year and disposed of pursuant to provisions of law governing found or abandoned property.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -935,7 +939,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.12.170" data-order="|17|17.12|17.12.170|" ref-path="17.12.170" class="h__section">17.12.170 NUISANCE; CUMULATIVE REMEDIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.12.170" data-order="|17|17.12|17.12.170|" data-ref-path="17.12.170" class="h__section">17.12.170 NUISANCE; CUMULATIVE REMEDIES.</h2>
                 <p>The placement, installation or maintenance of any News Dispenser or use of a Compartment in violation of the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12" title="Chapter 17.12 NEWSRACKS IN THE PUBLIC RIGHT-OF-WAY">this chapter</a> shall be, and the same is declared to be, a public nuisance. The provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12" title="Chapter 17.12 NEWSRACKS IN THE PUBLIC RIGHT-OF-WAY">this chapter</a> shall not be deemed a limitation upon any other remedies of the City authorized by law with respect to the matter herein specified. In addition to any and all remedies available in connection with violations of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12" title="Chapter 17.12 NEWSRACKS IN THE PUBLIC RIGHT-OF-WAY">this chapter</a>, any violation of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12" title="Chapter 17.12 NEWSRACKS IN THE PUBLIC RIGHT-OF-WAY">this chapter</a> shall be punishable pursuant to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/1.04" title="Chapter 1.04 GENERAL PENALTY">Chapter 1.04</a> of this Code.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -943,7 +947,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.12.180" data-order="|17|17.12|17.12.180|" ref-path="17.12.180" class="h__section">17.12.180 AMORTIZATION REQUIREMENTS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.12.180" data-order="|17|17.12|17.12.180|" data-ref-path="17.12.180" class="h__section">17.12.180 AMORTIZATION REQUIREMENTS.</h2>
                 <p>Any News Dispenser which does not comply with the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12" title="Chapter 17.12 NEWSRACKS IN THE PUBLIC RIGHT-OF-WAY">this chapter</a> as of the effective date of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12" title="Chapter 17.12 NEWSRACKS IN THE PUBLIC RIGHT-OF-WAY">this chapter</a> shall be removed or otherwise brought into conformance within six months of the effective date of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12" title="Chapter 17.12 NEWSRACKS IN THE PUBLIC RIGHT-OF-WAY">this chapter</a> except that all Freestanding Newsracks shall be removed from the Mandatory Modular Area in accord with the provisions of a stipulated plan approved under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12.070#(b)" title="">Section 17.12.070(b)</a>, or other reasonable plan providing for systematic replacement of Freestanding Newsracks with Modular Newsracks imposed by the Director.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -951,7 +955,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.12.190" data-order="|17|17.12|17.12.190|" ref-path="17.12.190" class="h__section">17.12.190 SEVERABILITY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.12.190" data-order="|17|17.12|17.12.190|" data-ref-path="17.12.190" class="h__section">17.12.190 SEVERABILITY.</h2>
                 <p>In the event that any section or provision of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12" title="Chapter 17.12 NEWSRACKS IN THE PUBLIC RIGHT-OF-WAY">this chapter</a> is held to be invalid or inapplicable, it is intended that the invalid part or parts be severed from the remaining provisions in order to continue in force and effect as many provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12" title="Chapter 17.12 NEWSRACKS IN THE PUBLIC RIGHT-OF-WAY">this chapter</a> as possible.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -959,7 +963,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.12.200" data-order="|17|17.12|17.12.200|" ref-path="17.12.200" class="h__section">17.12.200 SIGNAGE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.12.200" data-order="|17|17.12|17.12.200|" data-ref-path="17.12.200" class="h__section">17.12.200 SIGNAGE.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.12.200#(a)">(a)</span> Modular Newsracks. No Modular Newsrack or Compartment shall have advertising displays, or other signage, logos or similar adornments on the back, sides or top of the Modular Newsrack or Compartment. Allowed on the front of the Modular Newsrack Compartment is signage identifying the Publication contained therein.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.12.200#(b)">(b)</span> Freestanding Newsracks. Freestanding Newsracks may continue with existing signage identifying the Publication contained therein. All other advertising displays, logos or similar adornments on Freestanding Newsracks are prohibited. No new Freestanding Newsrack permitted after the effective date of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12" title="Chapter 17.12 NEWSRACKS IN THE PUBLIC RIGHT-OF-WAY">this chapter</a> shall have any advertising displays or other signage, logos or similar adornment upon the back, sides or top of the Freestanding Newsrack. Allowed on the front of such Freestanding Newsrack is signage identifying the Publication contained therein.</p>
                 <aside class="annotations" role="note">
@@ -968,7 +972,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.12.201" data-order="|17|17.12|17.12.201|" ref-path="17.12.201" class="h__section">17.12.201 NON-MANDATORY ENFORCEMENT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.12.201" data-order="|17|17.12|17.12.201|" data-ref-path="17.12.201" class="h__section">17.12.201 NON-MANDATORY ENFORCEMENT.</h2>
                 <p>Nothing contained in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.12" title="Chapter 17.12 NEWSRACKS IN THE PUBLIC RIGHT-OF-WAY">this chapter</a> shall impose a mandatory duty of enforcement on the City, or any officer, official, agent, employee, board, council, or commission thereof. Instead, if any provision purports to impose a mandatory duty of enforcement that provision shall vest the City and the appropriate officer, official, agent, employee, board, council, or commission with discretion to enforce the provision or not to enforce it.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -976,8 +980,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.16" data-order="|17|17.16|" ref-path="17.16" class="h__chapter">Chapter 17.16 DRIVEWAYS</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/17.16.010" data-order="|17|17.16|17.16.010|" ref-path="17.16.010" class="h__section">17.16.010 CONFORMANCE WITH CHAPTER REQUIRED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.16" data-order="|17|17.16|" data-ref-path="17.16" class="h__chapter">Chapter 17.16 DRIVEWAYS</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.16.010" data-order="|17|17.16|17.16.010|" data-ref-path="17.16.010" class="h__section">17.16.010 CONFORMANCE WITH CHAPTER REQUIRED.</h2>
                 <p>No building or structure or open paved area designed or used for a garage or for the storing of automobiles, and which is reached by a driveway crossing the sidewalk or public property in front of such building structure or area, shall hereafter be used for such purposes, unless the driveway crossing the sidewalk or public property leading to such building structure or area and the curb in front thereof is built or constructed in conformity with the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.16" title="Chapter 17.16 DRIVEWAYS">this chapter</a>.</p>
                 <p>If, at any time, the driveway so constructed is no longer necessary because the building structure or area ceases to be used for the storage of automobiles, is removed or destroyed or access thereto is reoriented, the driveway crossing the sidewalk or public place shall be removed and the curb, gutter, sidewalk and parkway restored in line and to the grade of adjacent curb, gutter, sidewalk and parkway.</p>
                 <p>When a new driveway is to be constructed upon the same property, the permit required by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.16.030" title="17.16.030 CONSTRUCTION PERMIT REQUIRED—DEPOSIT.">Section 17.16.030</a> shall include the removal of any existing driveways no longer necessary.</p>
@@ -987,7 +991,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.16.020" data-order="|17|17.16|17.16.020|" ref-path="17.16.020" class="h__section">17.16.020 WALK THICKNESS—GRADE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.16.020" data-order="|17|17.16|17.16.020|" data-ref-path="17.16.020" class="h__section">17.16.020 WALK THICKNESS—GRADE.</h2>
                 <p>Where a driveway crosses the sidewalk, the walk must be rough finished for the lineal distance of at least eight feet and must be at least four inches in thickness. The driveway must extend to the roadway side of the curbline. It must gradually descend in grade to conform with bottom grade of curbs and also to conform with cross section of curbs and crown of a finished roadway adjacent to curbs and gutters.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -995,7 +999,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.16.030" data-order="|17|17.16|17.16.030|" ref-path="17.16.030" class="h__section">17.16.030 CONSTRUCTION PERMIT REQUIRED—DEPOSIT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.16.030" data-order="|17|17.16|17.16.030|" data-ref-path="17.16.030" class="h__section">17.16.030 CONSTRUCTION PERMIT REQUIRED—DEPOSIT.</h2>
                 <p>No sidewalk or driveway shall be constructed, rebuilt or repaired within the City without a permit to do so having been first procured from the Superintendent of Streets. The application for such permit shall be in writing directed to the Superintendent of Streets, shall be in such form as may be specified by the Superintendent of Streets, and shall include the name of the applicant, specifications of the materials proposed to be used, and the dimensions and location of the proposed sidewalk or driveway.</p>
                 <p>The application shall be accompanied by an undertaking in an amount and form to be fixed and determined by the Superintendent of Streets, but not to exceed one thousand dollars, or by a cash deposit in a sum to be fixed and determined by the Superintendent of Streets, but not to exceed five hundred dollars.</p>
                 <p>The undertaking or cash deposit shall guarantee to the City that the permittee will comply with the terms and conditions of the permit and will repair or cause to be repaired any damage to city property caused by the construction, rebuilding or repair of the sidewalk or driveway.</p>
@@ -1011,7 +1015,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.16.040" data-order="|17|17.16|17.16.040|" ref-path="17.16.040" class="h__section">17.16.040 SPECIFICATIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.16.040" data-order="|17|17.16|17.16.040|" data-ref-path="17.16.040" class="h__section">17.16.040 SPECIFICATIONS.</h2>
                 <p>All driveways hereafter constructed or rebuilt within the City shall conform to the official specifications for sidewalks, and the official lines and grades, as the same may now exist or hereafter be adopted by the Council.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1019,7 +1023,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.16.050" data-order="|17|17.16|17.16.050|" ref-path="17.16.050" class="h__section">17.16.050 INSPECTIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.16.050" data-order="|17|17.16|17.16.050|" data-ref-path="17.16.050" class="h__section">17.16.050 INSPECTIONS.</h2>
                 <p>The Superintendent of Streets shall make all inspections necessary to insure compliance with the terms of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.16" title="Chapter 17.16 DRIVEWAYS">this chapter</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1027,12 +1031,12 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.20" data-order="|17|17.20|" ref-path="17.20" class="h__chapter">Chapter 17.20 STREET SIGNS</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.20" data-order="|17|17.20|" data-ref-path="17.20" class="h__chapter">Chapter 17.20 STREET SIGNS</h2>
                 <section class="line-group annotations">
                   <h4>Editor's Notes</h4>
                   <p>For provisions relating to street sign standards, see Chapter 21.36.</p>
                 </section>
-                <h2 id="/us/ca/cities/san-mateo/code/17.20.010" data-order="|17|17.20|17.20.010|" ref-path="17.20.010" class="h__section">17.20.010 DEFACING PROHIBITED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.20.010" data-order="|17|17.20|17.20.010|" data-ref-path="17.20.010" class="h__section">17.20.010 DEFACING PROHIBITED.</h2>
                 <p>No person shall break, injure, deface or damage any public street sign, or sign post, situate upon any public street and bearing the name of such street, or giving other public information, or break, injure, deface or damage any street sign or other mark placed upon any property, fronting on any public street and bearing the name of such street.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1044,8 +1048,8 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.24" data-order="|17|17.24|" ref-path="17.24" class="h__chapter">Chapter 17.24 SIDEWALK MAINTENANCE</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/17.24.010" data-order="|17|17.24|17.24.010|" ref-path="17.24.010" class="h__section">17.24.010 INTENT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.24" data-order="|17|17.24|" data-ref-path="17.24" class="h__chapter">Chapter 17.24 SIDEWALK MAINTENANCE</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.24.010" data-order="|17|17.24|17.24.010|" data-ref-path="17.24.010" class="h__section">17.24.010 INTENT.</h2>
                 <p>California Streets and Highway Code Sections 5600 et seq. provide that owners of lots or portions of lots fronting on any portion of a public street, when that street or place is improved or if and when the area between the property line of the adjacent property and the street line is maintained as a park or parking strip, shall maintain the sidewalk in such condition that it will not endanger persons or property or interfere with the public convenience in the use of those works or areas.</p>
                 <p>To promote the public health, safety and general welfare, the Council finds it necessary to enact <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.24" title="Chapter 17.24 SIDEWALK MAINTENANCE">this chapter</a>, which may be referred to collectively as the Sidewalk Maintenance Ordinance.</p>
                 <aside class="annotations" role="note">
@@ -1054,7 +1058,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.24.020" data-order="|17|17.24|17.24.020|" ref-path="17.24.020" class="h__section">17.24.020 DEFINITIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.24.020" data-order="|17|17.24|17.24.020|" data-ref-path="17.24.020" class="h__section">17.24.020 DEFINITIONS.</h2>
                 <p>For the purpose of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.24" title="Chapter 17.24 SIDEWALK MAINTENANCE">this chapter</a>, the following words and phrases shall have the meanings set forth below. Unless in direct conflict with terms defined herein, other words and phrases shall be interpreted as defined in the <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=SHC&amp;tocTitle=+Public+Utilities+Code+-+SHC" title="">Streets and Highways Code</a>:</p>
                 <p><strong>Director of Public Works</strong>. Director of Public Works or his or her designee.</p>
                 <p><strong>Driveway Approach.</strong> The concrete structure located in the public right-of-way between the public street and a driveway or parking area on private property.</p>
@@ -1069,7 +1073,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.24.030" data-order="|17|17.24|17.24.030|" ref-path="17.24.030" class="h__section">17.24.030 OWNERS OF FRONTAGE RESPONSIBLE FOR REPAIR.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.24.030" data-order="|17|17.24|17.24.030|" data-ref-path="17.24.030" class="h__section">17.24.030 OWNERS OF FRONTAGE RESPONSIBLE FOR REPAIR.</h2>
                 <p>It shall be the duty of the Property Owner(s) of lots or portions of lots adjacent to any portion of a public street, avenue, alley, lane, court or place to maintain the Sidewalks and sidewalk area, including any parking strip or Driveway Approach, in a safe nondangerous condition. The Property Owner has the primary and exclusive duty to fund and perform such repair and maintenance, whether or not the City has notified the property owner of the need for such repairs or maintenance or has performed similar repairs or maintenance in the past.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1077,7 +1081,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.24.040" data-order="|17|17.24|17.24.040|" ref-path="17.24.040" class="h__section">17.24.040 NOTICE TO PROPERTY OWNER.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.24.040" data-order="|17|17.24|17.24.040|" data-ref-path="17.24.040" class="h__section">17.24.040 NOTICE TO PROPERTY OWNER.</h2>
                 <p>When any portion of a Sidewalk or Driveway Approach is not in good repair and condition and the Director of Public Works has knowledge thereof, he or she will notify the adjacent property owner to repair it. Notice shall be written and given by mailing, either by letter or postal card, to the Property Owner's last known address, as it appears on the last assessment rolls of the County of San Mateo. This section does not create a mandatory duty.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1085,7 +1089,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.24.050" data-order="|17|17.24|17.24.050|" ref-path="17.24.050" class="h__section">17.24.050 CONTENTS OF NOTICE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.24.050" data-order="|17|17.24|17.24.050|" data-ref-path="17.24.050" class="h__section">17.24.050 CONTENTS OF NOTICE.</h2>
                 <p>The notice shall direct the Property Owner to repair the Sidewalk and specify what work is required to be done, how the work is to be done, and what materials shall be used in such repair, and shall further specify that, if the Property Owner chooses not to repair the Sidewalk after 90 days notice, the Director of Public Works may schedule such repair to be made at Property Owner expense and obtain a lien against the property in accordance with Municipal Code <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/7.42" title="Chapter 7.42 LIEN AND ASSESSMENTS OF COSTS AND EXPENSES INCURRED IN PUBLIC NUISANCE ABATEMENTS">Chapter 7.42</a> if the Property Owner fails to reimburse the City for repair costs.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1093,7 +1097,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.24.060" data-order="|17|17.24|17.24.060|" ref-path="17.24.060" class="h__section">17.24.060 DIRECTOR OF PUBLIC WORKS TO REPAIR IF OWNER FAILS TO DO SO.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.24.060" data-order="|17|17.24|17.24.060|" data-ref-path="17.24.060" class="h__section">17.24.060 DIRECTOR OF PUBLIC WORKS TO REPAIR IF OWNER FAILS TO DO SO.</h2>
                 <p>If the repair is not commenced and prosecuted to completion as required by the notice, the Director of Public Works may repair said sidewalk. The cost of such repair shall be an obligation to the City owed by the adjacent Property Owner. If the Property Owner fails to reimburse City costs of repair within 60 days of completion of the repairs, the City shall obtain a lien on the adjacent property in accordance with Municipal Code <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/7.42" title="Chapter 7.42 LIEN AND ASSESSMENTS OF COSTS AND EXPENSES INCURRED IN PUBLIC NUISANCE ABATEMENTS">Chapter 7.42</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1101,7 +1105,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.24.070" data-order="|17|17.24|17.24.070|" ref-path="17.24.070" class="h__section">17.24.070 NOTICE OF COST AND CLAIM OF LIEN.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.24.070" data-order="|17|17.24|17.24.070|" data-ref-path="17.24.070" class="h__section">17.24.070 NOTICE OF COST AND CLAIM OF LIEN.</h2>
                 <p>Upon completion of the repair, the Director of Public Works will ascertain the repair cost and apportion it, if the area repaired is adjacent to more than one lot of land. The Director of Public Works will notify the Property Owner by mail of the repair and demand payment to the City within 60 days of completion of the repairs. The Property Owner shall be obligated to the City in the amount of the cost of repair. If the Property Owner fails to reimburse the City's repair cost, the City shall obtain a lien for such cost of repair upon any such lot of land.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1109,7 +1113,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.24.080" data-order="|17|17.24|17.24.080|" ref-path="17.24.080" class="h__section">17.24.080 APPEALS PROCESS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.24.080" data-order="|17|17.24|17.24.080|" data-ref-path="17.24.080" class="h__section">17.24.080 APPEALS PROCESS.</h2>
                 <p>The notice of cost shall allow the Property Owner to appeal the determination as to the responsible Property Owner(s) of the amount owed. The request to appeal the claim must be in writing and filed within 10 calendar days of the date of the Director of Public Works notice to the Property Owner of the cost of repair. The appeal shall designate with particularity the decision, action or determination appealed from and the remedy or relief sought by way of the appeal. The appeal shall be filed with the Public Works secretary, who shall set the hearing for the next regularly scheduled meeting of the Sustainability and Infrastructure Commission. At the hearing, the commission shall receive all evidence offered by the Property Owner and City staff. At the conclusion of the hearing, the commission shall make its findings. If the commission finds that the initial decision, action or determination that is appealed from is consistent with the provisions and policies of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.24" title="Chapter 17.24 SIDEWALK MAINTENANCE">this chapter</a> and is not otherwise injurious to the public health, safety or welfare, then the appeal shall be denied. If it finds that the initial decision, action or determination is either inconsistent with the provisions and policies of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.24" title="Chapter 17.24 SIDEWALK MAINTENANCE">this chapter</a> or is otherwise injurious to the public health, safety or welfare, then the commission may sustain the appeal and in its decision grant any remedy or relief sought by the Property Owner, or such other relief as it deems appropriate, that is consistent with the provisions and policies of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.24" title="Chapter 17.24 SIDEWALK MAINTENANCE">this chapter</a>. Any interested person may appeal the decision of the commission to the City Council by filing an application with the City Clerk's Office, including any required fees, within 10 calendar days of the decision. The decision of the Council shall be final.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1117,7 +1121,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.24.090" data-order="|17|17.24|17.24.090|" ref-path="17.24.090" class="h__section">17.24.090 COLLECTION BY FINANCE DEPARTMENT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.24.090" data-order="|17|17.24|17.24.090|" data-ref-path="17.24.090" class="h__section">17.24.090 COLLECTION BY FINANCE DEPARTMENT.</h2>
                 <p>In the event the cost of repair to the sidewalk is not paid after a 60-day notice of cost, and an appeal has not been filed or has been denied, the Director shall transmit to the Finance Department a statement of each such unpaid cost of repair. The Finance Department shall endeavor diligently to collect the same on behalf of the City any and all amounts paid or collected shall replenish the revolving fund as provided in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.24" title="Chapter 17.24 SIDEWALK MAINTENANCE">this chapter</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1125,7 +1129,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.24.100" data-order="|17|17.24|17.24.100|" ref-path="17.24.100" class="h__section">17.24.100 RECORDING OF LIEN.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.24.100" data-order="|17|17.24|17.24.100|" data-ref-path="17.24.100" class="h__section">17.24.100 RECORDING OF LIEN.</h2>
                 <p>After the 60-day delinquent period, the Director of Public Works will place a lien on the adjacent property in accordance with Municipal Code <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/7.42" title="Chapter 7.42 LIEN AND ASSESSMENTS OF COSTS AND EXPENSES INCURRED IN PUBLIC NUISANCE ABATEMENTS">Chapter 7.42</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1133,7 +1137,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.24.110" data-order="|17|17.24|17.24.110|" ref-path="17.24.110" class="h__section">17.24.110 RELEASE OF LIEN.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.24.110" data-order="|17|17.24|17.24.110|" data-ref-path="17.24.110" class="h__section">17.24.110 RELEASE OF LIEN.</h2>
                 <p>On payment of the amount owed, the Director of Public Works shall request that the County Recorder remove the lien.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1141,7 +1145,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.24.120" data-order="|17|17.24|17.24.120|" ref-path="17.24.120" class="h__section">17.24.120 REMOVAL OR PLANTING OF STREET OR HERITAGE TREE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.24.120" data-order="|17|17.24|17.24.120|" data-ref-path="17.24.120" class="h__section">17.24.120 REMOVAL OR PLANTING OF STREET OR HERITAGE TREE.</h2>
                 <p>If the Property Owner wishes to remove or plant a street or heritage tree in relation to the sidewalk repairs, he or she must apply for a permit as prescribed under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13" title="Title 13 PARKS AND RECREATION">Title 13</a> of this Code relating to Heritage Trees, and Street Trees.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1149,7 +1153,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.24.130" data-order="|17|17.24|17.24.130|" ref-path="17.24.130" class="h__section">17.24.130 SIDEWALK IMPROVEMENT – PERMIT REQUIRED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.24.130" data-order="|17|17.24|17.24.130|" data-ref-path="17.24.130" class="h__section">17.24.130 SIDEWALK IMPROVEMENT – PERMIT REQUIRED.</h2>
                 <p>Before constructing, repairing, or replacing the sidewalk in front of a lot or lots adjacent to a public street, avenue, alley, lane, court, or place, the owner of said lot or lots shall obtain an encroachment permit from the Department of Public Works. The encroachment permit fee shall be waived. However, bonds and certificate of insurance will be required.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1164,7 +1168,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.24.140" data-order="|17|17.24|17.24.140|" ref-path="17.24.140" class="h__section">17.24.140 SIDEWALK IMPROVEMENT UNLAWFUL WITHOUT PERMIT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.24.140" data-order="|17|17.24|17.24.140|" data-ref-path="17.24.140" class="h__section">17.24.140 SIDEWALK IMPROVEMENT UNLAWFUL WITHOUT PERMIT.</h2>
                 <p>It is unlawful for any person, firm, or corporation to construct, repair, or replace any sidewalk within the City of San Mateo, without first obtaining a permit from the Department of Public Works unless the Director of Public Works decides that no permit is needed.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1172,7 +1176,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.24.150" data-order="|17|17.24|17.24.150|" ref-path="17.24.150" class="h__section">17.24.150 LIABILITY FOR UNSAFE CONDITIONS AND INJURY TO PUBLIC.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.24.150" data-order="|17|17.24|17.24.150|" data-ref-path="17.24.150" class="h__section">17.24.150 LIABILITY FOR UNSAFE CONDITIONS AND INJURY TO PUBLIC.</h2>
                 <p>The Property Owner required by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.24.130" title="17.24.130 SIDEWALK IMPROVEMENT – PERMIT REQUIRED.">Section 17.24.130</a> to maintain and repair the sidewalk area shall owe a duty to members of the public to keep and maintain the sidewalk area in a safe and nondangerous condition. If, as a result of the failure of any Property Owner to maintain the sidewalk area in a nondangerous condition as required by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.24.130" title="17.24.130 SIDEWALK IMPROVEMENT – PERMIT REQUIRED.">Section 17.24.130</a>, any person suffers injury or damage to person or property, the Property Owner shall be liable to such person for the resulting damages or injury.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1180,7 +1184,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.24.160" data-order="|17|17.24|17.24.160|" ref-path="17.24.160" class="h__section">17.24.160 REVOLVING FUND.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.24.160" data-order="|17|17.24|17.24.160|" data-ref-path="17.24.160" class="h__section">17.24.160 REVOLVING FUND.</h2>
                 <p>A fund shall be provided to cover initially the cost of making sidewalk repairs as provided under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.24.160" title="17.24.160 REVOLVING FUND.">Section 17.24.160</a> and if Property Owner wishes to have the City make the repairs. The revolving fund will be replenished by appropriation and by all moneys paid or collected from sidewalk repairs and repairs in unaccepted public right-of-way and liens.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1192,8 +1196,8 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.29" data-order="|17|17.29|" ref-path="17.29" class="h__chapter">Chapter 17.29 SHOPPING CART REMOVAL, IMPOUNDMENT, DISPOSAL</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/17.29.010" data-order="|17|17.29|17.29.010|" ref-path="17.29.010" class="h__section">17.29.010 FINDINGS AND PURPOSE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.29" data-order="|17|17.29|" data-ref-path="17.29" class="h__chapter">Chapter 17.29 SHOPPING CART REMOVAL, IMPOUNDMENT, DISPOSAL</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.29.010" data-order="|17|17.29|17.29.010|" data-ref-path="17.29.010" class="h__section">17.29.010 FINDINGS AND PURPOSE.</h2>
                 <p>Abandoned shopping carts constitute a nuisance, create potential hazards to the health and safety of the public, and interfere with pedestrian and vehicular traffic within the City of San Mateo. The accumulation of wrecked, dismantled and abandoned shopping carts on public or private property also tends to create conditions that reduce property values, promoting blight and deterioration in the City. The intent of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.29" title="Chapter 17.29 SHOPPING CART REMOVAL, IMPOUNDMENT, DISPOSAL">this chapter</a> is to insure that measures are taken by store owners to prevent the removal of shopping carts from store premises and parking lots, to make the removal of shopping carts a violation of this Code, and to facilitate the retrieval of abandoned carts as permitted by State law.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1201,7 +1205,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.29.020" data-order="|17|17.29|17.29.020|" ref-path="17.29.020" class="h__section">17.29.020 DEFINITIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.29.020" data-order="|17|17.29|17.29.020|" data-ref-path="17.29.020" class="h__section">17.29.020 DEFINITIONS.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.29.020#a.">a.</span> Cart. Cart shall mean a basket which is mounted on wheels or a similar device provided by a business establishment for use by a customer for the purpose of transporting goods of any kind, including, but not limited to grocery store shopping carts.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.29.020#b.">b.</span> Owner. Owner shall mean any person or entity, who in connection with the conduct of a business, owns, possesses, or makes any cart available to customers or the public. For purposes of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.29" title="Chapter 17.29 SHOPPING CART REMOVAL, IMPOUNDMENT, DISPOSAL">this chapter</a>, owner shall also include the Owner's on-site or designated Agent that provides the carts for use by its customers.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.29.020#c.">c.</span> Premises. Premises shall mean the entire area owned and utilized by the business establishment that provides carts for use by customers, including any parking lot or other property provided by the owner for customer parking.</p>
@@ -1212,7 +1216,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.29.030" data-order="|17|17.29|17.29.030|" ref-path="17.29.030" class="h__section">17.29.030 REQUIRED SIGNS ON CARTS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.29.030" data-order="|17|17.29|17.29.030|" data-ref-path="17.29.030" class="h__section">17.29.030 REQUIRED SIGNS ON CARTS.</h2>
                 <p>Every cart owned or provided by any business establishment in the City of San Mateo must have a sign permanently affixed to it that contains the following information:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.29.030#(a)">(a)</span> Identifies the owner of the cart or the name of the business establishment, or both;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.29.030#(b)">(b)</span> Notifies the public of the procedure to be utilized for authorized removal of the cart from the business premises;</p>
@@ -1226,7 +1230,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.29.040" data-order="|17|17.29|17.29.040|" ref-path="17.29.040" class="h__section">17.29.040 PROHIBITING REMOVAL OR POSSESSION OF ABANDONED CART.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.29.040" data-order="|17|17.29|17.29.040|" data-ref-path="17.29.040" class="h__section">17.29.040 PROHIBITING REMOVAL OR POSSESSION OF ABANDONED CART.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.29.040#(a)">(a)</span> It is unlawful to either temporarily or permanently remove a cart from the premises or parking area of a business establishment without the express prior written approval of the owner or on-duty manager of the business establishment. Written permission shall be valid for a period not to exceed 72 hours.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.29.040#(b)">(b)</span> It is unlawful to be in possession of a cart that has been removed from the premises or parking area of a business establishment unless it is in the process of being immediately returned to the owner or business establishment.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.29.040#(c)">(c)</span> This section shall not apply to carts that are removed for the purposes of repair or maintenance.</p>
@@ -1240,7 +1244,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.29.050" data-order="|17|17.29|17.29.050|" ref-path="17.29.050" class="h__section">17.29.050 MANDATORY PLAN TO PREVENT CART REMOVAL/EVALUATION REPORT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.29.050" data-order="|17|17.29|17.29.050|" data-ref-path="17.29.050" class="h__section">17.29.050 MANDATORY PLAN TO PREVENT CART REMOVAL/EVALUATION REPORT.</h2>
                 <p>Every Owner shall develop and implement a specific plan to prevent customers from removing carts from the business premises. The plan must include the following elements:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.29.050#(a)">(a)</span> Notice to Customers. Written notification shall be provided to customers that removal of carts from the premises and parking lots are prohibited and a violation of state and local law. This notice may be provided in the form of flyers, warnings on shopping bags, or any other form of written notification that will effectively notify customers of the prohibition.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.29.050#(b)">(b)</span> Signs. Signs shall be placed in pertinent places near door exits and near parking lot exits that warn customers that cart removal is prohibited and constitute a violation of state and local law.</p>
@@ -1259,7 +1263,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.29.060" data-order="|17|17.29|17.29.060|" ref-path="17.29.060" class="h__section">17.29.060 PREVENTION PLAN/EVALUATION REPORT TIMELINES AND APPROVAL PROCESS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.29.060" data-order="|17|17.29|17.29.060|" data-ref-path="17.29.060" class="h__section">17.29.060 PREVENTION PLAN/EVALUATION REPORT TIMELINES AND APPROVAL PROCESS.</h2>
                 <p>The proposed plan for preventing cart removal and the evaluation report shall be submitted for approval to the City within 60 days after adoption of this ordinance and by July 1st of each year thereafter. If a new plan is submitted, the proposed measures shall be implemented by no later than thirty (30) days after City approval is given. If the proposed plan is the same as the previous year, the prevention measures shall be continued until and unless the City indicates that a measure(s) needs to be modified. Unless otherwise agreed, any modifications to the plan imposed by the City shall be implemented within thirty days after the City notifies the Owner of the needed modifications.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1267,7 +1271,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.29.070" data-order="|17|17.29|17.29.070|" ref-path="17.29.070" class="h__section">17.29.070 PENALTIES FOR FAILING TO SUBMIT A PREVENTION PLAN OR EVALUATION REPORT OR TO IMPLEMENT PREVENTION MEASURES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.29.070" data-order="|17|17.29|17.29.070|" data-ref-path="17.29.070" class="h__section">17.29.070 PENALTIES FOR FAILING TO SUBMIT A PREVENTION PLAN OR EVALUATION REPORT OR TO IMPLEMENT PREVENTION MEASURES.</h2>
                 <p>Any Owner that fails to submit a plan, implement the proposed plan measures, or implement any required modifications to the plan by the City within the time frames specified in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.29" title="Chapter 17.29 SHOPPING CART REMOVAL, IMPOUNDMENT, DISPOSAL">this chapter</a> shall be required to place disabling devices on all carts owned/leased/used by the business to prevent removal of carts from the business premises and parking lots. Any Owner that fails to submit an evaluation report as outlined in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.29.050#(d)" title="">Section 17.29.050(d)</a> by July 1st of each year or fails to place a disabling device on all carts, if applicable, shall be subject to a $1,000.00 civil penalty, plus an additional penalty of $50.00 for each day of non-compliance.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1279,7 +1283,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.29.080" data-order="|17|17.29|17.29.080|" ref-path="17.29.080" class="h__section">17.29.080 NOTIFICATION FOR RETRIEVAL OF ABANDONED CARTS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.29.080" data-order="|17|17.29|17.29.080|" data-ref-path="17.29.080" class="h__section">17.29.080 NOTIFICATION FOR RETRIEVAL OF ABANDONED CARTS.</h2>
                 <p>Pursuant to <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=22435.7&amp;lawCode=BPC" title="">Business and Professions Code Section 22435.7</a>, the City shall notify the Owner of any abandoned carts owned or used by the business establishment that have been located within the City of San Mateo. The Owner shall have three (3) days from the date the notification is given, to retrieve the carts from the City.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1287,7 +1291,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.29.090" data-order="|17|17.29|17.29.090|" ref-path="17.29.090" class="h__section">17.29.090 ADMINISTRATIVE COSTS AND FINES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.29.090" data-order="|17|17.29|17.29.090|" data-ref-path="17.29.090" class="h__section">17.29.090 ADMINISTRATIVE COSTS AND FINES.</h2>
                 <p>Pursuant to <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=22435.7&amp;lawCode=BPC" title="">Business and Professions Code Section 22435.7</a>, any Owner that fails to retrieve its abandoned cart(s) after receiving the three-day notice by the City, shall pay the City's administrative costs for retrieving the cart(s) and providing the notification to the Owner. Any Owner who fails to retrieve abandoned carts in accordance with <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.29" title="Chapter 17.29 SHOPPING CART REMOVAL, IMPOUNDMENT, DISPOSAL">this chapter</a> in excess of three times during a specified six-month period, shall be subject to a $50.00 for each occurrence. An occurrence includes all carts owned by the Owner that are impounded by the City in a one-day period.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1295,7 +1299,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.29.100" data-order="|17|17.29|17.29.100|" ref-path="17.29.100" class="h__section">17.29.100 DISPOSITION OF CARTS AFTER THIRTY DAYS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.29.100" data-order="|17|17.29|17.29.100|" data-ref-path="17.29.100" class="h__section">17.29.100 DISPOSITION OF CARTS AFTER THIRTY DAYS.</h2>
                 <p>According to State Law, any cart not reclaimed from the City within thirty (30) days after notification to the Owner shall be sold or otherwise disposed of by the City.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1303,7 +1307,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.29.110" data-order="|17|17.29|17.29.110|" ref-path="17.29.110" class="h__section">17.29.110 EXEMPTION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.29.110" data-order="|17|17.29|17.29.110|" data-ref-path="17.29.110" class="h__section">17.29.110 EXEMPTION.</h2>
                 <p>Any Owner that has a contract with the City to provide for retrieval of abandoned carts or is part of a consortium of businesses that have entered into a retrieval contract that is approved by the City, shall be exempt from the Sections <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.29.050" title="17.29.050 MANDATORY PLAN TO PREVENT CART REMOVAL/EVALUATION REPORT.">17.29.050</a> through <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.29.070" title="17.29.070 PENALTIES FOR FAILING TO SUBMIT A PREVENTION PLAN OR EVALUATION REPORT OR TO IMPLEMENT PREVENTION MEASURES.">17.29.070</a> of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.29" title="Chapter 17.29 SHOPPING CART REMOVAL, IMPOUNDMENT, DISPOSAL">this chapter</a>. This exemption is valid only if the other provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.29" title="Chapter 17.29 SHOPPING CART REMOVAL, IMPOUNDMENT, DISPOSAL">this chapter</a> are complied with by Owner.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1311,7 +1315,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.29.120" data-order="|17|17.29|17.29.120|" ref-path="17.29.120" class="h__section">17.29.120 SEVERABILITY AND VALIDITY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.29.120" data-order="|17|17.29|17.29.120|" data-ref-path="17.29.120" class="h__section">17.29.120 SEVERABILITY AND VALIDITY.</h2>
                 <p>If any section, subsection paragraph or sentence of this ordinance, or any part thereof, is for any reason found to be unconstitutional, invalid or beyond the authority of the City of San Mateo by a court of competent jurisdiction, such decision shall not affect the validity or effectiveness of the remaining portions of this ordinance.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1319,8 +1323,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.30" data-order="|17|17.30|" ref-path="17.30" class="h__chapter">Chapter 17.30 VALET PARKING</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/17.30.005" data-order="|17|17.30|17.30.005|" ref-path="17.30.005" class="h__section">17.30.005 DEFINITIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.30" data-order="|17|17.30|" data-ref-path="17.30" class="h__chapter">Chapter 17.30 VALET PARKING</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.30.005" data-order="|17|17.30|17.30.005|" data-ref-path="17.30.005" class="h__section">17.30.005 DEFINITIONS.</h2>
                 <p>Words and phrases used in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17" title="Title 17 STREETS AND SIDEWALKS">this title</a> have the following definitions:</p>
                 <p>"CPID Area" means the area within the Central Parking Improvement District established by the City Council.</p>
                 <p>"Primarily responsible person" is the person designated on the application for a valet parking permit.</p>
@@ -1333,7 +1337,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.30.010" data-order="|17|17.30|17.30.010|" ref-path="17.30.010" class="h__section">17.30.010 VALET PARKING PERMIT REQUIRED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.30.010" data-order="|17|17.30|17.30.010|" data-ref-path="17.30.010" class="h__section">17.30.010 VALET PARKING PERMIT REQUIRED.</h2>
                 <p>No person or entity shall solicit or engage in the storage or parking of any motor vehicle by valet services unless it first shall have obtained a valid valet parking permit. <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.30" title="Chapter 17.30 VALET PARKING">This chapter</a> shall not apply to any business or place of assembly that provides such parking solely on its premises and does not use the public streets or parking garages for pick-up, drop-off, or parking of vehicles. Valet parking shall not be permitted outside the CPID Area.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1341,7 +1345,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.30.020" data-order="|17|17.30|17.30.020|" ref-path="17.30.020" class="h__section">17.30.020 VALET PERMIT TYPES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.30.020" data-order="|17|17.30|17.30.020|" data-ref-path="17.30.020" class="h__section">17.30.020 VALET PERMIT TYPES.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.30.020#(a)">(a)</span> Fixed Location Valet Parking Permit. A fixed location valet parking permit is required for any valet parking operator who provides valet parking services at a restaurant or other place of assembly that utilizes valet parking services on a daily or other regularly scheduled basis, or provides valet parking three times or more within one year.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.30.020#(b)">(b)</span> Special Event Valet Parking Permit. A special event valet parking permit is required for any valet parking operator who provides valet parking services fewer than three times within one year.</p>
                 <aside class="annotations" role="note">
@@ -1350,7 +1354,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.30.030" data-order="|17|17.30|17.30.030|" ref-path="17.30.030" class="h__section">17.30.030 PERMIT APPLICATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.30.030" data-order="|17|17.30|17.30.030|" data-ref-path="17.30.030" class="h__section">17.30.030 PERMIT APPLICATION.</h2>
                 <p>Any person desiring a fixed location valet parking permit or a special event valet parking permit shall file an application with the Department of Public Works on an application form provided by the Department. The following information shall be provided:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.30.030#(a)">(a)</span> Name, address and telephone number of corporation, partnership, sole proprietorship, person or other business entity applying for permit and all persons driving or having access to the vehicles.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.30.030#(b)">(b)</span> History, with address of operating location of valet services provided by applicant or applicant's operator/agent within the previous five years, including identification of valet permits issued, revoked or suspended.</p>
@@ -1365,7 +1369,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.30.040" data-order="|17|17.30|17.30.040|" ref-path="17.30.040" class="h__section">17.30.040 PERMIT APPROVAL—FIXED LOCATION VALET PARKING PERMIT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.30.040" data-order="|17|17.30|17.30.040|" data-ref-path="17.30.040" class="h__section">17.30.040 PERMIT APPROVAL—FIXED LOCATION VALET PARKING PERMIT.</h2>
                 <p>At such time as all information required has been provided, the application shall be deemed complete. Once the application is complete, copies of it shall be sent to the Police Department and the Public Works Department and the Downtown San Mateo Association's Parking Committee for review. Those organizations shall have 45 days to review the application and provide written comment. Notice of the review shall be given in accord with <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.30.045" title="17.30.045 NOTICE.">Section 17.30.045</a>. The City Manager or designee shall consider the comments from the reviewing groups and other comments by interested persons at the review and determine on whether to issue or deny the permit application. All permits issued under this section shall be for a one-year period. It is the responsibility of the valet operator or primarily responsible person to apply for the valet permit at least 90 days before an existing permit expires for continuous service. Once the permit expires, the valet permit is no longer valid and on-street service is no longer allowed. The City Manager or designee shall approve the application for a fixed location valet parking permit if it finds all of the following to exist:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.30.040#(a)">(a)</span> The background and valet service history are such that the proposed operation will not be a health and safety risk to the public.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.30.040#(b)">(b)</span> The number of proposed parking spaces to be utilized is sufficient to ensure that the valet parking operation will not unduly affect the availability of on-street parking spaces or spaces within City parking garages not agreed to by the City.</p>
@@ -1380,7 +1384,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.30.045" data-order="|17|17.30|17.30.045|" ref-path="17.30.045" class="h__section">17.30.045 NOTICE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.30.045" data-order="|17|17.30|17.30.045|" data-ref-path="17.30.045" class="h__section">17.30.045 NOTICE.</h2>
                 <p>In addition to other notice required by law for the permit review, a fixed location valet parking permit applicant shall mail notice at least 10 days before the hearing of the time and place of hearing to all property owners within a 300-foot radius of where the valet station is proposed within the CPID Area from a list of such owners provided by the City. The application shall not be reviewed unless verified proof of such mailing is before the City Manager or designee at the time of review date. The applicant shall pay fee as established in the City's fee schedule for notice preparation.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1395,7 +1399,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.30.050" data-order="|17|17.30|17.30.050|" ref-path="17.30.050" class="h__section">17.30.050 PERMIT APPROVAL—SPECIAL EVENT VALET PARKING PERMIT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.30.050" data-order="|17|17.30|17.30.050|" data-ref-path="17.30.050" class="h__section">17.30.050 PERMIT APPROVAL—SPECIAL EVENT VALET PARKING PERMIT.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.30.050#(a)">(a)</span> Application. Application shall be made at least 20 days prior to the special event for which the permit is sought, provided that the time for application may be shortened if the permit need arises within 15 days of the event. At such time as all information required has been provided, the application shall be deemed complete. A special event valet parking permit shall not cover any valet operation for more than a total of five days within a period of 10 contiguous days. On the day the application is made, notification of the application shall be posted in a visible location at the site of the proposed valet service. The notice shall be made on a form provided by the City. The application shall not be deemed complete until proof of posting at the proposed location by the primarily responsible person, valet operator, or applicant has been filed with the City.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.30.050#(b)">(b)</span> Decision. A decision shall be made at least three days before the intended date of operation if a complete application is filed at least 20 days prior to the special event. If the application is filed less than 20 days prior to the special event, a decision shall be made as is reasonably possible and nothing herein shall be construed to prohibit the City Manager or designee from denying the permit if the City Manager or designee determines that inadequate review time is available.</p>
                 <p>The City Manager, or designee, shall issue the special event valet parking permit after consultation with the Police Department if the City Manager finds all of the following to exist:</p>
@@ -1412,7 +1416,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.30.060" data-order="|17|17.30|17.30.060|" ref-path="17.30.060" class="h__section">17.30.060 REGULATIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.30.060" data-order="|17|17.30|17.30.060|" data-ref-path="17.30.060" class="h__section">17.30.060 REGULATIONS.</h2>
                 <p>All permittees and applicants shall comply with the following regulations:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.30.060#(a)">(a)</span> Prior to issuance of any valet parking permit, the applicant shall provide proof of insurance to the City Manager, or designee at the same levels and manner required for an encroachment permit except that the applicant shall also provide garage keepers legal liability insurance at the same level as required for general liability.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.30.060#(b)">(b)</span> Prior to issuance of any valet parking permit, the applicant shall show proof of having obtained a business tax certificate from the City for both the valet parking operation and any business it serves.</p>
@@ -1437,7 +1441,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.30.070" data-order="|17|17.30|17.30.070|" ref-path="17.30.070" class="h__section">17.30.070 APPEAL.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.30.070" data-order="|17|17.30|17.30.070|" data-ref-path="17.30.070" class="h__section">17.30.070 APPEAL.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.30.070#(a)">(a)</span> Any interested person may appeal a decision of the City Manager or designee regarding a fixed location valet parking application. Appeals filed more than 10 days after the decision is made shall not be deemed valid and will not be considered. No appeal shall be permitted from the decision of the City Manager or designee on a special event valet parking permit.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.30.070#(b)">(b)</span> All appeals shall be in writing and filed with the Sustainability and Infrastructure Commission secretary and shall be accompanied by the fee required under the City's Comprehensive Fee Schedule.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.30.070#(c)">(c)</span> Appeals shall be to the Sustainability and Infrastructure Commission and shall be scheduled for the next available Commission meeting. The appeal shall be de novo. The secretary shall mail written notice of the time and place of the hearing on appeal to the applicant and to the appellant, if different, to the Downtown San Mateo Association and to those persons required to be notified under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.30.045" title="17.30.045 NOTICE.">Section 17.30.045</a>.</p>
@@ -1447,7 +1451,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.30.080" data-order="|17|17.30|17.30.080|" ref-path="17.30.080" class="h__section">17.30.080 REVOCATION AND SUSPENSION OF PERMITS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.30.080" data-order="|17|17.30|17.30.080|" data-ref-path="17.30.080" class="h__section">17.30.080 REVOCATION AND SUSPENSION OF PERMITS.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.30.080#(a)">(a)</span> Any fixed location valet parking permit shall be subject to suspension or revocation by the City Manager or designee, for a violation of any provision of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.30" title="Chapter 17.30 VALET PARKING">this chapter</a> or for any matter that would have warranted denial of the permit. Prior to suspension, the permittee shall be entitled to a hearing before the City Manager or designee, provided that a suspension may occur by the City Manager or designee, without notice or hearing if the above finds that the valet service is a public nuisance or presents an immediate health and safety risk to the public. Appeals shall be to the Sustainability and Infrastructure Commission under the same terms as an appeal is permitted from a permit denial.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.30.080#(b)">(b)</span> Any special event valet parking permit shall be subject to suspension or revocation by the City Manager or designee for any violation of any provision of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.30" title="Chapter 17.30 VALET PARKING">this chapter</a> or for any matter that would have warranted denial of the permit. Prior to suspension, the permittee shall be entitled to a hearing before the City Manager or designee, provided that a suspension may occur by the City Manager or designee, without notice or hearing if he or she finds that the valet service is a public nuisance or presents a health and safety risk to the public. The City Manager or designee's decision shall be final.</p>
                 <aside class="annotations" role="note">
@@ -1456,8 +1460,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.32" data-order="|17|17.32|" ref-path="17.32" class="h__chapter">Chapter 17.32 TRENCH CUTS</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/17.32.010" data-order="|17|17.32|17.32.010|" ref-path="17.32.010" class="h__section">17.32.010 RESTRICTION ON EXCAVATIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.32" data-order="|17|17.32|" data-ref-path="17.32" class="h__chapter">Chapter 17.32 TRENCH CUTS</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.32.010" data-order="|17|17.32|17.32.010|" data-ref-path="17.32.010" class="h__section">17.32.010 RESTRICTION ON EXCAVATIONS.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.32.010#(a)">(a)</span> Prohibition. Excavation in newly renovated public rights-of-way is prohibited for three years after filing of a notice of completion or acceptance of a new street or structural overlay of an entire street.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.32.010#(b)">(b)</span> Exceptions. The prohibition does not apply under the following circumstances:</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.32.010#(b)(1)">(1)</span> Emergency which endangers life or property.</p>
@@ -1471,7 +1475,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.32.020" data-order="|17|17.32|17.32.020|" ref-path="17.32.020" class="h__section">17.32.020 REPAVING.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.32.020" data-order="|17|17.32|17.32.020|" data-ref-path="17.32.020" class="h__section">17.32.020 REPAVING.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.32.020#(a)">(a)</span> Repaving Required. If a street is excavated within the three year restriction as an exception to the prohibition, the excavating entity must repave the block of the street in which the excavation is located or a smaller area if approved by the Public Works Director.</p>
                 <p>Exceptions. The repaving requirement does not apply if:</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.32.020#(a)(1)">(1)</span> The emergency need to excavate arose from a natural disaster such as an earthquake.</p>
@@ -1482,8 +1486,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.34" data-order="|17|17.34|" ref-path="17.34" class="h__chapter">Chapter 17.34 SPECIAL EVENTS</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/17.34.010" data-order="|17|17.34|17.34.010|" ref-path="17.34.010" class="h__section">17.34.010 TITLE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.34" data-order="|17|17.34|" data-ref-path="17.34" class="h__chapter">Chapter 17.34 SPECIAL EVENTS</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.34.010" data-order="|17|17.34|17.34.010|" data-ref-path="17.34.010" class="h__section">17.34.010 TITLE.</h2>
                 <p><a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.34" title="Chapter 17.34 SPECIAL EVENTS">This chapter</a> shall be known as the special events code. It is referred to herein as the "code."</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1491,7 +1495,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.34.020" data-order="|17|17.34|17.34.020|" ref-path="17.34.020" class="h__section">17.34.020 PURPOSE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.34.020" data-order="|17|17.34|17.34.020|" data-ref-path="17.34.020" class="h__section">17.34.020 PURPOSE.</h2>
                 <p>It is the purpose of this code to provide for the issuance of special event permits to regulate events on the public streets and public property of the City, as well as specified events on private property that affect public streets and public property; and to provide for fees, charges and procedures required to administer the permit process.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1499,7 +1503,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.34.030" data-order="|17|17.34|17.34.030|" ref-path="17.34.030" class="h__section">17.34.030 DEFINITIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.34.030" data-order="|17|17.34|17.34.030|" data-ref-path="17.34.030" class="h__section">17.34.030 DEFINITIONS.</h2>
                 <p>The following words and phrases when used in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.34" title="Chapter 17.34 SPECIAL EVENTS">this chapter</a> shall mean:</p>
                 <p>"Amplified sound" means music or speech projected or transmitted by electronic equipment, including, but not limited to, an amplifier, loudspeakers, or similar devices.</p>
                 <p>"Annual event" means an event recurring each year at approximately the same date which has previously complied with the permit requirements of this code.</p>
@@ -1528,7 +1532,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.34.040" data-order="|17|17.34|17.34.040|" ref-path="17.34.040" class="h__section">17.34.040 SPECIAL EVENT PERMIT REQUIRED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.34.040" data-order="|17|17.34|17.34.040|" data-ref-path="17.34.040" class="h__section">17.34.040 SPECIAL EVENT PERMIT REQUIRED.</h2>
                 <p>A special event permit must be obtained from the City to stage a special event. However, spontaneous events may be conducted at the locations specified in municipal code <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/13.10" title="Chapter 13.10 PARK PERMITS">Chapter 13.10</a> without obtaining a special event permit.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1536,7 +1540,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.34.050" data-order="|17|17.34|17.34.050|" ref-path="17.34.050" class="h__section">17.34.050 SPECIAL EVENT COMMITTEE—MEMBERSHIP.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.34.050" data-order="|17|17.34|17.34.050|" data-ref-path="17.34.050" class="h__section">17.34.050 SPECIAL EVENT COMMITTEE—MEMBERSHIP.</h2>
                 <p>There is created hereby a Special Event Committee to carry out the provisions of this code. This Committee is comprised of representatives of City departments, including, but not limited to, the following departments: Police, Fire, Public Works, Community Development, and Parks and Recreation. The Committee may also invite representatives from other City departments, public agencies or community or neighborhood organizations to provide comments on proposed special events. Examples of such organizations are the Downtown San Mateo Association, Chamber of Commerce, SamTrans and United Homeowners. The chairperson of the Committee shall be designated by the City Manager. The chairperson shall provide for maintaining Committee records, arranging meeting times and places and issuing permits on behalf of the Committee.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1544,7 +1548,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.34.060" data-order="|17|17.34|17.34.060|" ref-path="17.34.060" class="h__section">17.34.060 POWERS OF THE SPECIAL EVENTS COMMITTEE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.34.060" data-order="|17|17.34|17.34.060|" data-ref-path="17.34.060" class="h__section">17.34.060 POWERS OF THE SPECIAL EVENTS COMMITTEE.</h2>
                 <p>The Special Events Committee shall have the power to:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.34.060#(a)">(a)</span> Interpret and administer this code;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.34.060#(b)">(b)</span> Represent the City, in accordance with procedures adopted by the City Manager, in discussions and in maintaining agreements with the person(s) who represents the event;</p>
@@ -1558,7 +1562,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.34.070" data-order="|17|17.34|17.34.070|" ref-path="17.34.070" class="h__section">17.34.070 APPLICATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.34.070" data-order="|17|17.34|17.34.070|" data-ref-path="17.34.070" class="h__section">17.34.070 APPLICATION.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.34.070#(a)">(a)</span> Special Event Permit Application Required. An application must be submitted to the City by the special event applicant or sponsor along with an application fee and an administrative review fee (if applicable) in the amounts established by City Council resolution. Payment of the application fee is not required for free speech events. An indigent person who cannot apply for a permit because of an inability to pay the application fee due to such indigence may not be required to pay the fee in accordance with administrative regulations or guidelines adopted pursuant to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.34" title="Chapter 17.34 SPECIAL EVENTS">this chapter</a>. Application for indigent status shall be made at the time of submission of permit application and shall be accompanied by such relevant information and documentation as may, in the opinion of the City Manager, or designee, be reasonably necessary to verify such status.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.34.070#(b)">(b)</span> Application Form and Contents. An application for a special event permit shall be in a form prescribed by the Committee, be signed by a responsible person at least 21 years of age, and contain all of the following information:</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.34.070#(b)(1)">(1)</span> The name, address, and daytime telephone number of each of the following:</p>
@@ -1589,7 +1593,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.34.080" data-order="|17|17.34|17.34.080|" ref-path="17.34.080" class="h__section">17.34.080 PROCESSING OF PERMITS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.34.080" data-order="|17|17.34|17.34.080|" data-ref-path="17.34.080" class="h__section">17.34.080 PROCESSING OF PERMITS.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.34.080#(a)">(a)</span> Non-Free Speech Events.</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.34.080#(a)(1)">(1)</span> For first time special events, the application must be filed at least 90 days prior to the date of the proposed event.</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.34.080#(a)(2)">(2)</span> For annual events for which a special event permit has previously issued, the application must be filed at least 45 days prior to the date of the proposed event.</p>
@@ -1626,7 +1630,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.34.090" data-order="|17|17.34|17.34.090|" ref-path="17.34.090" class="h__section">17.34.090 PERMIT FEES AND CHARGES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.34.090" data-order="|17|17.34|17.34.090|" data-ref-path="17.34.090" class="h__section">17.34.090 PERMIT FEES AND CHARGES.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.34.090#(a)">(a)</span> Permit fees and charges are established by resolution of the City Council, if required. The application fee must be submitted when the applicant or sponsor files the application. Other costs for City services shall be invoiced to the permittee no later than 10 working days after the expiration date of the permit. Fees are payable within 30 days of invoice.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.34.090#(b)">(b)</span> In addition to the payment of any applicable nonrefundable permit application fees, all applicants or sponsors shall be responsible for paying for all City departmental service charges incurred in connection with or due to the permittee's activities under the permit.</p>
                 <aside class="annotations" role="note">
@@ -1635,7 +1639,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.34.100" data-order="|17|17.34|17.34.100|" ref-path="17.34.100" class="h__section">17.34.100 REVOCATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.34.100" data-order="|17|17.34|17.34.100|" data-ref-path="17.34.100" class="h__section">17.34.100 REVOCATION.</h2>
                 <p>A special event permit can be revoked by the chair for any of the following reasons:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.34.100#(a)">(a)</span> Failure to comply with any permitting requirements or conditions of approval;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/17.34.100#(b)">(b)</span> Knowingly providing false, misleading or fraudulent information;</p>
@@ -1648,7 +1652,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.34.110" data-order="|17|17.34|17.34.110|" ref-path="17.34.110" class="h__section">17.34.110 APPEAL.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.34.110" data-order="|17|17.34|17.34.110|" data-ref-path="17.34.110" class="h__section">17.34.110 APPEAL.</h2>
                 <p>A decision to deny a special event permit application or revoke a special events permit is appealable to the City Manager by filing a written appeal to the City Manager within 10 days of the decision. The City Manager or designee shall hold a hearing within 10 days of receipt of the appeal. The decision of the City Manager or designee is final.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1656,7 +1660,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.34.120" data-order="|17|17.34|17.34.120|" ref-path="17.34.120" class="h__section">17.34.120 HOLD HARMLESS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.34.120" data-order="|17|17.34|17.34.120|" data-ref-path="17.34.120" class="h__section">17.34.120 HOLD HARMLESS.</h2>
                 <p>As a condition to the issuance of any permit under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/17.34" title="Chapter 17.34 SPECIAL EVENTS">this chapter</a>, the applicant shall agree to defend, indemnify and hold harmless the City, its elected and appointed officials, employees and agents, against losses and liabilities incurred from the conduct of the permittee, or its officers, employees, and agents, or claims or liabilities caused by, or arising out of any activities authorized by any such permit.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1664,7 +1668,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.34.130" data-order="|17|17.34|17.34.130|" ref-path="17.34.130" class="h__section">17.34.130 INSURANCE REQUIREMENTS FOR NON-FREE SPEECH EVENTS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.34.130" data-order="|17|17.34|17.34.130|" data-ref-path="17.34.130" class="h__section">17.34.130 INSURANCE REQUIREMENTS FOR NON-FREE SPEECH EVENTS.</h2>
                 <p>The applicant shall provide general liability insurance naming the City, its elected and appointed officials, employees, and agents, as an additional insured. Limits of coverage will be determined by the City Attorney's office at the time of application. Certificates of insurance are to be submitted to the City for approval 14 working days prior to the day of the event. Acceptability of insurance is subject to approval by the City's Risk Manager. This requirement does not apply to free speech events.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1672,7 +1676,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/17.34.140" data-order="|17|17.34|17.34.140|" ref-path="17.34.140" class="h__section">17.34.140 ADOPTION OF PROCEDURES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/17.34.140" data-order="|17|17.34|17.34.140|" data-ref-path="17.34.140" class="h__section">17.34.140 ADOPTION OF PROCEDURES.</h2>
                 <p>The City Manager may prepare and adopt procedures for the purpose of implementing this code or to carry out other responsibilities as may be required by this code or other codes, ordinances of the City or other agencies. Such procedures do not require approval by the City Council.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1683,7 +1687,7 @@
               </div>
             </article>
           </main>
-          <nav id="area__navigation_mini" class="ui ns__document__oll-core" role="region" aria-label="Previous and next article links">
+          <nav id="area__navigation_mini" class="ns__document__oll-core" aria-label="Previous and next article links">
             <section>
               <a href="/us/ca/cities/san-mateo/code/16" aria-label="Title 16 RESERVED">
                 <div class="h__ui">Previous</div>
@@ -1698,7 +1702,7 @@
             </section>
           </nav>
         </div>
-      </section>
+      </div>
       <footer id="section__footer" class="ns__document__oll-core">
         <div id="section__footer__inner" class="ns__document__oll-core">
           <div id="area__footer__content" class="ns__document__oll-core">

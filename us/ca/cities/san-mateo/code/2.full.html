@@ -53,15 +53,17 @@
     <script src="/_reader/js/main.js"> </script>
   </head>
   <body>
-    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true">
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
       <p id="message"> </p>
     </div>
-    <a href="#area__content" class="skip-link">Skip to main content</a>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
     <div id="grid" class="ns__document__oll-core">
       <header id="section__header" class="ns__document__oll-core">
         <div id="section__header__inner" class="ns__document__oll-core">
           <div id="area__logo" class="ns__document__oll-core">
-            <a href="/" class="logo" alt="San Mateo Law Library">
+            <a href="/" class="logo" aria-label="Logo - Return to home page">
               <img src="/us/ngo/oll/_document/v2/images/logo/logo.png" srcset="/us/ngo/oll/_document/v2/images/logo/logo.png 1x, /us/ngo/oll/_document/v2/images/logo/logo@2x.png 2x" alt="San Mateo Law Library logo"/>
             </a>
           </div>
@@ -70,11 +72,13 @@
           </div>
         </div>
       </header>
-      <section id="section__content" class="ns__document__oll-core">
+      <div id="section__content" class="ns__document__oll-core">
         <div id="section__content__inner" class="ns__document__oll-core">
-          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region">
-            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-hidden="true" aria-label="Mobile menu toggler"/>
-            <label for="menu-trigger" aria-label="Toggle mobile menu"> </label>
+          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
             <nav role="navigation" aria-label="Breadcrumb navigation">
               <div class="h__ui">Navigation</div>
               <ul class="ancestors">
@@ -92,15 +96,15 @@
           </section>
           <main id="area__content" class="ns__document__oll-core">
             <div class="h__document-title">City of San Mateo Municipal Code.</div>
-            <article class="content" role="document" ref-path="2">
+            <article class="content" role="document" data-ref-path="2">
               <div class="tuf-authenticate">
                 <h1 class="h__toc" id="/us/ca/cities/san-mateo/code/2">Title 2 ADMINISTRATION AND PERSONNEL</h1>
-                <h2 id="/us/ca/cities/san-mateo/code/2.03" data-order="|2|2.03|" ref-path="2.03" class="h__chapter">Chapter 2.03 CITY COUNCIL</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.03" data-order="|2|2.03|" data-ref-path="2.03" class="h__chapter">Chapter 2.03 CITY COUNCIL</h2>
                 <section class="line-group annotations">
                   <h4>Editor's Notes</h4>
                   <p>For the relevant provisions of the City charter see §§ 2.01-2.19 inclusively.</p>
                 </section>
-                <h2 id="/us/ca/cities/san-mateo/code/2.03.010" data-order="|2|2.03|2.03.010|" ref-path="2.03.010" class="h__section">2.03.010 AGENDA MEETINGS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.03.010" data-order="|2|2.03|2.03.010|" data-ref-path="2.03.010" class="h__section">2.03.010 AGENDA MEETINGS.</h2>
                 <p>By notice stated on the written agenda for a regular or special meeting, an agenda review meeting may be held by the City Council at the time and place so specified.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -108,12 +112,12 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.09" data-order="|2|2.09|" ref-path="2.09" class="h__chapter">Chapter 2.09 OFFICERS</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.09" data-order="|2|2.09|" data-ref-path="2.09" class="h__chapter">Chapter 2.09 OFFICERS</h2>
                 <section class="line-group annotations">
                   <h4>Editor's Notes</h4>
                   <p>For the relevant provisions of the City charter see Art. II, Art. III, Art. IV, §§ 8.04 and 9.01.</p>
                 </section>
-                <h2 id="/us/ca/cities/san-mateo/code/2.09.010" data-order="|2|2.09|2.09.010|" ref-path="2.09.010" class="h__section">2.09.010 OFFICERS GENERALLY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.09.010" data-order="|2|2.09|2.09.010|" data-ref-path="2.09.010" class="h__section">2.09.010 OFFICERS GENERALLY.</h2>
                 <p>The officers of this city shall continue to be those provided for in the City Charter and the duties of such respective officers shall be as provided in said charter, and as set forth in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.09" title="Chapter 2.09 OFFICERS">this chapter</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -121,7 +125,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.09.020" data-order="|2|2.09|2.09.020|" ref-path="2.09.020" class="h__section">2.09.020 ADDITIONAL DUTIES OF CITY CLERK.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.09.020" data-order="|2|2.09|2.09.020|" data-ref-path="2.09.020" class="h__section">2.09.020 ADDITIONAL DUTIES OF CITY CLERK.</h2>
                 <p>In addition to the duties imposed upon the City Clerk by the charter, he or she shall be ex officio clerk of the City Council and shall attend all regular or special meetings, adjourned or other, of the Council.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -129,7 +133,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.09.025" data-order="|2|2.09|2.09.025|" ref-path="2.09.025" class="h__section">2.09.025 CITY ATTORNEY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.09.025" data-order="|2|2.09|2.09.025|" data-ref-path="2.09.025" class="h__section">2.09.025 CITY ATTORNEY.</h2>
                 <p>The City Attorney shall be appointed by and serve at the pleasure of the Council. The City Attorney may be removed from office by an affirmative vote of a majority of the Council plus one.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -137,8 +141,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.12" data-order="|2|2.12|" ref-path="2.12" class="h__chapter">Chapter 2.12 CODE OF ETHICS FOR OFFICERS</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/2.12.010" data-order="|2|2.12|2.12.010|" ref-path="2.12.010" class="h__section">2.12.010 OFFICERS DEFINED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.12" data-order="|2|2.12|" data-ref-path="2.12" class="h__chapter">Chapter 2.12 CODE OF ETHICS FOR OFFICERS</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.12.010" data-order="|2|2.12|2.12.010|" data-ref-path="2.12.010" class="h__section">2.12.010 OFFICERS DEFINED.</h2>
                 <p>The elected and appointed officers and members of boards and commissions, whether paid or unpaid, merit system or not, are officers of this city for the purpose of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.12" title="Chapter 2.12 CODE OF ETHICS FOR OFFICERS">this chapter</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -146,7 +150,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.12.020" data-order="|2|2.12|2.12.020|" ref-path="2.12.020" class="h__section">2.12.020 PURPOSE OF CHAPTER.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.12.020" data-order="|2|2.12|2.12.020|" data-ref-path="2.12.020" class="h__section">2.12.020 PURPOSE OF CHAPTER.</h2>
                 <p>The proper operation of democratic government requires that officers of this city be independent, impartial, and responsible to the people; that public office not be used for personal gain, and that the public have confidence in the integrity of its government.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -154,7 +158,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.12.030" data-order="|2|2.12|2.12.030|" ref-path="2.12.030" class="h__section">2.12.030 OFFICER RESPONSIBILITY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.12.030" data-order="|2|2.12|2.12.030|" data-ref-path="2.12.030" class="h__section">2.12.030 OFFICER RESPONSIBILITY.</h2>
                 <p>The officers of this city are agents of public purpose and hold office for the benefit of the people; they are bound to observe in their official acts, the highest standards of morality and to discharge, faithfully, the duties of their office regardless of personal considerations, recognizing that the public interest must be their primary concern.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -162,7 +166,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.12.040" data-order="|2|2.12|2.12.040|" ref-path="2.12.040" class="h__section">2.12.040 FAIR AND EQUAL TREATMENT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.12.040" data-order="|2|2.12|2.12.040|" data-ref-path="2.12.040" class="h__section">2.12.040 FAIR AND EQUAL TREATMENT.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.12.040#(a)">(a)</span> Use of city-owned equipment. No officer shall request or permit the use of city-owned vehicles, equipment, materials or property for personal convenience or profit, except when such are available to the public generally.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.12.040#(b)">(b)</span> Special Consideration. No officer shall grant special consideration, treatment or advantage to any citizen beyond that which is available to every other citizen.</p>
                 <aside class="annotations" role="note">
@@ -171,12 +175,12 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.15" data-order="|2|2.15|" ref-path="2.15" class="h__chapter">Chapter 2.15 LIBRARY BOARD</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.15" data-order="|2|2.15|" data-ref-path="2.15" class="h__chapter">Chapter 2.15 LIBRARY BOARD</h2>
                 <section class="line-group annotations">
                   <h4>Editor's Notes</h4>
                   <p>For the relevant provisions of the City charter see §§ 4.12 and 6.01-6.03. For relevant state statutes regarding the administration of public libraries see part 4, Div. 20, Chapter 3 West's <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=EDC&amp;tocTitle=+Public+Utilities+Code+-+EDC" title="">Cal. Educ. C.A.</a></p>
                 </section>
-                <h2 id="/us/ca/cities/san-mateo/code/2.15.010" data-order="|2|2.15|2.15.010|" ref-path="2.15.010" class="h__section">2.15.010 ORGANIZATION—POWERS—DUTIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.15.010" data-order="|2|2.15|2.15.010|" data-ref-path="2.15.010" class="h__section">2.15.010 ORGANIZATION—POWERS—DUTIES.</h2>
                 <p>The public library shall be governed by a library board of trustees. There is and shall be a library board of trustees consisting of five members appointed by the City Council with the powers and duties as set forth in Section 6.01 of the Charter of the City and as provided for in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.15" title="Chapter 2.15 LIBRARY BOARD">this chapter</a>. Each member shall serve at the pleasure of the Council and for a term of four years, or until the appointment and qualification of a successor.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -184,7 +188,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.15.020" data-order="|2|2.15|2.15.020|" ref-path="2.15.020" class="h__section">2.15.020 RECIPROCAL SERVICE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.15.020" data-order="|2|2.15|2.15.020|" data-ref-path="2.15.020" class="h__section">2.15.020 RECIPROCAL SERVICE.</h2>
                 <p>The library board of trustees shall review and make recommendations to the City Council on any proposal for participation by the City library on a reciprocal basis with other libraries in a local or regional library system.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -192,7 +196,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.15.030" data-order="|2|2.15|2.15.030|" ref-path="2.15.030" class="h__section">2.15.030 ACQUISITIONS OF BOOKS AND MATERIALS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.15.030" data-order="|2|2.15|2.15.030|" data-ref-path="2.15.030" class="h__section">2.15.030 ACQUISITIONS OF BOOKS AND MATERIALS.</h2>
                 <p>The library board of trustees shall establish, by rules and regulations, the policy for the selection of books, reading, visual, auditory and like materials peculiar to the library in accordance with the contract-purchasing procedure in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3.60" title="Chapter 3.60 PURCHASING">Chapter 3.60</a> of this code, and subject to limitations of the budget for such purposes.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -200,7 +204,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.15.040" data-order="|2|2.15|2.15.040|" ref-path="2.15.040" class="h__section">2.15.040 DISPOSAL OF BOOKS AND MATERIALS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.15.040" data-order="|2|2.15|2.15.040|" data-ref-path="2.15.040" class="h__section">2.15.040 DISPOSAL OF BOOKS AND MATERIALS.</h2>
                 <p>All books and other library materials which are surplus to the needs of the library, as determined by the librarian, may be offered for sale, marked for discard or donated to nonprofit educational, cultural or social service organizations as directed by the library board of trustees.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -208,7 +212,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.15.050" data-order="|2|2.15|2.15.050|" ref-path="2.15.050" class="h__section">2.15.050 LIBRARY GIFTS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.15.050" data-order="|2|2.15|2.15.050|" data-ref-path="2.15.050" class="h__section">2.15.050 LIBRARY GIFTS.</h2>
                 <p>The library board of trustees may accept gifts other than real property pursuant to Section 6.01 of the San Mateo City Charter, without specific approval of the Council, where no obligation attaches to the City other than the use for the benefit of the library, and if they do not require maintenance or unusual housing, insurance or continual cost to the City.</p>
                 <p>Funds received by way of gift or bequest for the use and benefit of the City libraries, where payment into the City treasury is inconsistent with the terms of the gift, shall be deposited in an insured account in a depository approved by the City Manager. They shall be subject to withdrawal therefrom only upon the authorization of the library board at a regular meeting or a special meeting called for that purpose upon the signed authorization of no less than two members of the board. The funds shall be subject to audit by the City auditor from time to time.</p>
                 <p>The library board shall furnish an annual report by June 30th of each year on such fund to the City Council, showing the deposits, receipts, withdrawals and the purposes for which the funds are being pledged and used.</p>
@@ -218,12 +222,12 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.21" data-order="|2|2.21|" ref-path="2.21" class="h__chapter">Chapter 2.21 COMMUNITY RELATIONS COMMISSION</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.21" data-order="|2|2.21|" data-ref-path="2.21" class="h__chapter">Chapter 2.21 COMMUNITY RELATIONS COMMISSION</h2>
                 <section class="line-group annotations">
                   <h4>Editor's Notes</h4>
                   <p>Although not controlling, for statutory provisions pertaining to human relation commissions, see <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=50260&amp;lawCode=GOV" title="">Cal. Gov. C.A. § 50260</a> et seq.</p>
                 </section>
-                <h2 id="/us/ca/cities/san-mateo/code/2.21.010" data-order="|2|2.21|2.21.010|" ref-path="2.21.010" class="h__section">2.21.010 ORGANIZATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.21.010" data-order="|2|2.21|2.21.010|" data-ref-path="2.21.010" class="h__section">2.21.010 ORGANIZATION.</h2>
                 <p>The Community Relations Commission of the City shall consist of no more than six members appointed by the Council until no later than June 10, 2014, and thereafter shall have five members. In making appointments, the Council shall insure that the persons appointed are representative of the neighborhoods and ethnic communities to be served by the Commission as hereinafter provided.</p>
                 <p>Each member of the Community Relations Commission shall serve at the pleasure of the Council and for a term of four years, or until the appointment and qualification of a successor. No member shall be eligible for reappointment after serving two consecutive four-year terms.</p>
                 <aside class="annotations" role="note">
@@ -232,7 +236,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.21.020" data-order="|2|2.21|2.21.020|" ref-path="2.21.020" class="h__section">2.21.020 MEETINGS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.21.020" data-order="|2|2.21|2.21.020|" data-ref-path="2.21.020" class="h__section">2.21.020 MEETINGS.</h2>
                 <p>The Community Relations Commission shall meet within a month of its formation and establish itself by electing a chair and vice-chair to serve at the pleasure of the Commission. The Commission may adopt reasonable rules and regulations for the conduct of its business. A regular time and place of meetings shall be established and adhered to in the manner of holding public meetings for legislative bodies in the state. All meetings shall be open to the public unless by law otherwise provided.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -240,7 +244,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.21.030" data-order="|2|2.21|2.21.030|" ref-path="2.21.030" class="h__section">2.21.030 POWERS—DUTIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.21.030" data-order="|2|2.21|2.21.030|" data-ref-path="2.21.030" class="h__section">2.21.030 POWERS—DUTIES.</h2>
                 <p>The Community Relations Commission shall have the following powers and duties:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.21.030#(a)">(a)</span> To conduct public hearings pursuant to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/7.16" title="Chapter 7.16 PUBLIC NUISANCES">Chapter 7.16</a>.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.21.030#(b)">(b)</span> To hear appeals from any notice and order or any action of the building official issued pursuant to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/7.14" title="Chapter 7.14 PROPERTY MAINTENANCE CODE">Chapter 7.14</a>.</p>
@@ -257,7 +261,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.21.040" data-order="|2|2.21|2.21.040|" ref-path="2.21.040" class="h__section">2.21.040 FEDERAL AND STATE LAW.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.21.040" data-order="|2|2.21|2.21.040|" data-ref-path="2.21.040" class="h__section">2.21.040 FEDERAL AND STATE LAW.</h2>
                 <p>It is the intent of the Council that the activities of the Community Relations Commission shall not conflict with areas which are the exclusive jurisdiction of the Federal government, the State, or any of its political subdivisions as established by statute.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -265,7 +269,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.21.050" data-order="|2|2.21|2.21.050|" ref-path="2.21.050" class="h__section">2.21.050 APPEALS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.21.050" data-order="|2|2.21|2.21.050|" data-ref-path="2.21.050" class="h__section">2.21.050 APPEALS.</h2>
                 <p>Decisions of the Community Relations Commission regarding violations of the ordinances on housing maintenance and public nuisances may be appealed to the City Council as set forth in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/7.16" title="Chapter 7.16 PUBLIC NUISANCES">Chapter 7.16</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -273,8 +277,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.24" data-order="|2|2.24|" ref-path="2.24" class="h__chapter">Chapter 2.24 PLANNING COMMISSION</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/2.24.010" data-order="|2|2.24|2.24.010|" ref-path="2.24.010" class="h__section">2.24.010 ORGANIZATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.24" data-order="|2|2.24|" data-ref-path="2.24" class="h__chapter">Chapter 2.24 PLANNING COMMISSION</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.24.010" data-order="|2|2.24|2.24.010|" data-ref-path="2.24.010" class="h__section">2.24.010 ORGANIZATION.</h2>
                 <p>The planning commission heretofore appointed constitutes the Planning Commission of this city. It shall consist of five voting members and one ex officio member.</p>
                 <p>The five voting members shall be selected by the City Council and shall hold office for a term of four years, or until their respective successors shall have qualified. Each such member shall have one vote in the deliberations of the commission. The ex officio member shall also be a member of the Council, shall be chosen by it, and shall hold office until his or her successor has qualified, but shall not be entitled to vote in the deliberations of the commission.</p>
                 <aside class="annotations" role="note">
@@ -287,7 +291,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.24.020" data-order="|2|2.24|2.24.020|" ref-path="2.24.020" class="h__section">2.24.020 DUTIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.24.020" data-order="|2|2.24|2.24.020|" data-ref-path="2.24.020" class="h__section">2.24.020 DUTIES.</h2>
                 <p>The duties of the Planning Commission shall consist of the following:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.24.020#(1)">(1)</span> It may adopt, establish and amend official master plans and portions thereof and compositions thereof;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.24.020#(2)">(2)</span> It may prepare, adopt and record precise street plans; it may control the construction of buildings within lines of streets shown on such precise street plans;</p>
@@ -298,8 +302,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.25" data-order="|2|2.25|" ref-path="2.25" class="h__chapter">Chapter 2.25 HOUSING REHABILITATION LOAN COMMITTEE</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/2.25.010" data-order="|2|2.25|2.25.010|" ref-path="2.25.010" class="h__section">2.25.010 ORGANIZATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.25" data-order="|2|2.25|" data-ref-path="2.25" class="h__chapter">Chapter 2.25 HOUSING REHABILITATION LOAN COMMITTEE</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.25.010" data-order="|2|2.25|2.25.010|" data-ref-path="2.25.010" class="h__section">2.25.010 ORGANIZATION.</h2>
                 <p>The Housing Rehabilitation Loan Committee heretofore appointed constitutes the Housing Rehabilitation Loan Committee of the City. It shall consist of five (5) voting members.</p>
                 <p>The five (5) members shall be appointed by the Council. Insofar as possible, four of the five (5) members shall be representative of the following communities or interest groups:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.25.010#(a)">(a)</span> Financial lenders;</p>
@@ -313,7 +317,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.25.020" data-order="|2|2.25|2.25.020|" ref-path="2.25.020" class="h__section">2.25.020 DUTIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.25.020" data-order="|2|2.25|2.25.020|" data-ref-path="2.25.020" class="h__section">2.25.020 DUTIES.</h2>
                 <p>The duties of the Housing Rehabilitation Loan Committee shall be to review and take action on all applications to the City for rehabilitation loans and to review and recommend to the City Council any changes in loan terms or other matters concerning housing rehabilitation loans.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -321,8 +325,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.27" data-order="|2|2.27|" ref-path="2.27" class="h__chapter">Chapter 2.27 PARK AND RECREATION COMMISSION</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/2.27.010" data-order="|2|2.27|2.27.010|" ref-path="2.27.010" class="h__section">2.27.010 ORGANIZATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.27" data-order="|2|2.27|" data-ref-path="2.27" class="h__chapter">Chapter 2.27 PARK AND RECREATION COMMISSION</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.27.010" data-order="|2|2.27|2.27.010|" data-ref-path="2.27.010" class="h__section">2.27.010 ORGANIZATION.</h2>
                 <p>A park and recreation commission shall continue as heretofore established in and for the City, to be known and designated as the "San Mateo park and recreation commission." It shall consist of five members appointed by the Council.</p>
                 <p>Each member of the commission shall serve at the pleasure of the Council for a term of four years and until the appointment and qualification of a successor.</p>
                 <aside class="annotations" role="note">
@@ -331,7 +335,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.27.020" data-order="|2|2.27|2.27.020|" ref-path="2.27.020" class="h__section">2.27.020 MEETINGS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.27.020" data-order="|2|2.27|2.27.020|" data-ref-path="2.27.020" class="h__section">2.27.020 MEETINGS.</h2>
                 <p>The commission shall meet monthly at a time and place to be fixed by it, shall elect a chairman and vice-chairman, and may adopt rules for its proceedings. It may hold special meetings upon call of the chairman or two members upon written notice as required by the public meeting law.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -339,7 +343,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.27.030" data-order="|2|2.27|2.27.030|" ref-path="2.27.030" class="h__section">2.27.030 POWERS—DUTIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.27.030" data-order="|2|2.27|2.27.030|" data-ref-path="2.27.030" class="h__section">2.27.030 POWERS—DUTIES.</h2>
                 <p>It shall be the duty of the commission, as an advisory body to the Council, to advise on its own initiative, or as requested by the City Council, on the acquisition, development, beautification and maintenance of public parks, landscape resources, public recreation facilities, budgets and the programs of park and recreation activities.</p>
                 <p>The commission may, through the City Council, make recommendations to other boards or commissions of the City with respect to any action the commission believes should be taken, or upon which it has been requested to advise.</p>
                 <aside class="annotations" role="note">
@@ -348,7 +352,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.27.040" data-order="|2|2.27|2.27.040|" ref-path="2.27.040" class="h__section">2.27.040 REPORTS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.27.040" data-order="|2|2.27|2.27.040|" data-ref-path="2.27.040" class="h__section">2.27.040 REPORTS.</h2>
                 <p>The commission shall make an annual report to the Council immediately following the close of each fiscal year, and may also, from time to time, report its recommendations to the Council.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -356,8 +360,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.28" data-order="|2|2.28|" ref-path="2.28" class="h__chapter">Chapter 2.28 SUSTAINABILITY AND INFRASTRUCTURE COMMISSION<annotation app="2018-07-04" doc="City of San Mateo, Cal., Ord. No. 2018-4" eff="2018-07-04" path="§2" type="History"/></h2>
-                <h2 id="/us/ca/cities/san-mateo/code/2.28.010" data-order="|2|2.28|2.28.010|" ref-path="2.28.010" class="h__section">2.28.010 ORGANIZATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.28" data-order="|2|2.28|" data-ref-path="2.28" class="h__chapter">Chapter 2.28 SUSTAINABILITY AND INFRASTRUCTURE COMMISSION<annotation app="2018-07-04" doc="City of San Mateo, Cal., Ord. No. 2018-4" eff="2018-07-04" path="§2" type="History"/></h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.28.010" data-order="|2|2.28|2.28.010|" data-ref-path="2.28.010" class="h__section">2.28.010 ORGANIZATION.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.28.010#(a)">(a)</span> The commission shall have five members appointed by the Council.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.28.010#(b)">(b)</span> The members of the commission shall be appointed for four-year terms or until the appointment of a successor, except that the initial terms of the first members appointed shall be determined by lot at their first meeting so that each year one or more terms will expire.</p>
                 <aside class="annotations" role="note">
@@ -366,7 +370,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.28.020" data-order="|2|2.28|2.28.020|" ref-path="2.28.020" class="h__section">2.28.020 MEETINGS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.28.020" data-order="|2|2.28|2.28.020|" data-ref-path="2.28.020" class="h__section">2.28.020 MEETINGS.</h2>
                 <p>The commission shall meet within one month of its formation and establish itself by electing a chairman, vice-chairman and secretary to serve at the pleasure of the commission. A regular time and place of meetings shall be established and adhered to in the manner of holding public meetings for legislative bodies in the state. All meetings shall be open to the public unless by law otherwise provided.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -374,7 +378,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.28.030" data-order="|2|2.28|2.28.030|" ref-path="2.28.030" class="h__section">2.28.030 POWERS—DUTIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.28.030" data-order="|2|2.28|2.28.030|" data-ref-path="2.28.030" class="h__section">2.28.030 POWERS—DUTIES.</h2>
                 <p>It shall be the duty of the sustainability and infrastructure commission, as an advisory body to the City Council, to advise on policies and programs related to environmental sustainability, transportation and infrastructure.</p>
                 <p>The sustainability and infrastructure commission may make recommendations to any other board or commission of the City with respect to any action upon which it has been requested to advise.</p>
                 <p>The sustainability and infrastructure commission shall possess other such powers and duties as may be prescribed from time to time by resolution of the City Council.</p>
@@ -384,8 +388,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.29" data-order="|2|2.29|" ref-path="2.29" class="h__chapter">Chapter 2.29 SENIOR CITIZENS COMMISSION</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/2.29.010" data-order="|2|2.29|2.29.010|" ref-path="2.29.010" class="h__section">2.29.010 ORGANIZATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.29" data-order="|2|2.29|" data-ref-path="2.29" class="h__chapter">Chapter 2.29 SENIOR CITIZENS COMMISSION</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.29.010" data-order="|2|2.29|2.29.010|" data-ref-path="2.29.010" class="h__section">2.29.010 ORGANIZATION.</h2>
                 <p>The senior citizens commission of the City shall consist of no more than five members appointed by the Council. The President of the Senior Advisory Council, or designee, shall be an ex-officio member of the Senior Citizens Commission without the right to vote. Members shall be persons who display an interest in and appreciation of senior affairs.</p>
                 <p>Each member of the senior citizens commission shall serve at the pleasure of the Council and for a term of four years or until the appointment of a successor, except that the initial terms of the first members appointed shall be determined by lot at their first meeting so that each year at least one term will expire. Thereafter, all appointments shall be for a term of four years.</p>
                 <aside class="annotations" role="note">
@@ -394,7 +398,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.29.020" data-order="|2|2.29|2.29.020|" ref-path="2.29.020" class="h__section">2.29.020 MEETINGS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.29.020" data-order="|2|2.29|2.29.020|" data-ref-path="2.29.020" class="h__section">2.29.020 MEETINGS.</h2>
                 <p>The commission shall meet within one month of its formation and establish itself by electing a chairperson and vice chairperson to serve at the pleasure of the board. The board may adopt reasonable rules and regulations for the conduct of its business. A regular time and place of meetings shall be established and adhered to in the manner of holding public meetings for legislative bodies in the state.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -402,7 +406,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.29.030" data-order="|2|2.29|2.29.030|" ref-path="2.29.030" class="h__section">2.29.030 POWERS—DUTIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.29.030" data-order="|2|2.29|2.29.030|" data-ref-path="2.29.030" class="h__section">2.29.030 POWERS—DUTIES.</h2>
                 <p>It shall be the objective of the senior citizens commission, as an advisory body to the Council, to encourage, foster, and facilitate programs for the enhancement of all matters relating to the social, economic, and personal well being of the senior population.</p>
                 <p>The Commission shall recommend to the Council the establishment and funding of programs and services for senior citizens within the City and review and make recommendations to the Council regarding any senior citizen center operated by the City.</p>
                 <p>Further, the Commission shall periodically review the efforts being made towards implementing the recommendations set forth in the Adopted Master Plan for Senior Services and shall be charged with keeping said plan current.</p>
@@ -413,8 +417,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.30" data-order="|2|2.30|" ref-path="2.30" class="h__chapter">Chapter 2.30 DEPARTMENT OF COMMUNITY DEVELOPMENT</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/2.30.010" data-order="|2|2.30|2.30.010|" ref-path="2.30.010" class="h__section">2.30.010 CREATION—POWERS—DUTIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.30" data-order="|2|2.30|" data-ref-path="2.30" class="h__chapter">Chapter 2.30 DEPARTMENT OF COMMUNITY DEVELOPMENT</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.30.010" data-order="|2|2.30|2.30.010|" data-ref-path="2.30.010" class="h__section">2.30.010 CREATION—POWERS—DUTIES.</h2>
                 <p>The department of community development is created. It shall perform the functions of building inspection, planning, and housing and economic development. It shall consist of building, planning, and housing and economic development divisions. The department shall have such powers and duties as may from time to time be prescribed by the Council or city manager. There shall be a director of community development and such assistants as may from time to time be approved by the Council provided that one such assistant shall be the building official of the City.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -422,7 +426,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.30.020" data-order="|2|2.30|2.30.020|" ref-path="2.30.020" class="h__section">2.30.020 DIRECTOR OF COMMUNITY DEVELOPMENT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.30.020" data-order="|2|2.30|2.30.020|" data-ref-path="2.30.020" class="h__section">2.30.020 DIRECTOR OF COMMUNITY DEVELOPMENT.</h2>
                 <p>The director of community development shall be appointed by the City Manager and be the head of the department of community development and shall have such powers and duties as may from time to time be prescribed by the Council or city manager.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -430,8 +434,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.33" data-order="|2|2.33|" ref-path="2.33" class="h__chapter">Chapter 2.33 DEPARTMENT OF FINANCE</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/2.33.010" data-order="|2|2.33|2.33.010|" ref-path="2.33.010" class="h__section">2.33.010 CREATION—POWERS—DUTIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.33" data-order="|2|2.33|" data-ref-path="2.33" class="h__chapter">Chapter 2.33 DEPARTMENT OF FINANCE</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.33.010" data-order="|2|2.33|2.33.010|" data-ref-path="2.33.010" class="h__section">2.33.010 CREATION—POWERS—DUTIES.</h2>
                 <p>The department of finance is created. It shall have such powers and duties as may from time to time be provided by the Council and the City Manager. It shall consist of the fiscal director and such assistants as may from time to time be approved by the Council.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -439,7 +443,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.33.020" data-order="|2|2.33|2.33.020|" ref-path="2.33.020" class="h__section">2.33.020 FISCAL DIRECTOR—CITY TREASURER.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.33.020" data-order="|2|2.33|2.33.020|" data-ref-path="2.33.020" class="h__section">2.33.020 FISCAL DIRECTOR—CITY TREASURER.</h2>
                 <p>The fiscal director shall be appointed by the City Manager and shall serve at his or her pleasure. He or she shall be the treasurer, ex officio Tax Collector and license collector of the City. He or she shall be the head of the department of finance and shall have such powers and duties as are hereinafter provided and such other powers and duties as may from time to time be prescribed by the Council or city manager.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -447,7 +451,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.33.030" data-order="|2|2.33|2.33.030|" ref-path="2.33.030" class="h__section">2.33.030 CASH POOL OPERATIONS—CHECK SYSTEM.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.33.030" data-order="|2|2.33|2.33.030|" data-ref-path="2.33.030" class="h__section">2.33.030 CASH POOL OPERATIONS—CHECK SYSTEM.</h2>
                 <p>Municipal obligations of the City shall be financed by cash pool operations, and utilization of a check system rather than a warrant system.</p>
                 <p>Except for those funds restricted by bond indentures, state or federal law, the charter or specific conditions of the legislation creating them, temporary transfers between funds are permitted.</p>
                 <aside class="annotations" role="note">
@@ -456,7 +460,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.33.040" data-order="|2|2.33|2.33.040|" ref-path="2.33.040" class="h__section">2.33.040 DUTIES—FISCAL DIRECTOR.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.33.040" data-order="|2|2.33|2.33.040|" data-ref-path="2.33.040" class="h__section">2.33.040 DUTIES—FISCAL DIRECTOR.</h2>
                 <p>The fiscal director shall have the responsibility for the accounting system, accounts and controls, receipts and expenditures, and deposits and investments, receipt and collection of all taxes, assessments, license fees and other revenues of the City, including money receivable from the county, state or federal government, or from any court, office, department or agency of the City or any other source.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -464,7 +468,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.33.050" data-order="|2|2.33|2.33.050|" ref-path="2.33.050" class="h__section">2.33.050 AUTHORITY TO SIGN NEGOTIABLE INSTRUMENTS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.33.050" data-order="|2|2.33|2.33.050|" data-ref-path="2.33.050" class="h__section">2.33.050 AUTHORITY TO SIGN NEGOTIABLE INSTRUMENTS.</h2>
                 <p>The fiscal director is authorized to sign all general checks and payroll checks drawn in the name of the City; and such signatures may be in facsimile.</p>
                 <p>The fiscal director is authorized, in the name of the City, to sign bonds, deposit agreements, notes, negotiable instruments and all other orders for payment of money by affixing his or her personal signature thereto.</p>
                 <p>In the absence of or other inability of the fiscal director to perform his or her duties, the City Manager may deputize an assistant within the finance department to sign checks and such other negotiable instruments as the City Manager shall designate, upon his or her qualification on a surety bond in the same amount as the fiscal director.</p>
@@ -474,7 +478,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.36" data-order="|2|2.36|" ref-path="2.36" class="h__chapter">Chapter 2.36 FIRE DEPARTMENT</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.36" data-order="|2|2.36|" data-ref-path="2.36" class="h__chapter">Chapter 2.36 FIRE DEPARTMENT</h2>
                 <section class="line-group annotations">
                   <h4>Editor's Notes</h4>
                   <p>For provisions relating to building fire standards, see <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/23.28" title="Chapter 23.28 FIRE CODE">Chapter 23.28</a>.</p>
@@ -484,7 +488,7 @@
                   <p>For provisions relating to combustible containers, see <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/7.32" title="Chapter 7.32 GARBAGE">Chapter 7.32</a>.</p>
                   <p>For provisions relating to burning outside, see Chapter 10.24.</p>
                 </section>
-                <h2 id="/us/ca/cities/san-mateo/code/2.36.010" data-order="|2|2.36|2.36.010|" ref-path="2.36.010" class="h__section">2.36.010 PERSONNEL.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.36.010" data-order="|2|2.36|2.36.010|" data-ref-path="2.36.010" class="h__section">2.36.010 PERSONNEL.</h2>
                 <p>The fire department shall consist of a chief of the fire department and such officers and employees as may from time to time be appointed in conformity with the merit system provisions codified in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.57" title="Chapter 2.57 PERSONNEL SYSTEM">Chapter 2.57</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -492,7 +496,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.36.020" data-order="|2|2.36|2.36.020|" ref-path="2.36.020" class="h__section">2.36.020 POWERS OF MEMBERS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.36.020" data-order="|2|2.36|2.36.020|" data-ref-path="2.36.020" class="h__section">2.36.020 POWERS OF MEMBERS.</h2>
                 <p>Each member of the fire department shall have such powers as are now or may hereafter be conferred by State law upon members of fire departments within general law cities.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -500,7 +504,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.36.030" data-order="|2|2.36|2.36.030|" ref-path="2.36.030" class="h__section">2.36.030 DIVISION—ESTABLISHED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.36.030" data-order="|2|2.36|2.36.030|" data-ref-path="2.36.030" class="h__section">2.36.030 DIVISION—ESTABLISHED.</h2>
                 <p>There is established within the fire department, a bureau of fire protection and life safety. The purpose of the bureau of fire protection and life safety is to provide an organization for investigation of the cause, origin and circumstances of fires, to devise ways and means for fire prevention, and to assist the Fire Chief in the administration and enforcement of the Uniform Fire Code.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -508,7 +512,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.36.040" data-order="|2|2.36|2.36.040|" ref-path="2.36.040" class="h__section">2.36.040 BUREAU OF FIRE PROTECTION AND LIFE SAFETY—COMPOSITION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.36.040" data-order="|2|2.36|2.36.040|" data-ref-path="2.36.040" class="h__section">2.36.040 BUREAU OF FIRE PROTECTION AND LIFE SAFETY—COMPOSITION.</h2>
                 <p>The division shall be composed of the Fire Marshal and such subordinates as may from time to time be approved by the City Council.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -516,7 +520,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.36.050" data-order="|2|2.36|2.36.050|" ref-path="2.36.050" class="h__section">2.36.050 AUTHORITY TO ARREST—NOTICE TO APPEAR.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.36.050" data-order="|2|2.36|2.36.050|" data-ref-path="2.36.050" class="h__section">2.36.050 AUTHORITY TO ARREST—NOTICE TO APPEAR.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.36.050#(a)">(a)</span> The Fire Chief, each chief officer of the department and each member of the bureau of fire protection and life safety, hereinafter collectively referred to as the arresting officer, may arrest a person without a warrant whenever he or she has reasonable cause to believe that the person to be arrested has committed a misdemeanor or infraction in his or her presence which is a violation of a statute or ordinance he or she has the duty to enforce.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.36.050#(b)">(b)</span> In any case in which a person is arrested pursuant to subdivision (a) and the person arrested does not demand to be taken before a magistrate, the arresting officer shall prepare a written notice to appear and release the person on his or her promise to appear as prescribed by Chapter 5C, "Citations for Misdemeanors" (commencing with Section 853.6), of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/3" title="Title 3 TAXATION AND FINANCE">Title 3</a> of Part <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2&amp;lawCode=PEN" title="">2 of the California Penal Code</a>. The provisions of said Chapter 5C shall thereafter apply with reference to any proceeding based on the issuance of a written notice to appear.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.36.050#(c)">(c)</span> This section (<a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.36.050" title="2.36.050 AUTHORITY TO ARREST—NOTICE TO APPEAR.">Section 2.36.050</a>) is adopted pursuant to the authority granted by <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=836.5&amp;lawCode=PEN" title="">Section 836.5 of the California Penal Code</a>.</p>
@@ -531,14 +535,14 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.39" data-order="|2|2.39|" ref-path="2.39" class="h__chapter">Chapter 2.39 POLICE DEPARTMENT</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.39" data-order="|2|2.39|" data-ref-path="2.39" class="h__chapter">Chapter 2.39 POLICE DEPARTMENT</h2>
                 <section class="line-group annotations">
                   <h4>Editor's Notes</h4>
                   <p>For provisions relating to press identification cards, see Chapter 5.54.</p>
                   <p>For provisions relating to private patrols, see <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/5.57" title="Chapter 5.57 PRIVATE PATROLS AND SECURITY SERVICES">Chapter 5.57</a>.</p>
                   <p>For the relevant provisions of the City charter see §§ 3.04 and 4.01.</p>
                 </section>
-                <h2 id="/us/ca/cities/san-mateo/code/2.39.010" data-order="|2|2.39|2.39.010|" ref-path="2.39.010" class="h__section">2.39.010 DEFINITIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.39.010" data-order="|2|2.39|2.39.010|" data-ref-path="2.39.010" class="h__section">2.39.010 DEFINITIONS.</h2>
                 <p>For the purposes of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.39" title="Chapter 2.39 POLICE DEPARTMENT">this chapter</a>, the following words and phrases are defined, and shall be construed as hereinafter set out, unless it is apparent from the context that they have a different meaning:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.39.010#(1)">(1)</span> "Official police officer's badge" means a badge of the size, type and design last approved for the use of regular police officers. Each such badge shall bear on the face thereof the title or rank of the person to whom it was issued. All badges of each title or rank shall be consecutively numbered and the number shall appear on the face of each badge;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.39.010#(2)">(2)</span> "Reserve police officer" means any officer of the Police Department appointed as provided in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.39.020" title="2.39.020 PERSONNEL.">Section 2.39.020</a> to act as a member of the department and who is sworn in such capacity regardless of whether or not his or her compensation is paid by the City, or who is appointed to act in such capacity as deemed appropriate by the Chief of Police;</p>
@@ -549,7 +553,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.39.020" data-order="|2|2.39|2.39.020|" ref-path="2.39.020" class="h__section">2.39.020 PERSONNEL.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.39.020" data-order="|2|2.39|2.39.020|" data-ref-path="2.39.020" class="h__section">2.39.020 PERSONNEL.</h2>
                 <p>The police department shall consist of a Chief of Police, and such officers and employees as the City Manager or the Chief of Police may from time to time appoint in conformity with the merit system provisions codified in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.57" title="Chapter 2.57 PERSONNEL SYSTEM">Chapter 2.57</a>, or otherwise. In addition to such regular officers, the Chief of Police, subject to confirmation by the Council, shall have power to appoint reserve officers to hold office for such length of time as shall be designated in the appointment, whenever the Chief of Police deems any of such officers necessary. No person who is not a regular police officer shall wear an official police officer's badge.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -561,7 +565,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.39.030" data-order="|2|2.39|2.39.030|" ref-path="2.39.030" class="h__section">2.39.030 POWERS OF REGULAR OFFICERS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.39.030" data-order="|2|2.39|2.39.030|" data-ref-path="2.39.030" class="h__section">2.39.030 POWERS OF REGULAR OFFICERS.</h2>
                 <p>Each regular officer shall have the powers that are now conferred by law upon police officers of this state in all matters pertaining to the enforcement of the police regulations of the City, and shall be entitled to the same protection in all respects as is now afforded by law to police officers of this state. It shall be his or her duty to enforce the ordinances of the City, to prevent the commission of any breach of peace, to suppress riots and disorderly assemblages, and to arrest every person found violating any law or ordinance or committing acts injurious to the quiet and good order of the City, or to the person or property of any citizen of the City. He or she shall have such further powers and duties as may be prescribed by the Council or the manager or Chief of Police, by ordinance or order.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -569,7 +573,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.39.031" data-order="|2|2.39|2.39.031|" ref-path="2.39.031" class="h__section">2.39.031 POWERS OF RESERVE OFFICERS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.39.031" data-order="|2|2.39|2.39.031|" data-ref-path="2.39.031" class="h__section">2.39.031 POWERS OF RESERVE OFFICERS.</h2>
                 <p>Reserve officers have power to perform as peace officers the specific police functions assigned to them by the Chief of Police for the duration of such specific assignment while on duty.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -577,7 +581,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.39.040" data-order="|2|2.39|2.39.040|" ref-path="2.39.040" class="h__section">2.39.040 BADGES—ISSUANCE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.39.040" data-order="|2|2.39|2.39.040|" data-ref-path="2.39.040" class="h__section">2.39.040 BADGES—ISSUANCE.</h2>
                 <p>Neither the Council nor any board or member thereof, or officer or employee of the City shall:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.39.040#(1)">(1)</span> Issue any official police officer's badge except to persons lawfully entitled thereto under the provisions of this code;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.39.040#(2)">(2)</span> Issue to any person whomsoever any honorary police badge or any other badge calculated to indicate that the holder thereof is a member of, or connected with, the Police Department of the City, except that reserve police officer's badges and official police officer's badges may be issued to persons lawfully entitled thereto as elsewhere provided in this code;</p>
@@ -588,7 +592,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.39.050" data-order="|2|2.39|2.39.050|" ref-path="2.39.050" class="h__section">2.39.050 RESERVE POLICE OFFICERS' BADGES—ISSUANCE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.39.050" data-order="|2|2.39|2.39.050|" data-ref-path="2.39.050" class="h__section">2.39.050 RESERVE POLICE OFFICERS' BADGES—ISSUANCE.</h2>
                 <p>Reserve police officers' badges shall only be issued by the Chief of Police. The Chief of Police shall keep a record of all badges issued.</p>
                 <p>Each such badge shall be surrendered on the termination of the employment of the reserve officer from the Police Department.</p>
                 <aside class="annotations" role="note">
@@ -597,7 +601,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.39.060" data-order="|2|2.39|2.39.060|" ref-path="2.39.060" class="h__section">2.39.060 SPECIAL POLICE OFFICERS' BADGES—RECALL.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.39.060" data-order="|2|2.39|2.39.060|" data-ref-path="2.39.060" class="h__section">2.39.060 SPECIAL POLICE OFFICERS' BADGES—RECALL.</h2>
                 <p>All special police officers' badges heretofore issued are of no further effect and shall be forthwith returned to the Chief of Police.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -605,7 +609,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.39.090" data-order="|2|2.39|2.39.090|" ref-path="2.39.090" class="h__section">2.39.090 UNAUTHORIZED POSSESSION OF BADGE OR PRESS IDENTIFICATION CARD.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.39.090" data-order="|2|2.39|2.39.090|" data-ref-path="2.39.090" class="h__section">2.39.090 UNAUTHORIZED POSSESSION OF BADGE OR PRESS IDENTIFICATION CARD.</h2>
                 <p>No person shall have in his or her possession any official police badge or special reserve police officer's badge or press identification card which has not been lawfully issued to him or her according to the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.39" title="Chapter 2.39 POLICE DEPARTMENT">this chapter</a>. No person shall possess any such card or badge after his or her right to use such card or badge has been terminated.</p>
                 <p>Unless authorized by the Chief of Police, no person shall have in his or her possession any other badge, star, shield, miniature, ring, charm or insignia, regardless of the size, shape or design thereof, which has on it the words "San Mateo Police" or "San Mateo Detective," whether used separately, together or in combination with any other words indicating a connection with the San Mateo police department, or which is identical in design with or which so resembles an official police officer's badge or a reserve police officer's badge that it may be readily mistaken for either of such badges.</p>
                 <p>No person who is not a regular police officer, reserve police officer, honorably retired police officer, police service aid or police cadet shall wear or display any badge, star or insignia calculated to indicate that he or she is a member of, or connected with, the San Mateo police department.</p>
@@ -615,7 +619,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.39.100" data-order="|2|2.39|2.39.100|" ref-path="2.39.100" class="h__section">2.39.100 AUTHORIZED BADGES OF RETIRED OFFICERS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.39.100" data-order="|2|2.39|2.39.100|" data-ref-path="2.39.100" class="h__section">2.39.100 AUTHORIZED BADGES OF RETIRED OFFICERS.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.39.100#(a)">(a)</span> Notwithstanding any other provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.39" title="Chapter 2.39 POLICE DEPARTMENT">this chapter</a>, any person who has been, during his or her lifetime, a duly and regularly appointed, commissioned and sworn police officer of this city and who has honorably retired from such position, may retain and carry any badge lawfully issued to him or her or otherwise lawfully acquired by him or her during his or her service or incident to his or her retirement, provided the word "retired" is plainly shown on such badge, by being engraved or embossed thereon or otherwise permanently affixed thereto.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.39.100#(b)">(b)</span> Nothing in this section shall be deemed to authorize the use of any badge herein mentioned for any unlawful purpose, and any such badge so used may be confiscated by the Chief of Police.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.39.100#(c)">(c)</span> Any badge mentioned in this section shall be subject to confiscation by the Chief of Police if worn or displayed by any person other than the person authorized to possess it, and shall be returned to the person authorized to possess it only upon a showing that such wearing or display was without his or her consent, express or implied.</p>
@@ -625,7 +629,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.39.110" data-order="|2|2.39|2.39.110|" ref-path="2.39.110" class="h__section">2.39.110 POLICE UNIFORM—IMITATION PROHIBITED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.39.110" data-order="|2|2.39|2.39.110|" data-ref-path="2.39.110" class="h__section">2.39.110 POLICE UNIFORM—IMITATION PROHIBITED.</h2>
                 <p>No person other than a sworn police officer or reserve police officer shall wear any uniform of a pattern or design, or in the semblance, of the uniform authorized by the Chief of Police for the use of the regular or reserve members of the Police Department, or wear upon any uniform any star, badge, or insignia of a pattern or design that may be mistaken for, or confounded with, the official police officer's badge or the reserve police officer's badge.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -633,7 +637,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.39.130" data-order="|2|2.39|2.39.130|" ref-path="2.39.130" class="h__section">2.39.130 POLICE IDENTIFICATION CARD—ISSUANCE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.39.130" data-order="|2|2.39|2.39.130|" data-ref-path="2.39.130" class="h__section">2.39.130 POLICE IDENTIFICATION CARD—ISSUANCE.</h2>
                 <p>The Chief of Police is authorized to issue an identification card to authorized personnel. No other person shall possess such a card.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -641,7 +645,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.39.160" data-order="|2|2.39|2.39.160|" ref-path="2.39.160" class="h__section">2.39.160 UNCLAIMED PROPERTY—TIME FOR HOLDING.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.39.160" data-order="|2|2.39|2.39.160|" data-ref-path="2.39.160" class="h__section">2.39.160 UNCLAIMED PROPERTY—TIME FOR HOLDING.</h2>
                 <p>Any unclaimed property shall be held by the department for a period of at least three months</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -653,7 +657,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.39.170" data-order="|2|2.39|2.39.170|" ref-path="2.39.170" class="h__section">2.39.170 UNCLAIMED PROPERTY—SALE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.39.170" data-order="|2|2.39|2.39.170|" data-ref-path="2.39.170" class="h__section">2.39.170 UNCLAIMED PROPERTY—SALE.</h2>
                 <p>If, within said period specified in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.39.160" title="2.39.160 UNCLAIMED PROPERTY—TIME FOR HOLDING.">Section 2.39.160</a>, such bicycle or other property has not been claimed by anyone legally entitled thereto, such bicycle or other property may be sold at public auction to the highest bidder on notice of sale given as set forth in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.39.180" title="2.39.180 UNCLAIMED PROPERTY—SALE—NOTICE.">Section 2.39.180</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -661,7 +665,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.39.180" data-order="|2|2.39|2.39.180|" ref-path="2.39.180" class="h__section">2.39.180 UNCLAIMED PROPERTY—SALE—NOTICE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.39.180" data-order="|2|2.39|2.39.180|" data-ref-path="2.39.180" class="h__section">2.39.180 UNCLAIMED PROPERTY—SALE—NOTICE.</h2>
                 <p>Notice of sale of such unclaimed property shall be given by the Chief of Police at least five days before the time fixed for such sale by publishing such notice once in a newspaper of general circulation published in the county.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -673,7 +677,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.39.190" data-order="|2|2.39|2.39.190|" ref-path="2.39.190" class="h__section">2.39.190 UNCLAIMED PROPERTY—DESTRUCTION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.39.190" data-order="|2|2.39|2.39.190|" data-ref-path="2.39.190" class="h__section">2.39.190 UNCLAIMED PROPERTY—DESTRUCTION.</h2>
                 <p>In the event that any such property is perishable and cannot be sold, or the property has no sale value, or at such auction sale there have been no bids for the property, it shall be destroyed by the Chief of Police at such time as the Chief of Police may determine.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -681,8 +685,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.45" data-order="|2|2.45|" ref-path="2.45" class="h__chapter">Chapter 2.45 DEPARTMENT OF PARKS AND RECREATION</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/2.45.010" data-order="|2|2.45|2.45.010|" ref-path="2.45.010" class="h__section">2.45.010 CREATION—POWERS—DUTIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.45" data-order="|2|2.45|" data-ref-path="2.45" class="h__chapter">Chapter 2.45 DEPARTMENT OF PARKS AND RECREATION</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.45.010" data-order="|2|2.45|2.45.010|" data-ref-path="2.45.010" class="h__section">2.45.010 CREATION—POWERS—DUTIES.</h2>
                 <p>The department of parks and recreation is created. It shall have the responsibility for the review of landscaping of proposed development, management, control and general supervision of the public parks, islands and ovals, public facilities landscaping, playgrounds, recreational centers, swimming pools, the municipal golf courses, and all other recreational and human services facilities and programs of the City. It shall consist of the director of parks and recreation and such assistants as may from time to time be approved by the City Council.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -690,7 +694,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.45.020" data-order="|2|2.45|2.45.020|" ref-path="2.45.020" class="h__section">2.45.020 DIRECTOR OF PARKS AND RECREATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.45.020" data-order="|2|2.45|2.45.020|" data-ref-path="2.45.020" class="h__section">2.45.020 DIRECTOR OF PARKS AND RECREATION.</h2>
                 <p>The director of parks and recreation shall be appointed by and serve at the pleasure of the City Manager. The director shall be the head of the department of parks and recreation and be responsible for carrying out the duties as may from time to time be prescribed by the City Council or city manager.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -698,8 +702,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.48" data-order="|2|2.48|" ref-path="2.48" class="h__chapter">Chapter 2.48 DEPARTMENT OF PUBLIC WORKS</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/2.48.010" data-order="|2|2.48|2.48.010|" ref-path="2.48.010" class="h__section">2.48.010 CREATION—POWERS—DUTIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.48" data-order="|2|2.48|" data-ref-path="2.48" class="h__chapter">Chapter 2.48 DEPARTMENT OF PUBLIC WORKS</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.48.010" data-order="|2|2.48|2.48.010|" data-ref-path="2.48.010" class="h__section">2.48.010 CREATION—POWERS—DUTIES.</h2>
                 <p>The Department of Public Works is created. It shall perform the functions of engineering, maintenance and traffic and shall have such powers and duties as may from time to time be prescribed by the Council or City Manager. It shall consist of the Director of Public Works and such assistants as may from time to time be approved by the Council provided that three of such assistants shall be: the assistant city engineer; the superintendent of maintenance; and the traffic engineer.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -707,7 +711,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.48.020" data-order="|2|2.48|2.48.020|" ref-path="2.48.020" class="h__section">2.48.020 DIRECTOR OF PUBLIC WORKS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.48.020" data-order="|2|2.48|2.48.020|" data-ref-path="2.48.020" class="h__section">2.48.020 DIRECTOR OF PUBLIC WORKS.</h2>
                 <p>The Director of Public Works shall be appointed by the City Manager and be the head of the Department of Public Works and shall have such powers and duties as may from time to time be prescribed by the Council or City Manager.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -715,7 +719,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.48.025" data-order="|2|2.48|2.48.025|" ref-path="2.48.025" class="h__section">2.48.025 CITY ENGINEER—DEFINED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.48.025" data-order="|2|2.48|2.48.025|" data-ref-path="2.48.025" class="h__section">2.48.025 CITY ENGINEER—DEFINED.</h2>
                 <p>For purposes of this Code, "City Engineer" shall mean the Director of Public Works or his or her designee.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -723,7 +727,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.48.030" data-order="|2|2.48|2.48.030|" ref-path="2.48.030" class="h__section">2.48.030 SUPERINTENDENT OF STREETS—DEFINED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.48.030" data-order="|2|2.48|2.48.030|" data-ref-path="2.48.030" class="h__section">2.48.030 SUPERINTENDENT OF STREETS—DEFINED.</h2>
                 <p>For purposes of this Code, "Superintendent of Streets" means the Director of Public Works or his or her designee.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -731,8 +735,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.57" data-order="|2|2.57|" ref-path="2.57" class="h__chapter">Chapter 2.57 PERSONNEL SYSTEM</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/2.57.010" data-order="|2|2.57|2.57.010|" ref-path="2.57.010" class="h__section">2.57.010 ADOPTION OF PERSONNEL SYSTEM.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.57" data-order="|2|2.57|" data-ref-path="2.57" class="h__chapter">Chapter 2.57 PERSONNEL SYSTEM</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.57.010" data-order="|2|2.57|2.57.010|" data-ref-path="2.57.010" class="h__section">2.57.010 ADOPTION OF PERSONNEL SYSTEM.</h2>
                 <p>In order to establish an equitable and uniform procedure for dealing with personnel matters; to attract to municipal service the best and most competent persons available; to assure that appointments and promotions of employees will be based on merit and fitness; and to provide a reasonable degree of security for qualified employees, the following personnel system is hereby adopted.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -740,7 +744,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.57.020" data-order="|2|2.57|2.57.020|" ref-path="2.57.020" class="h__section">2.57.020 DEFINITIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.57.020" data-order="|2|2.57|2.57.020|" data-ref-path="2.57.020" class="h__section">2.57.020 DEFINITIONS.</h2>
                 <p>As used in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.57" title="Chapter 2.57 PERSONNEL SYSTEM">this chapter</a>, the following terms shall be defined as indicated:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.57.020#(a)">(a)</span> "Appointing power" means the officers of the City who, in their individual capacities, or as a board, commission, or City Council, have the final authority to make the appointment to the position to be filled.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.57.020#(b)">(b)</span> "Class" means all positions sufficiently similar in duties, authority, and responsibility, to permit grouping under a common title in the application with equity of common standards of selection, transfer, demotion and salary.</p>
@@ -763,7 +767,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.57.030" data-order="|2|2.57|2.57.030|" ref-path="2.57.030" class="h__section">2.57.030 PERSONNEL OFFICER.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.57.030" data-order="|2|2.57|2.57.030|" data-ref-path="2.57.030" class="h__section">2.57.030 PERSONNEL OFFICER.</h2>
                 <p>The City Manager shall be the Personnel Officer. The City Manager may delegate any of the powers and duties conferred upon him or her as Personnel Officer under <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.57" title="Chapter 2.57 PERSONNEL SYSTEM">this chapter</a> to any other officer or employee of the City or may recommend that such powers and duties be performed under contract as provided in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.57.170" title="2.57.170 RIGHT TO CONTRACT FOR SPECIAL SERVICE.">Section 2.57.170</a> of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.57" title="Chapter 2.57 PERSONNEL SYSTEM">this chapter</a>. The Personnel Officer shall:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.57.030#(a)">(a)</span> Attend all meetings of the personnel board and serve as its secretary;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.57.030#(b)">(b)</span> Administer all the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.57" title="Chapter 2.57 PERSONNEL SYSTEM">this chapter</a> and of the personnel rules not specifically reserved to the City Council or the personnel board;</p>
@@ -776,7 +780,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.57.035" data-order="|2|2.57|2.57.035|" ref-path="2.57.035" class="h__section">2.57.035 PERSONNEL DEPARTMENT—DUTIES, ORGANIZATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.57.035" data-order="|2|2.57|2.57.035|" data-ref-path="2.57.035" class="h__section">2.57.035 PERSONNEL DEPARTMENT—DUTIES, ORGANIZATION.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.57.035#(a)">(a)</span> Creation—Duties. A Personnel Division is created in the City Manager's Office. It shall assist the Personnel Officer in the administration of all personnel matters of the City and such additional duties as the Council and the City Manager may prescribe from time to time.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -784,7 +788,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.57.040" data-order="|2|2.57|2.57.040|" ref-path="2.57.040" class="h__section">2.57.040 PERSONNEL BOARD.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.57.040" data-order="|2|2.57|2.57.040|" data-ref-path="2.57.040" class="h__section">2.57.040 PERSONNEL BOARD.</h2>
                 <p>There is hereby created a personnel board to consist of five members, to be appointed by the City Council as provided in the City Charter.</p>
                 <p>The personnel board shall adopt rules of procedure and shall select a chairman from among its members who shall act as presiding officer.</p>
                 <p>Vacancies on the personnel board shall be filled by appointment by the City Council for the unexpired term. Each member shall serve until his or her successor is appointed and qualified. A majority vote of the City Council shall be required to appoint or remove a member of the personnel board.</p>
@@ -795,7 +799,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.57.050" data-order="|2|2.57|2.57.050|" ref-path="2.57.050" class="h__section">2.57.050 DUTIES OF THE PERSONNEL BOARD.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.57.050" data-order="|2|2.57|2.57.050|" data-ref-path="2.57.050" class="h__section">2.57.050 DUTIES OF THE PERSONNEL BOARD.</h2>
                 <p>The personnel board shall determine the order of business for the conduct of its meetings, and shall meet regularly or on call of the chairman or a majority of the members of the board. A majority of the members of the board shall constitute a quorum for the transaction of business.</p>
                 <p>The board, as provided by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.57" title="Chapter 2.57 PERSONNEL SYSTEM">this chapter</a> and by the rules, shall hear appeals submitted by any person in the competitive service relative to any disciplinary action, dismissal, demotion, charge of discrimination, or alleged violation of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.57" title="Chapter 2.57 PERSONNEL SYSTEM">this chapter</a>, and to certify its findings and recommendations as provided in the personnel system rules.</p>
                 <aside class="annotations" role="note">
@@ -804,7 +808,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.57.060" data-order="|2|2.57|2.57.060|" ref-path="2.57.060" class="h__section">2.57.060 COMPETITIVE SERVICE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.57.060" data-order="|2|2.57|2.57.060|" data-ref-path="2.57.060" class="h__section">2.57.060 COMPETITIVE SERVICE.</h2>
                 <p>The provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.57" title="Chapter 2.57 PERSONNEL SYSTEM">this chapter</a> shall apply to all offices, positions and employments in the service of the City, except:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.57.060#(a)">(a)</span> The City Manager and his or her assistants;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.57.060#(b)">(b)</span> Elective officers;</p>
@@ -821,7 +825,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.57.070" data-order="|2|2.57|2.57.070|" ref-path="2.57.070" class="h__section">2.57.070 ADOPTION AND AMENDMENT OF RULES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.57.070" data-order="|2|2.57|2.57.070|" data-ref-path="2.57.070" class="h__section">2.57.070 ADOPTION AND AMENDMENT OF RULES.</h2>
                 <p>Personnel rules shall be adopted by resolution of the City Council after notice of such action has been publicly posted in at least three public places designated by the City Council, and at least five days prior to City Council consideration. The Personnel Officer shall give reasonable written notice to each recognized employee organization affected by the ordinance, rule, resolution or regulation or amendment thereof proposed to be adopted by the City Council (optional if not within the scope of representation). Amendments and revisions may be suggested by an interested party and shall be processed as provided in the personnel rules. The rules shall establish regulations governing the personnel system including:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.57.070#(a)">(a)</span> Preparation, installation, revision, and maintenance of a position classification plan covering all positions in the competitive service, including employment standards and qualifications for each class;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.57.070#(b)">(b)</span> Public announcement of all tests and acceptance of applications for employment;</p>
@@ -839,7 +843,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.57.080" data-order="|2|2.57|2.57.080|" ref-path="2.57.080" class="h__section">2.57.080 APPOINTMENTS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.57.080" data-order="|2|2.57|2.57.080|" data-ref-path="2.57.080" class="h__section">2.57.080 APPOINTMENTS.</h2>
                 <p>Appointments to vacant positions in the competitive service shall be made in accordance with the personnel rules. Appointments and promotions shall be based on merit and fitness to be ascertained so far as practicable by competitive examination. Examinations may be used and conducted to aid in the selection of qualified employees and shall consist of selection techniques which will test fairly the qualifications of candidates such as achievement and aptitude tests, written tests, personal interview, performance tests, physical agility tests, evaluation of daily work performance, work samples or any combinations of these or other tests. The probationary period shall be considered an extension of the examination process. Physical and medical tests may be given as a part of any examination.</p>
                 <p>In any examination the Personnel Officer may include, in addition to competitive tests, a qualifying test or tests, and set minimum standards therefor.</p>
                 <p>Appointments shall be made by the City Council, or by the officer in whom the power to make appointments is vested.</p>
@@ -850,7 +854,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.57.090" data-order="|2|2.57|2.57.090|" ref-path="2.57.090" class="h__section">2.57.090 PROBATIONARY PERIOD.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.57.090" data-order="|2|2.57|2.57.090|" data-ref-path="2.57.090" class="h__section">2.57.090 PROBATIONARY PERIOD.</h2>
                 <p>All regular appointments, including promotional appointments, shall be for a probationary period of not less than six months. During the probationary period, the employee may be rejected at any time without the right of appeal or hearing.</p>
                 <p>An employee rejected during the probationary period from a position to which he or she has been promoted shall be reinstated to a position in the class from which he or she was promoted unless he or she is discharged from the City service as provided in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.57" title="Chapter 2.57 PERSONNEL SYSTEM">this chapter</a> and the rules.</p>
                 <p>An employee in the competitive service promoted or transferred to a position not included in the competitive service shall be reinstated to a position in the class from which he or she was promoted or transferred if action is taken to reject him or her unless he or she is discharged in the manner provided in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.57" title="Chapter 2.57 PERSONNEL SYSTEM">this chapter</a> and the personnel rules for positions in the competitive service.</p>
@@ -860,7 +864,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.57.100" data-order="|2|2.57|2.57.100|" ref-path="2.57.100" class="h__section">2.57.100 STATUS OF PRESENT EMPLOYEES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.57.100" data-order="|2|2.57|2.57.100|" data-ref-path="2.57.100" class="h__section">2.57.100 STATUS OF PRESENT EMPLOYEES.</h2>
                 <p>Any person holding a position included in the competitive service who, on the effective date of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.57" title="Chapter 2.57 PERSONNEL SYSTEM">this chapter</a>, shall have served continuously in such position, or in some other position in the competitive service, for a period equal to the probationary period prescribed in the rules for his or her class, shall assume regular status in the competitive service in the position held on such effective date without qualifying test, and shall thereafter be subject in all respects to the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.57" title="Chapter 2.57 PERSONNEL SYSTEM">this chapter</a> and the personnel rules.</p>
                 <p>Any other person holding positions in the competitive service shall be regarded as probationers who are serving out the balance of their probationary periods as prescribed in the rules before obtaining regular status. The probationary period shall be computed from the date of appointment or employment.</p>
                 <aside class="annotations" role="note">
@@ -869,7 +873,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.57.110" data-order="|2|2.57|2.57.110|" ref-path="2.57.110" class="h__section">2.57.110 APPLICABILITY OF RULES TO CERTAIN EXEMPT POSITIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.57.110" data-order="|2|2.57|2.57.110|" data-ref-path="2.57.110" class="h__section">2.57.110 APPLICABILITY OF RULES TO CERTAIN EXEMPT POSITIONS.</h2>
                 <p>The provisions of the personnel rules relating to attendance and leaves shall apply to the incumbents of full-time exempt positions, unless otherwise specified.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -877,7 +881,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.57.120" data-order="|2|2.57|2.57.120|" ref-path="2.57.120" class="h__section">2.57.120 DEMOTION, DISMISSAL, REDUCTION IN PAY, SUSPENSION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.57.120" data-order="|2|2.57|2.57.120|" data-ref-path="2.57.120" class="h__section">2.57.120 DEMOTION, DISMISSAL, REDUCTION IN PAY, SUSPENSION.</h2>
                 <p>Any appointing power shall have the right, for due cause, to demote, dismiss, reduce in pay, or suspend without pay for thirty calendar days any regular employee. Notice of such action must be in writing and served personally on such employee, except where an emergency situation exists, in which case the notice shall be served within three working days of the action taken. Such notice shall specify the penalty and contain a statement of the reason or reasons therefor.</p>
                 <p>The provisions of this section shall not apply to reductions in pay which are a part of a general plan to reduce salaries and wages or to eliminate positions.</p>
                 <aside class="annotations" role="note">
@@ -886,7 +890,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.57.130" data-order="|2|2.57|2.57.130|" ref-path="2.57.130" class="h__section">2.57.130 RIGHT OF APPEAL.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.57.130" data-order="|2|2.57|2.57.130|" data-ref-path="2.57.130" class="h__section">2.57.130 RIGHT OF APPEAL.</h2>
                 <p>Any employee in the competitive service shall have the right to appeal to the personnel board any disciplinary action, or alleged violation of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.57" title="Chapter 2.57 PERSONNEL SYSTEM">this chapter</a>, except in those instances where the right of appeal is specifically prohibited by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.57" title="Chapter 2.57 PERSONNEL SYSTEM">this chapter</a> or the rules adopted thereunder.</p>
                 <p>All appeals shall be concluded as expeditiously as possible and in accordance with the requirements and procedures as set forth in the personnel rules and regulations adopted pursuant to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.57" title="Chapter 2.57 PERSONNEL SYSTEM">this chapter</a>.</p>
                 <aside class="annotations" role="note">
@@ -895,7 +899,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.57.140" data-order="|2|2.57|2.57.140|" ref-path="2.57.140" class="h__section">2.57.140 LAYOFF AND REEMPLOYMENT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.57.140" data-order="|2|2.57|2.57.140|" data-ref-path="2.57.140" class="h__section">2.57.140 LAYOFF AND REEMPLOYMENT.</h2>
                 <p>Whenever in the judgment of the City Council it becomes necessary in the interest of economy, or because the necessity for a position no longer exists, the City Council may abolish any position or employment in the competitive service; and the employee holding such position or employment may be laid off without taking disciplinary action and without the right of appeal.</p>
                 <p>The order of layoff of employees shall be established by the Personnel Officer on the recommendation of the department head involved. The department head shall take into consideration the job performance and length of service of employees in preparing a recommended layoff list; provided, however, that no regular or probationary employee shall be laid off from his or her position in any department while any emergency, temporary or provisional employee is serving in the same class in that department.</p>
                 <p>Employees to be laid off shall be given at least fourteen days' prior notice.</p>
@@ -907,7 +911,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.57.150" data-order="|2|2.57|2.57.150|" ref-path="2.57.150" class="h__section">2.57.150 IMPROPER POLITICAL ACTIVITY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.57.150" data-order="|2|2.57|2.57.150|" data-ref-path="2.57.150" class="h__section">2.57.150 IMPROPER POLITICAL ACTIVITY.</h2>
                 <p>The political activities of city employees shall conform to pertinent provisions of State law.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -915,7 +919,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.57.160" data-order="|2|2.57|2.57.160|" ref-path="2.57.160" class="h__section">2.57.160 DISCRIMINATION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.57.160" data-order="|2|2.57|2.57.160|" data-ref-path="2.57.160" class="h__section">2.57.160 DISCRIMINATION.</h2>
                 <p>No person in the competitive service, or seeking admission thereto, shall be employed, promoted, demoted or discharged, or in any way favored or discriminated against because of political opinions or affiliations, race, color, ancestry, national origin, religious creed, sex or because of the exercise of his or her rights under <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3502&amp;lawCode=GOV" title="">Section 3502 of the Government Code</a>.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -923,7 +927,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.57.170" data-order="|2|2.57|2.57.170|" ref-path="2.57.170" class="h__section">2.57.170 RIGHT TO CONTRACT FOR SPECIAL SERVICE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.57.170" data-order="|2|2.57|2.57.170|" data-ref-path="2.57.170" class="h__section">2.57.170 RIGHT TO CONTRACT FOR SPECIAL SERVICE.</h2>
                 <p>The City Manager shall consider and make recommendations to the City Council regarding the extent to which the City should contract for the performance of technical services in connection with the establishment or operation of the personnel system. The City Council may contract with any qualified person or public or private agency for the performance of all or any of the following responsibilities and duties imposed by <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.57" title="Chapter 2.57 PERSONNEL SYSTEM">this chapter</a>:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.57.170#(a)">(a)</span> The preparation of personnel rules and subsequent revisions and amendments thereof;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.57.170#(b)">(b)</span> The preparation of a position classification plan, and subsequent revisions and amendments thereof;</p>
@@ -943,8 +947,8 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.58" data-order="|2|2.58|" ref-path="2.58" class="h__chapter">Chapter 2.58 EQUAL OPPORTUNITY IN EMPLOYMENT</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/2.58.010" data-order="|2|2.58|2.58.010|" ref-path="2.58.010" class="h__section">2.58.010 PURPOSE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.58" data-order="|2|2.58|" data-ref-path="2.58" class="h__chapter">Chapter 2.58 EQUAL OPPORTUNITY IN EMPLOYMENT</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.58.010" data-order="|2|2.58|2.58.010|" data-ref-path="2.58.010" class="h__section">2.58.010 PURPOSE.</h2>
                 <p>It is the policy of the City to provide equal opportunity in city employment for all qualified persons, to prohibit discrimination in employment because of race, creed, color, religion, sex, national origin, physical or mental disability or medical condition, and to promote the full realization of equal employment opportunity through a positive, continuing program in the City.</p>
                 <p>The program shall include equal opportunity in recruitment, employment, compensation, promotion, demotion, suspension, transfer, layoff or discharge.</p>
                 <aside class="annotations" role="note">
@@ -953,7 +957,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.58.020" data-order="|2|2.58|2.58.020|" ref-path="2.58.020" class="h__section">2.58.020 PERSONNEL OFFICER DUTIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.58.020" data-order="|2|2.58|2.58.020|" data-ref-path="2.58.020" class="h__section">2.58.020 PERSONNEL OFFICER DUTIES.</h2>
                 <p>The City Manager, as chief administrative officer and personnel officer, shall be responsible for the implementation, administration, coordination and enforcement of the City's equal opportunity program.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -961,7 +965,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.58.030" data-order="|2|2.58|2.58.030|" ref-path="2.58.030" class="h__section">2.58.030 PERSONNEL BOARD DUTIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.58.030" data-order="|2|2.58|2.58.030|" data-ref-path="2.58.030" class="h__section">2.58.030 PERSONNEL BOARD DUTIES.</h2>
                 <p>The personnel board shall act in an advisory capacity to the City Manager on an equal opportunity program, and shall:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.58.030#(1)">(1)</span> Make such recommendations to the City Manager as it deems necessary or desirable to assure the success of the program and the City's obligations thereunder; and</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.58.030#(2)">(2)</span> Exercise prompt, fair and impartial consideration of all complaints of discrimination by all employees or applicants for city employment in accordance with the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.57.170" title="2.57.170 RIGHT TO CONTRACT FOR SPECIAL SERVICE.">Sec. 2.57.170</a> of this code.</p>
@@ -971,7 +975,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.58.040" data-order="|2|2.58|2.58.040|" ref-path="2.58.040" class="h__section">2.58.040 ADOPTION OF PROGRAM.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.58.040" data-order="|2|2.58|2.58.040|" data-ref-path="2.58.040" class="h__section">2.58.040 ADOPTION OF PROGRAM.</h2>
                 <p>The City Council, from time to time, may adopt, by resolution, specific policies and programs to be administered by the City Manager to assure implementation of the City's equal opportunity of employment.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -979,12 +983,12 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.66" data-order="|2|2.66|" ref-path="2.66" class="h__chapter">Chapter 2.66 RETIREMENT SYSTEM</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.66" data-order="|2|2.66|" data-ref-path="2.66" class="h__chapter">Chapter 2.66 RETIREMENT SYSTEM</h2>
                 <section class="line-group annotations">
                   <h4>Editor's Notes</h4>
                   <p>For the statutory provisions regarding the election by the City to belong to the State Employees' Retirement System see West's Cal. C.A. §§ 20450 et seq. For the provisions regarding the State Employees' Retirement System generally see West's <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=GOV&amp;tocTitle=+Public+Utilities+Code+-+GOV" title="">Cal. Gov. C.A.</a> §§ <a class="internal-link no-wrap" href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=20000&amp;lawCode=GOV" title="">20000</a> et seq.</p>
                 </section>
-                <h2 id="/us/ca/cities/san-mateo/code/2.66.010" data-order="|2|2.66|2.66.010|" ref-path="2.66.010" class="h__section">2.66.010 ADOPTION OF STATE SYSTEM.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.66.010" data-order="|2|2.66|2.66.010|" data-ref-path="2.66.010" class="h__section">2.66.010 ADOPTION OF STATE SYSTEM.</h2>
                 <p>The State Employees' Retirement System for officials and employees of cities is adopted as the retirement system for the officials and employees of the City.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -992,7 +996,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.66.020" data-order="|2|2.66|2.66.020|" ref-path="2.66.020" class="h__section">2.66.020 CONTRACT WITH STATE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.66.020" data-order="|2|2.66|2.66.020|" data-ref-path="2.66.020" class="h__section">2.66.020 CONTRACT WITH STATE.</h2>
                 <p>The council is vested with the power to take all proceedings provided by law, and to execute a contract with the state, for making the officials and employees of the City members of the State Employees' Retirement System.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1000,7 +1004,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.66.030" data-order="|2|2.66|2.66.030|" ref-path="2.66.030" class="h__section">2.66.030 ELECTION TO BECOME MEMBER.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.66.030" data-order="|2|2.66|2.66.030|" data-ref-path="2.66.030" class="h__section">2.66.030 ELECTION TO BECOME MEMBER.</h2>
                 <p>The officials and employees to be included therein constitute the classes to consist of the members of all offices and departments, who, by secret ballot, separately as to each class, shall elect to come into the system.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1008,7 +1012,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.66.040" data-order="|2|2.66|2.66.040|" ref-path="2.66.040" class="h__section">2.66.040 ADDITIONAL POWERS OF COUNCIL.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.66.040" data-order="|2|2.66|2.66.040|" data-ref-path="2.66.040" class="h__section">2.66.040 ADDITIONAL POWERS OF COUNCIL.</h2>
                 <p>The powers vested in the Council constitute and include the authority to apply to the state for such contract, report to the state on the types and terms of service of all officials and employees eligible therefor, the obtaining of all actuarial data necessary for the state to report to the City a quotation of the approximate contribution necessary for maintaining the City's share of said system, the resolution of intention to make the contract, and the approval of the contract by ordinance; the collection of the officials' and employees' share thereof, and the levy of taxes to maintain the City's share; the maintenance of the system, and all matters and things provided by law, whether or not herein mentioned.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1016,7 +1020,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.66.050" data-order="|2|2.66|2.66.050|" ref-path="2.66.050" class="h__section">2.66.050 EXCEPTION FOR SALARIES OF CITY CLERK AND CITY TREASURER.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.66.050" data-order="|2|2.66|2.66.050|" data-ref-path="2.66.050" class="h__section">2.66.050 EXCEPTION FOR SALARIES OF CITY CLERK AND CITY TREASURER.</h2>
                 <p>Upon the City Clerk or city treasurer becoming included in the City employees' retirement system, pursuant to any act of the state legislature providing therefor, the salary of such officer is fixed thereafter as his or her regular compensation plus the amount required by law to be contributed by the City to the retirement fund by reason of the inclusion of said officer in the system.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1024,8 +1028,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.69" data-order="|2|2.69|" ref-path="2.69" class="h__chapter">Chapter 2.69 OFFICE HOURS—PUBLIC RECORDS</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/2.69.010" data-order="|2|2.69|2.69.010|" ref-path="2.69.010" class="h__section">2.69.010 OFFICE HOURS OF CITY DEPARTMENTS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.69" data-order="|2|2.69|" data-ref-path="2.69" class="h__chapter">Chapter 2.69 OFFICE HOURS—PUBLIC RECORDS</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.69.010" data-order="|2|2.69|2.69.010|" data-ref-path="2.69.010" class="h__section">2.69.010 OFFICE HOURS OF CITY DEPARTMENTS.</h2>
                 <p>All city departments shall maintain office hours at the City Hall on all business days; provided that all city departments shall be closed all day on Saturdays.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1033,7 +1037,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.69.020" data-order="|2|2.69|2.69.020|" ref-path="2.69.020" class="h__section">2.69.020 BOOKS—RECORDS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.69.020" data-order="|2|2.69|2.69.020|" data-ref-path="2.69.020" class="h__section">2.69.020 BOOKS—RECORDS.</h2>
                 <p>The books and records of all city offices shall be open at all times during office hours, and any taxpayer of the City may inspect the same, provided such taxpayer specifies the book or record he or she desires to see, and such book or record is not taken from the office.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1041,7 +1045,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.69.030" data-order="|2|2.69|2.69.030|" ref-path="2.69.030" class="h__section">2.69.030 COPIES OF RECORDS—DUTY TO FURNISH.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.69.030" data-order="|2|2.69|2.69.030|" data-ref-path="2.69.030" class="h__section">2.69.030 COPIES OF RECORDS—DUTY TO FURNISH.</h2>
                 <p>In addition to their other duties, city officials or employees shall make and furnish upon application, or when required by law, ordinance or the City charter, statistics or copies of public records, maps or other public documents on file in the department with which they are connected.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1049,7 +1053,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.69.040" data-order="|2|2.69|2.69.040|" ref-path="2.69.040" class="h__section">2.69.040 COPIES OF RECORDS—FEES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.69.040" data-order="|2|2.69|2.69.040|" data-ref-path="2.69.040" class="h__section">2.69.040 COPIES OF RECORDS—FEES.</h2>
                 <p>For making and furnishing such statistics, copies or extracts of such public records, certain fees including state tax shall be charged by the City as established by resolution of the City Council.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1057,7 +1061,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.69.050" data-order="|2|2.69|2.69.050|" ref-path="2.69.050" class="h__section">2.69.050 COPIES OF RECORDS—FURNISHING ON EMPLOYEE'S OWN TIME FORBIDDEN.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.69.050" data-order="|2|2.69|2.69.050|" data-ref-path="2.69.050" class="h__section">2.69.050 COPIES OF RECORDS—FURNISHING ON EMPLOYEE'S OWN TIME FORBIDDEN.</h2>
                 <p>No official or employee of the City shall make or furnish any such statistics, copies or extracts for private parties on his or her own time.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1065,7 +1069,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.69.070" data-order="|2|2.69|2.69.070|" ref-path="2.69.070" class="h__section">2.69.070 RETENTION OF FEES OR COMMISSIONS FORBIDDEN.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.69.070" data-order="|2|2.69|2.69.070|" data-ref-path="2.69.070" class="h__section">2.69.070 RETENTION OF FEES OR COMMISSIONS FORBIDDEN.</h2>
                 <p>No official or employee shall be authorized to retain any fee or commission to his or her own use by way of compensation, but all such fees shall be deposited with the treasurer in accordance with the provisions of the City charter.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1073,7 +1077,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.69.080" data-order="|2|2.69|2.69.080|" ref-path="2.69.080" class="h__section">2.69.080 DESTRUCTION OF DUPLICATE RECORDS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.69.080" data-order="|2|2.69|2.69.080|" data-ref-path="2.69.080" class="h__section">2.69.080 DESTRUCTION OF DUPLICATE RECORDS.</h2>
                 <p>Pursuant to the authority contained in <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=34090.7&amp;lawCode=GOV" title="">Section 34090.7 of the Government Code</a>, any department head may, with the written concurrence of the City Manager and city attorney, destroy any city records which are not required for the operation of the department and for which a duplicate is retained by a department of the City.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1081,14 +1085,14 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.75" data-order="|2|2.75|" ref-path="2.75" class="h__chapter">Chapter 2.75 FUNDS</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.75" data-order="|2|2.75|" data-ref-path="2.75" class="h__chapter">Chapter 2.75 FUNDS</h2>
                 <section class="line-group annotations">
                   <h4>Editor's Notes</h4>
                   <p>For provisions relating to general fund—Dog licenses, see Chapter 8.16 of this code.</p>
                   <p>For provisions relating to street fund—Vehicle tax, see Chapter 5.78 of this code.</p>
                   <p>For the relevant provision of the City charter with regard to handling of city funds see §§ 5.08 and 5.10.</p>
                 </section>
-                <h2 id="/us/ca/cities/san-mateo/code/2.75.010" data-order="|2|2.75|2.75.010|" ref-path="2.75.010" class="h__section">2.75.010 ESTABLISHMENT.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.75.010" data-order="|2|2.75|2.75.010|" data-ref-path="2.75.010" class="h__section">2.75.010 ESTABLISHMENT.</h2>
                 <p>There shall be established and maintained, in addition to any other funds provided by law or ordinance, certain funds as set forth in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.75" title="Chapter 2.75 FUNDS">this chapter</a> to be kept by the treasurer of the City. The treasurer of the City shall keep accurate accounts of such funds and report the condition of each to the Council at the times required by it. Subsidiary accounts may be kept within each fund in the treasury for the purpose of facilitating accounting procedures and assisting the several departments in determining revenues deposited and expenditures made from their respective funds.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1096,7 +1100,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.75.020" data-order="|2|2.75|2.75.020|" ref-path="2.75.020" class="h__section">2.75.020 USE OF MONEYS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.75.020" data-order="|2|2.75|2.75.020|" data-ref-path="2.75.020" class="h__section">2.75.020 USE OF MONEYS.</h2>
                 <p>Moneys in any fund established hereunder may be used only for the purpose for which such fund has been established and maintained.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1104,7 +1108,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.75.030" data-order="|2|2.75|2.75.030|" ref-path="2.75.030" class="h__section">2.75.030 TRANSFER OF FUNDS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.75.030" data-order="|2|2.75|2.75.030|" data-ref-path="2.75.030" class="h__section">2.75.030 TRANSFER OF FUNDS.</h2>
                 <p>The City Council may appropriate or transfer moneys from any of the funds to any other of the funds in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.75" title="Chapter 2.75 FUNDS">this chapter</a> except as provided by charter or laws limiting the power to make such transfers.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1112,7 +1116,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.75.040" data-order="|2|2.75|2.75.040|" ref-path="2.75.040" class="h__section">2.75.040 PETTY CASH FUNDS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.75.040" data-order="|2|2.75|2.75.040|" data-ref-path="2.75.040" class="h__section">2.75.040 PETTY CASH FUNDS.</h2>
                 <p>Such other petty cash funds or revolving funds may be created in the several departments as the Council from time to time may deem necessary or convenient. The expenditures from such funds shall be accurately kept for the permanent record. The City treasurer shall keep an accurate record of each such petty cash fund, showing from which major fund any such petty cash fund was established.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1120,7 +1124,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.75.050" data-order="|2|2.75|2.75.050|" ref-path="2.75.050" class="h__section">2.75.050 BOND PLAN A MAINTENANCE FUND.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.75.050" data-order="|2|2.75|2.75.050|" data-ref-path="2.75.050" class="h__section">2.75.050 BOND PLAN A MAINTENANCE FUND.</h2>
                 <p>Bond plan A maintenance fund is established and shall be maintained for the deposit of all moneys which have been collected under bond plan A of Chapters 21.48 through 21.80 or under the Improvement Bond Act of 1911 for the purpose of administering the handling, issuance of, and accounting for, bonds issued thereunder.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1128,7 +1132,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.75.060" data-order="|2|2.75|2.75.060|" ref-path="2.75.060" class="h__section">2.75.060 BOND PLAN E FUNDS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.75.060" data-order="|2|2.75|2.75.060|" data-ref-path="2.75.060" class="h__section">2.75.060 BOND PLAN E FUNDS.</h2>
                 <p>Bond Plan E funds shall be maintained from time to time for the deposit of all moneys which have been collected from special assessments under plan E proceedings pursuant to this code. The principal and interest due annually to retire bonds issued pursuant to such proceedings shall be paid from this fund.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1136,7 +1140,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.75.070" data-order="|2|2.75|2.75.070|" ref-path="2.75.070" class="h__section">2.75.070 CAPITAL OUTLAY FUND.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.75.070" data-order="|2|2.75|2.75.070|" data-ref-path="2.75.070" class="h__section">2.75.070 CAPITAL OUTLAY FUND.</h2>
                 <p>The capital outlay fund is established and shall be maintained for the deposit of cash reserves for future capital expenditures.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1144,7 +1148,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.75.080" data-order="|2|2.75|2.75.080|" ref-path="2.75.080" class="h__section">2.75.080 CITY EMPLOYEES' RETIREMENT FUND.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.75.080" data-order="|2|2.75|2.75.080|" data-ref-path="2.75.080" class="h__section">2.75.080 CITY EMPLOYEES' RETIREMENT FUND.</h2>
                 <p>The City employees' retirement fund is established and shall be maintained for the deposit of moneys collected as taxes to meet the obligations of the City to the state retirement system.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1152,7 +1156,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.75.090" data-order="|2|2.75|2.75.090|" ref-path="2.75.090" class="h__section">2.75.090 COMPREHENSIVE LIABILITY FUND.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.75.090" data-order="|2|2.75|2.75.090|" data-ref-path="2.75.090" class="h__section">2.75.090 COMPREHENSIVE LIABILITY FUND.</h2>
                 <p>The comprehensive liability fund is established and shall be maintained for the deposit of all moneys budgeted for the self-insurance program. Payments from the fund shall be made for all insurance premiums for all liability, property damage and fire and comprehensive coverage for the City, and all premiums for bonding officials and employees of the City, as authorized by the Council, or otherwise required by law. Payments shall also be made for such claims required to be paid by the City under deductible or self-retention insurance contract obligations, or through self-insurance, in settlement of claims or by any judgment of a court.</p>
                 <p>The fund may be charged for personnel costs of administering the self-insurance program, including salaries and benefits for the time expended thereon, cost of investigations, adjustment and outside legal and administrative costs.</p>
                 <p>It shall also be the depository for all moneys received, collected or recovered upon liability and property damage claims for the City. All earnings from investments of the fund and all state-mandated benefit costs recovered shall also accrue to the fund. Such earnings shall be credited to the fund at least once annually before the close of the fiscal year.</p>
@@ -1163,7 +1167,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.75.100" data-order="|2|2.75|2.75.100|" ref-path="2.75.100" class="h__section">2.75.100 GAS TAX FUND.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.75.100" data-order="|2|2.75|2.75.100|" data-ref-path="2.75.100" class="h__section">2.75.100 GAS TAX FUND.</h2>
                 <p>To comply with the provisions of Article V of Chapter 1 of Division <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1&amp;lawCode=SHC" title="">1 of the Streets and Highways Code</a>, with particular reference to the amendments made thereto by Chapter 642, Statutes of 1935, there shall be maintained in the City treasury the special fund to be known as the "special gas tax street improvement fund" heretofore created.</p>
                 <p>All moneys received by the City from the state under the provisions of the <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=SHC&amp;tocTitle=+Public+Utilities+Code+-+SHC" title="">Streets and Highways Code</a> now or hereafter provided by general law, for the acquisition of real property or interests therein, or the construction, maintenance or improvement of streets or highways, other than state highways, in the City, shall be paid into said fund.</p>
                 <aside class="annotations" role="note">
@@ -1172,7 +1176,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.75.110" data-order="|2|2.75|2.75.110|" ref-path="2.75.110" class="h__section">2.75.110 GENERAL FUND.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.75.110" data-order="|2|2.75|2.75.110|" data-ref-path="2.75.110" class="h__section">2.75.110 GENERAL FUND.</h2>
                 <p>The general fund shall be maintained for the deposit of all moneys received into the City treasury and not specifically levied for, or appropriated to, any other fund, and of such other moneys as may be apportioned thereto. From it shall be paid such claims as may be allowed thereon.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1180,7 +1184,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.75.120" data-order="|2|2.75|2.75.120|" ref-path="2.75.120" class="h__section">2.75.120 LIBRARY FUND.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.75.120" data-order="|2|2.75|2.75.120|" data-ref-path="2.75.120" class="h__section">2.75.120 LIBRARY FUND.</h2>
                 <p>The library fund shall be maintained for the deposit of such moneys as may be apportioned thereto from the library tax and collected from fines, dues and other public library receipts. From it shall be paid such claims as may be allowed thereon on recommendation of the library board.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1188,7 +1192,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.75.130" data-order="|2|2.75|2.75.130|" ref-path="2.75.130" class="h__section">2.75.130 MUNICIPAL BOND FUNDS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.75.130" data-order="|2|2.75|2.75.130|" data-ref-path="2.75.130" class="h__section">2.75.130 MUNICIPAL BOND FUNDS.</h2>
                 <p>Municipal bond funds shall be established and maintained from time to time when required under state, or other law. Moneys already derived from the sale of municipal bonds shall be retained in the respective funds in which they have been deposited.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1196,7 +1200,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.75.140" data-order="|2|2.75|2.75.140|" ref-path="2.75.140" class="h__section">2.75.140 MUNICIPAL BOND REDEMPTION FUNDS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.75.140" data-order="|2|2.75|2.75.140|" data-ref-path="2.75.140" class="h__section">2.75.140 MUNICIPAL BOND REDEMPTION FUNDS.</h2>
                 <p>Municipal bond redemption funds shall be established from time to time as a depository for all moneys received from special levies to meet the payment of principal and interest on general obligation bonds. Moneys already derived from taxes shall be retained in their respective funds.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1204,7 +1208,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.75.150" data-order="|2|2.75|2.75.150|" ref-path="2.75.150" class="h__section">2.75.150 PARK AND BOULEVARD FUND.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.75.150" data-order="|2|2.75|2.75.150|" data-ref-path="2.75.150" class="h__section">2.75.150 PARK AND BOULEVARD FUND.</h2>
                 <p>The park and boulevard fund shall be maintained as a depository for moneys derived from special revenues and tax levies, for the improvement, care and maintenance of the parks, recreational facilities, and parkways in city and of the trees, shrubs and grass plots upon the public streets thereof. The park and recreation commission shall make recommendations concerning the expenditures of moneys deposited in this fund.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1212,7 +1216,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.75.160" data-order="|2|2.75|2.75.160|" ref-path="2.75.160" class="h__section">2.75.160 TRAFFIC SAFETY FUND.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.75.160" data-order="|2|2.75|2.75.160|" data-ref-path="2.75.160" class="h__section">2.75.160 TRAFFIC SAFETY FUND.</h2>
                 <p>The traffic safety fund shall be established and maintained in accordance with the provisions of <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=42200&amp;lawCode=VEH" title="">Section 42200 of the Vehicle Code</a>. All fines and forfeitures collected from any person charged with a misdemeanor under said code shall be deposited in said fund.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1220,7 +1224,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.75.170" data-order="|2|2.75|2.75.170|" ref-path="2.75.170" class="h__section">2.75.170 UNAPPORTIONED TAX FUND.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.75.170" data-order="|2|2.75|2.75.170|" data-ref-path="2.75.170" class="h__section">2.75.170 UNAPPORTIONED TAX FUND.</h2>
                 <p>The unapportioned tax fund is established and shall be maintained. All tax funds received shall be placed in the fund. Apportionment to the several funds for which taxes have been levied shall be made from time to time on recommendation of the City Manager.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1228,7 +1232,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.75.180" data-order="|2|2.75|2.75.180|" ref-path="2.75.180" class="h__section">2.75.180 WORKERS' COMPENSATION FUND.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.75.180" data-order="|2|2.75|2.75.180|" data-ref-path="2.75.180" class="h__section">2.75.180 WORKERS' COMPENSATION FUND.</h2>
                 <p>The workers' compensation fund is established and shall be maintained for the deposit of all moneys budgeted for payment of workers' compensation claims under the City's self-insurance program. It shall also be the depository for temporary disability and medical payments recovered from third parties or received while the employee is disabled and is receiving full salary under the provisions of <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=4850&amp;lawCode=LAB" title="">California Labor Code Section 4850</a> or the City personnel laws and rules. Payments therefrom shall be made for all excess insurance coverage premiums, all proper industrial injury claims against the City and for all pre employment and post employment physical examinations.</p>
                 <p>The fund may be charged for personnel costs of administering the self-insurance program, including contracts for outside administration and legal expenses, salaries and benefits for the time of city personnel expended thereon and other costs directly incurred in said program.</p>
                 <p>Said fund shall be established and maintained at a level that the Council periodically determines to be sufficient to properly discharge the City's obligations under the workers' compensation laws of this state. All earnings from investments of the fund and all state-mandated benefit costs recovered shall also accrue to the fund. Such earnings shall be credited to the fund at least once annually before the close of the fiscal year.</p>
@@ -1238,8 +1242,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.78" data-order="|2|2.78|" ref-path="2.78" class="h__chapter">Chapter 2.78 EMERGENCY SERVICES</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/2.78.010" data-order="|2|2.78|2.78.010|" ref-path="2.78.010" class="h__section">2.78.010 CHAPTER PURPOSES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.78" data-order="|2|2.78|" data-ref-path="2.78" class="h__chapter">Chapter 2.78 EMERGENCY SERVICES</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.78.010" data-order="|2|2.78|2.78.010|" data-ref-path="2.78.010" class="h__section">2.78.010 CHAPTER PURPOSES.</h2>
                 <p>The declared purposes of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.78" title="Chapter 2.78 EMERGENCY SERVICES">this chapter</a> are to provide for the preparation and carrying out of plans for the protection of persons and property within this city in the event of an emergency; the direction of the emergency organization; and to provide for the coordination of the emergency functions of this city with all other public agencies and affected private persons, corporations, and organizations. Any expenditures made in connection with such emergency activities, including mutual aid activities, shall be deemed conclusively to be for the direct protection and benefit of the inhabitants and property of the City.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1247,7 +1251,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.78.020" data-order="|2|2.78|2.78.020|" ref-path="2.78.020" class="h__section">2.78.020 DEFINITIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.78.020" data-order="|2|2.78|2.78.020|" data-ref-path="2.78.020" class="h__section">2.78.020 DEFINITIONS.</h2>
                 <p>As used in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.78" title="Chapter 2.78 EMERGENCY SERVICES">this chapter</a>, "emergency" means the actual or threatened existence of conditions of disaster or extreme peril to the safety of persons and property within this city caused by such conditions as air pollution, earthquake, epidemic, extreme and sudden energy shortages, drought, fire, flood, riot, storm, or other conditions, including conditions resulting from war or imminent threat of war, but other than conditions resulting from beyond the control of the services, personnel, equipment, and facilities of this city, requiring the combined efforts of other political subdivisions to respond.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1255,7 +1259,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.78.030" data-order="|2|2.78|2.78.030|" ref-path="2.78.030" class="h__section">2.78.030 DIRECTOR—POWERS AND DUTIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.78.030" data-order="|2|2.78|2.78.030|" data-ref-path="2.78.030" class="h__section">2.78.030 DIRECTOR—POWERS AND DUTIES.</h2>
                 <p>There is created the office of director of emergency services. The City Manager shall be the director of emergency services.</p>
                 <p>The director is empowered:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.78.030#(a)">(a)</span> To request the City Council to proclaim the existence or threatened existence of a local emergency and the termination thereof, if the City Council is in session, or to issue such proclamation if the City Council is not in session, subject to the confirmation by the City Council at the earliest practicable time;</p>
@@ -1269,7 +1273,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.78.040" data-order="|2|2.78|2.78.040|" ref-path="2.78.040" class="h__section">2.78.040 DIRECTOR—ADDITIONAL POWERS AND DUTIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.78.040" data-order="|2|2.78|2.78.040|" data-ref-path="2.78.040" class="h__section">2.78.040 DIRECTOR—ADDITIONAL POWERS AND DUTIES.</h2>
                 <p>In the event of the proclamation of a local emergency as provided in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.78" title="Chapter 2.78 EMERGENCY SERVICES">this chapter</a>, as the proclamation of a state of emergency by the governor or the director of the State Office of Emergency Services, or the existence of a state of war emergency, the director is empowered:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.78.040#(a)">(a)</span> To make and issue rules and regulations on matters reasonably related to the protection of life and property as affected by such emergency; provided, however, such rules and regulations must be confirmed at the earliest practicable time by the City Council;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.78.040#(b)">(b)</span> To obtain vital supplies, equipment, and such other properties found lacking and needed for the protection of life and property, and bind the City for the fair value thereof, and if required immediately, to commandeer the same for public use;</p>
@@ -1286,7 +1290,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.78.050" data-order="|2|2.78|2.78.050|" ref-path="2.78.050" class="h__section">2.78.050 ORGANIZATION—COMPOSITION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.78.050" data-order="|2|2.78|2.78.050|" data-ref-path="2.78.050" class="h__section">2.78.050 ORGANIZATION—COMPOSITION.</h2>
                 <p>All officers and employees of this city, together with those volunteer forces enrolled to aid them during an emergency, and all groups, organizations and persons who, by agreement or operation of laws, including persons commandeered under the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.78.040#(c)" title="">Section 2.78.040(c)</a>, may be charged with duties incident to the protection of life and property in this city during such emergency, shall constitute the emergency services organization of the City. All volunteers shall be registered, and it is intended that they be protected by workers' compensation laws of the state while in training or in active emergency duty.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1294,7 +1298,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.78.060" data-order="|2|2.78|2.78.060|" ref-path="2.78.060" class="h__section">2.78.060 ORGANIZATION—DIVISION, SERVICES AND STAFF.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.78.060" data-order="|2|2.78|2.78.060|" data-ref-path="2.78.060" class="h__section">2.78.060 ORGANIZATION—DIVISION, SERVICES AND STAFF.</h2>
                 <p>The functions and duties of the San Mateo emergency services organization shall be distributed among such divisions, services and special staff as the City Council shall prescribe by resolution.</p>
                 <p>The City Council shall concurrently with the adoption of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.78" title="Chapter 2.78 EMERGENCY SERVICES">this chapter</a>, adopt a resolution setting forth the form of organization, establishment and designation of divisions and services, the assignment of functions, duties and powers, and the designation of officers and employees with specific emergency responsibilities. Insofar as possible, the form of organization, titles and terminology shall conform to the recommendations of the federal government and the state office of emergency services.</p>
                 <aside class="annotations" role="note">
@@ -1303,7 +1307,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.78.070" data-order="|2|2.78|2.78.070|" ref-path="2.78.070" class="h__section">2.78.070 VIOLATIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.78.070" data-order="|2|2.78|2.78.070|" data-ref-path="2.78.070" class="h__section">2.78.070 VIOLATIONS.</h2>
                 <p>It is unlawful for any person during an emergency:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.78.070#(a)">(a)</span> Willfully to obstruct, hinder or delay any member of the emergency services organization in the enforcement of any lawful rule or regulation issued pursuant to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.78" title="Chapter 2.78 EMERGENCY SERVICES">this chapter</a>, or in the performance of any duty imposed upon him or her by virtue of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.78" title="Chapter 2.78 EMERGENCY SERVICES">this chapter</a>;</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.78.070#(b)">(b)</span> To do any act forbidden by any lawful rules or regulations issued pursuant to <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.78" title="Chapter 2.78 EMERGENCY SERVICES">this chapter</a>, if such act is of such a nature as to give or be likely to give assistance to the enemy, or to imperil the lives or property of inhabitants of this city, or to prevent, hinder or delay the defense or protection thereof;</p>
@@ -1314,8 +1318,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.80" data-order="|2|2.80|" ref-path="2.80" class="h__chapter">Chapter 2.80 CONTRIBUTIONS AND LOANS TO CITY CANDIDATE CAMPAIGNS</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/2.80.010" data-order="|2|2.80|2.80.010|" ref-path="2.80.010" class="h__section">2.80.010 FINDINGS AND PURPOSE.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.80" data-order="|2|2.80|" data-ref-path="2.80" class="h__chapter">Chapter 2.80 CONTRIBUTIONS AND LOANS TO CITY CANDIDATE CAMPAIGNS</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.80.010" data-order="|2|2.80|2.80.010|" data-ref-path="2.80.010" class="h__section">2.80.010 FINDINGS AND PURPOSE.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.80.010#(a)">(a)</span> The City Council hereby finds that preserving integrity and openness in the political process is a matter of the highest public interest; that the people of the City of San Mateo can be better served through a more informed electorate; that the trust of the people is essential to representative government; and that regulation of certain campaign contributions and loans is necessary to promote public confidence in government and to protect the integrity of the electoral process.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.80.010#(b)">(b)</span> The City Council further finds that regulation of campaign contributions is required because the costs of running political campaigns have reached levels that lead to a public perception that special interests and wealthy individuals may have undue influence on or access to elected officials.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.80.010#(c)">(c)</span> It is the policy of the City to promote and encourage broad-based citizen involvement in the financing of election campaigns.</p>
@@ -1327,7 +1331,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.80.020" data-order="|2|2.80|2.80.020|" ref-path="2.80.020" class="h__section">2.80.020 DEFINITIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.80.020" data-order="|2|2.80|2.80.020|" data-ref-path="2.80.020" class="h__section">2.80.020 DEFINITIONS.</h2>
                 <p>As used in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.80" title="Chapter 2.80 CONTRIBUTIONS AND LOANS TO CITY CANDIDATE CAMPAIGNS">this chapter</a>, the words and phrases shall be defined in the same manner as they are defined in the Political Reform Act of 1974 (including any amendments thereto) as found in <a class="internal-link " href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=81000&amp;lawCode=GOV" title="">California Government Code Section 81000</a> et seq., unless defined otherwise in this section. For the purposes of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.80" title="Chapter 2.80 CONTRIBUTIONS AND LOANS TO CITY CANDIDATE CAMPAIGNS">this chapter</a>, the terms below are defined as follows:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.80.020#(a)">(a)</span> "Candidate" means any individual listed on the ballot for election to any City office, or who otherwise has taken affirmative action to seek election to City office, or who receives a contribution or makes an expenditure, or who gives his or her consent for any other person to receive a contribution or make an expenditure with the purpose of bringing about his or her election to any City office. "Candidate" also means an officeholder in connection with a recall election relating to such officeholder.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.80.020#(b)">(b)</span> "Candidate committee" means a committee that is controlled directly or indirectly by a candidate or that acts jointly with a candidate in connection with the making of expenditures.</p>
@@ -1341,7 +1345,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.80.030" data-order="|2|2.80|2.80.030|" ref-path="2.80.030" class="h__section">2.80.030 LIMITATIONS ON CONTRIBUTIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.80.030" data-order="|2|2.80|2.80.030|" data-ref-path="2.80.030" class="h__section">2.80.030 LIMITATIONS ON CONTRIBUTIONS.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.80.030#(a)">(a)</span> For any particular election, including a recall election, no individual shall make, and no candidate, candidate committee treasurer or other person acting on behalf of a candidate committee shall solicit or accept from any individual any contribution which will cause the total amount contributed by such individual to exceed $500.00.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.80.030#(b)">(b)</span> For any particular election, including a recall election, no organization shall make, and no candidate, candidate committee treasurer or other person acting on behalf of a candidate committee shall solicit or accept from any organization any contribution which will cause the total amount contributed by such organization to exceed $1,000.00.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/2.80.030#(c)">(c)</span> Any contribution or portion thereof that exceeds the limits in this section shall be returned to the contributor within 72 hours of receipt.</p>
@@ -1356,7 +1360,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.80.040" data-order="|2|2.80|2.80.040|" ref-path="2.80.040" class="h__section">2.80.040 CANDIDATE LOANS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.80.040" data-order="|2|2.80|2.80.040|" data-ref-path="2.80.040" class="h__section">2.80.040 CANDIDATE LOANS.</h2>
                 <p>No candidate shall personally loan their campaign an amount the outstanding balance of which exceeds $15,000.00 at any given point in time.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1368,7 +1372,7 @@
                   </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.80.050" data-order="|2|2.80|2.80.050|" ref-path="2.80.050" class="h__section">2.80.050 CANDIDATE CAMPAIGNS ONLY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.80.050" data-order="|2|2.80|2.80.050|" data-ref-path="2.80.050" class="h__section">2.80.050 CANDIDATE CAMPAIGNS ONLY.</h2>
                 <p>The provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.80" title="Chapter 2.80 CONTRIBUTIONS AND LOANS TO CITY CANDIDATE CAMPAIGNS">this chapter</a> apply to election campaigns for candidates only. The provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.80" title="Chapter 2.80 CONTRIBUTIONS AND LOANS TO CITY CANDIDATE CAMPAIGNS">this chapter</a> do not apply to any referendum or initiative election.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1376,7 +1380,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.80.060" data-order="|2|2.80|2.80.060|" ref-path="2.80.060" class="h__section">2.80.060 INJUNCTION, OTHER COURT ACTION.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.80.060" data-order="|2|2.80|2.80.060|" data-ref-path="2.80.060" class="h__section">2.80.060 INJUNCTION, OTHER COURT ACTION.</h2>
                 <p>In addition to all other remedies and penalties provided for violation of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.80" title="Chapter 2.80 CONTRIBUTIONS AND LOANS TO CITY CANDIDATE CAMPAIGNS">this chapter</a>, the City Attorney may bring suit in a court of competent jurisdiction to seek an injunction or other appropriate relief, to halt any violation of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.80" title="Chapter 2.80 CONTRIBUTIONS AND LOANS TO CITY CANDIDATE CAMPAIGNS">this chapter</a>. Such action may include seeking a temporary restraining order or temporary injunction and other appropriate temporary relief. Nothing in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.80" title="Chapter 2.80 CONTRIBUTIONS AND LOANS TO CITY CANDIDATE CAMPAIGNS">this chapter</a> shall be deemed to restrict a suit for damages on behalf of the City or on behalf of any other person or entity.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1384,7 +1388,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.80.070" data-order="|2|2.80|2.80.070|" ref-path="2.80.070" class="h__section">2.80.070 PENALTIES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.80.070" data-order="|2|2.80|2.80.070|" data-ref-path="2.80.070" class="h__section">2.80.070 PENALTIES.</h2>
                 <p>Any person who violates the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.80" title="Chapter 2.80 CONTRIBUTIONS AND LOANS TO CITY CANDIDATE CAMPAIGNS">this chapter</a> is guilty of a public offense.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1392,7 +1396,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.80.080" data-order="|2|2.80|2.80.080|" ref-path="2.80.080" class="h__section">2.80.080 POST ELECTION REVIEW.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.80.080" data-order="|2|2.80|2.80.080|" data-ref-path="2.80.080" class="h__section">2.80.080 POST ELECTION REVIEW.</h2>
                 <p>No later than three (3) months after the certification of the results of a City election at which a City Council member is elected, the City Clerk shall calendar for City Council consideration a review of the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.80" title="Chapter 2.80 CONTRIBUTIONS AND LOANS TO CITY CANDIDATE CAMPAIGNS">this chapter</a>. The purpose of such review is to allow the City Council to consider the ongoing appropriateness of the provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.80" title="Chapter 2.80 CONTRIBUTIONS AND LOANS TO CITY CANDIDATE CAMPAIGNS">this chapter</a>, including, but not limited to, the amount of the contribution and loan limits established in Sections <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.80.030" title="2.80.030 LIMITATIONS ON CONTRIBUTIONS.">2.80.030</a> and <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.80.040" title="2.80.040 CANDIDATE LOANS.">2.80.040</a>.</p>
                 <p>Notwithstanding any other provision of this code, the City Clerk's failure to calendar this review within the time period specified shall not subject the City Clerk to any criminal or civil penalty.</p>
                 <aside class="annotations" role="note">
@@ -1401,7 +1405,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/2.80.090" data-order="|2|2.80|2.80.090|" ref-path="2.80.090" class="h__section">2.80.090 SEVERABILITY.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/2.80.090" data-order="|2|2.80|2.80.090|" data-ref-path="2.80.090" class="h__section">2.80.090 SEVERABILITY.</h2>
                 <p>Each section and provision of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.80" title="Chapter 2.80 CONTRIBUTIONS AND LOANS TO CITY CANDIDATE CAMPAIGNS">this chapter</a> shall be considered severable and the invalidity of any section or provision of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/2.80" title="Chapter 2.80 CONTRIBUTIONS AND LOANS TO CITY CANDIDATE CAMPAIGNS">this chapter</a> shall not affect the validity or enforceability of any other section or provision.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -1412,7 +1416,7 @@
               </div>
             </article>
           </main>
-          <nav id="area__navigation_mini" class="ui ns__document__oll-core" role="region" aria-label="Previous and next article links">
+          <nav id="area__navigation_mini" class="ns__document__oll-core" aria-label="Previous and next article links">
             <section>
               <a href="/us/ca/cities/san-mateo/code/1" aria-label="Title 1 GENERAL PROVISIONS">
                 <div class="h__ui">Previous</div>
@@ -1427,7 +1431,7 @@
             </section>
           </nav>
         </div>
-      </section>
+      </div>
       <footer id="section__footer" class="ns__document__oll-core">
         <div id="section__footer__inner" class="ns__document__oll-core">
           <div id="area__footer__content" class="ns__document__oll-core">

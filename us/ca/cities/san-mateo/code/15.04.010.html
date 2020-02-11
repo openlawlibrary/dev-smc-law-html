@@ -53,15 +53,17 @@
     <script src="/_reader/js/main.js"> </script>
   </head>
   <body>
-    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true">
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
       <p id="message"> </p>
     </div>
-    <a href="#area__content" class="skip-link">Skip to main content</a>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
     <div id="grid" class="ns__document__oll-core">
       <header id="section__header" class="ns__document__oll-core">
         <div id="section__header__inner" class="ns__document__oll-core">
           <div id="area__logo" class="ns__document__oll-core">
-            <a href="/" class="logo" alt="San Mateo Law Library">
+            <a href="/" class="logo" aria-label="Logo - Return to home page">
               <img src="/us/ngo/oll/_document/v2/images/logo/logo.png" srcset="/us/ngo/oll/_document/v2/images/logo/logo.png 1x, /us/ngo/oll/_document/v2/images/logo/logo@2x.png 2x" alt="San Mateo Law Library logo"/>
             </a>
           </div>
@@ -70,11 +72,13 @@
           </div>
         </div>
       </header>
-      <section id="section__content" class="ns__document__oll-core">
+      <div id="section__content" class="ns__document__oll-core">
         <div id="section__content__inner" class="ns__document__oll-core">
-          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region">
-            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-hidden="true" aria-label="Mobile menu toggler"/>
-            <label for="menu-trigger" aria-label="Toggle mobile menu"> </label>
+          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
             <nav role="navigation" aria-label="Breadcrumb navigation">
               <div class="h__ui">Navigation</div>
               <ul class="ancestors">
@@ -98,7 +102,7 @@
           </section>
           <main id="area__content" class="ns__document__oll-core">
             <div class="h__document-title">City of San Mateo Municipal Code.</div>
-            <article class="content" role="document" ref-path="15.04.010">
+            <article class="content" role="document" data-ref-path="15.04.010">
               <div class="tuf-authenticate">
                 <h1 class="h__toc" id="/us/ca/cities/san-mateo/code/15.04.010">15.04.010 RETENTION PROCEDURE.</h1>
                 <p>Whenever in the opinion of the Council, the public interest requires the submission to the qualified electors of city, or whenever by initiative petitions duly presented to council, pursuant to the provisions of the act hereinafter referred to, requiring it to submit to the qualified electors of the City the question of whether or not the City shall retain the powers of control vested in it respecting all public utilities, or any public utility, or of the surrender of such powers to the Public Utilities Commission of the state, in case the qualified electors thereof have voted to retain such powers, or the question of whether city shall reinvest such powers in city, in case the qualified electors thereof have heretofore or hereafter voted to surrender such powers, the City, its council and other officers, and the qualified electors thereof, shall have the power to and shall conduct the proceedings therefor in accordance with the procedure provided in that certain act of the state legislature entitled "An Act to Provide for Submitting to the Qualified Electors of Every City and County, or Incorporated City or Town in this State the Question Whether Such City and County, or Incorporated City or Town, Shall Retain the Powers of Control Vested Therein Respecting All or any Public Utility, Providing Further for Elections Thereafter to Surrender Such Powers in the Case the Qualified Electors of Any Such City or County, or Incorporated City or Town, Shall Have Voted to Retain Such Powers or to Reinvest Such City and County, or Incorporated City or Town, with Such Powers, in Case the Qualified Electors Thereof Have Voted to Surrender Such Powers," approved June 7, 1915 (Statutes 1915, pages 1273 to 1280, both inclusive), which sections of said act are incorporated herein and made a part hereof for reference thereto the same as if said sections were set forth herein in full; provided, however, that where any of the provisions of said act are in conflict with any of the provisions of the City charter, then the provisions of the charter shall supersede and control.</p>
@@ -111,7 +115,7 @@
               </div>
             </article>
           </main>
-          <nav id="area__navigation_mini" class="ui ns__document__oll-core" role="region" aria-label="Previous and next article links">
+          <nav id="area__navigation_mini" class="ns__document__oll-core" aria-label="Previous and next article links">
             <section>
               <a href="/us/ca/cities/san-mateo/code/15.04" aria-label="Chapter 15.04 CONTROL">
                 <div class="h__ui">Previous</div>
@@ -126,7 +130,7 @@
             </section>
           </nav>
         </div>
-      </section>
+      </div>
       <footer id="section__footer" class="ns__document__oll-core">
         <div id="section__footer__inner" class="ns__document__oll-core">
           <div id="area__footer__content" class="ns__document__oll-core">

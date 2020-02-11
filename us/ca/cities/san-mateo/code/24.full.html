@@ -53,15 +53,17 @@
     <script src="/_reader/js/main.js"> </script>
   </head>
   <body>
-    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true">
+    <div role="region" id="announcer" aria-live="polite" class="sr-only" aria-atomic="true" aria-label="Live messages">
       <p id="message"> </p>
     </div>
-    <a href="#area__content" class="skip-link">Skip to main content</a>
+    <nav class="visually-hidden">
+      <a href="#area__content" class="skip-link">Skip to main content</a>
+    </nav>
     <div id="grid" class="ns__document__oll-core">
       <header id="section__header" class="ns__document__oll-core">
         <div id="section__header__inner" class="ns__document__oll-core">
           <div id="area__logo" class="ns__document__oll-core">
-            <a href="/" class="logo" alt="San Mateo Law Library">
+            <a href="/" class="logo" aria-label="Logo - Return to home page">
               <img src="/us/ngo/oll/_document/v2/images/logo/logo.png" srcset="/us/ngo/oll/_document/v2/images/logo/logo.png 1x, /us/ngo/oll/_document/v2/images/logo/logo@2x.png 2x" alt="San Mateo Law Library logo"/>
             </a>
           </div>
@@ -70,11 +72,13 @@
           </div>
         </div>
       </header>
-      <section id="section__content" class="ns__document__oll-core">
+      <div id="section__content" class="ns__document__oll-core">
         <div id="section__content__inner" class="ns__document__oll-core">
-          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region">
-            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-hidden="true" aria-label="Mobile menu toggler"/>
-            <label for="menu-trigger" aria-label="Toggle mobile menu"> </label>
+          <section id="area__breadcrumbs" class="ns__document__oll-core" role="region" aria-label="Breadcrumbs">
+            <input type="checkbox" id="menu-trigger" class="menu-trigger" aria-label="Mobile menu toggler"/>
+            <label for="menu-trigger">
+              <span class="visually-hidden">Toggle mobile menu</span>
+            </label>
             <nav role="navigation" aria-label="Breadcrumb navigation">
               <div class="h__ui">Navigation</div>
               <ul class="ancestors">
@@ -92,11 +96,11 @@
           </section>
           <main id="area__content" class="ns__document__oll-core">
             <div class="h__document-title">City of San Mateo Municipal Code.</div>
-            <article class="content" role="document" ref-path="24">
+            <article class="content" role="document" data-ref-path="24">
               <div class="tuf-authenticate">
                 <h1 class="h__toc" id="/us/ca/cities/san-mateo/code/24">Title 24 TRANSPORTATION SYSTEM MANAGEMENT (TSM)</h1>
-                <h2 id="/us/ca/cities/san-mateo/code/24.01" data-order="|24|24.01|" ref-path="24.01" class="h__chapter">Chapter 24.01 TRANSPORTATION SYSTEM MANAGEMENT</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/24.01.010" data-order="|24|24.01|24.01.010|" ref-path="24.01.010" class="h__section">24.01.010 FINDINGS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/24.01" data-order="|24|24.01|" data-ref-path="24.01" class="h__chapter">Chapter 24.01 TRANSPORTATION SYSTEM MANAGEMENT</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/24.01.010" data-order="|24|24.01|24.01.010|" data-ref-path="24.01.010" class="h__section">24.01.010 FINDINGS.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/24.01.010#(a)">(a)</span> There has been a significant increase in traffic in the Cities and surrounding region, and this trend is anticipated to continue in the future.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/24.01.010#(b)">(b)</span> Recent and future development and redevelopment within the City and surrounding region will lead to increased traffic in the area.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/24.01.010#(c)">(c)</span> Transportation Systems Management (TSM) programs have been shown to be capable of reducing vehicle trips and increasing vehicle occupancy rates, and can be effective in reducing the need for increasing gasoline taxes and costly major road improvements.</p>
@@ -116,7 +120,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/24.01.020" data-order="|24|24.01|24.01.020|" ref-path="24.01.020" class="h__section">24.01.020 GOALS AND OBJECTIVES.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/24.01.020" data-order="|24|24.01|24.01.020|" data-ref-path="24.01.020" class="h__section">24.01.020 GOALS AND OBJECTIVES.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/24.01.020#(a)">(a)</span> Goals. The goals of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/24.01" title="Chapter 24.01 TRANSPORTATION SYSTEM MANAGEMENT">this chapter</a> are to:</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/24.01.020#(a)(1)">(1)</span> Assure that all existing and future employers and complexes participate in mitigating traffic problems by implementing TSM measures.</p>
                 <p class="text-indent-2"><span class="level-num" id="/us/ca/cities/san-mateo/code/24.01.020#(a)(2)">(2)</span> Encourage coordination and consistency between public agencies and the private sector in planning and implementing transportation programs.</p>
@@ -132,7 +136,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/24.01.030" data-order="|24|24.01|24.01.030|" ref-path="24.01.030" class="h__section">24.01.030 DEFINITIONS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/24.01.030" data-order="|24|24.01|24.01.030|" data-ref-path="24.01.030" class="h__section">24.01.030 DEFINITIONS.</h2>
                 <p>As used in <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/24.01" title="Chapter 24.01 TRANSPORTATION SYSTEM MANAGEMENT">this chapter</a>, the following words and phrases have the meanings respectively ascribed thereto in this section:</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/24.01.030#(a)">(a)</span> "Alternative Work Hours Program" shall mean any system for shifting the work day of an employee so that the work day starts or ends outside of the peak periods. Such programs include but are not limited to: (i) compressed work weeks; (ii) staggered work hours involving a shift in the set work hours of employees at the work place; and (iii) flexible hours involving individually determining work hours within guidelines established by the employer.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/24.01.030#(b)">(b)</span> "Carpool" shall mean a motor vehicle occupied by two (2) or more employees commuting together.</p>
@@ -166,7 +170,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/24.01.040" data-order="|24|24.01|24.01.040|" ref-path="24.01.040" class="h__section">24.01.040 TSM COORDINATOR.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/24.01.040" data-order="|24|24.01|24.01.040|" data-ref-path="24.01.040" class="h__section">24.01.040 TSM COORDINATOR.</h2>
                 <p>The TSM Coordinator shall be employed by the Joint Powers Authority and shall serve as staff in administering the TSM provisions of <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/24.01" title="Chapter 24.01 TRANSPORTATION SYSTEM MANAGEMENT">this chapter</a> as provided in the Inter-City Agreement. Duties shall include, but are not limited to, assisting employers in carrying out TSM responsibilities, providing commute alternatives assistance, preparing summary reports, and developing incentives for employer participation in the TSM program.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -174,7 +178,7 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/24.01.050" data-order="|24|24.01|24.01.050|" ref-path="24.01.050" class="h__section">24.01.050 TSM REQUIREMENTS.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/24.01.050" data-order="|24|24.01|24.01.050|" data-ref-path="24.01.050" class="h__section">24.01.050 TSM REQUIREMENTS.</h2>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/24.01.050#(a)">(a)</span> Each employer within San Mateo County subject to the Bay Area Air Quality Management District's (BAAQMD) Regulation 13, Rule 1 (regional employer-based trip-reduction rule) shall conform to the employer based trip-reduction program requirements established and enforced by the BAAQMD.</p>
                 <p class="text-indent-1"><span class="level-num" id="/us/ca/cities/san-mateo/code/24.01.050#(b)">(b)</span> Each employer of 25 or more employees, and every sponsor of 25 or more employees, is encouraged to distribute to its employees on a regular basis, commute alternatives information on ridesharing, transit, bicycling, etc.; and participate when possible in programs, sponsored by the Joint Powers Authority, that may contribute to the reduction of single occupant vehicle commute trips.</p>
                 <aside class="annotations" role="note">
@@ -183,8 +187,8 @@
     </p>
                 </aside>
                 <hr class="section-separator" aria-hidden="true"/>
-                <h2 id="/us/ca/cities/san-mateo/code/24.03" data-order="|24|24.03|" ref-path="24.03" class="h__chapter">Chapter 24.03 COUNTY TRANSPORTATION SYSTEM MANAGEMENT</h2>
-                <h2 id="/us/ca/cities/san-mateo/code/24.03.010" data-order="|24|24.03|24.03.010|" ref-path="24.03.010" class="h__section">24.03.010 COUNTY TRANSPORTATION SYSTEM MANAGEMENT—TSM—ADOPTION AUTHORIZED.</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/24.03" data-order="|24|24.03|" data-ref-path="24.03" class="h__chapter">Chapter 24.03 COUNTY TRANSPORTATION SYSTEM MANAGEMENT</h2>
+                <h2 id="/us/ca/cities/san-mateo/code/24.03.010" data-order="|24|24.03|24.03.010|" data-ref-path="24.03.010" class="h__section">24.03.010 COUNTY TRANSPORTATION SYSTEM MANAGEMENT—TSM—ADOPTION AUTHORIZED.</h2>
                 <p>It is hereby declared to be the policy of the City of San Mateo that the County of San Mateo Transportation System Management (TSM) should apply in the City of San Mateo. The Transportation System Management Plan shall be adopted by the Council by resolution and amended by resolution from time to time to conform to the plan of the County as it may be amended from time to time. In the event that the County plan conflicts in whole or in part with <a class="internal-link no-wrap" href="/us/ca/cities/san-mateo/code/24.01" title="Chapter 24.01 TRANSPORTATION SYSTEM MANAGEMENT">Chapter 24.01</a>, the County plan shall be governing and shall prevail.</p>
                 <aside class="annotations" role="note">
                   <p>
@@ -195,7 +199,7 @@
               </div>
             </article>
           </main>
-          <nav id="area__navigation_mini" class="ui ns__document__oll-core" role="region" aria-label="Previous and next article links">
+          <nav id="area__navigation_mini" class="ns__document__oll-core" aria-label="Previous and next article links">
             <section>
               <a href="/us/ca/cities/san-mateo/code/23" aria-label="Title 23 BUILDINGS AND CONSTRUCTION">
                 <div class="h__ui">Previous</div>
@@ -210,7 +214,7 @@
             </section>
           </nav>
         </div>
-      </section>
+      </div>
       <footer id="section__footer" class="ns__document__oll-core">
         <div id="section__footer__inner" class="ns__document__oll-core">
           <div id="area__footer__content" class="ns__document__oll-core">
